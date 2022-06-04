@@ -1,14 +1,14 @@
 <img src="https://thumb.tildacdn.com/tild3934-3732-4633-b864-646466363531/-/format/webp/FAIRware_Logo.jpg" alt="incentive logo" height="75"/>
 
-[![CI](https://github.com/fair-data-collective/M4M-20-FAIRware-Psychology-Variables/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/M4M-20-FAIRware-Psychology-Variables/actions?query=workflow%3ASheet2RDF)
+[![CI](https://github.com/fair-data-collective/M4M-21-FAIRware-Neuroscience-Subjects/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/M4M-21-FAIRware-Neuroscience-Subjects/actions?query=workflow%3ASheet2RDF)
 
-# [Psychology Subjects](http://purl.org/m4m20/variables/)
+# [Neuroscience Subjects](http://purl.org/m4m21/variables/)
 
-Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Psychology Variables**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop 20 (M4M.20 FAIRware Psychology), which is one of deliverables of [FAIRware project](https://researchonresearch.org/projects#!/tab/273951116-3) funded by [RoRi](https://researchonresearch.org/).
+Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Neuroscience Variables**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop 21 (M4M.2a FAIRware Neuroscience), which is one of deliverables of [FAIRware project](https://researchonresearch.org/projects#!/tab/273951116-3) funded by [RoRi](https://researchonresearch.org/).
 
-`sheet2rdf` is used to build and serve **Psychology Variables**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary, which resolve on [BioPortal](bioportal.bioontology.org/) (Stanford's ontology service):
+`sheet2rdf` is used to build and serve **Neuroscience Variables**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary, which resolve on [BioPortal](bioportal.bioontology.org/) (Stanford's ontology service):
 
-http://purl.org/m4m20/variables/
+http://purl.org/m4m21/variables/
 
 # Tooling
 
