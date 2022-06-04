@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/fair-data-collective/M4M-21-FAIRware-Neuroscience-Subjects/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/M4M-21-FAIRware-Neuroscience-Subjects/actions?query=workflow%3ASheet2RDF)
 
-# [Neuroscience Subjects](http://purl.org/m4m21/variables/)
+# [Neuroscience Variables](http://purl.org/m4m21/variables/)
 
 Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Neuroscience Variables**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop 21 (M4M.21 FAIRware Neuroscience), which is one of deliverables of [FAIRware project](https://researchonresearch.org/projects#!/tab/273951116-3) funded by [RoRi](https://researchonresearch.org/).
 
