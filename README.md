@@ -4,7 +4,7 @@
 
 # [Neuroscience Subjects](http://purl.org/m4m21/variables/)
 
-Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Neuroscience Variables**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop 21 (M4M.2a FAIRware Neuroscience), which is one of deliverables of [FAIRware project](https://researchonresearch.org/projects#!/tab/273951116-3) funded by [RoRi](https://researchonresearch.org/).
+Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **Neuroscience Variables**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop 21 (M4M.21 FAIRware Neuroscience), which is one of deliverables of [FAIRware project](https://researchonresearch.org/projects#!/tab/273951116-3) funded by [RoRi](https://researchonresearch.org/).
 
 `sheet2rdf` is used to build and serve **Neuroscience Variables**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary, which resolve on [BioPortal](bioportal.bioontology.org/) (Stanford's ontology service):
 
