@@ -1,0 +1,72 @@
+ConceptScheme URI,http://purl.org/incentive/variables/,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+"Prefixes for controlled vocabularies, schema and ontologies"
+PREFIX,incentive-vars,http://purl.org/incentive/variables/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
+PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
+PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,iop,https://w3id.org/iadopt/ont/,I-ADOPT Ontology
+PREFIX,puv,https://w3id.org/env/puv#,"A simple ontology which implements the Parameter Usage 
+Vocabulary semantic model, as described at 
+https://github.com/nvs-vocabs/P01."
+PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
+PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
+PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
+Metadata about vocabulary
+
+dct:title,INCENTIVE Project Variables,Title of the vocabulary
+dct:description,Quantitative and qualitative variables describing ...,Description of the controlled vocabulary
+foaf:homepage,https://zenodo.org/communities/incentive/about/ ,Home page of community creating vocabulary
+dct:creator,https://orcid.org/0000-0002-9381-9693,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-3277-3107,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-4645-9442,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9719-9161,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9346-0190,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-8954-0470,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-8888-635X,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0003-1352-9213,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-6796-6780,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-9432-4297,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0002-5914-3554,An ORCID ID of the vocabulary creator
+dct:creator,https://orcid.org/0000-0001-5323-3180,An ORCID ID of the vocabulary creator
+dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
+dct:hasVersion,0.1.1,Vocabulary version
+dct:created,2021-08-23T16:13+00:00,Date when vocabulary was initially created
+dct:modified,2022-06-04T11:26:36+00:00,Automatic update when vocabulary is updated
+Definition of terms
+
+Identifier,"skos:prefLabel@en(id=""label"")","qudt:unit(separator="","")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
+incentive-vars:1000,IgG Subclasses,,,levels of IgG subclasses to Flu antigens,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:1001,IgG1-HA1,,,levels of immunoglobulin G-1against HA-1 antigen,,IgG Subclasses,,,test,test,test,test,test,test,test,test,MFI,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:1002,IgG2-HA1,,,levels of immunoglobulin G-2 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:1003,IgG3-HA1,,,levels of immunoglobulin G-3 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:1004,IgG4-HA1,,,levels of immunoglobulin G-4 against HA-1 antigen,,IgG Subclasses,,,,,,,,,,,MFI,,,https://orcid.org/0000-0003-3277-3107
+incentive-vars:1005,Surface Antigens-FC,,,level of surface antigenexpression,,,,,,,,,,,,,MFI
+incentive-vars:1006,CD3,,,level of CD3 expression,,Surface Antigens-FC,,,,,,,,,,,MFI
+incentive-vars:1007,Cytokines-FC,,,level of cytokine expreesion/secretion,,,,,,,,,,,,,MFI
+incentive-vars:1008,IFNg,,,level of IFNg expression/secretion,,Cytokines-FC,,,,,,,,,,,MFI
+incentive-vars:1009,Chemokines-FC,,,level of chemokine expression,,,,,,,,,,,,,MFI
+incentive-vars:1010
+incentive-vars:1011
+incentive-vars:1012
+incentive-vars:1013
+incentive-vars:1014
+incentive-vars:1015
+incentive-vars:1016
+incentive-vars:1017
+incentive-vars:1018
+incentive-vars:1019
+incentive-vars:1020
+incentive-vars:1021
+incentive-vars:1022
+incentive-vars:1023
+incentive-vars:1024
+incentive-vars:1025
+incentive-vars:1026
+incentive-vars:1027
+incentive-vars:1028
+incentive-vars:1029
+incentive-vars:1030
+incentive-vars:1031
+incentive-vars:1032
+incentive-vars:1033
+incentive-vars:1034
