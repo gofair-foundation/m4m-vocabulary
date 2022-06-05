@@ -8,7 +8,7 @@
   dct:created "enter date of creation in the form bellow"@en;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.1"@en;
-  dct:modified "2022-06-05T08:18:49+00:00"@en;
+  dct:modified "2022-06-05T08:56:29+00:00"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1002;
