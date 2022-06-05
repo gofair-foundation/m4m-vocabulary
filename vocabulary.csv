@@ -1,6 +1,6 @@
-ConceptScheme URI,http://purl.org/m4m-21/subjects,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+ConceptScheme URI,http://purl.org/m4m21/subjects,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vocab,http://purl.org/m4m-21/subjects/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,vocab,http://purl.org/m4m21/subjects/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
@@ -20,42 +20,11 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion,0.1.1,Vocabulary version
 dct:created,enter date of creation in the form bellow,Date when vocabulary was initially created
-dct:modified,2022-06-04T19:41:32+00:00,Automatic update when vocabulary is updated
+dct:modified,2022-06-05T08:18:49+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","qudt:unit(separator="","")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,,,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-vocab:1001,,,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-vocab:1002,,,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-vocab:1003,,,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-vocab:1004,,,,,,,,,,,,,,,,,,,,https://orcid.org/0000-0003-3277-3107
-vocab:1005
-vocab:1006
-vocab:1007
-vocab:1008
-vocab:1009
-vocab:1010
-vocab:1011
-vocab:1012
-vocab:1013
-vocab:1014
-vocab:1015
-vocab:1016
-vocab:1017
-vocab:1018
-vocab:1019
-vocab:1020
-vocab:1021
-vocab:1022
-vocab:1023
-vocab:1024
-vocab:1025
-vocab:1026
-vocab:1027
-vocab:1028
-vocab:1029
-vocab:1030
-vocab:1031
-vocab:1032
-vocab:1033
-vocab:1034
+Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+vocab:1000,Test Top Subject,Test Subject Alternative Label,Test Subject Definition
+vocab:1001,Test Narrow Subject,,,,Test Top Subject
+vocab:1002,Test Top Subject 2
+vocab:1003,Test Narrow Subject 2,,,,Test Top Subject 2
