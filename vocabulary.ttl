@@ -82,7 +82,7 @@ sosa:madeBySensor
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2022-06-11T18:34:42+00:00"^^xsd:datetime;
+  dct:modified "2022-06-11T18:39:12+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
   skos:hasTopConcept vocab:1000, vocab:1002;
@@ -93,21 +93,21 @@ vocab:1000 a skos:Concept;
   skos:definition "Test Subject Definition"@en;
   skos:inScheme <http://purl.org/m4m21/subjects>;
   skos:narrower vocab:1001;
-  skos:prefLabel "Test Top Subject";
+  skos:prefLabel "Test Top Subject"@en;
   skos:topConceptOf <http://purl.org/m4m21/subjects> .
 
 vocab:1001 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "Test Narrow Subject" .
+  skos:prefLabel "Test Narrow Subject"@en .
 
 vocab:1002 a skos:Concept;
   skos:inScheme <http://purl.org/m4m21/subjects>;
   skos:narrower vocab:1003;
-  skos:prefLabel "Test Top Subject 2";
+  skos:prefLabel "Test Top Subject 2"@en;
   skos:topConceptOf <http://purl.org/m4m21/subjects> .
 
 vocab:1003 a skos:Concept;
   skos:broader vocab:1002;
   skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "Test Narrow Subject 2" .
+  skos:prefLabel "Test Narrow Subject 2"@en .
