@@ -18,12 +18,12 @@ dct:description,Vocabulary description,Description of the controlled vocabulary
 foaf:homepage,URL to the community developing vocab,Home page of community creating vocabulary
 dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
-dct:hasVersion,0.1.1,Vocabulary version
-dct:created,enter date of creation in the form bellow,Date when vocabulary was initially created
-dct:modified,2022-06-05T08:56:29+00:00,Automatic update when vocabulary is updated
+dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
+dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
+dct:modified^^xsd:datetime,2022-06-11T18:34:42+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+Identifier,"skos:prefLabel@en(id=""label"")^^xsd:string","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,Test Top Subject,Test Subject Alternative Label,Test Subject Definition
 vocab:1001,Test Narrow Subject,,,,Test Top Subject
 vocab:1002,Test Top Subject 2
