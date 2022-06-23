@@ -82,10 +82,11 @@ sosa:madeBySensor
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "23/06/2022T11:30:05+00:00"^^xsd:datetime;
+  dct:modified "23/06/2022T14:52:27+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1004, vocab:1005;
+  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1004, vocab:1005, vocab:1006,
+    vocab:1007;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
@@ -153,4 +154,24 @@ vocab:1005 a skos:Concept;
   skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811>;
   skos:inScheme <http://purl.org/m4m21/subjects>;
   skos:prefLabel "magnetoencephalography"@en;
+  skos:topConceptOf <http://purl.org/m4m21/subjects> .
+
+vocab:1006 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0001-6361-2571"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <https://bids.neuroimaging.io/specification.html>;
+  skos:definition "Brain Imaging Data Structure"@en;
+  skos:inScheme <http://purl.org/m4m21/subjects>;
+  skos:prefLabel "bids"@en;
+  skos:topConceptOf <http://purl.org/m4m21/subjects> .
+
+vocab:1007 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0001-6361-2571"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <https://www.sciencedirect.com/topics/engineering/power-spectrum>;
+  skos:definition "Computation of the power spectrum of the signal"@en;
+  skos:inScheme <http://purl.org/m4m21/subjects>;
+  skos:prefLabel "power spectral analysis"@en;
   skos:topConceptOf <http://purl.org/m4m21/subjects> .

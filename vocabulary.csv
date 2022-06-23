@@ -13,7 +13,7 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,23/06/2022T11:30:05+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,23/06/2022T14:52:27+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
@@ -23,3 +23,5 @@ vocab:1002,memory,,"The cognitive process of encoding, storing and retrieving pa
 vocab:1003,working memory,,"active maintenance and flexible updating of goal-task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference",http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587,memory,http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
 vocab:1004,somatosensory,,"The tactile modality is the sensory modality pertaining to the sense of contact via the skin with other, external objects.",http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456,,http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
 vocab:1005,magnetoencephalography,,"The measurement of the magnetic fields produced by electrical activity in the brain, usually conducted externally, using extremely sensitive devices. The measurement of electric fields in the brain provides information about the localization of brain activity which is complementary to that provided by electroencephalography.",http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
+vocab:1006,bids,,Brain Imaging Data Structure,https://bids.neuroimaging.io/specification.html,,,,,,,2022-06-23,2022-06-23,0000-0001-6361-2571
+vocab:1007,power spectral analysis,,Computation of the power spectrum of the signal,https://www.sciencedirect.com/topics/engineering/power-spectrum,,,,,,,2022-06-23,2022-06-23,0000-0001-6361-2571
