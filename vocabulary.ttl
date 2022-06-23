@@ -82,32 +82,75 @@ sosa:madeBySensor
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2022-06-11T18:39:12+00:00"^^xsd:datetime;
+  dct:modified "23/06/2022T11:30:05+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
-  skos:hasTopConcept vocab:1000, vocab:1002;
+  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1004, vocab:1005;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
-  skos:altLabel "Test Subject Alternative Label"@en;
-  skos:definition "Test Subject Definition"@en;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://uri.neuinfo.org/nif/nifstd/birnlex_1843>;
+  skos:definition "The process of focusing on certain aspects of current experience to the exclusion of others. It is the act of heeding or taking notice or concentrating. (MeSH)"@en;
+  skos:exactMatch <http://uri.neuinfo.org/nif/nifstd/birnlex_1843>;
   skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:narrower vocab:1001;
-  skos:prefLabel "Test Top Subject"@en;
+  skos:prefLabel "attention"@en;
   skos:topConceptOf <http://purl.org/m4m21/subjects> .
 
 vocab:1001 a skos:Concept;
-  skos:broader vocab:1000;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929>;
+  skos:definition "The state of being alert, oriented, and responsive to the environment."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929>;
   skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "Test Narrow Subject"@en .
+  skos:prefLabel "consciousness"@en;
+  skos:topConceptOf <http://purl.org/m4m21/subjects> .
 
 vocab:1002 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://uri.neuinfo.org/nif/nifstd/birnlex_1833>;
+  skos:definition "The cognitive process of encoding, storing and retrieving past experience"@en;
+  skos:exactMatch <http://uri.neuinfo.org/nif/nifstd/birnlex_1833>;
   skos:inScheme <http://purl.org/m4m21/subjects>;
   skos:narrower vocab:1003;
-  skos:prefLabel "Test Top Subject 2"@en;
+  skos:prefLabel "memory"@en;
   skos:topConceptOf <http://purl.org/m4m21/subjects> .
 
 vocab:1003 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>;
   skos:broader vocab:1002;
+  skos:definition "active maintenance and flexible updating of goal-task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference"@en;
+  skos:exactMatch <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>;
   skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "Test Narrow Subject 2"@en .
+  skos:prefLabel "working memory"@en .
+
+vocab:1004 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456>;
+  skos:definition "The tactile modality is the sensory modality pertaining to the sense of contact via the skin with other, external objects."@en;
+  skos:exactMatch <http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456>;
+  skos:inScheme <http://purl.org/m4m21/subjects>;
+  skos:prefLabel "somatosensory"@en;
+  skos:topConceptOf <http://purl.org/m4m21/subjects> .
+
+vocab:1005 a skos:Concept;
+  dct:created "2022-06-23"^^xsd:date;
+  dct:creator "0000-0003-2195-3997"@en;
+  dct:modified "2022-06-23"^^xsd:date;
+  dct:source <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811>;
+  skos:definition "The measurement of the magnetic fields produced by electrical activity in the brain, usually conducted externally, using extremely sensitive devices. The measurement of electric fields in the brain provides information about the localization of brain activity which is complementary to that provided by electroencephalography."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811>;
+  skos:inScheme <http://purl.org/m4m21/subjects>;
+  skos:prefLabel "magnetoencephalography"@en;
+  skos:topConceptOf <http://purl.org/m4m21/subjects> .
