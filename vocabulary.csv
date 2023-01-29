@@ -1,9 +1,16 @@
-ConceptScheme URI,http://purl.org/m4m21/subjects,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vocab,http://purl.org/m4m21/subjects/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,vocab,http://purl.org/m4m/,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,iop,https://w3id.org/iadopt/ont/,I-ADOPT Ontology
+PREFIX,puv,https://w3id.org/env/puv#,"A simple ontology which implements the Parameter Usage 
+Vocabulary semantic model, as described at 
+https://github.com/nvs-vocabs/P01."
+PREFIX,sosa,http://www.w3.org/ns/sosa/,Semantic Sensor Network Ontology
+PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
+PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
 dct:title,Vocabulary title,Title of the vocabulary
@@ -13,15 +20,8 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,23/06/2022T14:52:27+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-01-29T19:40:52+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,attention,,The process of focusing on certain aspects of current experience to the exclusion of others. It is the act of heeding or taking notice or concentrating. (MeSH),http://uri.neuinfo.org/nif/nifstd/birnlex_1843,,http://uri.neuinfo.org/nif/nifstd/birnlex_1843,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1001,consciousness,,"The state of being alert, oriented, and responsive to the environment.",http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1002,memory,,"The cognitive process of encoding, storing and retrieving past experience",http://uri.neuinfo.org/nif/nifstd/birnlex_1833,,http://uri.neuinfo.org/nif/nifstd/birnlex_1833,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1003,working memory,,"active maintenance and flexible updating of goal-task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference",http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587,memory,http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1004,somatosensory,,"The tactile modality is the sensory modality pertaining to the sense of contact via the skin with other, external objects.",http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456,,http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1005,magnetoencephalography,,"The measurement of the magnetic fields produced by electrical activity in the brain, usually conducted externally, using extremely sensitive devices. The measurement of electric fields in the brain provides information about the localization of brain activity which is complementary to that provided by electroencephalography.",http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811,,,,,2022-06-23,2022-06-23,0000-0003-2195-3997
-vocab:1006,bids,,Brain Imaging Data Structure,https://bids.neuroimaging.io/specification.html,,,,,,,2022-06-23,2022-06-23,0000-0001-6361-2571
-vocab:1007,power spectral analysis,,Computation of the power spectrum of the signal,https://www.sciencedirect.com/topics/engineering/power-spectrum,,,,,,,2022-06-23,2022-06-23,0000-0001-6361-2571
+Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+vocab:1000,test term

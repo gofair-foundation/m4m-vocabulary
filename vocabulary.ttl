@@ -2,176 +2,20 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vocab: <http://purl.org/m4m21/subjects/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix schema: <http://schema.org/>.
-@prefix iop:   <https://w3id.org/iadopt/ont/> .
-@prefix puv: <https://w3id.org/env/puv#> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix vocab: <http://purl.org/m4m/> .
 
-iop:constrains  a     owl:ObjectProperty ;
-        rdfs:comment  "A Constraint constrains an Entity having a role in the Variable description." ;
-        rdfs:domain   iop:Constraint ;
-        rdfs:label    "constrains" ;
-        rdfs:range    iop:Entity .
 
-iop:hasConstraint  a  owl:ObjectProperty ;
-        rdfs:comment  "A Variable has a Constraint, that confines an Entity involved in the observation." ;
-        rdfs:domain   iop:Variable ;
-        rdfs:label    "hasConstraint" ;
-        rdfs:range    iop:Constraint .
-
-iop:hasContextObject  a  owl:ObjectProperty ;
-        rdfs:comment  "A Variable has an Entity that provides additional background information regarding the ObjectOfInterest." ;
-        rdfs:domain   iop:Variable ;
-        rdfs:label    "hasContextObject" ;
-        rdfs:range    iop:Entity .
-
-iop:hasMatrix  a            owl:ObjectProperty ;
-        rdfs:comment        "A Variable might have an Entity in which the ObjectOfInterest is contained." ;
-        rdfs:domain         iop:Variable ;
-        rdfs:label          "hasMatrix" ;
-        rdfs:range          iop:Entity ;
-        rdfs:subPropertyOf  iop:hasContextObject .
-
-iop:hasObjectOfInterest
-        a             owl:ObjectProperty ;
-        rdfs:comment  "A Variable has an Entity whose Property is observed." ;
-        rdfs:domain   iop:Variable ;
-        rdfs:label    "hasObjectOfInterest" ;
-        rdfs:range    iop:Entity .
-
-iop:hasProperty  a    owl:ObjectProperty ;
-        rdfs:comment  "A Variable has a Property that characterizes an Entity." ;
-        rdfs:domain   iop:Variable ;
-        rdfs:label    "hasProperty" ;
-        rdfs:range    iop:Property .
-
-puv:uom
-  a owl:ObjectProperty ;
-  rdfs:comment "scale or unit of measurement" ;
-  rdfs:label "unit-of-measurement " ;
-  rdfs:range puv:UnitOfMeasurement .
-
-puv:statistic
-  a owl:ObjectProperty ;
-  rdfs:comment "statistical treatment" ;
-  rdfs:domain puv:Parameter ;
-  rdfs:label "statistic " ;
-  rdfs:range puv:ParameterStatistic .
-
-puv:method
-  a owl:ObjectProperty ;
-  rdfs:comment "method used to measure the value" ;
-  rdfs:label "method" ;
-  rdfs:range puv:Method .
-        
-sosa:madeBySensor 
-  a owl:ObjectProperty ;
-  rdfs:label "made by sensor"@en ;
-  skos:definition "Relation between an Observation and the Sensor which made the Observation."@en ;
-  rdfs:comment "Relation between an Observation and the Sensor which made the Observation."@en ;
-  schema:domainIncludes sosa:Observation ;
-  schema:rangeIncludes sosa:Sensor ;
-  owl:inverseOf sosa:madeObservation ;
-  rdfs:isDefinedBy sosa: .
-
-<http://purl.org/m4m21/subjects> a skos:ConceptScheme;
+<http://purl.org/m4m> a skos:ConceptScheme;
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "Vocabulary description"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "23/06/2022T14:52:27+00:00"^^xsd:datetime;
+  dct:modified "2023-01-29T19:40:52+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Vocabulary title"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1004, vocab:1005, vocab:1006,
-    vocab:1007;
+  skos:hasTopConcept vocab:1000;
   foaf:homepage "URL to the community developing vocab"@en .
 
 vocab:1000 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://uri.neuinfo.org/nif/nifstd/birnlex_1843>;
-  skos:definition "The process of focusing on certain aspects of current experience to the exclusion of others. It is the act of heeding or taking notice or concentrating. (MeSH)"@en;
-  skos:exactMatch <http://uri.neuinfo.org/nif/nifstd/birnlex_1843>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "attention"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1001 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929>;
-  skos:definition "The state of being alert, oriented, and responsive to the environment."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C37929>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "consciousness"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1002 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://uri.neuinfo.org/nif/nifstd/birnlex_1833>;
-  skos:definition "The cognitive process of encoding, storing and retrieving past experience"@en;
-  skos:exactMatch <http://uri.neuinfo.org/nif/nifstd/birnlex_1833>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:narrower vocab:1003;
-  skos:prefLabel "memory"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1003 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>;
-  skos:broader vocab:1002;
-  skos:definition "active maintenance and flexible updating of goal-task relevant information (items, goals, strategies, etc.) in a form that resists interference but has limited capacity. These representations may involve flexible binding of representations, may be characterized by the absence of external support for the internally maintained representations, and are frequently temporary due to ongoing interference"@en;
-  skos:exactMatch <http://www.cognitiveatlas.org/ontology/cogat.owl#CAO_00587>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "working memory"@en .
-
-vocab:1004 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456>;
-  skos:definition "The tactile modality is the sensory modality pertaining to the sense of contact via the skin with other, external objects."@en;
-  skos:exactMatch <http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000456>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "somatosensory"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1005 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0003-2195-3997"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811>;
-  skos:definition "The measurement of the magnetic fields produced by electrical activity in the brain, usually conducted externally, using extremely sensitive devices. The measurement of electric fields in the brain provides information about the localization of brain activity which is complementary to that provided by electroencephalography."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16811>;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "magnetoencephalography"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1006 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0001-6361-2571"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <https://bids.neuroimaging.io/specification.html>;
-  skos:definition "Brain Imaging Data Structure"@en;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "bids"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
-
-vocab:1007 a skos:Concept;
-  dct:created "2022-06-23"^^xsd:date;
-  dct:creator "0000-0001-6361-2571"@en;
-  dct:modified "2022-06-23"^^xsd:date;
-  dct:source <https://www.sciencedirect.com/topics/engineering/power-spectrum>;
-  skos:definition "Computation of the power spectrum of the signal"@en;
-  skos:inScheme <http://purl.org/m4m21/subjects>;
-  skos:prefLabel "power spectral analysis"@en;
-  skos:topConceptOf <http://purl.org/m4m21/subjects> .
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "test term"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
