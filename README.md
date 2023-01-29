@@ -14,5 +14,4 @@ This repository hosts automatic workflow, executed by means of Github actions, a
 
 - Fetches Google Sheet, containing the vocabulary terms and their defitions, from Google Drive and stores it as `xlsx` and `csv` files
 - Converts fetched sheet to machine-actionable and FAIR RDF vocabulary using [xls2rdf](https://github.com/sparna-git/xls2rdf)
-- Tests the resulting RDF vocabulary using [qSKOS](https://github.com/cmader/qSKOS/)
 - Commits conversion results and tests logs to this repository
