@@ -57,7 +57,7 @@ jobs:
         run: |
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
           mv xls2rdf.log ./logs/
-          python ./src/update.py
+#          python ./src/update.py
 
       - name: deploy
         env:
