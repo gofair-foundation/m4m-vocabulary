@@ -36,8 +36,6 @@ jobs:
           conda create -n sheet2rdf python=3.8 pandas openpyxl
           conda activate sheet2rdf
           pip install gsheets
-#          FAILs due to qSKOS issues
-#          curl -L https://github.com/cmader/qSKOS/releases/download/2.0.3/qSKOS-cmd.jar -o qSKOS.jar
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
 
       - name: Fetch
@@ -57,16 +55,7 @@ jobs:
           RENDERING_PROPERTIES: ${{secrets.RENDERING_PROPERTIES}}
         run: |
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
-          mv xls2rdf.log ./logs/
-#          python ./src/update.py
-
-# Issues with qSKOS
-#      - name: test
-#        env:
-#          FILE_NAME: ${{secrets.FILE_NAME}}
-#        run: |
-#          java -jar qSKOS.jar analyze -dc mil,bl $FILE_NAME.ttl -o ./logs/rdf-test.log
-          
+          mv xls2rdf.log ./logs/          
 
       - name: deploy
         env:
