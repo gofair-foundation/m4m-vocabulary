@@ -10,10 +10,10 @@
   dct:creator <https://orcid.org/0000-0002-5727-4999>;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-05-03T09:39:39+00:00"^^xsd:datetime;
+  dct:modified "2023-05-03T10:02:02+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "PARC Demo Vocabulary"@en;
-  skos:hasTopConcept vocab:1000;
+  skos:hasTopConcept vocab:1000, vocab:1010;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
@@ -69,3 +69,14 @@ vocab:1009 a skos:Concept;
   skos:broader vocab:1002;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "concentration of o,p'-DDE"@en .
+
+vocab:1010 a skos:Concept;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1011;
+  skos:prefLabel "sampling method"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1011 a skos:Concept;
+  skos:broader vocab:1010;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "active sampling"@en .
