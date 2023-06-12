@@ -1,15 +1,34 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix puv: <https://w3id.org/env/puv#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix vocab: <http://purl.org/m4m/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/m4m> a skos:ConceptScheme;
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
+  dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-06-12T14:18:58+00:00"^^xsd:datetime;
+  dct:modified "2023-06-12T17:32:46+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
   skos:hasTopConcept vocab:1000;
@@ -24,9 +43,102 @@ vocab:1000 a skos:Concept;
 vocab:1001 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1005, vocab:1006, vocab:1008, vocab:1009, vocab:1010, vocab:1011,
+    vocab:1012, vocab:1014, vocab:1015, vocab:1016, vocab:1017, vocab:1019, vocab:1020;
   skos:prefLabel "subject"@en .
 
 vocab:1002 a skos:Concept;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1004, vocab:1007, vocab:1013, vocab:1018;
   skos:prefLabel "variable"@en .
+
+vocab:1003 a skos:Concept;
+  skos:broader vocab:1002;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "nNOS-CreERT2 x GCaMP6f-expressing mice"@en .
+
+vocab:1004 a skos:Concept;
+  skos:broader vocab:1002;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "ChAT-Cre x GCaMP6f-expressing mice"@en .
+
+vocab:1005 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mouse study"@en .
+
+vocab:1006 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "neurological studies"@en .
+
+vocab:1007 a skos:Concept;
+  skos:broader vocab:1002;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "phasic calcium transient response"@en .
+
+vocab:1008 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Myenteric neurons"@en .
+
+vocab:1009 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Murine colon"@en .
+
+vocab:1010 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Spontaneous colonic migrating motor complexes (CMMCs)"@en .
+
+vocab:1011 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Brush stimulation of the mucosa"@en .
+
+vocab:1012 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Electrical field stimulation (EFS)"@en .
+
+vocab:1013 a skos:Concept;
+  skos:broader vocab:1002;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Elongation of the colon"@en .
+
+vocab:1014 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Microscopy"@en .
+
+vocab:1015 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Optical physiology"@en .
+
+vocab:1016 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Myenteric nerve plexus"@en .
+
+vocab:1017 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Calcium imaging"@en .
+
+vocab:1018 a skos:Concept;
+  skos:broader vocab:1002;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Neuron activity"@en .
+
+vocab:1019 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Nikon Eclipse FN1 upright fluorescence microscope"@en .
+
+vocab:1020 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Photometrics Prime 95B sCMOS camera"@en .

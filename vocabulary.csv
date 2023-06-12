@@ -17,14 +17,32 @@ Metadata about vocabulary
 dct:title,Demo M4M Vocabulary,Title of the vocabulary
 dct:description,This vocabulary is used in DEMO M4M workshop,Description of the controlled vocabulary
 foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
-dct:creator,,An ORCID ID of the vocabulary creator
+dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-06-12T14:18:58+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-06-12T17:32:46+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")",skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,M4M.25 vocabulary
 vocab:1001,subject,M4M.25 vocabulary
 vocab:1002,variable,M4M.25 vocabulary
+vocab:1003,nNOS-CreERT2 x GCaMP6f-expressing mice,variable
+vocab:1004,ChAT-Cre x GCaMP6f-expressing mice,variable
+vocab:1005,mouse study,subject
+vocab:1006,neurological studies,subject
+vocab:1007,phasic calcium transient response,variable
+vocab:1008,Myenteric neurons,subject
+vocab:1009,Murine colon,subject
+vocab:1010,Spontaneous colonic migrating motor complexes (CMMCs),subject
+vocab:1011,Brush stimulation of the mucosa,subject
+vocab:1012,Electrical field stimulation (EFS),subject
+vocab:1013,Elongation of the colon,variable
+vocab:1014,Microscopy,subject
+vocab:1015,Optical physiology,subject
+vocab:1016,Myenteric nerve plexus,subject
+vocab:1017,Calcium imaging,subject
+vocab:1018,Neuron activity,variable
+vocab:1019,Nikon Eclipse FN1 upright fluorescence microscope,subject
+vocab:1020,Photometrics Prime 95B sCMOS camera,subject
