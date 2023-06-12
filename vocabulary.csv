@@ -21,10 +21,10 @@ dct:creator,,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-06-12T09:19:29+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-06-12T14:18:58+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")",skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,M4M.25 vocabulary
-vocab:1001,subject,M4M26 vocabulary
-vocab:1002,variable,M4M26 vocabulary
+vocab:1001,subject,M4M.25 vocabulary
+vocab:1002,variable,M4M.25 vocabulary

@@ -9,23 +9,24 @@
   dct:created "2022-06-01T00:00:00+00:00"^^xsd:datetime;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-06-12T09:19:29+00:00"^^xsd:datetime;
+  dct:modified "2023-06-12T14:18:58+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002;
+  skos:hasTopConcept vocab:1000;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1001, vocab:1002;
   skos:prefLabel "M4M.25 vocabulary"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1001 a skos:Concept;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "subject"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "subject"@en .
 
 vocab:1002 a skos:Concept;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "variable"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "variable"@en .
