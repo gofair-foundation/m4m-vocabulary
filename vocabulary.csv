@@ -21,14 +21,14 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-08-17T09:08:29+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-08-17T11:10:08+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(lookupColumn=""skos:prefLabel"" separator="","")",rdf:type,skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(separator="","")",rdf:type,skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
 vocab:1000,subject
 vocab:1001,variable
 vocab:1002,community maturity level
-vocab:1003,emerging,community maturity level
-vocab:1004,developing,community maturity level
-vocab:1005,mature,community maturity level
+vocab:1003,emerging,vocab:1002
+vocab:1004,developing,vocab:1002
+vocab:1005,mature,vocab:1002
 vocab:1006,hasMaturityLevel,,owl:ObjectProperty
