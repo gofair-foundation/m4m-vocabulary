@@ -1,5 +1,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vocab: <http://purl.org/m4m/> .
@@ -10,7 +11,7 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-08-17T07:59:39+00:00"^^xsd:datetime;
+  dct:modified "2023-08-17T09:08:29+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
   skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002;
@@ -46,3 +47,6 @@ vocab:1005 a skos:Concept;
   skos:broader vocab:1002;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "mature"@en .
+
+vocab:1006 a owl:ObjectProperty;
+  skos:prefLabel "hasMaturityLevel"@en .
