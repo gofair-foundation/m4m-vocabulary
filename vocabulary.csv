@@ -1,6 +1,6 @@
 ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,gdmt,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
@@ -13,6 +13,8 @@ PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
 PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 PREFIX,owl,http://www.w3.org/2002/07/owl#
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 Metadata about vocabulary
 
 dct:title,Demo M4M Vocabulary,Title of the vocabulary
@@ -22,14 +24,157 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-13T15:17:21+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-09-13T15:36:49+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(separator="","")",rdf:type,skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,subject
-vocab:1001,variable
-vocab:1002,community maturity level
-vocab:1003,emerging,vocab:1002
-vocab:1004,developing,vocab:1002
-vocab:1005,mature,vocab:1002
-vocab:1006,hasMaturityLevel,,owl:ObjectProperty
+Identifier,skos:prefLabel,rdf:type,rdfs:label,skos:definition@en,"skos:altLabel(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","dct:creator(separator="","")","dct:contributor(separator="","")",skos:editorialNote@en,skos:note@en,,,,,,,,,,,,"dct:creator(separator="","")","dct:contributor(separator="","")"
+gdmt:hasResourceTypeInfo,has Resource Type Info,owl:ObjectProperty,has Resource Type Info,Information about the type of the resource being described with metadata.
+gdmt:hasDatasetIdentifierInfo,has Dataset Identifier Info,owl:ObjectProperty,has Dataset Identifier Info,Information about the globally unique and persistent identifier used to identify and optionally access (meta)data of the dataset being described.
+gdmt:hasRelatedResourcesInfo,has Related Resources Info,owl:ObjectProperty,has Related Resources Info,Information about resource related to the dataset or other entity being described.
+gdmt:hasVersionInfo,has Version Info,owl:ObjectProperty,has Version Info,Information about the version of the resource being described.
+gdmt:hasLanguageInfo,has Language Info,owl:ObjectProperty,has Language Info,Information about the language in which the dataset being described is provided.
+gdmt:hasTitleInfo,has Title Info,owl:ObjectProperty,has Title Info,Information about a name or title by which the dataset being described is known.
+gdmt:hasDescriptionInfo,has Description Info,owl:ObjectProperty,has Description Info,Detailed information (typically at the level of an abstract) about the dataset being described.
+gdmt:hasSubjectInfo,has Subject Info,owl:ObjectProperty,has Subject Info,Topic information that defines the dataset's subject or purpose.
+gdmt:hasSubjectAndKeywordInfo,has Subject And Keyword Info,owl:ObjectProperty,has Subject And Keyword Info,"Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset."
+gdmt:hasControlledTermsInfo,has Controlled Terms Info,owl:ObjectProperty,has Controlled Terms Info,Controlled concepts that define the dataset or purpose.
+gdmt:hasCreatorInfo,has Creator Info,owl:ObjectProperty,has Creator Info,"Information about the Creator entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."
+gdmt:hasCreatorNameInfo,has Creator Name Info,owl:ObjectProperty,has Creator Name Info,Information about the creator name.
+gdmt:hasCreatorIdentifierInfo,has Creator Identifier Info,owl:ObjectProperty,has Creator Identifier Info,Information about the creator identifier.
+gdmt:hasCreatorAffiliationInfo,has Creator Affiliation Info,owl:ObjectProperty,has Creator Affiliation Info,Information about the creator affiliations.
+gdmt:hasContributorInfo,has Contributor Info,owl:ObjectProperty,has Contributor Info,"Information about a Contributor entity that helped bring into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."
+gdmt:hasContributorNameInfo,has Contributor Name Info,owl:ObjectProperty,has Contributor Name Info,Information about a contributor name.
+gdmt:hasContributorIdentifierInfo,has Contributor Identifier Info,owl:ObjectProperty,has Contributor Identifier Info,Information about a contributor identifier.
+gdmt:hasContributorAffiliationInfo,has Contributor Affiliation Info,owl:ObjectProperty,has Contributor Affiliation Info,Information about a contributor's affiliations.
+gdmt:hasPublisherInfo,has Publisher Info,owl:ObjectProperty,has Publisher Info,"Information about the entity that plays the principal role in officially making the dataset public. The role can be to hold, archive, publish, print, distribute, release, issue, or produce the dataset being described. This property is often used to formulate the citation, so consider the prominence of the role and of the entity. For datasets, use the primary repository for serving the data, or the primary organization taking responsibility for serving the data, as the Publisher. The Distribution element can be used to describe the entity(ies) that make the dataset accessible."
+gdmt:hasPublisherIdentifierInfo,has Publisher Identifier Info,owl:ObjectProperty,has Publisher Identifier Info,Information about the publisher identifier.
+gdmt:hasRightsInfo,has Rights Info,owl:ObjectProperty,has Rights Info,Information about ways in which the dataset may or may not be accessed and used.
+gdmt:hasLicenseIdentifierInfo,has License Identifier Info,owl:ObjectProperty,has License Identifier Info,Information about the license identifier.
+gdmt:hasDateInfo,has Date Info,owl:ObjectProperty,has Date Info,Information about relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published.
+gdmt:hasDistributionInfo,has Distribution Info,owl:ObjectProperty,has Distribution Info,"Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata)."
+gdmt:hasDistributionAccessInfo,has Distribution Access Info,owl:ObjectProperty,has Distribution Access Info,Details about the distribution access.
+gdmt:hasDistributorInfo,has Distributor Info,owl:ObjectProperty,has Distributor Info,Information about the distributor of this dataset distribution. The Distributor includes persons or legal entities that responsible for distributing the dataset distribution.
+gdmt:hasDistributorNameInfo,has Distributor Name Info,owl:ObjectProperty,has Distributor Name Info,Information about the distributor name.
+gdmt:hasDistributorIdentifierInfo,has Distributor Identifier Info,owl:ObjectProperty,has Distributor Identifier Info,Information about the distributor identifier.
+gdmt:hasDistributorAffiliationInfo,has Distributor Affiliation Info,owl:ObjectProperty,has Distributor Affiliation Info,Information about the distributor affiliations.
+gdmt:hasContentInfo,has Content Info,owl:ObjectProperty,has Content Info,"Information describing the entities that constitute the dataset being described, and their organization and provenance. (The dataset is defined as coming from a single Data Source.)"
+gdmt:hasDataStreamInfo,has Data Stream Info,owl:ObjectProperty,has Data Stream Info,"Information about a Data Stream, a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."
+gdmt:hasDataSourceInfo,has Data Source Info,owl:ObjectProperty,has Data Source Info,"Information about a Data Source, a physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems."
+gdmt:hasVariableInfo,has Variable Info,owl:ObjectProperty,has Variable Info,Information about a single entity being measured or computed.
+gdmt:hasSpatialCoverageInfo,has Spatial Coverage Info,owl:ObjectProperty,has Spatial Coverage Info,Information about the geospatial area (region on Earth) covered by the dataset being described.
+gdmt:hasSpatialCoveragePointInfo,has Spatial Coverage Point Info,owl:ObjectProperty,has Spatial Coverage Point Info,Information about a geospatial coverage represented as a single point.
+gdmt:hasSpatialCoverageBoundingBoxInfo,has Spatial Coverage Bounding Box Info,owl:ObjectProperty,has Spatial Coverage Bounding Box Info,Information about a geospatial coverage represented using bounding box.
+gdmt:hasSpatialCoveragePolygonInfo,has Spatial Coverage Polygon Info,owl:ObjectProperty,has Spatial Coverage Polygon Info,Information about a geospatial coverage represented using polygon.
+gdmt:hasVerticalCoverageInfo,has Vertical Coverage Info,owl:ObjectProperty,has Vertical Coverage Info,Information about the vertical area (altitude and/or depth) covered by the dataset being described.
+gdmt:hasTemporalCoverageInfo,has Temporal Coverage Info,owl:ObjectProperty,has Temporal Coverage Info,Information about the temporal coverage and resolution of the dataset being described.
+gdmt:hasFundingInfo,has Funding Info,owl:ObjectProperty,has Funding Info,Information about the sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)
+gdmt:hasAwardInfo,has Award Info,owl:ObjectProperty,has Award Info,Information about the project award.
+gdmt:hasFunderInfo,has Funder Info,owl:ObjectProperty,has Funder Info,Information about the award funder.
+gdmt:hasDatasetIdentifierSubType,has Dataset Identifier Sub Type,owl:ObjectProperty,has Dataset Identifier Sub Type,The subtype of the identifier used to specify the dataset being described.
+gdmt:hasRelatedResourceIdentifierSubType,has Related Resource Identifier Sub Type,owl:ObjectProperty,has Related Resource Identifier Sub Type,The subtype of the identifier used to specify the related resource.
+gdmt:hasPrimaryLanguage,has Primary Language,owl:ObjectProperty,has Primary Language,Primary language used to present the dataset (if multiple languages are present). Use a code from IETF BCP 47
+gdmt:hasSubjectIRI,has Subject IRI,owl:DatatypeProperty,has Subject IRI,"The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used."
+gdmt:hasSubjectScheme,has Subject Scheme,owl:DatatypeProperty,has Subject Scheme,The name of the scheme or authority used for the Subject Concept IRI.
+gdmt:hasSubjectSchemeIRI,has Subject Scheme IRI,owl:DatatypeProperty,has Subject Scheme IRI,The IRI of the scheme or authority used for the Subject Concept IRI.
+gdmt:hasKeyword,has Keyword,owl:DatatypeProperty,has Keyword,"Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used."
+gdmt:hasCreatorIdentifier,has Creator Identifier,owl:DatatypeProperty,has Creator Identifier,Globally unique string that identifies the creator (an individual or legal entity).
+gdmt:hasCreatorIdentifierScheme,has Creator Identifier Scheme,owl:DatatypeProperty,has Creator Identifier Scheme,The name of the scheme or authority used for the Creator Identifier.
+gdmt:hasCreatorIdentifierSchemeIRI,has Creator Identifier Scheme IRI,owl:DatatypeProperty,has Creator Identifier Scheme IRI,The IRI of the scheme or authority used for the Creator Identifier.
+gdmt:hasCreatorAffiliation,has Creator Affiliation,owl:ObjectProperty,has Creator Affiliation,The organizational or institutional affiliation of the creator.
+gdmt:hasCreatorAffiliationIdentifier,has Creator Affiliation Identifier,owl:DatatypeProperty,has Creator Affiliation Identifier,Globally unique string that identifies the organizational affiliation of the creator.
+gdmt:hasCreatorAffiliationIdentifierScheme,has Creator Affiliation Identifier Scheme,owl:DatatypeProperty,has Creator Affiliation Identifier Scheme,The name of the scheme or authority used for the Creator Affiliation Identifier.
+gdmt:hasCreatorAffiliationIdentifierSchemeIRI,has Creator Affiliation Identifier Scheme IRI,owl:ObjectProperty,has Creator Affiliation Identifier Scheme IRI,The IRI of the scheme or authority used for the Creator Affiliation Identifier.
+gdmt:hasCreatorRole,has Creator Role,owl:ObjectProperty,has Creator Role,The role of the creator in bringing the described dataset into existence.
+gdmt:hasCreatorType,has Creator Type,owl:ObjectProperty,has Creator Type,The type of the creator of the described dataset (organization or person).
+gdmt:hasContributorIdentifier,has Contributor Identifier,owl:DatatypeProperty,has Contributor Identifier,Globally unique string that identifies the contributor (an individual or legal entity).
+gdmt:hasContributorIdentifierScheme,has Contributor Identifier Scheme,owl:DatatypeProperty,has Contributor Identifier Scheme,The name of the scheme or authority used for the Contributor Identifier.
+gdmt:hasContributorIdentifierSchemeIRI,has Contributor Identifier Scheme IRI,owl:DatatypeProperty,has Contributor Identifier Scheme IRI,The IRI of the scheme or authority used for the Contributor Identifier.
+gdmt:hasContributorAffiliation,has Contributor Affiliation,owl:ObjectProperty,has Contributor Affiliation,The organizational or institutional affiliation of the contributor.
+gdmt:hasContributorAffiliationIdentifier,has Contributor Affiliation Identifier,owl:DatatypeProperty,has Contributor Affiliation Identifier,Globally unique string that identifies the organizational affiliation of the contributor.
+gdmt:hasContributorAffiliationIdentifierScheme,has Contributor Affiliation Identifier Scheme,owl:DatatypeProperty,has Contributor Affiliation Identifier Scheme,The name of the scheme or authority used for the Contributor Affiliation Identifier.
+gdmt:hasContributorAffiliationIdentifierSchemeIRI,has Contributor Affiliation Identifier Scheme IRI,owl:DatatypeProperty,has Contributor Affiliation Identifier Scheme IRI,The IRI of the scheme or authority used for the Contributor Affiliation Identifier.
+gdmt:hasContributorRole,has Contributor Role,owl:ObjectProperty,has Contributor Role,The role of the contributor in bringing the described dataset into existence.
+gdmt:hasContributorType,has Contributor Type,owl:ObjectProperty,has Contributor Type,The type of the contributor of the described dataset (organization or person).
+gdmt:hasPublisherIdentifier,has Publisher Identifier,owl:DatatypeProperty,has Publisher Identifier,Globally unique string that identifies the publisher.
+gdmt:hasPublisherIdentifierScheme,has Publisher Identifier Scheme,owl:DatatypeProperty,has Publisher Identifier Scheme,The name of the scheme or authority used for the Publisher Identifier.
+gdmt:hasPublisherIdentifierSchemeIRI,has Publisher Identifier Scheme IRI,owl:DatatypeProperty,has Publisher Identifier Scheme IRI,The IRI of the scheme or authority used for the Publisher Identifier.
+gdmt:hasPublisherAddress,has Publisher Address,owl:DatatypeProperty,has Publisher Address,An address of the publisher.
+gdmt:hasLicenseName,has License Name,owl:DatatypeProperty,has License Name,A standardized version of the license name.
+gdmt:hasLicenseIdentifier,has License Identifier,owl:DatatypeProperty,has License Identifier,IRI of the license for the dataset being described.
+gdmt:hasLicenseIdentifierScheme,has License Identifier Scheme,owl:DatatypeProperty,has License Identifier Scheme,The name of the scheme or authority used for the Rights Identifier.
+gdmt:hasLicenseIdentifierSchemeIRI,has License Identifier Scheme IRI,owl:DatatypeProperty,has License Identifier Scheme IRI,The IRI of the scheme or authority used for the Rights Identifier.
+gdmt:hasDatasetDate,has Dataset Date,owl:DatatypeProperty,has Dataset Date,Date relevant to dataset.
+gdmt:hasDatasetDateType,has Dataset Date Type,owl:ObjectProperty,has Dataset Date Type,Type of the date with respect to the dataset.
+gdmt:hasDistributionIdentifier,has Distribution Identifier,owl:DatatypeProperty,has Distribution Identifier,A globally unique string that identifies the dataset distribution.
+gdmt:hasDistributionIdentifierType,has Distribution Identifier Type,owl:ObjectProperty,has Distribution Identifier Type,The identifier type used to identify the dataset distribution.
+gdmt:hasDistributionMediaType,has Distribution Media Type,owl:ObjectProperty,has Distribution Media Type,"A media type, formerly known as a MIME type, of dataset distribution."
+gdmt:hasDistributionSize,has Distribution Size,owl:DatatypeProperty,has Distribution Size,Total size of dataset distribution.
+gdmt:hasDistributionAccessProtocol,has Distribution Access Protocol,owl:DatatypeProperty,has Distribution Access Protocol,The protocol used to access the dataset distribution.
+gdmt:hasDistributionAccessConfiguration,has Distribution Access Configuration,owl:DatatypeProperty,has Distribution Access Configuration,The access protocol configuration for quering dataset distribution.
+gdmt:hasDistributionQueryStatement,has Distribution Query Statement,owl:DatatypeProperty,has Distribution Query Statement,Technical statement(s) for querying dataset distribution.
+gdmt:hasDistributionDate,has Distribution Date,owl:DatatypeProperty,has Distribution Date,Date when the dataset was distributed.
+gdmt:hasDistributorIdentifier,has Distributor Identifier,owl:DatatypeProperty,has Distributor Identifier,Globally unique string that identifies the distributor (an individual or legal entity).
+gdmt:hasDistributorIdentifierScheme,has Distributor Identifier Scheme,owl:DatatypeProperty,has Distributor Identifier Scheme,The name of the scheme or authority used for the Distributor Identifier.
+gdmt:hasDistributorIdentifierSchemeIRI,has Distributor Identifier Scheme IRI,owl:DatatypeProperty,has Distributor Identifier Scheme IRI,The IRI of the scheme or authority used for the Distributor Identifier.
+gdmt:hasDistributorAffiliation,has Distributor Affiliation,owl:DatatypeProperty,has Distributor Affiliation,The organizational or institutional affiliation of the distributor.
+gdmt:hasDistributorAffiliationIdentifier,has Distributor Affiliation Identifier,owl:DatatypeProperty,has Distributor Affiliation Identifier,Globally unique string that identifies the organizational affiliation of the distributor.
+gdmt:hasDistributorAffiliationIdentifierScheme,has Distributor Affiliation Identifier Scheme,owl:DatatypeProperty,has Distributor Affiliation Identifier Scheme,The name of the scheme or authority used for the Distributor Affiliation Identifier.
+gdmt:hasDistributorAffiliationIdentifierSchemeIRI,has Distributor Affiliation Identifier Scheme IRI,owl:DatatypeProperty,has Distributor Affiliation Identifier Scheme IRI,The IRI of the scheme or authority used for the Distributor Affiliation Identifier.
+gdmt:hasDistributorRole,has Distributor Role,owl:ObjectProperty,has Distributor Role,The role of the distributor in bringing the described dataset into existence.
+gdmt:hasDistributorType,has Distributor Type,owl:ObjectProperty,has Distributor Type,"The type of the distributor of the described dataset (organization, or person)."
+gdmt:hasDataStream,has Data Stream,owl:DatatypeProperty,has Data Stream,Human readable name of collection of records coming from a data source.
+gdmt:hasDataStreamIRI,has Data Stream IRI,owl:DatatypeProperty,has Data Stream IRI,Unique identifier of collection of records coming from a data source.
+gdmt:hasDataStreamScheme,has Data Stream Scheme,owl:DatatypeProperty,has Data Stream Scheme,The name of the scheme or authority used for the Data Stream Identifier.
+gdmt:hasDataStreamSchemeIRI,has Data Stream Scheme IRI,owl:DatatypeProperty,has Data Stream Scheme IRI,The IRI of the scheme or authority used for the Data Stream Identifier.
+gdmt:hasDataSource,has Data Source,owl:DatatypeProperty,has Data Source,Human readable name of data source from which the variable(s) come(s).
+gdmt:hasDataSourceIRI,has Data Source IRI,owl:DatatypeProperty,has Data Source IRI,"IRI describing the data source (e.g., PID of an instrument)."
+gdmt:hasDataSourceScheme,has Data Source Scheme,owl:DatatypeProperty,has Data Source Scheme,The name of the scheme or authority used for the Data Source Identifier.
+gdmt:hasDataSourceSchemeIRI,has Data Source Scheme IRI,owl:DatatypeProperty,has Data Source Scheme IRI,The IRI of the scheme or authority used for the Data Source Identifier.
+gdmt:hasVariable,has Variable,owl:DatatypeProperty,has Variable,Human readable name of variable being recorded in datastream.
+gdmt:hasVariableIRI,has Variable IRI,owl:DatatypeProperty,has Variable IRI,IRI describing the variable.
+gdmt:hasVariableScheme,has Variable Scheme,owl:DatatypeProperty,has Variable Scheme,The name of the scheme or authority used for the Variable Identifier.
+gdmt:hasVariableSchemeIRI,has Variable Scheme IRI,owl:DatatypeProperty,has Variable Scheme IRI,The IRI of the scheme or authority used for the Variable Identifier.
+gdmt:hasPointLatitude,has Point Latitude,owl:DatatypeProperty,has Point Latitude,Geographic latitude of a point which represents a location of dataset collection.
+gdmt:hasPointLongitude,has Point Longitude,owl:DatatypeProperty,has Point Longitude,Geographic longitude of a point which represents a location of dataset collection.
+gdmt:hasWestBoundLongitude,has West Bound Longitude,owl:DatatypeProperty,has West Bound Longitude,The most west longitude of a bounding box representing an area of dataset collection.
+gdmt:hasEastBoundLongitude,has East Bound Longitude,owl:DatatypeProperty,has East Bound Longitude,The most east longitude of a bounding box representing an area of dataset collection.
+gdmt:hasSouthBoundLatitude,has South Bound Latitude,owl:DatatypeProperty,has South Bound Latitude,The most south latitude of a bounding box representing an area of dataset collection.
+gdmt:hasNorthBoundLatitude,has North Bound Latitude,owl:DatatypeProperty,has North Bound Latitude,The most north latitude of a bounding box representing an area of dataset collection.
+gdmt:hasPolygonPointLatitude,has Polygon Point Latitude,owl:DatatypeProperty,has Polygon Point Latitude,Geographical latitude of a polygon point which represents one vertex of an area of dataset collection.
+gdmt:hasPolygonPointLongitude,has Polygon Point Longitude,owl:DatatypeProperty,has Polygon Point Longitude,Geographical longitude of a polygon point which represents one vertex of an area of dataset collection.
+gdmt:hasGeoLocationDescription,has Geo Location Description,owl:DatatypeProperty,has Geo Location Description,The description of a geographical location of dataset collection.
+gdmt:hasVerticalResolutionInMeters,has Vertical Resolution In Meters,owl:DatatypeProperty,has Vertical Resolution In Meters,"Minimum vertical separation resolvable in a dataset, measured in meters."
+gdmt:hasVerticalExtentMaximumValue,has Vertical Extent Maximum Value,owl:DatatypeProperty,has Vertical Extent Maximum Value,"A maximum vertical extent of dataset collection. In case of depth, this represents a minimum depth of dataset collection."
+gdmt:hasVerticalExtentMinimumValue,has Vertical Extent Minimum Value,owl:DatatypeProperty,has Vertical Extent Minimum Value,"A minimum vertical extent of dataset collection. In case of depth, this represents a maximum depth of dataset collection."
+gdmt:hasVerticalExtentUnit,has Vertical Extent Unit,owl:ObjectProperty,has Vertical Extent Unit,Unit used to specify Vertical Extent.
+gdmt:hasVerticalExtentUnitIRI,has Vertical Extent Unit IRI,owl:DatatypeProperty,has Vertical Extent Unit IRI,The IRI for the unit used to specify Vertical Extent.
+gdmt:hasVerticalExtentUnitScheme,has Vertical Extent Unit Scheme,owl:DatatypeProperty,has Vertical Extent Unit Scheme,The name of the scheme or authority used for the Vertical Extent Unit Identifier.
+gdmt:hasVerticalExtentUnitSchemeIRI,has Vertical Extent Unit Scheme IRI,owl:DatatypeProperty,has Vertical Extent Unit Scheme IRI,The IRI of the scheme or authority used for the Vertical Extent Unit Identifier.
+gdmt:hasVerticalExtentDatum,has Vertical Extent Datum,owl:DatatypeProperty,has Vertical Extent Datum,The name of the Datum (reference frame) used for the Vertical Extent values.
+gdmt:hasVerticalExtentDatumIRI,has Vertical Extent Datum IRI,owl:DatatypeProperty,has Vertical Extent Datum IRI,The unique identifier of the Datum (reference frame) used for the Vertical Extent values.
+gdmt:hasTemporalExtentMinimumValue,has Temporal Extent Minimum Value,owl:DatatypeProperty,has Temporal Extent Minimum Value,The start date of the data.
+gdmt:hasTemporalExtentMaximumValue,has Temporal Extent Maximum Value,owl:DatatypeProperty,has Temporal Extent Maximum Value,The end date of the data.
+gdmt:hasTemporalResolution,has Temporal Resolution,owl:DatatypeProperty,has Temporal Resolution,Interval between two consecutive data records.
+gdmt:hasDuration,has Duration,owl:DatatypeProperty,has Duration,The total duration of data temporal coverage.
+gdmt:hasAwardTitle,has Award Title,owl:DatatypeProperty,has Award Title,"The human readable title of the award, grant, or other specific funding mechanism for the described dataset."
+gdmt:hasAwardPageIRI,has Award Page IRI,owl:DatatypeProperty,has Award Page IRI,The IRI leading to a page provided by the funder for more information about the award (grant).
+gdmt:hasAwardLocalIdentifier,has Award Local Identifier,owl:DatatypeProperty,has Award Local Identifier,"The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)"
+gdmt:hasFunderName,has Funder Name,owl:DatatypeProperty,has Funder Name,Name of the organization providing the funding for the described dataset ('funding provider').
+gdmt:hasFunderIdentifier,has Funder Identifier,owl:DatatypeProperty,has Funder Identifier,Globally unique string that identifies the funding provider.
+gdmt:hasFunderIdentifierScheme,has Funder Identifier Scheme,owl:DatatypeProperty,has Funder Identifier Scheme,Name of the schema for the funderIdentifier.
+gdmt:hasFunderIdentifierSchemeIRI,has Funder Identifier Scheme IRI,owl:DatatypeProperty,has Funder Identifier Scheme IRI,IRI of the schema for the funder identifier.
+gdmt:ResourceTypeCategory,Resource Type Category,,,This is a set of controlled terms from DataCite/DCMI for the category of resource being described.
+gdmt:Audiovisual,Audiovisual,,,A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound.,,gdmt:ResourceTypeCategory
+gdmt:Collection,Collection,,,"An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described.",,gdmt:ResourceTypeCategory
+gdmt:DataPaper,Data Paper,,,"A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability.",,gdmt:ResourceTypeCategory
+gdmt:DataCatalog,Data Catalog,,,A collection of datasets.,,gdmt:ResourceTypeCategory
+gdmt:Dataset,Dataset,,,Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog.,,gdmt:ResourceTypeCategory
+gdmt:DataStream,Data Stream,,,"Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time.",,gdmt:ResourceTypeCategory
+gdmt:Event,Event,,,"A non-persistent, time-based occurrence.",,gdmt:ResourceTypeCategory
+gdmt:Image,Image,,,A visual representation other than text,,gdmt:ResourceTypeCategory
+gdmt:InteractiveResource,Interactive Resource,,,"A resource requiring interaction from the user to be understood, executed, or experienced",,gdmt:ResourceTypeCategory
+gdmt:Model,Model,,,"An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes.",,gdmt:ResourceTypeCategory
+gdmt:PhysicalObject,Physical Object,,,"An inanimate, three-dimensional object or substance.",,gdmt:ResourceTypeCategory
+gdmt:Service,Service,,,"An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users.",,gdmt:ResourceTypeCategory
+gdmt:Software,Software,,,A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research.,,gdmt:ResourceTypeCategory
+gdmt:Sound,Sound,,,A resource primarily intended to be heard.,,gdmt:ResourceTypeCategory

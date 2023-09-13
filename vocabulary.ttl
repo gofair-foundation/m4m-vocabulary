@@ -1,9 +1,26 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gdmt: <http://purl.org/m4m/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix puv: <https://w3id.org/env/puv#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix vocab: <http://purl.org/m4m/> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/m4m> a skos:ConceptScheme;
@@ -11,42 +28,776 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-13T15:17:21+00:00"^^xsd:datetime;
+  dct:modified "2023-09-13T15:36:49+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002;
+  skos:hasTopConcept gdmt:ResourceTypeCategory;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
-vocab:1000 a skos:Concept;
+gdmt:hasResourceTypeInfo a owl:ObjectProperty;
+  rdfs:label "has Resource Type Info"@en;
+  skos:definition "Information about the type of the resource being described with metadata."@en;
+  skos:prefLabel "has Resource Type Info"@en .
+
+gdmt:hasDatasetIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has Dataset Identifier Info"@en;
+  skos:definition "Information about the globally unique and persistent identifier used to identify and optionally access (meta)data of the dataset being described."@en;
+  skos:prefLabel "has Dataset Identifier Info"@en .
+
+gdmt:hasRelatedResourcesInfo a owl:ObjectProperty;
+  rdfs:label "has Related Resources Info"@en;
+  skos:definition "Information about resource related to the dataset or other entity being described."@en;
+  skos:prefLabel "has Related Resources Info"@en .
+
+gdmt:hasVersionInfo a owl:ObjectProperty;
+  rdfs:label "has Version Info"@en;
+  skos:definition "Information about the version of the resource being described."@en;
+  skos:prefLabel "has Version Info"@en .
+
+gdmt:hasLanguageInfo a owl:ObjectProperty;
+  rdfs:label "has Language Info"@en;
+  skos:definition "Information about the language in which the dataset being described is provided."@en;
+  skos:prefLabel "has Language Info"@en .
+
+gdmt:hasTitleInfo a owl:ObjectProperty;
+  rdfs:label "has Title Info"@en;
+  skos:definition "Information about a name or title by which the dataset being described is known."@en;
+  skos:prefLabel "has Title Info"@en .
+
+gdmt:hasDescriptionInfo a owl:ObjectProperty;
+  rdfs:label "has Description Info"@en;
+  skos:definition "Detailed information (typically at the level of an abstract) about the dataset being described."@en;
+  skos:prefLabel "has Description Info"@en .
+
+gdmt:hasSubjectInfo a owl:ObjectProperty;
+  rdfs:label "has Subject Info"@en;
+  skos:definition "Topic information that defines the dataset's subject or purpose."@en;
+  skos:prefLabel "has Subject Info"@en .
+
+gdmt:hasSubjectAndKeywordInfo a owl:ObjectProperty;
+  rdfs:label "has Subject And Keyword Info"@en;
+  skos:definition "Concepts (keywords, classification, or free text terms) that define the dataset or purpose (subjects which can be addressed) using the dataset."@en;
+  skos:prefLabel "has Subject And Keyword Info"@en .
+
+gdmt:hasControlledTermsInfo a owl:ObjectProperty;
+  rdfs:label "has Controlled Terms Info"@en;
+  skos:definition "Controlled concepts that define the dataset or purpose."@en;
+  skos:prefLabel "has Controlled Terms Info"@en .
+
+gdmt:hasCreatorInfo a owl:ObjectProperty;
+  rdfs:label "has Creator Info"@en;
+  skos:definition "Information about the Creator entity that brought into existence the dataset being described. Creators can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
+  skos:prefLabel "has Creator Info"@en .
+
+gdmt:hasCreatorNameInfo a owl:ObjectProperty;
+  rdfs:label "has Creator Name Info"@en;
+  skos:definition "Information about the creator name."@en;
+  skos:prefLabel "has Creator Name Info"@en .
+
+gdmt:hasCreatorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has Creator Identifier Info"@en;
+  skos:definition "Information about the creator identifier."@en;
+  skos:prefLabel "has Creator Identifier Info"@en .
+
+gdmt:hasCreatorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "has Creator Affiliation Info"@en;
+  skos:definition "Information about the creator affiliations."@en;
+  skos:prefLabel "has Creator Affiliation Info"@en .
+
+gdmt:hasContributorInfo a owl:ObjectProperty;
+  rdfs:label "has Contributor Info"@en;
+  skos:definition "Information about a Contributor entity that helped bring into existence the dataset being described. Contributors can be people, organizations and/or physical or virtual infrastructure (e.g., sensors, software)."@en;
+  skos:prefLabel "has Contributor Info"@en .
+
+gdmt:hasContributorNameInfo a owl:ObjectProperty;
+  rdfs:label "has Contributor Name Info"@en;
+  skos:definition "Information about a contributor name."@en;
+  skos:prefLabel "has Contributor Name Info"@en .
+
+gdmt:hasContributorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has Contributor Identifier Info"@en;
+  skos:definition "Information about a contributor identifier."@en;
+  skos:prefLabel "has Contributor Identifier Info"@en .
+
+gdmt:hasContributorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "has Contributor Affiliation Info"@en;
+  skos:definition "Information about a contributor's affiliations."@en;
+  skos:prefLabel "has Contributor Affiliation Info"@en .
+
+gdmt:hasPublisherInfo a owl:ObjectProperty;
+  rdfs:label "has Publisher Info"@en;
+  skos:definition "Information about the entity that plays the principal role in officially making the dataset public. The role can be to hold, archive, publish, print, distribute, release, issue, or produce the dataset being described. This property is often used to formulate the citation, so consider the prominence of the role and of the entity. For datasets, use the primary repository for serving the data, or the primary organization taking responsibility for serving the data, as the Publisher. The Distribution element can be used to describe the entity(ies) that make the dataset accessible."@en;
+  skos:prefLabel "has Publisher Info"@en .
+
+gdmt:hasPublisherIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has Publisher Identifier Info"@en;
+  skos:definition "Information about the publisher identifier."@en;
+  skos:prefLabel "has Publisher Identifier Info"@en .
+
+gdmt:hasRightsInfo a owl:ObjectProperty;
+  rdfs:label "has Rights Info"@en;
+  skos:definition "Information about ways in which the dataset may or may not be accessed and used."@en;
+  skos:prefLabel "has Rights Info"@en .
+
+gdmt:hasLicenseIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has License Identifier Info"@en;
+  skos:definition "Information about the license identifier."@en;
+  skos:prefLabel "has License Identifier Info"@en .
+
+gdmt:hasDateInfo a owl:ObjectProperty;
+  rdfs:label "has Date Info"@en;
+  skos:definition "Information about relevant dates related to the resource being described. One instance of date must be of datsetDateType=Published."@en;
+  skos:prefLabel "has Date Info"@en .
+
+gdmt:hasDistributionInfo a owl:ObjectProperty;
+  rdfs:label "has Distribution Info"@en;
+  skos:definition "Details about the distribution for this individual public presentation of the dataset (if part of the Distribution metadata), or for all the public presentations of the dataset being described (if part of the Dataset metadata)."@en;
+  skos:prefLabel "has Distribution Info"@en .
+
+gdmt:hasDistributionAccessInfo a owl:ObjectProperty;
+  rdfs:label "has Distribution Access Info"@en;
+  skos:definition "Details about the distribution access."@en;
+  skos:prefLabel "has Distribution Access Info"@en .
+
+gdmt:hasDistributorInfo a owl:ObjectProperty;
+  rdfs:label "has Distributor Info"@en;
+  skos:definition "Information about the distributor of this dataset distribution. The Distributor includes persons or legal entities that responsible for distributing the dataset distribution."@en;
+  skos:prefLabel "has Distributor Info"@en .
+
+gdmt:hasDistributorNameInfo a owl:ObjectProperty;
+  rdfs:label "has Distributor Name Info"@en;
+  skos:definition "Information about the distributor name."@en;
+  skos:prefLabel "has Distributor Name Info"@en .
+
+gdmt:hasDistributorIdentifierInfo a owl:ObjectProperty;
+  rdfs:label "has Distributor Identifier Info"@en;
+  skos:definition "Information about the distributor identifier."@en;
+  skos:prefLabel "has Distributor Identifier Info"@en .
+
+gdmt:hasDistributorAffiliationInfo a owl:ObjectProperty;
+  rdfs:label "has Distributor Affiliation Info"@en;
+  skos:definition "Information about the distributor affiliations."@en;
+  skos:prefLabel "has Distributor Affiliation Info"@en .
+
+gdmt:hasContentInfo a owl:ObjectProperty;
+  rdfs:label "has Content Info"@en;
+  skos:definition "Information describing the entities that constitute the dataset being described, and their organization and provenance. (The dataset is defined as coming from a single Data Source.)"@en;
+  skos:prefLabel "has Content Info"@en .
+
+gdmt:hasDataStreamInfo a owl:ObjectProperty;
+  rdfs:label "has Data Stream Info"@en;
+  skos:definition "Information about a Data Stream, a collection of one or more variable records originating from a single data source (e.g., sensor, process, or person). A data stream can grow over time."@en;
+  skos:prefLabel "has Data Stream Info"@en .
+
+gdmt:hasDataSourceInfo a owl:ObjectProperty;
+  rdfs:label "has Data Source Info"@en;
+  skos:definition "Information about a Data Source, a physical or conceptual entity that creates the data streams that make up the described dataset. The data source may or may not be associated with a fixed location; for example, a series of discrete sensors deployed over time to a single location may be considered a single data source in some systems."@en;
+  skos:prefLabel "has Data Source Info"@en .
+
+gdmt:hasVariableInfo a owl:ObjectProperty;
+  rdfs:label "has Variable Info"@en;
+  skos:definition "Information about a single entity being measured or computed."@en;
+  skos:prefLabel "has Variable Info"@en .
+
+gdmt:hasSpatialCoverageInfo a owl:ObjectProperty;
+  rdfs:label "has Spatial Coverage Info"@en;
+  skos:definition "Information about the geospatial area (region on Earth) covered by the dataset being described."@en;
+  skos:prefLabel "has Spatial Coverage Info"@en .
+
+gdmt:hasSpatialCoveragePointInfo a owl:ObjectProperty;
+  rdfs:label "has Spatial Coverage Point Info"@en;
+  skos:definition "Information about a geospatial coverage represented as a single point."@en;
+  skos:prefLabel "has Spatial Coverage Point Info"@en .
+
+gdmt:hasSpatialCoverageBoundingBoxInfo a owl:ObjectProperty;
+  rdfs:label "has Spatial Coverage Bounding Box Info"@en;
+  skos:definition "Information about a geospatial coverage represented using bounding box."@en;
+  skos:prefLabel "has Spatial Coverage Bounding Box Info"@en .
+
+gdmt:hasSpatialCoveragePolygonInfo a owl:ObjectProperty;
+  rdfs:label "has Spatial Coverage Polygon Info"@en;
+  skos:definition "Information about a geospatial coverage represented using polygon."@en;
+  skos:prefLabel "has Spatial Coverage Polygon Info"@en .
+
+gdmt:hasVerticalCoverageInfo a owl:ObjectProperty;
+  rdfs:label "has Vertical Coverage Info"@en;
+  skos:definition "Information about the vertical area (altitude and/or depth) covered by the dataset being described."@en;
+  skos:prefLabel "has Vertical Coverage Info"@en .
+
+gdmt:hasTemporalCoverageInfo a owl:ObjectProperty;
+  rdfs:label "has Temporal Coverage Info"@en;
+  skos:definition "Information about the temporal coverage and resolution of the dataset being described."@en;
+  skos:prefLabel "has Temporal Coverage Info"@en .
+
+gdmt:hasFundingInfo a owl:ObjectProperty;
+  rdfs:label "has Funding Info"@en;
+  skos:definition "Information about the sources of funding that enabled and drove the creation of the dataset. (Non-monetary sources are described under Contributor.)"@en;
+  skos:prefLabel "has Funding Info"@en .
+
+gdmt:hasAwardInfo a owl:ObjectProperty;
+  rdfs:label "has Award Info"@en;
+  skos:definition "Information about the project award."@en;
+  skos:prefLabel "has Award Info"@en .
+
+gdmt:hasFunderInfo a owl:ObjectProperty;
+  rdfs:label "has Funder Info"@en;
+  skos:definition "Information about the award funder."@en;
+  skos:prefLabel "has Funder Info"@en .
+
+gdmt:hasDatasetIdentifierSubType a owl:ObjectProperty;
+  rdfs:label "has Dataset Identifier Sub Type"@en;
+  skos:definition "The subtype of the identifier used to specify the dataset being described."@en;
+  skos:prefLabel "has Dataset Identifier Sub Type"@en .
+
+gdmt:hasRelatedResourceIdentifierSubType a owl:ObjectProperty;
+  rdfs:label "has Related Resource Identifier Sub Type"@en;
+  skos:definition "The subtype of the identifier used to specify the related resource."@en;
+  skos:prefLabel "has Related Resource Identifier Sub Type"@en .
+
+gdmt:hasPrimaryLanguage a owl:ObjectProperty;
+  rdfs:label "has Primary Language"@en;
+  skos:definition "Primary language used to present the dataset (if multiple languages are present). Use a code from IETF BCP 47"@en;
+  skos:prefLabel "has Primary Language"@en .
+
+gdmt:hasSubjectIRI a owl:DatatypeProperty;
+  rdfs:label "has Subject IRI"@en;
+  skos:definition "The IRI of a concept (keyword, classification code, or controlled key phrase) that defines the dataset or indicates for which concepts the dataset can be used."@en;
+  skos:prefLabel "has Subject IRI"@en .
+
+gdmt:hasSubjectScheme a owl:DatatypeProperty;
+  rdfs:label "has Subject Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Subject Concept IRI."@en;
+  skos:prefLabel "has Subject Scheme"@en .
+
+gdmt:hasSubjectSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Subject Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Subject Concept IRI."@en;
+  skos:prefLabel "has Subject Scheme IRI"@en .
+
+gdmt:hasKeyword a owl:DatatypeProperty;
+  rdfs:label "has Keyword"@en;
+  skos:definition "Free text subject, keyword, classification code, or key phrase describing the dataset or purpose for which the dataset can be used."@en;
+  skos:prefLabel "has Keyword"@en .
+
+gdmt:hasCreatorIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Creator Identifier"@en;
+  skos:definition "Globally unique string that identifies the creator (an individual or legal entity)."@en;
+  skos:prefLabel "has Creator Identifier"@en .
+
+gdmt:hasCreatorIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Creator Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Creator Identifier."@en;
+  skos:prefLabel "has Creator Identifier Scheme"@en .
+
+gdmt:hasCreatorIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Creator Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Creator Identifier."@en;
+  skos:prefLabel "has Creator Identifier Scheme IRI"@en .
+
+gdmt:hasCreatorAffiliation a owl:ObjectProperty;
+  rdfs:label "has Creator Affiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the creator."@en;
+  skos:prefLabel "has Creator Affiliation"@en .
+
+gdmt:hasCreatorAffiliationIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Creator Affiliation Identifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the creator."@en;
+  skos:prefLabel "has Creator Affiliation Identifier"@en .
+
+gdmt:hasCreatorAffiliationIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Creator Affiliation Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Creator Affiliation Identifier."@en;
+  skos:prefLabel "has Creator Affiliation Identifier Scheme"@en .
+
+gdmt:hasCreatorAffiliationIdentifierSchemeIRI a owl:ObjectProperty;
+  rdfs:label "has Creator Affiliation Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Creator Affiliation Identifier."@en;
+  skos:prefLabel "has Creator Affiliation Identifier Scheme IRI"@en .
+
+gdmt:hasCreatorRole a owl:ObjectProperty;
+  rdfs:label "has Creator Role"@en;
+  skos:definition "The role of the creator in bringing the described dataset into existence."@en;
+  skos:prefLabel "has Creator Role"@en .
+
+gdmt:hasCreatorType a owl:ObjectProperty;
+  rdfs:label "has Creator Type"@en;
+  skos:definition "The type of the creator of the described dataset (organization or person)."@en;
+  skos:prefLabel "has Creator Type"@en .
+
+gdmt:hasContributorIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Contributor Identifier"@en;
+  skos:definition "Globally unique string that identifies the contributor (an individual or legal entity)."@en;
+  skos:prefLabel "has Contributor Identifier"@en .
+
+gdmt:hasContributorIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Contributor Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Contributor Identifier."@en;
+  skos:prefLabel "has Contributor Identifier Scheme"@en .
+
+gdmt:hasContributorIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Contributor Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Contributor Identifier."@en;
+  skos:prefLabel "has Contributor Identifier Scheme IRI"@en .
+
+gdmt:hasContributorAffiliation a owl:ObjectProperty;
+  rdfs:label "has Contributor Affiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the contributor."@en;
+  skos:prefLabel "has Contributor Affiliation"@en .
+
+gdmt:hasContributorAffiliationIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Contributor Affiliation Identifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the contributor."@en;
+  skos:prefLabel "has Contributor Affiliation Identifier"@en .
+
+gdmt:hasContributorAffiliationIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Contributor Affiliation Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Contributor Affiliation Identifier."@en;
+  skos:prefLabel "has Contributor Affiliation Identifier Scheme"@en .
+
+gdmt:hasContributorAffiliationIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Contributor Affiliation Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Contributor Affiliation Identifier."@en;
+  skos:prefLabel "has Contributor Affiliation Identifier Scheme IRI"@en .
+
+gdmt:hasContributorRole a owl:ObjectProperty;
+  rdfs:label "has Contributor Role"@en;
+  skos:definition "The role of the contributor in bringing the described dataset into existence."@en;
+  skos:prefLabel "has Contributor Role"@en .
+
+gdmt:hasContributorType a owl:ObjectProperty;
+  rdfs:label "has Contributor Type"@en;
+  skos:definition "The type of the contributor of the described dataset (organization or person)."@en;
+  skos:prefLabel "has Contributor Type"@en .
+
+gdmt:hasPublisherIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Publisher Identifier"@en;
+  skos:definition "Globally unique string that identifies the publisher."@en;
+  skos:prefLabel "has Publisher Identifier"@en .
+
+gdmt:hasPublisherIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Publisher Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Publisher Identifier."@en;
+  skos:prefLabel "has Publisher Identifier Scheme"@en .
+
+gdmt:hasPublisherIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Publisher Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Publisher Identifier."@en;
+  skos:prefLabel "has Publisher Identifier Scheme IRI"@en .
+
+gdmt:hasPublisherAddress a owl:DatatypeProperty;
+  rdfs:label "has Publisher Address"@en;
+  skos:definition "An address of the publisher."@en;
+  skos:prefLabel "has Publisher Address"@en .
+
+gdmt:hasLicenseName a owl:DatatypeProperty;
+  rdfs:label "has License Name"@en;
+  skos:definition "A standardized version of the license name."@en;
+  skos:prefLabel "has License Name"@en .
+
+gdmt:hasLicenseIdentifier a owl:DatatypeProperty;
+  rdfs:label "has License Identifier"@en;
+  skos:definition "IRI of the license for the dataset being described."@en;
+  skos:prefLabel "has License Identifier"@en .
+
+gdmt:hasLicenseIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has License Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Rights Identifier."@en;
+  skos:prefLabel "has License Identifier Scheme"@en .
+
+gdmt:hasLicenseIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has License Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Rights Identifier."@en;
+  skos:prefLabel "has License Identifier Scheme IRI"@en .
+
+gdmt:hasDatasetDate a owl:DatatypeProperty;
+  rdfs:label "has Dataset Date"@en;
+  skos:definition "Date relevant to dataset."@en;
+  skos:prefLabel "has Dataset Date"@en .
+
+gdmt:hasDatasetDateType a owl:ObjectProperty;
+  rdfs:label "has Dataset Date Type"@en;
+  skos:definition "Type of the date with respect to the dataset."@en;
+  skos:prefLabel "has Dataset Date Type"@en .
+
+gdmt:hasDistributionIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Distribution Identifier"@en;
+  skos:definition "A globally unique string that identifies the dataset distribution."@en;
+  skos:prefLabel "has Distribution Identifier"@en .
+
+gdmt:hasDistributionIdentifierType a owl:ObjectProperty;
+  rdfs:label "has Distribution Identifier Type"@en;
+  skos:definition "The identifier type used to identify the dataset distribution."@en;
+  skos:prefLabel "has Distribution Identifier Type"@en .
+
+gdmt:hasDistributionMediaType a owl:ObjectProperty;
+  rdfs:label "has Distribution Media Type"@en;
+  skos:definition "A media type, formerly known as a MIME type, of dataset distribution."@en;
+  skos:prefLabel "has Distribution Media Type"@en .
+
+gdmt:hasDistributionSize a owl:DatatypeProperty;
+  rdfs:label "has Distribution Size"@en;
+  skos:definition "Total size of dataset distribution."@en;
+  skos:prefLabel "has Distribution Size"@en .
+
+gdmt:hasDistributionAccessProtocol a owl:DatatypeProperty;
+  rdfs:label "has Distribution Access Protocol"@en;
+  skos:definition "The protocol used to access the dataset distribution."@en;
+  skos:prefLabel "has Distribution Access Protocol"@en .
+
+gdmt:hasDistributionAccessConfiguration a owl:DatatypeProperty;
+  rdfs:label "has Distribution Access Configuration"@en;
+  skos:definition "The access protocol configuration for quering dataset distribution."@en;
+  skos:prefLabel "has Distribution Access Configuration"@en .
+
+gdmt:hasDistributionQueryStatement a owl:DatatypeProperty;
+  rdfs:label "has Distribution Query Statement"@en;
+  skos:definition "Technical statement(s) for querying dataset distribution."@en;
+  skos:prefLabel "has Distribution Query Statement"@en .
+
+gdmt:hasDistributionDate a owl:DatatypeProperty;
+  rdfs:label "has Distribution Date"@en;
+  skos:definition "Date when the dataset was distributed."@en;
+  skos:prefLabel "has Distribution Date"@en .
+
+gdmt:hasDistributorIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Distributor Identifier"@en;
+  skos:definition "Globally unique string that identifies the distributor (an individual or legal entity)."@en;
+  skos:prefLabel "has Distributor Identifier"@en .
+
+gdmt:hasDistributorIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Distributor Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Distributor Identifier."@en;
+  skos:prefLabel "has Distributor Identifier Scheme"@en .
+
+gdmt:hasDistributorIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Distributor Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Distributor Identifier."@en;
+  skos:prefLabel "has Distributor Identifier Scheme IRI"@en .
+
+gdmt:hasDistributorAffiliation a owl:DatatypeProperty;
+  rdfs:label "has Distributor Affiliation"@en;
+  skos:definition "The organizational or institutional affiliation of the distributor."@en;
+  skos:prefLabel "has Distributor Affiliation"@en .
+
+gdmt:hasDistributorAffiliationIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Distributor Affiliation Identifier"@en;
+  skos:definition "Globally unique string that identifies the organizational affiliation of the distributor."@en;
+  skos:prefLabel "has Distributor Affiliation Identifier"@en .
+
+gdmt:hasDistributorAffiliationIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Distributor Affiliation Identifier Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Distributor Affiliation Identifier."@en;
+  skos:prefLabel "has Distributor Affiliation Identifier Scheme"@en .
+
+gdmt:hasDistributorAffiliationIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Distributor Affiliation Identifier Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Distributor Affiliation Identifier."@en;
+  skos:prefLabel "has Distributor Affiliation Identifier Scheme IRI"@en .
+
+gdmt:hasDistributorRole a owl:ObjectProperty;
+  rdfs:label "has Distributor Role"@en;
+  skos:definition "The role of the distributor in bringing the described dataset into existence."@en;
+  skos:prefLabel "has Distributor Role"@en .
+
+gdmt:hasDistributorType a owl:ObjectProperty;
+  rdfs:label "has Distributor Type"@en;
+  skos:definition "The type of the distributor of the described dataset (organization, or person)."@en;
+  skos:prefLabel "has Distributor Type"@en .
+
+gdmt:hasDataStream a owl:DatatypeProperty;
+  rdfs:label "has Data Stream"@en;
+  skos:definition "Human readable name of collection of records coming from a data source."@en;
+  skos:prefLabel "has Data Stream"@en .
+
+gdmt:hasDataStreamIRI a owl:DatatypeProperty;
+  rdfs:label "has Data Stream IRI"@en;
+  skos:definition "Unique identifier of collection of records coming from a data source."@en;
+  skos:prefLabel "has Data Stream IRI"@en .
+
+gdmt:hasDataStreamScheme a owl:DatatypeProperty;
+  rdfs:label "has Data Stream Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Data Stream Identifier."@en;
+  skos:prefLabel "has Data Stream Scheme"@en .
+
+gdmt:hasDataStreamSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Data Stream Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Data Stream Identifier."@en;
+  skos:prefLabel "has Data Stream Scheme IRI"@en .
+
+gdmt:hasDataSource a owl:DatatypeProperty;
+  rdfs:label "has Data Source"@en;
+  skos:definition "Human readable name of data source from which the variable(s) come(s)."@en;
+  skos:prefLabel "has Data Source"@en .
+
+gdmt:hasDataSourceIRI a owl:DatatypeProperty;
+  rdfs:label "has Data Source IRI"@en;
+  skos:definition "IRI describing the data source (e.g., PID of an instrument)."@en;
+  skos:prefLabel "has Data Source IRI"@en .
+
+gdmt:hasDataSourceScheme a owl:DatatypeProperty;
+  rdfs:label "has Data Source Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Data Source Identifier."@en;
+  skos:prefLabel "has Data Source Scheme"@en .
+
+gdmt:hasDataSourceSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Data Source Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Data Source Identifier."@en;
+  skos:prefLabel "has Data Source Scheme IRI"@en .
+
+gdmt:hasVariable a owl:DatatypeProperty;
+  rdfs:label "has Variable"@en;
+  skos:definition "Human readable name of variable being recorded in datastream."@en;
+  skos:prefLabel "has Variable"@en .
+
+gdmt:hasVariableIRI a owl:DatatypeProperty;
+  rdfs:label "has Variable IRI"@en;
+  skos:definition "IRI describing the variable."@en;
+  skos:prefLabel "has Variable IRI"@en .
+
+gdmt:hasVariableScheme a owl:DatatypeProperty;
+  rdfs:label "has Variable Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Variable Identifier."@en;
+  skos:prefLabel "has Variable Scheme"@en .
+
+gdmt:hasVariableSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Variable Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Variable Identifier."@en;
+  skos:prefLabel "has Variable Scheme IRI"@en .
+
+gdmt:hasPointLatitude a owl:DatatypeProperty;
+  rdfs:label "has Point Latitude"@en;
+  skos:definition "Geographic latitude of a point which represents a location of dataset collection."@en;
+  skos:prefLabel "has Point Latitude"@en .
+
+gdmt:hasPointLongitude a owl:DatatypeProperty;
+  rdfs:label "has Point Longitude"@en;
+  skos:definition "Geographic longitude of a point which represents a location of dataset collection."@en;
+  skos:prefLabel "has Point Longitude"@en .
+
+gdmt:hasWestBoundLongitude a owl:DatatypeProperty;
+  rdfs:label "has West Bound Longitude"@en;
+  skos:definition "The most west longitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "has West Bound Longitude"@en .
+
+gdmt:hasEastBoundLongitude a owl:DatatypeProperty;
+  rdfs:label "has East Bound Longitude"@en;
+  skos:definition "The most east longitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "has East Bound Longitude"@en .
+
+gdmt:hasSouthBoundLatitude a owl:DatatypeProperty;
+  rdfs:label "has South Bound Latitude"@en;
+  skos:definition "The most south latitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "has South Bound Latitude"@en .
+
+gdmt:hasNorthBoundLatitude a owl:DatatypeProperty;
+  rdfs:label "has North Bound Latitude"@en;
+  skos:definition "The most north latitude of a bounding box representing an area of dataset collection."@en;
+  skos:prefLabel "has North Bound Latitude"@en .
+
+gdmt:hasPolygonPointLatitude a owl:DatatypeProperty;
+  rdfs:label "has Polygon Point Latitude"@en;
+  skos:definition "Geographical latitude of a polygon point which represents one vertex of an area of dataset collection."@en;
+  skos:prefLabel "has Polygon Point Latitude"@en .
+
+gdmt:hasPolygonPointLongitude a owl:DatatypeProperty;
+  rdfs:label "has Polygon Point Longitude"@en;
+  skos:definition "Geographical longitude of a polygon point which represents one vertex of an area of dataset collection."@en;
+  skos:prefLabel "has Polygon Point Longitude"@en .
+
+gdmt:hasGeoLocationDescription a owl:DatatypeProperty;
+  rdfs:label "has Geo Location Description"@en;
+  skos:definition "The description of a geographical location of dataset collection."@en;
+  skos:prefLabel "has Geo Location Description"@en .
+
+gdmt:hasVerticalResolutionInMeters a owl:DatatypeProperty;
+  rdfs:label "has Vertical Resolution In Meters"@en;
+  skos:definition "Minimum vertical separation resolvable in a dataset, measured in meters."@en;
+  skos:prefLabel "has Vertical Resolution In Meters"@en .
+
+gdmt:hasVerticalExtentMaximumValue a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Maximum Value"@en;
+  skos:definition "A maximum vertical extent of dataset collection. In case of depth, this represents a minimum depth of dataset collection."@en;
+  skos:prefLabel "has Vertical Extent Maximum Value"@en .
+
+gdmt:hasVerticalExtentMinimumValue a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Minimum Value"@en;
+  skos:definition "A minimum vertical extent of dataset collection. In case of depth, this represents a maximum depth of dataset collection."@en;
+  skos:prefLabel "has Vertical Extent Minimum Value"@en .
+
+gdmt:hasVerticalExtentUnit a owl:ObjectProperty;
+  rdfs:label "has Vertical Extent Unit"@en;
+  skos:definition "Unit used to specify Vertical Extent."@en;
+  skos:prefLabel "has Vertical Extent Unit"@en .
+
+gdmt:hasVerticalExtentUnitIRI a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Unit IRI"@en;
+  skos:definition "The IRI for the unit used to specify Vertical Extent."@en;
+  skos:prefLabel "has Vertical Extent Unit IRI"@en .
+
+gdmt:hasVerticalExtentUnitScheme a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Unit Scheme"@en;
+  skos:definition "The name of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
+  skos:prefLabel "has Vertical Extent Unit Scheme"@en .
+
+gdmt:hasVerticalExtentUnitSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Unit Scheme IRI"@en;
+  skos:definition "The IRI of the scheme or authority used for the Vertical Extent Unit Identifier."@en;
+  skos:prefLabel "has Vertical Extent Unit Scheme IRI"@en .
+
+gdmt:hasVerticalExtentDatum a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Datum"@en;
+  skos:definition "The name of the Datum (reference frame) used for the Vertical Extent values."@en;
+  skos:prefLabel "has Vertical Extent Datum"@en .
+
+gdmt:hasVerticalExtentDatumIRI a owl:DatatypeProperty;
+  rdfs:label "has Vertical Extent Datum IRI"@en;
+  skos:definition "The unique identifier of the Datum (reference frame) used for the Vertical Extent values."@en;
+  skos:prefLabel "has Vertical Extent Datum IRI"@en .
+
+gdmt:hasTemporalExtentMinimumValue a owl:DatatypeProperty;
+  rdfs:label "has Temporal Extent Minimum Value"@en;
+  skos:definition "The start date of the data."@en;
+  skos:prefLabel "has Temporal Extent Minimum Value"@en .
+
+gdmt:hasTemporalExtentMaximumValue a owl:DatatypeProperty;
+  rdfs:label "has Temporal Extent Maximum Value"@en;
+  skos:definition "The end date of the data."@en;
+  skos:prefLabel "has Temporal Extent Maximum Value"@en .
+
+gdmt:hasTemporalResolution a owl:DatatypeProperty;
+  rdfs:label "has Temporal Resolution"@en;
+  skos:definition "Interval between two consecutive data records."@en;
+  skos:prefLabel "has Temporal Resolution"@en .
+
+gdmt:hasDuration a owl:DatatypeProperty;
+  rdfs:label "has Duration"@en;
+  skos:definition "The total duration of data temporal coverage."@en;
+  skos:prefLabel "has Duration"@en .
+
+gdmt:hasAwardTitle a owl:DatatypeProperty;
+  rdfs:label "has Award Title"@en;
+  skos:definition "The human readable title of the award, grant, or other specific funding mechanism for the described dataset."@en;
+  skos:prefLabel "has Award Title"@en .
+
+gdmt:hasAwardPageIRI a owl:DatatypeProperty;
+  rdfs:label "has Award Page IRI"@en;
+  skos:definition "The IRI leading to a page provided by the funder for more information about the award (grant)."@en;
+  skos:prefLabel "has Award Page IRI"@en .
+
+gdmt:hasAwardLocalIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Award Local Identifier"@en;
+  skos:definition "The code assigned by the funding provider to a sponsored award (grant). (Can be an IRI, but typically is not.)"@en;
+  skos:prefLabel "has Award Local Identifier"@en .
+
+gdmt:hasFunderName a owl:DatatypeProperty;
+  rdfs:label "has Funder Name"@en;
+  skos:definition "Name of the organization providing the funding for the described dataset ('funding provider')."@en;
+  skos:prefLabel "has Funder Name"@en .
+
+gdmt:hasFunderIdentifier a owl:DatatypeProperty;
+  rdfs:label "has Funder Identifier"@en;
+  skos:definition "Globally unique string that identifies the funding provider."@en;
+  skos:prefLabel "has Funder Identifier"@en .
+
+gdmt:hasFunderIdentifierScheme a owl:DatatypeProperty;
+  rdfs:label "has Funder Identifier Scheme"@en;
+  skos:definition "Name of the schema for the funderIdentifier."@en;
+  skos:prefLabel "has Funder Identifier Scheme"@en .
+
+gdmt:hasFunderIdentifierSchemeIRI a owl:DatatypeProperty;
+  rdfs:label "has Funder Identifier Scheme IRI"@en;
+  skos:definition "IRI of the schema for the funder identifier."@en;
+  skos:prefLabel "has Funder Identifier Scheme IRI"@en .
+
+gdmt:ResourceTypeCategory a skos:Concept;
+  skos:definition "This is a set of controlled terms from DataCite/DCMI for the category of resource being described."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "subject"@en;
+  skos:narrower gdmt:Audiovisual, gdmt:Collection, gdmt:DataCatalog, gdmt:DataPaper,
+    gdmt:DataStream, gdmt:Dataset, gdmt:Event, gdmt:Image, gdmt:InteractiveResource, gdmt:Model,
+    gdmt:PhysicalObject, gdmt:Service, gdmt:Software, gdmt:Sound;
+  skos:prefLabel "Resource Type Category"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
-vocab:1001 a skos:Concept;
+gdmt:Audiovisual a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "variable"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "Audiovisual"@en .
 
-vocab:1002 a skos:Concept;
+gdmt:Collection a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1004, vocab:1005;
-  skos:prefLabel "community maturity level"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "Collection"@en .
 
-vocab:1003 a skos:Concept;
-  skos:broader vocab:1002;
+gdmt:DataPaper a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A factual and objective publication with a focused intent to identify and describe specific data, sets of data, or data collections to facilitate discoverability."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "emerging"@en .
+  skos:prefLabel "Data Paper"@en .
 
-vocab:1004 a skos:Concept;
-  skos:broader vocab:1002;
+gdmt:DataCatalog a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A collection of datasets."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "developing"@en .
+  skos:prefLabel "Data Catalog"@en .
 
-vocab:1005 a skos:Concept;
-  skos:broader vocab:1002;
+gdmt:Dataset a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "Dataset is a logical grouping of one or more data streams. It is can be provided in various data distributions. Dataset might be part of (parent) data catalog."@en;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "mature"@en .
+  skos:prefLabel "Dataset"@en .
 
-vocab:1006 a owl:ObjectProperty;
-  skos:prefLabel "hasMaturityLevel"@en .
+gdmt:DataStream a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "Data stream represent a collection of one or more variable records originating from a single data source (e.g., sensor) which properties remain unchanged during the data stream existence. In some use-cases, the data source location is required to remain unchanged (e.g., sensors attached to a meteorological tower). Data stream can grow over time."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Data Stream"@en .
+
+gdmt:Event a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A non-persistent, time-based occurrence."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Event"@en .
+
+gdmt:Image a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A visual representation other than text"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Image"@en .
+
+gdmt:InteractiveResource a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Interactive Resource"@en .
+
+gdmt:Model a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "An abstract, conceptual, graphical, mathematical or visualization model that represents empirical objects, phenomena, or physical processes."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Model"@en .
+
+gdmt:PhysicalObject a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "An inanimate, three-dimensional object or substance."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Physical Object"@en .
+
+gdmt:Service a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "An organized system of apparatus, appliances, staff, etc., for supplying some function(s) required by end users."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Service"@en .
+
+gdmt:Software a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A computer program in source code (text) or compiled form. Use this type for all software components supporting scholarly research."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Software"@en .
+
+gdmt:Sound a skos:Concept;
+  skos:broader gdmt:ResourceTypeCategory;
+  skos:definition "A resource primarily intended to be heard."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sound"@en .
