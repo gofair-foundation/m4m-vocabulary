@@ -21,14 +21,43 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-13T15:57:50+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-09-13T16:09:22+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,subject
-vocab:1001,variable,,var
-vocab:1002,community maturity level
-vocab:1003,emerging,new,,,,vocab:1002
-vocab:1004,developing,intermediate,,,,vocab:1002
-vocab:1005,mature,,,,,vocab:1002
-vocab:1006,hasMaturityLevel,,,,,,,,,,,,,,,,,,,,owl:ObjectProperty
+vocab:1000,analytical method
+vocab:1001,identification method,,,,,vocab:1000
+vocab:1002,spectrometry,,,,,vocab:1001
+vocab:1003,mass spectrometry,,,,,vocab:1002
+vocab:1004,inductively coupled plasma mass spectrometry,,,,,vocab:1003
+vocab:1005,atmospheric presure chemical ionization high resolution mass spectrometry,,,,,vocab:1003
+vocab:1006,high resolution mass spectrometry,,,,,vocab:1003,,,,,,,,,,,,,,,owl:ObjectProperty
+vocab:1007,electrothermal capture negative ion mass spectrometry,,,,,vocab:1003
+vocab:1008,tandem mass spectrometry,,,,,vocab:1003
+vocab:1009,mass spectrometry with Negative chemical ionization,,,,,vocab:1003
+vocab:1010,other spectrometry ,,,,,vocab:1001
+vocab:1011,Flame Atomic Emission Spectrometry,,,,,vocab:1011
+vocab:1012,flame Atomic absorption Spectrometry,,,,,vocab:1011
+vocab:1013,electrotermal atomic absorption spectrometry,,,,,vocab:1011
+vocab:1014,atomic absorption spectrometry,,,,,vocab:1011
+vocab:1015,inductively coupled plasma with optical emission spectrometry,,,,,vocab:1011
+vocab:1016,separation method,,,,,vocab:1000
+vocab:1017,chromatography,,,,,vocab:1016
+vocab:1018,gas chromatography,,,,,vocab:1017
+vocab:1019,high performance liquid chromatography,,,,,vocab:1017
+vocab:1020,combined method,,,,,vocab:1000
+vocab:1021,HPLC combination,,,,,vocab:1020
+vocab:1022,high performance liquid chromatography with mass spectrometry,,,,,vocab:1021
+vocab:1023,high performance liquid chromatography with diode array detector,,,,,vocab:1021
+vocab:1024,high performance liquid chromatography with high resolution mass spectrometry,,,,,vocab:1022
+vocab:1025,high performance liquid chromatography with fluorescence detection,,,,,vocab:1021
+vocab:1026,high performance liquid chromatography with tandem mass spectrometry,,,,,vocab:1022
+vocab:1027,GC combination,,,,,vocab:1020
+vocab:1028,gas chromatography with mass spectrometry,,,,,vocab:1027
+vocab:1029,gas chromatography with electron capture detector,,,,,vocab:1028
+vocab:1030,gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry,,,,,vocab:1028
+vocab:1031,gas chromatography coupled to electron capture negative ion mass spectrometry,,,,,vocab:1028
+vocab:1032,gas chromatography with mass spectrometry with Negative chemical ionization,,,,,vocab:1028
+vocab:1033,gas chromatography with high resolution mass spectrometry (HRMS),,,,,vocab:1028
+vocab:1034,gas chromatography with atmospheric presure chemical ionization high resolution mass spectrometry,,,,,vocab:1028
+vocab:1035,gas chromatography with electron capture detector,,,,,vocab:1027

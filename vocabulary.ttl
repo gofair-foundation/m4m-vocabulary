@@ -1,8 +1,25 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix puv: <https://w3id.org/env/puv#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
 @prefix vocab: <http://purl.org/m4m/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,45 +28,199 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-13T15:57:50+00:00"^^xsd:datetime;
+  dct:modified "2023-09-13T16:09:22+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002;
+  skos:hasTopConcept vocab:1000;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "subject"@en;
+  skos:narrower vocab:1001, vocab:1016, vocab:1020;
+  skos:prefLabel "analytical method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1001 a skos:Concept;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "var"@en;
-  skos:prefLabel "variable"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1002, vocab:1010;
+  skos:prefLabel "identification method"@en .
 
 vocab:1002 a skos:Concept;
+  skos:broader vocab:1001;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1004, vocab:1005;
-  skos:prefLabel "community maturity level"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1003;
+  skos:prefLabel "spectrometry"@en .
 
 vocab:1003 a skos:Concept;
-  skos:altLabel "new"@en;
   skos:broader vocab:1002;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "emerging"@en .
+  skos:narrower vocab:1004, vocab:1005, vocab:1006, vocab:1007, vocab:1008, vocab:1009;
+  skos:prefLabel "mass spectrometry"@en .
 
 vocab:1004 a skos:Concept;
-  skos:altLabel "intermediate"@en;
-  skos:broader vocab:1002;
+  skos:broader vocab:1003;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "developing"@en .
+  skos:prefLabel "inductively coupled plasma mass spectrometry"@en .
 
 vocab:1005 a skos:Concept;
-  skos:broader vocab:1002;
+  skos:broader vocab:1003;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "mature"@en .
+  skos:prefLabel "atmospheric presure chemical ionization high resolution mass spectrometry"@en .
 
 vocab:1006 a owl:ObjectProperty;
-  skos:prefLabel "hasMaturityLevel"@en .
+  skos:broader vocab:1003;
+  skos:prefLabel "high resolution mass spectrometry"@en .
+
+vocab:1007 a skos:Concept;
+  skos:broader vocab:1003;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "electrothermal capture negative ion mass spectrometry"@en .
+
+vocab:1008 a skos:Concept;
+  skos:broader vocab:1003;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "tandem mass spectrometry"@en .
+
+vocab:1009 a skos:Concept;
+  skos:broader vocab:1003;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass spectrometry with Negative chemical ionization"@en .
+
+vocab:1010 a skos:Concept;
+  skos:broader vocab:1001;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "other spectrometry"@en .
+
+vocab:1011 a skos:Concept;
+  skos:broader vocab:1011;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1011, vocab:1012, vocab:1013, vocab:1014, vocab:1015;
+  skos:prefLabel "Flame Atomic Emission Spectrometry"@en .
+
+vocab:1012 a skos:Concept;
+  skos:broader vocab:1011;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "flame Atomic absorption Spectrometry"@en .
+
+vocab:1013 a skos:Concept;
+  skos:broader vocab:1011;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "electrotermal atomic absorption spectrometry"@en .
+
+vocab:1014 a skos:Concept;
+  skos:broader vocab:1011;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "atomic absorption spectrometry"@en .
+
+vocab:1015 a skos:Concept;
+  skos:broader vocab:1011;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "inductively coupled plasma with optical emission spectrometry"@en .
+
+vocab:1016 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1017;
+  skos:prefLabel "separation method"@en .
+
+vocab:1017 a skos:Concept;
+  skos:broader vocab:1016;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1018, vocab:1019;
+  skos:prefLabel "chromatography"@en .
+
+vocab:1018 a skos:Concept;
+  skos:broader vocab:1017;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography"@en .
+
+vocab:1019 a skos:Concept;
+  skos:broader vocab:1017;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "high performance liquid chromatography"@en .
+
+vocab:1020 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1021, vocab:1027;
+  skos:prefLabel "combined method"@en .
+
+vocab:1021 a skos:Concept;
+  skos:broader vocab:1020;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1022, vocab:1023, vocab:1025;
+  skos:prefLabel "HPLC combination"@en .
+
+vocab:1022 a skos:Concept;
+  skos:broader vocab:1021;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1024, vocab:1026;
+  skos:prefLabel "high performance liquid chromatography with mass spectrometry"@en .
+
+vocab:1023 a skos:Concept;
+  skos:broader vocab:1021;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "high performance liquid chromatography with diode array detector"@en .
+
+vocab:1024 a skos:Concept;
+  skos:broader vocab:1022;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "high performance liquid chromatography with high resolution mass spectrometry"@en .
+
+vocab:1025 a skos:Concept;
+  skos:broader vocab:1021;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "high performance liquid chromatography with fluorescence detection"@en .
+
+vocab:1026 a skos:Concept;
+  skos:broader vocab:1022;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "high performance liquid chromatography with tandem mass spectrometry"@en .
+
+vocab:1027 a skos:Concept;
+  skos:broader vocab:1020;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1028, vocab:1035;
+  skos:prefLabel "GC combination"@en .
+
+vocab:1028 a skos:Concept;
+  skos:broader vocab:1027;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1029, vocab:1030, vocab:1031, vocab:1032, vocab:1033, vocab:1034;
+  skos:prefLabel "gas chromatography with mass spectrometry"@en .
+
+vocab:1029 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with electron capture detector"@en .
+
+vocab:1030 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry"@en .
+
+vocab:1031 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography coupled to electron capture negative ion mass spectrometry"@en .
+
+vocab:1032 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with mass spectrometry with Negative chemical ionization"@en .
+
+vocab:1033 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with high resolution mass spectrometry (HRMS)"@en .
+
+vocab:1034 a skos:Concept;
+  skos:broader vocab:1028;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with atmospheric presure chemical ionization high resolution mass spectrometry"@en .
+
+vocab:1035 a skos:Concept;
+  skos:broader vocab:1027;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas chromatography with electron capture detector"@en .
