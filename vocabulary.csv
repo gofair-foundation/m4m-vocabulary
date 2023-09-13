@@ -1,34 +1,34 @@
-ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+ConceptScheme URI,http://purl.org/m4m,,,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
 "Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
-PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,pav,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
-PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
-PREFIX,iop,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
-PREFIX,puv,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
+PREFIX,vocab,,,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
+PREFIX,skos,,,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
+PREFIX,pav,,,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
+PREFIX,dct,,,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,iop,,,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
+PREFIX,puv,,,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
 https://github.com/nvs-vocabs/P01."
-PREFIX,sosa,http://www.w3.org/ns/sosa/,,Semantic Sensor Network Ontology
-PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
-PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
-PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
+PREFIX,sosa,,,http://www.w3.org/ns/sosa/,,Semantic Sensor Network Ontology
+PREFIX,xsd,,,http://www.w3.org/2001/XMLSchema#
+PREFIX,qudt,,,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
+PREFIX,unit,,,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
-dct:title,Demo M4M Vocabulary,Title of the vocabulary
-dct:description,This vocabulary is used in DEMO M4M workshop,Description of the controlled vocabulary
-foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
-dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
-dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
-dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
-dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-13T14:43:31+00:00,Automatic update when vocabulary is updated
+dct:title,Demo M4M Vocabulary,,,Title of the vocabulary
+dct:description,This vocabulary is used in DEMO M4M workshop,,,Description of the controlled vocabulary
+foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,,,Home page of community creating vocabulary
+dct:creator,0000-0002-1665-678X,,,An ORCID ID of the vocabulary creator
+dct:rights,https://spdx.org/licenses/CC0-1.0,,,License under which the vocabulary is provided
+dct:hasVersion^^xsd:string,0.1.0,,,Vocabulary version
+dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,,,Date when vocabulary was initially created
+dct:modified^^xsd:datetime,2023-09-13T14:52:23+00:00,,,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:broader(separator="","")",rdf:type,skos:definition@en,"dct:source(separator="","")","skos:altLabel(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,subject
-vocab:1001,variable
+Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,"skos:broader(separator="","")",rdf:type,skos:definition@en,"dct:source(separator="","")",,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+vocab:1000,subject,task
+vocab:1001,variable,,var
 vocab:1002,community maturity level
-vocab:1003,emerging,vocab:1002
-vocab:1004,developing,vocab:1002
-vocab:1005,mature,vocab:1002
-vocab:1006,hasMaturityLevel,,owl:ObjectProperty
+vocab:1003,emerging,,,vocab:1002
+vocab:1004,developing,,,vocab:1002
+vocab:1005,mature,,,vocab:1002
+vocab:1006,hasMaturityLevel,,,,owl:ObjectProperty
