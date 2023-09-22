@@ -21,7 +21,7 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-22T14:37:15+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-09-22T14:41:19+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
@@ -197,4 +197,4 @@ vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172
 vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172
 vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172
 vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172
-vocab:1172,human matrix
+vocab:1172,human matrix,,,,,vocab:1097

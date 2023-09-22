@@ -28,10 +28,10 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-22T14:37:15+00:00"^^xsd:datetime;
+  dct:modified "2023-09-22T14:41:19+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1097, vocab:1172;
+  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1097;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
@@ -724,7 +724,8 @@ vocab:1096 a skos:Concept;
 
 vocab:1097 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1098, vocab:1099, vocab:1100, vocab:1101, vocab:1102, vocab:1103;
+  skos:narrower vocab:1098, vocab:1099, vocab:1100, vocab:1101, vocab:1102, vocab:1103,
+    vocab:1172;
   skos:prefLabel "matrix"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1151,10 +1152,10 @@ vocab:1171 a skos:Concept;
   skos:prefLabel "placenta tissue matrix"@en .
 
 vocab:1172 a skos:Concept;
+  skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155, vocab:1156,
     vocab:1157, vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162, vocab:1163,
     vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169, vocab:1170,
     vocab:1171;
-  skos:prefLabel "human matrix"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "human matrix"@en .
