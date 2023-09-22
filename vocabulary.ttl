@@ -28,199 +28,445 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-13T16:09:22+00:00"^^xsd:datetime;
+  dct:modified "2023-09-22T13:14:08+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000;
+  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1001, vocab:1016, vocab:1020;
+  skos:narrower vocab:1003, vocab:1004, vocab:1005, vocab:1006, vocab:1007, vocab:1008,
+    vocab:1009, vocab:1010, vocab:1011, vocab:1012, vocab:1013, vocab:1014, vocab:1015,
+    vocab:1016, vocab:1017, vocab:1018, vocab:1019, vocab:1020, vocab:1021, vocab:1022,
+    vocab:1023, vocab:1024, vocab:1025, vocab:1026, vocab:1027, vocab:1028, vocab:1029,
+    vocab:1030, vocab:1031, vocab:1032, vocab:1033, vocab:1034, vocab:1035, vocab:1036,
+    vocab:1037, vocab:1038, vocab:1039, vocab:1040, vocab:1041, vocab:1042, vocab:1043,
+    vocab:1044, vocab:1045, vocab:1046, vocab:1047, vocab:1048, vocab:1049, vocab:1050,
+    vocab:1051, vocab:1052, vocab:1053, vocab:1054, vocab:1055, vocab:1056, vocab:1057,
+    vocab:1058, vocab:1059, vocab:1060, vocab:1061;
   skos:prefLabel "analytical method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1001 a skos:Concept;
-  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1002, vocab:1010;
-  skos:prefLabel "identification method"@en .
+  skos:prefLabel "preparation method"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1002 a skos:Concept;
-  skos:broader vocab:1001;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003;
-  skos:prefLabel "spectrometry"@en .
+  skos:prefLabel "sampling method"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1003 a skos:Concept;
-  skos:broader vocab:1002;
+  skos:altLabel "AMA"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1004, vocab:1005, vocab:1006, vocab:1007, vocab:1008, vocab:1009;
-  skos:prefLabel "mass spectrometry"@en .
+  skos:notation "AMA"@en;
+  skos:prefLabel "Advanced mercury analyzer"@en .
 
 vocab:1004 a skos:Concept;
-  skos:broader vocab:1003;
+  skos:altLabel "CE-DAD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "inductively coupled plasma mass spectrometry"@en .
+  skos:notation "CE-DAD"@en;
+  skos:prefLabel "Capillary electrophoresis with diode array detection"@en .
 
 vocab:1005 a skos:Concept;
-  skos:broader vocab:1003;
+  skos:altLabel "CE-FLD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "atmospheric presure chemical ionization high resolution mass spectrometry"@en .
+  skos:notation "CE-FLD"@en;
+  skos:prefLabel "Capillary electrophoresis with fluorescence detection"@en .
 
-vocab:1006 a owl:ObjectProperty;
-  skos:broader vocab:1003;
-  skos:prefLabel "high resolution mass spectrometry"@en .
+vocab:1006 a skos:Concept;
+  skos:altLabel "CE-MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "CE-MS"@en;
+  skos:prefLabel "Capillary electrophoresis with mass spectrometry"@en .
 
 vocab:1007 a skos:Concept;
-  skos:broader vocab:1003;
+  skos:altLabel "CE-MS/MS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "electrothermal capture negative ion mass spectrometry"@en .
+  skos:notation "CE-MS_MS"@en;
+  skos:prefLabel "Capillary electrophoresis with tandem mass spectrometry"@en .
 
 vocab:1008 a skos:Concept;
-  skos:broader vocab:1003;
+  skos:altLabel "CE-MWD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "tandem mass spectrometry"@en .
+  skos:notation "CE-MWD"@en;
+  skos:prefLabel "Capillary electrophoresis with multiple wavelength detection"@en .
 
 vocab:1009 a skos:Concept;
-  skos:broader vocab:1003;
+  skos:altLabel "CE-UV"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "mass spectrometry with Negative chemical ionization"@en .
+  skos:notation "CE-UV"@en;
+  skos:prefLabel "Capillary electrophoresis with ultraviolet detection"@en .
 
 vocab:1010 a skos:Concept;
-  skos:broader vocab:1001;
+  skos:altLabel "EA-AAS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "other spectrometry"@en .
+  skos:notation "EA-AAS"@en;
+  skos:prefLabel "Electrothermal atomisation with atomic absorption spectrometry"@en .
 
 vocab:1011 a skos:Concept;
-  skos:broader vocab:1011;
+  skos:altLabel "EA-OES"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1011, vocab:1012, vocab:1013, vocab:1014, vocab:1015;
-  skos:prefLabel "Flame Atomic Emission Spectrometry"@en .
+  skos:notation "EA-OES"@en;
+  skos:prefLabel "Electrothermal atomisation with optical emission spectrometry"@en .
 
 vocab:1012 a skos:Concept;
-  skos:broader vocab:1011;
+  skos:altLabel "AAS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "flame Atomic absorption Spectrometry"@en .
+  skos:notation "AAS"@en;
+  skos:prefLabel "Atomic absorption spectrometry"@en .
 
 vocab:1013 a skos:Concept;
-  skos:broader vocab:1011;
+  skos:altLabel "Flame AAS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "electrotermal atomic absorption spectrometry"@en .
+  skos:notation "FLAME_AAS"@en;
+  skos:prefLabel "Flame atomic absorption spectrometry"@en .
 
 vocab:1014 a skos:Concept;
-  skos:broader vocab:1011;
+  skos:altLabel "Flame OES"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "atomic absorption spectrometry"@en .
+  skos:notation "FLAME_OES"@en;
+  skos:prefLabel "Flame optical emission spectrometry"@en .
 
 vocab:1015 a skos:Concept;
-  skos:broader vocab:1011;
+  skos:altLabel "GC-ECD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "inductively coupled plasma with optical emission spectrometry"@en .
+  skos:notation "GC-ECD"@en;
+  skos:prefLabel "Gass chromatography with electron capture detection"@en .
 
 vocab:1016 a skos:Concept;
+  skos:altLabel "GC-FID"@en;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1017;
-  skos:prefLabel "separation method"@en .
+  skos:notation "GC-FID"@en;
+  skos:prefLabel "Gass chromatography with flame ionization detection"@en .
 
 vocab:1017 a skos:Concept;
-  skos:broader vocab:1016;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1018, vocab:1019;
-  skos:prefLabel "chromatography"@en .
-
-vocab:1018 a skos:Concept;
-  skos:broader vocab:1017;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography"@en .
-
-vocab:1019 a skos:Concept;
-  skos:broader vocab:1017;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "high performance liquid chromatography"@en .
-
-vocab:1020 a skos:Concept;
+  skos:altLabel "GC-HRMS"@en;
   skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1021, vocab:1027;
-  skos:prefLabel "combined method"@en .
+  skos:notation "GC-HRMS"@en;
+  skos:prefLabel "Gass chromatography with high resolution mass spectrometry"@en .
+
+vocab:1018 a skos:Concept;
+  skos:altLabel "GC-MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-MS"@en;
+  skos:prefLabel "Gass chromatography with mass spectrometry"@en .
+
+vocab:1019 a skos:Concept;
+  skos:altLabel "GC-MS/MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-MS_MS"@en;
+  skos:prefLabel "Gass chromatography with tandem mass spectrometry"@en .
+
+vocab:1020 a skos:Concept;
+  skos:altLabel "GC-NPD"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-NPD"@en;
+  skos:prefLabel "Gass chromatography with Nitrogen Phosphorous detection"@en .
 
 vocab:1021 a skos:Concept;
-  skos:broader vocab:1020;
+  skos:altLabel "GC-PID"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1022, vocab:1023, vocab:1025;
-  skos:prefLabel "HPLC combination"@en .
+  skos:notation "GC-PID"@en;
+  skos:prefLabel "Gass chromatography with photoionization detection"@en .
 
 vocab:1022 a skos:Concept;
-  skos:broader vocab:1021;
+  skos:altLabel "HG-AAS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1024, vocab:1026;
-  skos:prefLabel "high performance liquid chromatography with mass spectrometry"@en .
+  skos:notation "HG-AAS"@en;
+  skos:prefLabel "Hydride generation atomic absorption spectroscopy"@en .
 
 vocab:1023 a skos:Concept;
-  skos:broader vocab:1021;
+  skos:altLabel "LC-DAD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "high performance liquid chromatography with diode array detector"@en .
+  skos:notation "LC-DAD"@en;
+  skos:prefLabel "Liquid chromatography with diode array detection"@en .
 
 vocab:1024 a skos:Concept;
-  skos:broader vocab:1022;
+  skos:altLabel "LC-FLD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "high performance liquid chromatography with high resolution mass spectrometry"@en .
+  skos:notation "LC-FLD"@en;
+  skos:prefLabel "Liquid chromatography with fluorescence detection"@en .
 
 vocab:1025 a skos:Concept;
-  skos:broader vocab:1021;
+  skos:altLabel "LC-MS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "high performance liquid chromatography with fluorescence detection"@en .
+  skos:notation "LC-MS"@en;
+  skos:prefLabel "Liquid chromatography with mass spectrometry"@en .
 
 vocab:1026 a skos:Concept;
-  skos:broader vocab:1022;
+  skos:altLabel "LC-MS/MS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "high performance liquid chromatography with tandem mass spectrometry"@en .
+  skos:notation "LC-MS_MS"@en;
+  skos:prefLabel "Liquid chromatography with tandem mass spectrometry"@en .
 
 vocab:1027 a skos:Concept;
-  skos:broader vocab:1020;
+  skos:altLabel "LC-HR-MS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1028, vocab:1035;
-  skos:prefLabel "GC combination"@en .
+  skos:notation "LC-HR-MS"@en;
+  skos:prefLabel "Liquid chromatography with high resolution mass spectrometry"@en .
 
 vocab:1028 a skos:Concept;
-  skos:broader vocab:1027;
+  skos:altLabel "LC-MWD"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1029, vocab:1030, vocab:1031, vocab:1032, vocab:1033, vocab:1034;
-  skos:prefLabel "gas chromatography with mass spectrometry"@en .
+  skos:notation "LC-MWD"@en;
+  skos:prefLabel "Liquid chromatography with multiple wavelength detection"@en .
 
 vocab:1029 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "LC-UV/VIS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with electron capture detector"@en .
+  skos:notation "LC-UV_VIS"@en;
+  skos:prefLabel "Liquid chromatography with UV visible detection"@en .
 
 vocab:1030 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "ICP-MS"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry"@en .
+  skos:notation "ICP-MS"@en;
+  skos:prefLabel "Inductively coupled plasma mass spectrometry"@en .
 
 vocab:1031 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "ICP-OES"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography coupled to electron capture negative ion mass spectrometry"@en .
+  skos:notation "ICP-OES"@en;
+  skos:prefLabel "Inductively coupled plasma with optical emission spectrometry"@en .
 
 vocab:1032 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "Spectrophotometry"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with mass spectrometry with Negative chemical ionization"@en .
+  skos:notation "SPECTROPHOTOMETRY"@en;
+  skos:prefLabel "Spectrophotometry"@en .
 
 vocab:1033 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "Continuous gas-analysers"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with high resolution mass spectrometry (HRMS)"@en .
+  skos:notation "CONTINUOUS_GAS-ANALYZERS"@en;
+  skos:prefLabel "Continuous gas-analysers"@en .
 
 vocab:1034 a skos:Concept;
-  skos:broader vocab:1028;
+  skos:altLabel "LAL"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with atmospheric presure chemical ionization high resolution mass spectrometry"@en .
+  skos:notation "LAL"@en;
+  skos:prefLabel "Limulus ameobocyte assay"@en .
 
 vocab:1035 a skos:Concept;
-  skos:broader vocab:1027;
+  skos:altLabel "qPCR"@en;
+  skos:broader vocab:1000;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas chromatography with electron capture detector"@en .
+  skos:notation "qPCR"@en;
+  skos:prefLabel "Quantitative polymerase chain reaction"@en .
+
+vocab:1036 a skos:Concept;
+  skos:altLabel "ELISA"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "ELISA"@en;
+  skos:prefLabel "Enzyme-linked immuno sorbent assay"@en .
+
+vocab:1037 a skos:Concept;
+  skos:altLabel "HPLC-MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "HPLC-MS"@en;
+  skos:prefLabel "High performance liquid chromatography with mass spectrometry"@en .
+
+vocab:1038 a skos:Concept;
+  skos:altLabel "UPLC-MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "UPLC-MS"@en;
+  skos:prefLabel "Ultra performance liquid chromatography with mass spectrometry"@en .
+
+vocab:1039 a skos:Concept;
+  skos:altLabel "HPLC-DAD"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "HPLC-DAD"@en;
+  skos:prefLabel "High performance liquid chromatography with diode array detection"@en .
+
+vocab:1040 a skos:Concept;
+  skos:altLabel "UPLC-DAD"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "UPLC-DAD"@en;
+  skos:prefLabel "Ultra performance liquid chromatography with diode array detection"@en .
+
+vocab:1041 a skos:Concept;
+  skos:altLabel "GC-APCI-HRMS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-APCI-HRMS"@en;
+  skos:prefLabel "Gas chromatography with atmospheric presure chemical ionization high resolution mass spectrometry"@en .
+
+vocab:1042 a skos:Concept;
+  skos:altLabel "HPLC-HRMS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "HPLC-HRMS"@en;
+  skos:prefLabel "High performance liquid chromatography with high resolution mass spectrometry"@en .
+
+vocab:1043 a skos:Concept;
+  skos:altLabel "UPLC-HRMS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "UPLC-HRMS"@en;
+  skos:prefLabel "Ultra performance liquid chromatography with high resolution mass spectrometry"@en .
+
+vocab:1044 a skos:Concept;
+  skos:altLabel "AAS-ETA"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "AAS-ETA"@en;
+  skos:prefLabel "Electrotermal atomic absorption spectrometry"@en .
+
+vocab:1045 a skos:Concept;
+  skos:altLabel "AMA"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "AMA"@en;
+  skos:prefLabel "Advanced mercury analyser"@en .
+
+vocab:1046 a skos:Concept;
+  skos:altLabel "FAES"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "FAES"@en;
+  skos:prefLabel "Flame atomic emission spectrometry"@en .
+
+vocab:1047 a skos:Concept;
+  skos:altLabel "GC-ECNI-MS (IT)"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-ECNI-MS_IT"@en;
+  skos:prefLabel "Gas chromatography coupled to electron capture negative ion mass spectrometry"@en .
+
+vocab:1048 a skos:Concept;
+  skos:altLabel "glass ion selective electrode"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GLASS-ION-SELECTIVE-ELECTRODE"@en;
+  skos:prefLabel "Glass ion selective electrode"@en .
+
+vocab:1049 a skos:Concept;
+  skos:altLabel "HPLC-FLU"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "HPLC-FLU"@en;
+  skos:prefLabel "High performance liquid chromatography with fluorescence detection"@en .
+
+vocab:1050 a skos:Concept;
+  skos:altLabel "HPLC-MS/MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "HPLC-MS_MS"@en;
+  skos:prefLabel "High performance liquid chromatography with tandem mass spectrometry"@en .
+
+vocab:1051 a skos:Concept;
+  skos:altLabel "UPLC-FLU"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "UPLC-FLU"@en;
+  skos:prefLabel "Ultra performance liquid chromatography with fluorescence detection"@en .
+
+vocab:1052 a skos:Concept;
+  skos:altLabel "UPLC-MS/MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "UPLC-MS_MS"@en;
+  skos:prefLabel "Ultra performance liquid chromatography with tandem mass spectrometry"@en .
+
+vocab:1053 a skos:Concept;
+  skos:altLabel "Kjeldahl"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "KJELDAHL"@en;
+  skos:prefLabel "Kjeldahl method (nitrogen determination)"@en .
+
+vocab:1054 a skos:Concept;
+  skos:altLabel "LiquiTOC II"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "LIQUITOC_II"@en;
+  skos:prefLabel "Total organic carbon (liquid samples)"@en .
+
+vocab:1055 a skos:Concept;
+  skos:altLabel "Spectrophotometry"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "SPECTROPHOTOMETRY"@en;
+  skos:prefLabel "Spectrophotometry"@en .
+
+vocab:1056 a skos:Concept;
+  skos:altLabel "Carbon analyzator"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "CARBON_ANALYZATOR"@en;
+  skos:prefLabel "Total organic carbon (solid samples)"@en .
+
+vocab:1057 a skos:Concept;
+  skos:altLabel "X-ray fluorescence"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "X-RAY_FLUORESCENCE"@en;
+  skos:prefLabel "X-ray fluorescence"@en .
+
+vocab:1058 a skos:Concept;
+  skos:altLabel "GC-MS-PCI"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-MS-PCI"@en;
+  skos:prefLabel "Gas chromatography with mass spectrometry with Positive chemical ionization"@en .
+
+vocab:1059 a skos:Concept;
+  skos:altLabel "GC-MS-NCI"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-MS-NCI"@en;
+  skos:prefLabel "Gas chromatography with mass spectrometry with Negative chemical ionization"@en .
+
+vocab:1060 a skos:Concept;
+  skos:altLabel "FAAS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "FAAS"@en;
+  skos:prefLabel "Flame atomic absorption spectrometry"@en .
+
+vocab:1061 a skos:Concept;
+  skos:altLabel "GC-APCI-MS-MS"@en;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "GC-APCI-MS-MS"@en;
+  skos:prefLabel "Gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry"@en .
