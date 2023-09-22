@@ -21,7 +21,7 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-22T13:14:08+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-09-22T14:22:48+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
@@ -87,3 +87,92 @@ vocab:1058,Gas chromatography with mass spectrometry with Positive chemical ioni
 vocab:1059,Gas chromatography with mass spectrometry with Negative chemical ionization,GC-MS-NCI,GC-MS-NCI,,,vocab:1000
 vocab:1060,Flame atomic absorption spectrometry,FAAS,FAAS,,,vocab:1000
 vocab:1061,Gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry,GC-APCI-MS-MS,GC-APCI-MS-MS,,,vocab:1000
+vocab:1062,Accelerated solvent extraction,ASE,ASE,,,vocab:1001
+vocab:1063,Digestion,Digestion,DIGESTION,,,vocab:1001
+vocab:1064,Dynamic headspace,DHS,DHS,,,vocab:1001
+vocab:1065,Large volume Solid-phase extraction,LVSPE,LVSPE,,,vocab:1001
+vocab:1066,Liquid desorption,Liquid desorption,LIQUID_DESORPTION,,,vocab:1001
+vocab:1067,Liquid x liquid extraction,LLE,LLE,,,vocab:1001
+vocab:1068,Microwave assisted digestion,Microwave assissted digestion,MICROWAVE_ASSISTED_DIGESTION,,,vocab:1001
+vocab:1069,Microwave assisted extraction,MAE,MAE,,,vocab:1001
+vocab:1070,Pressurised liquid extraction,PLE,PLE,,,vocab:1001
+vocab:1071,Solid phase extraction,SPE,SPE,,,vocab:1001
+vocab:1072,Solid phase extraction using membrane extraction disks,SPE using membrane extraction disks,SPE_MEMBRANE_EXTRACTION_DISKS,,,vocab:1001
+vocab:1073,Solid-phase extraction using columns,SPE using columns,SPE_COLUMNS,,,vocab:1001
+vocab:1074,Soxhlet extraction,Soxhlet extraction,SOXHLET,,,vocab:1001
+vocab:1075,Static headspace,SHS,SHS,,,vocab:1001
+vocab:1076,Supercritical fluid extraction,SFE,SFE,,,vocab:1001
+vocab:1077,Thermal desorption,Thermal desorption,THERMAL_DESORPTION,,,vocab:1001
+vocab:1078,Ultrasonic desorption,Ultrasonic desorption,ULTRASONIC_DESORPTION,,,vocab:1001
+vocab:1079,Ultrasonic extraction,USE,USE,,,vocab:1001
+vocab:1080,active sampling with high-volume sampling,HIG-VOL,HIG-VOL,,,vocab:1002
+vocab:1081,active sampling wtih low-volume sampling,LOW-VOL,LOW-VOL,,,vocab:1002
+vocab:1082,passive sampling with polyurethane foam,PAS-PUF,PAS-PUF,,,vocab:1002
+vocab:1083,passive sampling with sorbent integrated polyurethane foam disk,PAS-SIP,PAS-SIP,,,vocab:1002
+vocab:1084,passive sampling with XAD resin,PAS-XAD,PAS-XAD,,,vocab:1002
+vocab:1085,active sampling by hand,BY_HAND,BY_HAND,,,vocab:1002
+vocab:1086,sediment trap,SEDIMENT_TRAP,SEDIMENT_TRAP,,,vocab:1002
+vocab:1087,active sampling by hand,BY_HAND,BY_HAND,,,vocab:1002
+vocab:1088,bulk water,BULK_WATER,BULK_WATER,,,vocab:1002
+vocab:1089,passive sampling with polyurethane foam,PAS-PUF,PAS-PUF,,,vocab:1002
+vocab:1090,passive sampling with Polar Organic Chemical Integrative Sampler,PAS-POCIS,PAS-POCIS,,,vocab:1002
+vocab:1091,passive sampling with silicone rubber,PAS-SILICONE,PAS-SILICONE,,,vocab:1002
+vocab:1092,passive sampling with Empore™ Solid Phase Extraction Disks,PAS-EMPORE,PAS-EMPORE,,,vocab:1002
+vocab:1093,passive sampling with gel,PAS-GEL,PAS-GEL,,,vocab:1002
+vocab:1094,passive with low density polyethylene,PAS-LDPE,PAS-LDPE,,,vocab:1002
+vocab:1095,passive withsemipermeable membrane device,PAS-SPMD,PAS-SPMD,,,vocab:1002
+vocab:1096,passive with XAD resin,PAS-XAD,PAS-XAD,,,vocab:1002
+vocab:1097,matrix
+vocab:1098,air matrix,,,,,vocab:1097
+vocab:1099,sediment matrix,,,,,vocab:1097
+vocab:1100,soil matrix,,,,,vocab:1097
+vocab:1101,water matrix,,,,,vocab:1097
+vocab:1102,biota matrix,,,,,vocab:1097
+vocab:1103,deposition matrix,,,,,vocab:1097
+vocab:1104,wohle air matrix,,,,,vocab:1097
+vocab:1105,gas phase matrix,,,,,vocab:1098
+vocab:1106,TSP matrix,,,,,vocab:1098
+vocab:1107,PM 10 matrix,,,,,vocab:1098
+vocab:1108,PM 2.5 matrix,,,,,vocab:1098
+vocab:1109,PM 5 matrix,,,,,vocab:1098
+vocab:1110,surface matrix,,,,,vocab:1099
+vocab:1111,sewage sludge matrix,,,,,vocab:1099
+vocab:1112,stratified matrix,,,,,vocab:1099
+vocab:1113,surface matrix,,,,,vocab:1100
+vocab:1114,topsoil matrix,,,,,vocab:1100
+vocab:1115,subsoil A matrix,,,,,vocab:1100
+vocab:1116,subsoil B matrix,,,,,vocab:1100
+vocab:1117,horizon A matrix,,,,,vocab:1100
+vocab:1118,horizon B matrix,,,,,vocab:1100
+vocab:1119,horizon C matrix,,,,,vocab:1100
+vocab:1120,horizon E matrix,,,,,vocab:1100
+vocab:1121,horizon G matrix,,,,,vocab:1100
+vocab:1122,horizon M matrix,,,,,vocab:1100
+vocab:1123,horizon O matrix,,,,,vocab:1100
+vocab:1124,coastal matrix,,,,,vocab.1101
+vocab:1125,brackish matrix,,,,,vocab.1101
+vocab:1126,ocean matrix,,,,,vocab.1101
+vocab:1127,surface freshwater matrix,,,,,vocab.1101
+vocab:1128,surface freshwater - reservoir matrix,,,,,vocab.1101
+vocab:1129,surface freshwater - river matrix,,,,,vocab.1101
+vocab:1130,ground water matrix,,,,,vocab.1101
+vocab:1131,fish matrix,,,,,vocab:1102
+vocab:1132,barley matrix,,,,,vocab:1102
+vocab:1133,grass matrix,,,,,vocab:1102
+vocab:1134,hop matrix,,,,,vocab:1102
+vocab:1135,moss matrix,,,,,vocab:1102
+vocab:1136,mustard matrix,,,,,vocab:1102
+vocab:1137,maize matrix,,,,,vocab:1102
+vocab:1138,oat matrix,,,,,vocab:1102
+vocab:1139,peat moss matrix,,,,,vocab:1102
+vocab:1140,pine matrix,,,,,vocab:1102
+vocab:1141,potato matrix,,,,,vocab:1102
+vocab:1142,rape matrix,,,,,vocab:1102
+vocab:1143,soya matrix,,,,,vocab:1102
+vocab:1144,sunflover matrix,,,,,vocab:1102
+vocab:1145,spruce matrix,,,,,vocab:1102
+vocab:1146,triticale matrix,,,,,vocab:1102
+vocab:1147,wheat matrix,,,,,vocab:1102
+vocab:1148,dry matrix,,,,,vocab:1103
+vocab:1149,mixed matrix,,,,,vocab:1103
+vocab:1150,wet matrix,,,,,vocab:1103
