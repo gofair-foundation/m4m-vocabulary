@@ -1,5 +1,5 @@
 ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
-"Prefixes for controlled vocabularies, schema and ontologies"
+"Prefixes for controlled vocabularies, schema and ontologies",,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
 PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
 PREFIX,pav,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
@@ -10,9 +10,11 @@ Vocabulary semantic model, as described at
 https://github.com/nvs-vocabs/P01."
 PREFIX,sosa,http://www.w3.org/ns/sosa/,,Semantic Sensor Network Ontology
 PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
-Metadata about vocabulary
+Metadata about vocabulary,,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
 
 dct:title,Demo M4M Vocabulary,Title of the vocabulary
 dct:description,This vocabulary is used in DEMO M4M workshop,Description of the controlled vocabulary
@@ -21,13 +23,13 @@ dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
 dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
 dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
 dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-09-22T14:41:19+00:00,Automatic update when vocabulary is updated
+dct:modified^^xsd:datetime,2023-10-18T10:58:03+00:00,Automatic update when vocabulary is updated
 Definition of terms
 
-Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:modified^^xsd:date,dct:created^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,analytical method,,,,,,http://purl.obolibrary.org/obo/OBI_0000070
-vocab:1001,preparation method,,,,,,http://purl.obolibrary.org/obo/OBI_0000094
-vocab:1002,sampling method,,,,,,http://purl.obolibrary.org/obo/OBI_0000659
+Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
+vocab:1000,analytical method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070
+vocab:1001,preparation method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000094
+vocab:1002,sampling method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000659
 vocab:1003,Advanced mercury analyzer,AMA,AMA,,,vocab:1000
 vocab:1004,Capillary electrophoresis with diode array detection,CE-DAD,CE-DAD,,,vocab:1000
 vocab:1005,Capillary electrophoresis with fluorescence detection,CE-FLD,CE-FLD,,,vocab:1000
@@ -189,12 +191,49 @@ vocab:1160,saliva and/or sputum matrix,,SA,Saliva and or sputum,,vocab:1172
 vocab:1161,semen matrix,,SEM,Semen,,vocab:1172
 vocab:1162,hair matrix,,H,Hair,,vocab:1172
 vocab:1163,exhaled breath condensate matrix,,EBC,Exhaled breath condensate,,vocab:1172
-vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172
+vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
 vocab:1165,breast milk matrix,,BM,Breast milk,,vocab:1172
 vocab:1166,adipose tissue/fat matrix,,ADI,Adipose tissue/fat,,vocab:1172
-vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172
+vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
 vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172
-vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172
+vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
 vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172
-vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172
+vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
 vocab:1172,human matrix,,,,,vocab:1097
+vocab:1173,variable,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1174,"soil erosion in arable land with a slope of 4 to 8 percent in catchment
+",,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassPerAreaTime,http://vocabs.lter-europe.net/EnvThes/24,http://vocabs.lter-europe.net/EnvThes/30330,http://vocabs.lter-europe.net/EnvThes/10092,"vocab:1176,vocab:1177",,,,,,,,2023-10-18
+vocab:1175,constraint,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1176,arable,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1177,slope 4 to 8 percent,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1178,education level of the mother of the study participant,,,,,vocab:1173,,,,,,vocab:1204,vocab:1206,,vocab:1207,vocab:1208,,,,,,,,2023-10-18
+vocab:1179,mass per volume concentration of  pcb52 in a house dust sample,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_34206,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194,vocab:1197,,,,,,,,2023-10-18
+vocab:1180,concentration of pcb118 in air,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_81520,vocab:1098,,,,,,,,,,2023-10-18
+vocab:1181,percentage of total organic carbon in sediment,,,,,vocab:1173,,,,,,http://vocabs.lter-europe.net/EnvThes/22183,http://vocabs.lter-europe.net/EnvThes/20813,http://vocabs.lter-europe.net/EnvThes/20899,,,,,,,,,,2023-10-18
+vocab:1182,weight per volume concentration of chlorophyll-a in a water column,,,,,vocab:1173,,,,,,http://vocabs.lter-europe.net/EnvThes/10073,http://vocabs.lter-europe.net/EnvThes/20785,http://vocabs.lter-europe.net/EnvThes/20538,,http://vocabs.lter-europe.net/EnvThes/20924,,,,,,,,2023-10-18
+vocab:1183,concentration of leukocytes in the gut of a patient,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/Concentration,http://purl.bioontology.org/ontology/MESH/D007962,http://purl.jp/bio/11/meo/MEO_0000468,http://purl.bioontology.org/ontology/SNOMEDCT/116154003,"http://purl.bioontology.org/ontology/ICD10CM/G93.32, http://purl.bioontology.org/ontology/MESH/D007107",,,,,,,,2023-10-18
+vocab:1184,specific surface area of nanomaterials,,,,,vocab:1173,,,,,,,http://purl.bioontology.org/ontology/npo#NPO_199,,,,,,,,,,,2023-10-18
+vocab:1185,mass concentration of aldrin in air,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1186,mass concentration of NPs in medium at well bottom,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1187,concentration range of chemical agent in DMEM  in cells,,,,,vocab:1173,,,,,,,http://vocabs.lter-europe.net/EnvThes/20748,,,,,,,,,,,2023-10-18
+vocab:1188,mass per volume concentration of lead in river water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1189,pH value of soil,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1190,mass per volume concentration of toluene in a persons morning urine,,,,,vocab:1173,,,,,,,https://vocabulary.actris.nilu.no/actris_vocab/toluene,,,vocab:1202,,,,,,,,2023-10-18
+vocab:1191,frequency of dietary meat consumption in a person,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1192,pressure of air in atmosphere at 2m height,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1193,concentration of nitrate in running water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1194,concentration of NO2 in the organic horizon of soil,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1195,chemical reactivity of natural organic matter extracted from river surface water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1196,turbidity of river water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1197,settled,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1198,DMEM,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1199,medium,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1200,neuroblastoma,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1201,differentiated,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1202,morning,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1203,property,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1204,education level,,,,,vocab:1203,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953,,,,,,,,,,,,,,,2023-10-18
+vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,,2023-10-18
+vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,,2023-10-18
+vocab:1208,mother of participant,,,,,vocab:1175,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,,,2023-10-18

@@ -28,10 +28,11 @@
   dct:creator "0000-0002-1665-678X"@en;
   dct:description "This vocabulary is used in DEMO M4M workshop"@en;
   dct:hasVersion "0.1.0";
-  dct:modified "2023-09-22T14:41:19+00:00"^^xsd:datetime;
+  dct:modified "2023-10-18T10:58:03+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Demo M4M Vocabulary"@en;
-  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1097;
+  skos:hasTopConcept vocab:1000, vocab:1001, vocab:1002, vocab:1097, vocab:1173, vocab:1175,
+    vocab:1203, vocab:1205;
   foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary> .
 
 vocab:1000 a skos:Concept;
@@ -1096,6 +1097,7 @@ vocab:1163 a skos:Concept;
   skos:prefLabel "exhaled breath condensate matrix"@en .
 
 vocab:1164 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Red blood cells"@en;
   skos:inScheme <http://purl.org/m4m>;
@@ -1117,6 +1119,7 @@ vocab:1166 a skos:Concept;
   skos:prefLabel "adipose tissue/fat matrix"@en .
 
 vocab:1167 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "All toe nails"@en;
   skos:inScheme <http://purl.org/m4m>;
@@ -1131,6 +1134,7 @@ vocab:1168 a skos:Concept;
   skos:prefLabel "big toe nails matrix"@en .
 
 vocab:1169 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Dermal wipes"@en;
   skos:inScheme <http://purl.org/m4m>;
@@ -1145,6 +1149,7 @@ vocab:1170 a skos:Concept;
   skos:prefLabel "amniotic fluid matrix"@en .
 
 vocab:1171 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Placenta tissue"@en;
   skos:inScheme <http://purl.org/m4m>;
@@ -1159,3 +1164,264 @@ vocab:1172 a skos:Concept;
     vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169, vocab:1170,
     vocab:1171;
   skos:prefLabel "human matrix"@en .
+
+vocab:1173 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1174, vocab:1177, vocab:1178, vocab:1179, vocab:1180, vocab:1181,
+    vocab:1182, vocab:1183, vocab:1184, vocab:1185, vocab:1186, vocab:1187, vocab:1188,
+    vocab:1189, vocab:1190, vocab:1191, vocab:1192, vocab:1193, vocab:1194, vocab:1195,
+    vocab:1196;
+  skos:prefLabel "variable"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1174 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "soil erosion in arable land with a slope of 4 to 8 percent in catchment"@en;
+  iop:hasConstraint vocab:1176, vocab:1177;
+  iop:hasContextObject <http://vocabs.lter-europe.net/EnvThes/10092>;
+  iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/30330>;
+  iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/24>;
+  iop:hasProperty <http://qudt.org/vocab/quantitykind/MassPerAreaTime> .
+
+vocab:1175 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1176, vocab:1197, vocab:1198, vocab:1199, vocab:1200, vocab:1201,
+    vocab:1202, vocab:1208;
+  skos:prefLabel "constraint"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1176 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "arable"@en .
+
+vocab:1177 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "slope 4 to 8 percent"@en .
+
+vocab:1178 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "education level of the mother of the study participant"@en;
+  iop:hasConstraint vocab:1208;
+  iop:hasContextObject vocab:1207;
+  iop:hasObjectOfInterest vocab:1206;
+  iop:hasProperty vocab:1204 .
+
+vocab:1179 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass per volume concentration of pcb52 in a house dust sample"@en;
+  iop:hasConstraint vocab:1197;
+  iop:hasContextObject <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194>;
+  iop:hasMatrix <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281>;
+  iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CHEBI_34206>;
+  iop:hasProperty <http://qudt.org/vocab/quantitykind/MassConcentration> .
+
+vocab:1180 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "concentration of pcb118 in air"@en;
+  iop:hasMatrix vocab:1098;
+  iop:hasObjectOfInterest <http://purl.obolibrary.org/obo/CHEBI_81520>;
+  iop:hasProperty <http://qudt.org/vocab/quantitykind/MassConcentration> .
+
+vocab:1181 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "percentage of total organic carbon in sediment"@en;
+  iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/20899>;
+  iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/20813>;
+  iop:hasProperty <http://vocabs.lter-europe.net/EnvThes/22183> .
+
+vocab:1182 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "weight per volume concentration of chlorophyll-a in a water column"@en;
+  iop:hasConstraint <http://vocabs.lter-europe.net/EnvThes/20924>;
+  iop:hasMatrix <http://vocabs.lter-europe.net/EnvThes/20538>;
+  iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/20785>;
+  iop:hasProperty <http://vocabs.lter-europe.net/EnvThes/10073> .
+
+vocab:1183 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "concentration of leukocytes in the gut of a patient"@en;
+  iop:hasConstraint <http://purl.bioontology.org/ontology/ICD10CM/G93.32>, <http://purl.bioontology.org/ontology/MESH/D007107>;
+  iop:hasContextObject <http://purl.bioontology.org/ontology/SNOMEDCT/116154003>;
+  iop:hasMatrix <http://purl.jp/bio/11/meo/MEO_0000468>;
+  iop:hasObjectOfInterest <http://purl.bioontology.org/ontology/MESH/D007962>;
+  iop:hasProperty <http://qudt.org/vocab/quantitykind/Concentration> .
+
+vocab:1184 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "specific surface area of nanomaterials"@en;
+  iop:hasObjectOfInterest <http://purl.bioontology.org/ontology/npo#NPO_199> .
+
+vocab:1185 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass concentration of aldrin in air"@en .
+
+vocab:1186 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass concentration of NPs in medium at well bottom"@en .
+
+vocab:1187 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "concentration range of chemical agent in DMEM in cells"@en;
+  iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/20748> .
+
+vocab:1188 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass per volume concentration of lead in river water"@en .
+
+vocab:1189 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "pH value of soil"@en .
+
+vocab:1190 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mass per volume concentration of toluene in a persons morning urine"@en;
+  iop:hasConstraint vocab:1202;
+  iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/toluene> .
+
+vocab:1191 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "frequency of dietary meat consumption in a person"@en .
+
+vocab:1192 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "pressure of air in atmosphere at 2m height"@en .
+
+vocab:1193 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "concentration of nitrate in running water"@en .
+
+vocab:1194 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "concentration of NO2 in the organic horizon of soil"@en .
+
+vocab:1195 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "chemical reactivity of natural organic matter extracted from river surface water"@en .
+
+vocab:1196 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "turbidity of river water"@en .
+
+vocab:1197 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "settled"@en .
+
+vocab:1198 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "DMEM"@en .
+
+vocab:1199 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "medium"@en .
+
+vocab:1200 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "neuroblastoma"@en .
+
+vocab:1201 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "differentiated"@en .
+
+vocab:1202 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "morning"@en .
+
+vocab:1203 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1204;
+  skos:prefLabel "property"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1204 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1203;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953>;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "education level"@en .
+
+vocab:1205 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1206, vocab:1207;
+  skos:prefLabel "entity"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1206 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1205;
+  skos:exactMatch foaf:Person;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "person"@en .
+
+vocab:1207 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1205;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536>;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "study"@en .
+
+vocab:1208 a skos:Concept;
+  dct:created "2023-10-18"^^xsd:date;
+  skos:broader vocab:1175;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189>;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mother of participant"@en .
