@@ -1,9 +1,12 @@
-ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+__,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.,,,,,,,,,,,,,,,,,,,,,,2023-11-12
 "Prefixes for controlled vocabularies, schema and ontologies",,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
 PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,pav,http://purl.org/pav/ ,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
+PREFIX,owl,http://www.w3.org/2002/07/owl#,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+PREFIX,vaof,http://purl.org/vocommons/voaf#,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
+PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+PREFIX,doap,usefulinc.com/ns/doap#,,,,,,,,,,,,,,,,,,,,,,2023-11-12
 PREFIX,iop,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
 PREFIX,puv,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
@@ -17,223 +20,32 @@ PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units wh
 Metadata about vocabulary,,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
 
 dct:title,Demo M4M Vocabulary,Title of the vocabulary
-dct:description,This vocabulary is used in DEMO M4M workshop,Description of the controlled vocabulary
-foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
-dct:creator,0000-0002-1665-678X,An ORCID ID of the vocabulary creator
-dct:rights,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
-dct:hasVersion^^xsd:string,0.1.0,Vocabulary version
-dct:created^^xsd:datetime,2022-06-01T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,2023-10-18T10:58:03+00:00,Automatic update when vocabulary is updated
+skos:prefLabel,M4M Vocab,,,,,,,,,,,,,,,,,,,,,,,45242.64175063657
+owl:ontologyIRI,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:identifier,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+omv:acronym,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:description,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+omv:resourceLocator,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+owl:ontolgoyIRI,,Description of the controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:description,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:creator,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+voaf:hasEquivalencesWith,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+omv:keywords,,Description of the controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:publisher
+omv:knownUsage,metadata and keywords for ecological research data,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:audience,http://schema.org/Researcher,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+doap:repository
+dct:subject,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+schema:includedInDataCatalog
+dct:language,en,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+voaf:metadataVoc,http://www.isibang.ac.in/ns/mod/1.4,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:license,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+owl:versionInfo,,Vocabulary version,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:created^^xsd:datetime,,Date when vocabulary was initially created
+dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,analytical method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070
-vocab:1001,preparation method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000094
-vocab:1002,sampling method,,,,,,,http://purl.obolibrary.org/obo/OBI_0000659
-vocab:1003,Advanced mercury analyzer,AMA,AMA,,,vocab:1000
-vocab:1004,Capillary electrophoresis with diode array detection,CE-DAD,CE-DAD,,,vocab:1000
-vocab:1005,Capillary electrophoresis with fluorescence detection,CE-FLD,CE-FLD,,,vocab:1000
-vocab:1006,Capillary electrophoresis with mass spectrometry,CE-MS,CE-MS,,,vocab:1000
-vocab:1007,Capillary electrophoresis with tandem mass spectrometry,CE-MS/MS,CE-MS_MS,,,vocab:1000
-vocab:1008,Capillary electrophoresis with multiple wavelength detection,CE-MWD,CE-MWD,,,vocab:1000
-vocab:1009,Capillary electrophoresis with ultraviolet detection,CE-UV,CE-UV,,,vocab:1000
-vocab:1010,Electrothermal atomisation with atomic absorption spectrometry,EA-AAS,EA-AAS,,,vocab:1000
-vocab:1011,Electrothermal atomisation with optical emission spectrometry,EA-OES,EA-OES,,,vocab:1000
-vocab:1012,Atomic absorption spectrometry,AAS,AAS,,,vocab:1000
-vocab:1013,Flame atomic absorption spectrometry,Flame AAS,FLAME_AAS,,,vocab:1000
-vocab:1014,Flame optical emission spectrometry,Flame OES,FLAME_OES,,,vocab:1000
-vocab:1015,Gass chromatography with electron capture detection,GC-ECD,GC-ECD,,,vocab:1000
-vocab:1016,Gass chromatography with flame ionization detection,GC-FID,GC-FID,,,vocab:1000
-vocab:1017,Gass chromatography with high resolution mass spectrometry,GC-HRMS,GC-HRMS,,,vocab:1000
-vocab:1018,Gass chromatography with mass spectrometry,GC-MS,GC-MS,,,vocab:1000
-vocab:1019,Gass chromatography with tandem mass spectrometry,GC-MS/MS,GC-MS_MS,,,vocab:1000
-vocab:1020,Gass chromatography with Nitrogen Phosphorous detection,GC-NPD,GC-NPD,,,vocab:1000
-vocab:1021,Gass chromatography with photoionization detection,GC-PID,GC-PID,,,vocab:1000
-vocab:1022,Hydride generation atomic absorption spectroscopy,HG-AAS,HG-AAS,,,vocab:1000
-vocab:1023,Liquid chromatography with diode array detection,LC-DAD,LC-DAD,,,vocab:1000
-vocab:1024,Liquid chromatography with fluorescence detection,LC-FLD,LC-FLD,,,vocab:1000
-vocab:1025,Liquid chromatography with mass spectrometry,LC-MS,LC-MS,,,vocab:1000
-vocab:1026,Liquid chromatography with tandem mass spectrometry,LC-MS/MS,LC-MS_MS,,,vocab:1000
-vocab:1027,Liquid chromatography with high resolution mass spectrometry,LC-HR-MS,LC-HR-MS,,,vocab:1000
-vocab:1028,Liquid chromatography with multiple wavelength detection,LC-MWD,LC-MWD,,,vocab:1000
-vocab:1029,Liquid chromatography with UV visible detection,LC-UV/VIS,LC-UV_VIS,,,vocab:1000
-vocab:1030,Inductively coupled plasma mass spectrometry,ICP-MS,ICP-MS,,,vocab:1000
-vocab:1031,Inductively coupled plasma with optical emission spectrometry,ICP-OES,ICP-OES,,,vocab:1000
-vocab:1032,Spectrophotometry,Spectrophotometry,SPECTROPHOTOMETRY,,,vocab:1000
-vocab:1033,Continuous gas-analysers,Continuous gas-analysers,CONTINUOUS_GAS-ANALYZERS,,,vocab:1000
-vocab:1034,Limulus ameobocyte assay,LAL,LAL,,,vocab:1000
-vocab:1035,Quantitative polymerase chain reaction,qPCR,qPCR,,,vocab:1000
-vocab:1036,Enzyme-linked immuno sorbent assay,ELISA,ELISA,,,vocab:1000
-vocab:1037,High performance liquid chromatography with mass spectrometry,HPLC-MS,HPLC-MS,,,vocab:1000
-vocab:1038,Ultra performance liquid chromatography with mass spectrometry,UPLC-MS,UPLC-MS,,,vocab:1000
-vocab:1039,High performance liquid chromatography with diode array detection,HPLC-DAD,HPLC-DAD,,,vocab:1000
-vocab:1040,Ultra performance liquid chromatography with diode array detection,UPLC-DAD,UPLC-DAD,,,vocab:1000
-vocab:1041,Gas chromatography with atmospheric presure chemical ionization high resolution mass spectrometry,GC-APCI-HRMS,GC-APCI-HRMS,,,vocab:1000
-vocab:1042,High performance liquid chromatography with high resolution mass spectrometry,HPLC-HRMS,HPLC-HRMS,,,vocab:1000
-vocab:1043,Ultra performance liquid chromatography with high resolution mass spectrometry,UPLC-HRMS,UPLC-HRMS,,,vocab:1000
-vocab:1044,Electrotermal atomic absorption spectrometry,AAS-ETA,AAS-ETA,,,vocab:1000
-vocab:1045,Advanced mercury analyser,AMA,AMA,,,vocab:1000
-vocab:1046,Flame atomic emission spectrometry,FAES,FAES,,,vocab:1000
-vocab:1047,Gas chromatography coupled to electron capture negative ion mass spectrometry,GC-ECNI-MS (IT),GC-ECNI-MS_IT,,,vocab:1000
-vocab:1048,Glass ion selective electrode,glass ion selective electrode,GLASS-ION-SELECTIVE-ELECTRODE,,,vocab:1000
-vocab:1049,High performance liquid chromatography with fluorescence detection,HPLC-FLU,HPLC-FLU,,,vocab:1000
-vocab:1050,High performance liquid chromatography with tandem mass spectrometry,HPLC-MS/MS,HPLC-MS_MS,,,vocab:1000
-vocab:1051,Ultra performance liquid chromatography with fluorescence detection,UPLC-FLU,UPLC-FLU,,,vocab:1000
-vocab:1052,Ultra performance liquid chromatography with tandem mass spectrometry,UPLC-MS/MS,UPLC-MS_MS,,,vocab:1000
-vocab:1053,Kjeldahl method (nitrogen determination),Kjeldahl,KJELDAHL,,,vocab:1000
-vocab:1054,Total organic carbon (liquid samples),LiquiTOC II,LIQUITOC_II,,,vocab:1000
-vocab:1055,Spectrophotometry,Spectrophotometry,SPECTROPHOTOMETRY,,,vocab:1000
-vocab:1056,Total organic carbon (solid samples),Carbon analyzator,CARBON_ANALYZATOR,,,vocab:1000
-vocab:1057,X-ray fluorescence,X-ray fluorescence,X-RAY_FLUORESCENCE,,,vocab:1000
-vocab:1058,Gas chromatography with mass spectrometry with Positive chemical ionization,GC-MS-PCI,GC-MS-PCI,,,vocab:1000
-vocab:1059,Gas chromatography with mass spectrometry with Negative chemical ionization,GC-MS-NCI,GC-MS-NCI,,,vocab:1000
-vocab:1060,Flame atomic absorption spectrometry,FAAS,FAAS,,,vocab:1000
-vocab:1061,Gas chromatography with atmospheric presure chemical ionization tandem mass spectrometry,GC-APCI-MS-MS,GC-APCI-MS-MS,,,vocab:1000
-vocab:1062,Accelerated solvent extraction,ASE,ASE,,,vocab:1001
-vocab:1063,Digestion,Digestion,DIGESTION,,,vocab:1001
-vocab:1064,Dynamic headspace,DHS,DHS,,,vocab:1001
-vocab:1065,Large volume Solid-phase extraction,LVSPE,LVSPE,,,vocab:1001
-vocab:1066,Liquid desorption,Liquid desorption,LIQUID_DESORPTION,,,vocab:1001
-vocab:1067,Liquid x liquid extraction,LLE,LLE,,,vocab:1001
-vocab:1068,Microwave assisted digestion,Microwave assissted digestion,MICROWAVE_ASSISTED_DIGESTION,,,vocab:1001
-vocab:1069,Microwave assisted extraction,MAE,MAE,,,vocab:1001
-vocab:1070,Pressurised liquid extraction,PLE,PLE,,,vocab:1001
-vocab:1071,Solid phase extraction,SPE,SPE,,,vocab:1001
-vocab:1072,Solid phase extraction using membrane extraction disks,SPE using membrane extraction disks,SPE_MEMBRANE_EXTRACTION_DISKS,,,vocab:1001
-vocab:1073,Solid-phase extraction using columns,SPE using columns,SPE_COLUMNS,,,vocab:1001
-vocab:1074,Soxhlet extraction,Soxhlet extraction,SOXHLET,,,vocab:1001
-vocab:1075,Static headspace,SHS,SHS,,,vocab:1001
-vocab:1076,Supercritical fluid extraction,SFE,SFE,,,vocab:1001
-vocab:1077,Thermal desorption,Thermal desorption,THERMAL_DESORPTION,,,vocab:1001
-vocab:1078,Ultrasonic desorption,Ultrasonic desorption,ULTRASONIC_DESORPTION,,,vocab:1001
-vocab:1079,Ultrasonic extraction,USE,USE,,,vocab:1001
-vocab:1080,active sampling with high-volume sampling,HIG-VOL,HIG-VOL,,,vocab:1002
-vocab:1081,active sampling wtih low-volume sampling,LOW-VOL,LOW-VOL,,,vocab:1002
-vocab:1082,passive sampling with polyurethane foam,PAS-PUF,PAS-PUF,,,vocab:1002
-vocab:1083,passive sampling with sorbent integrated polyurethane foam disk,PAS-SIP,PAS-SIP,,,vocab:1002
-vocab:1084,passive sampling with XAD resin,PAS-XAD,PAS-XAD,,,vocab:1002
-vocab:1085,active sampling by hand,BY_HAND,BY_HAND,,,vocab:1002
-vocab:1086,sediment trap,SEDIMENT_TRAP,SEDIMENT_TRAP,,,vocab:1002
-vocab:1087,active sampling by hand,BY_HAND,BY_HAND,,,vocab:1002
-vocab:1088,bulk water,BULK_WATER,BULK_WATER,,,vocab:1002
-vocab:1089,passive sampling with polyurethane foam,PAS-PUF,PAS-PUF,,,vocab:1002
-vocab:1090,passive sampling with Polar Organic Chemical Integrative Sampler,PAS-POCIS,PAS-POCIS,,,vocab:1002
-vocab:1091,passive sampling with silicone rubber,PAS-SILICONE,PAS-SILICONE,,,vocab:1002
-vocab:1092,passive sampling with Empore™ Solid Phase Extraction Disks,PAS-EMPORE,PAS-EMPORE,,,vocab:1002
-vocab:1093,passive sampling with gel,PAS-GEL,PAS-GEL,,,vocab:1002
-vocab:1094,passive with low density polyethylene,PAS-LDPE,PAS-LDPE,,,vocab:1002
-vocab:1095,passive withsemipermeable membrane device,PAS-SPMD,PAS-SPMD,,,vocab:1002
-vocab:1096,passive with XAD resin,PAS-XAD,PAS-XAD,,,vocab:1002
-vocab:1097,matrix
-vocab:1098,air matrix,,,,,vocab:1097
-vocab:1099,sediment matrix,,,,,vocab:1097
-vocab:1100,soil matrix,,,,,vocab:1097
-vocab:1101,water matrix,,,,,vocab:1097
-vocab:1102,biota matrix,,,,,vocab:1097
-vocab:1103,deposition matrix,,,,,vocab:1097
-vocab:1104,whole air matrix,,,,,vocab:1098
-vocab:1105,gas phase matrix,,,,,vocab:1098
-vocab:1106,TSP matrix,,,,,vocab:1098
-vocab:1107,PM 10 matrix,,,,,vocab:1098
-vocab:1108,PM 2.5 matrix,,,,,vocab:1098
-vocab:1109,PM 5 matrix,,,,,vocab:1098
-vocab:1110,surface matrix,,,,,vocab:1099
-vocab:1111,sewage sludge matrix,,,,,vocab:1099
-vocab:1112,stratified matrix,,,,,vocab:1099
-vocab:1113,surface matrix,,,,,vocab:1100
-vocab:1114,topsoil matrix,,,,,vocab:1100
-vocab:1115,subsoil A matrix,,,,,vocab:1100
-vocab:1116,subsoil B matrix,,,,,vocab:1100
-vocab:1117,horizon A matrix,,,,,vocab:1100
-vocab:1118,horizon B matrix,,,,,vocab:1100
-vocab:1119,horizon C matrix,,,,,vocab:1100
-vocab:1120,horizon E matrix,,,,,vocab:1100
-vocab:1121,horizon G matrix,,,,,vocab:1100
-vocab:1122,horizon M matrix,,,,,vocab:1100
-vocab:1123,horizon O matrix,,,,,vocab:1100
-vocab:1124,coastal matrix,,,,,vocab:1101
-vocab:1125,brackish matrix,,,,,vocab:1101
-vocab:1126,ocean matrix,,,,,vocab:1101
-vocab:1127,surface freshwater matrix,,,,,vocab:1101
-vocab:1128,surface freshwater - reservoir matrix,,,,,vocab:1101
-vocab:1129,surface freshwater - river matrix,,,,,vocab:1101
-vocab:1130,ground water matrix,,,,,vocab:1101
-vocab:1131,fish matrix,,,,,vocab:1102
-vocab:1132,barley matrix,,,,,vocab:1102
-vocab:1133,grass matrix,,,,,vocab:1102
-vocab:1134,hop matrix,,,,,vocab:1102
-vocab:1135,moss matrix,,,,,vocab:1102
-vocab:1136,mustard matrix,,,,,vocab:1102
-vocab:1137,maize matrix,,,,,vocab:1102
-vocab:1138,oat matrix,,,,,vocab:1102
-vocab:1139,peat moss matrix,,,,,vocab:1102
-vocab:1140,pine matrix,,,,,vocab:1102
-vocab:1141,potato matrix,,,,,vocab:1102
-vocab:1142,rape matrix,,,,,vocab:1102
-vocab:1143,soya matrix,,,,,vocab:1102
-vocab:1144,sunflover matrix,,,,,vocab:1102
-vocab:1145,spruce matrix,,,,,vocab:1102
-vocab:1146,triticale matrix,,,,,vocab:1102
-vocab:1147,wheat matrix,,,,,vocab:1102
-vocab:1148,dry matrix,,,,,vocab:1103
-vocab:1149,mixed matrix,,,,,vocab:1103
-vocab:1150,wet matrix,,,,,vocab:1103
-vocab:1151,blood-whole blood matrix,,BWB,Blood-whole blood,,vocab:1172
-vocab:1152,blood -plasma matrix,,BP,Blood -plasma,,vocab:1172
-vocab:1153,blood -serum matrix,,BS,Blood -serum,,vocab:1172
-vocab:1154,cord blood-whole blood matrix,,CBWB,Cord blood-whole blood,,vocab:1172
-vocab:1155,cord blood-plasma matrix,,CBP,Cord blood-plasma,,vocab:1172
-vocab:1156,cord blood-serum matrix,,CBS,Cord blood-serum,,vocab:1172
-vocab:1157,urine-spot matrix,,US,Urine-spot,,vocab:1172
-vocab:1158,urine-24h matrix,,UD,Urine-24h,,vocab:1172
-vocab:1159,urine-morning urine matrix,,UM,Urine-morning urine,,vocab:1172
-vocab:1160,saliva and/or sputum matrix,,SA,Saliva and or sputum,,vocab:1172
-vocab:1161,semen matrix,,SEM,Semen,,vocab:1172
-vocab:1162,hair matrix,,H,Hair,,vocab:1172
-vocab:1163,exhaled breath condensate matrix,,EBC,Exhaled breath condensate,,vocab:1172
-vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1165,breast milk matrix,,BM,Breast milk,,vocab:1172
-vocab:1166,adipose tissue/fat matrix,,ADI,Adipose tissue/fat,,vocab:1172
-vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172
-vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172
-vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1172,human matrix,,,,,vocab:1097
-vocab:1173,variable,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1174,"soil erosion in arable land with a slope of 4 to 8 percent in catchment
-",,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassPerAreaTime,http://vocabs.lter-europe.net/EnvThes/24,http://vocabs.lter-europe.net/EnvThes/30330,http://vocabs.lter-europe.net/EnvThes/10092,"vocab:1176,vocab:1177",,,,,,,,2023-10-18
-vocab:1175,constraint,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1176,arable,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1177,slope 4 to 8 percent,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1178,education level of the mother of the study participant,,,,,vocab:1173,,,,,,vocab:1204,vocab:1206,,vocab:1207,vocab:1208,,,,,,,,2023-10-18
-vocab:1179,mass per volume concentration of  pcb52 in a house dust sample,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_34206,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194,vocab:1197,,,,,,,,2023-10-18
-vocab:1180,concentration of pcb118 in air,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_81520,vocab:1098,,,,,,,,,,2023-10-18
-vocab:1181,percentage of total organic carbon in sediment,,,,,vocab:1173,,,,,,http://vocabs.lter-europe.net/EnvThes/22183,http://vocabs.lter-europe.net/EnvThes/20813,http://vocabs.lter-europe.net/EnvThes/20899,,,,,,,,,,2023-10-18
-vocab:1182,weight per volume concentration of chlorophyll-a in a water column,,,,,vocab:1173,,,,,,http://vocabs.lter-europe.net/EnvThes/10073,http://vocabs.lter-europe.net/EnvThes/20785,http://vocabs.lter-europe.net/EnvThes/20538,,http://vocabs.lter-europe.net/EnvThes/20924,,,,,,,,2023-10-18
-vocab:1183,concentration of leukocytes in the gut of a patient,,,,,vocab:1173,,,,,,http://qudt.org/vocab/quantitykind/Concentration,http://purl.bioontology.org/ontology/MESH/D007962,http://purl.jp/bio/11/meo/MEO_0000468,http://purl.bioontology.org/ontology/SNOMEDCT/116154003,"http://purl.bioontology.org/ontology/ICD10CM/G93.32, http://purl.bioontology.org/ontology/MESH/D007107",,,,,,,,2023-10-18
-vocab:1184,specific surface area of nanomaterials,,,,,vocab:1173,,,,,,,http://purl.bioontology.org/ontology/npo#NPO_199,,,,,,,,,,,2023-10-18
-vocab:1185,mass concentration of aldrin in air,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1186,mass concentration of NPs in medium at well bottom,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1187,concentration range of chemical agent in DMEM  in cells,,,,,vocab:1173,,,,,,,http://vocabs.lter-europe.net/EnvThes/20748,,,,,,,,,,,2023-10-18
-vocab:1188,mass per volume concentration of lead in river water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1189,pH value of soil,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1190,mass per volume concentration of toluene in a persons morning urine,,,,,vocab:1173,,,,,,,https://vocabulary.actris.nilu.no/actris_vocab/toluene,,,vocab:1202,,,,,,,,2023-10-18
-vocab:1191,frequency of dietary meat consumption in a person,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1192,pressure of air in atmosphere at 2m height,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1193,concentration of nitrate in running water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1194,concentration of NO2 in the organic horizon of soil,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1195,chemical reactivity of natural organic matter extracted from river surface water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1196,turbidity of river water,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1197,settled,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1198,DMEM,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1199,medium,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1200,neuroblastoma,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1201,differentiated,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1202,morning,,,,,vocab:1175,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1203,property,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1204,education level,,,,,vocab:1203,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953,,,,,,,,,,,,,,,2023-10-18
-vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
-vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,,2023-10-18
-vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,,2023-10-18
-vocab:1208,mother of participant,,,,,vocab:1175,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,,,2023-10-18
+vocab:1000,test,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070,,,,,,,,,,,,,,,,2023-11-12
+,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
