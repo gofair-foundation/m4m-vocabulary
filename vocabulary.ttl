@@ -22,5 +22,4 @@
 vocab:1000 a skos:Concept;
   dct:created "2023-11-12"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "test"@en;
   skos:topConceptOf <http://purl.org/m4m> .

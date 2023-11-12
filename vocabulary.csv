@@ -1,12 +1,12 @@
-__,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-"Prefixes for controlled vocabularies, schema and ontologies",,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+"Prefixes for controlled vocabularies, schema and ontologies"
 PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,owl,http://www.w3.org/2002/07/owl#,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+PREFIX,owl,http://www.w3.org/2002/07/owl#
 PREFIX,vaof,http://purl.org/vocommons/voaf#,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
-PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-PREFIX,doap,usefulinc.com/ns/doap#,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+PREFIX,omv,http://omv.ontoware.org/2005/05/ontology
+PREFIX,doap,usefulinc.com/ns/doap#
 PREFIX,iop,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
 PREFIX,puv,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
@@ -17,35 +17,295 @@ PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
 PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
 PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
-Metadata about vocabulary,,,,,,,,,,,,,,,,,,,,,,,,2023-10-18
+Metadata about vocabulary
 
 dct:title,Demo M4M Vocabulary,Title of the vocabulary
-skos:prefLabel,M4M Vocab,,,,,,,,,,,,,,,,,,,,,,,45242.64175063657
-owl:ontologyIRI,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:identifier,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-omv:acronym,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:description,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-omv:resourceLocator,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-owl:ontolgoyIRI,,Description of the controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:description,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:creator,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-voaf:hasEquivalencesWith,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-omv:keywords,,Description of the controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+skos:prefLabel,M4M Vocab
+owl:ontologyIRI,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
+dct:identifier
+omv:acronym
+dct:description
+omv:resourceLocator
+owl:ontolgoyIRI,,Description of the controlled vocabulary
+dct:description
+dct:creator
+voaf:hasEquivalencesWith
+omv:keywords,,Description of the controlled vocabulary
 dct:publisher
-omv:knownUsage,metadata and keywords for ecological research data,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:audience,http://schema.org/Researcher,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+omv:knownUsage,metadata and keywords for ecological research data
+dct:audience,http://schema.org/Researcher
 doap:repository
-dct:subject,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:subject
 schema:includedInDataCatalog
-dct:language,en,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-voaf:metadataVoc,http://www.isibang.ac.in/ns/mod/1.4,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-dct:license,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided,,,,,,,,,,,,,,,,,,,,,,2023-11-12
-owl:versionInfo,,Vocabulary version,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+dct:language,en
+voaf:metadataVoc,http://www.isibang.ac.in/ns/mod/1.4
+foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
+dct:license,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
+owl:versionInfo,,Vocabulary version
 dct:created^^xsd:datetime,,Date when vocabulary was initially created
 dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,test,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070,,,,,,,,,,,,,,,,2023-11-12
+vocab:1000,,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070,,,,,,,,,,,,,,,,2023-11-12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
