@@ -2,310 +2,569 @@ ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all term
 "Prefixes for controlled vocabularies, schema and ontologies"
 PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,owl,http://www.w3.org/2002/07/owl#
+PREFIX,owl,http://www.w3.org/2002/07/owl#,,"Prefix for the ontology language of the Semantic Web, which empowers fast and flexible data modeling and efficient automated reasoning"
 PREFIX,vaof,http://purl.org/vocommons/voaf#,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
 PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
-PREFIX,omv,http://omv.ontoware.org/2005/05/ontology
-PREFIX,doap,usefulinc.com/ns/doap#
-PREFIX,iop,https://w3id.org/iadopt/ont/,,I-ADOPT Ontology
-PREFIX,puv,https://w3id.org/env/puv#,,"A simple ontology which implements the Parameter Usage 
+PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,Prefix for Metadata Ontology Vocabulary which is a standard for ontology metadata 
+PREFIX,doap,usefulinc.com/ns/doap#,,"Prefix for the Description of a Project Ontology which describes software projects, in particular free and open source software"
+PREFIX,iop,https://w3id.org/iadopt/ont/,,Prefix for the I-ADOPT Ontology which describes observable properties
+PREFIX,puv,https://w3id.org/env/puv#,,"Prefix for a simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
 https://github.com/nvs-vocabs/P01."
-PREFIX,sosa,http://www.w3.org/ns/sosa/,,Semantic Sensor Network Ontology
-PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
-PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#
-PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#
+PREFIX,sosa,http://www.w3.org/ns/sosa/,,Prefix for the Semantic Sensor Network Ontology
+PREFIX,xsd,http://www.w3.org/2001/XMLSchema#,,Prefix for the Ontology for eXtenisble Markup Language schemas 
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,Prefix for the Research Description Framework that provides the data model explaining how to build a graph
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#,,Prefix for the Research Description Framework Schema that explains how nodes in a graph relate
 PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
 PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
-dct:title,Demo M4M Vocabulary,Title of the vocabulary
-skos:prefLabel,M4M Vocab
-owl:ontologyIRI,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
-dct:identifier
-omv:acronym
-dct:description
-omv:resourceLocator
-owl:ontolgoyIRI,,Description of the controlled vocabulary
-dct:description
-dct:creator
-voaf:hasEquivalencesWith
-omv:keywords,,Description of the controlled vocabulary
-dct:publisher
-omv:knownUsage,metadata and keywords for ecological research data
-dct:audience,http://schema.org/Researcher
-doap:repository
-dct:subject
-schema:includedInDataCatalog
-dct:language,en
-voaf:metadataVoc,http://www.isibang.ac.in/ns/mod/1.4
-foaf:homepage,https://github.com/gofair-foundation/m4m-vocabulary,Home page of community creating vocabulary
-dct:license,https://spdx.org/licenses/CC0-1.0,License under which the vocabulary is provided
-owl:versionInfo,,Vocabulary version
-dct:created^^xsd:datetime,,Date when vocabulary was initially created
+dct:title,LD Base vocabulary,Title of the vocabulary
+skos:prefLabel,LD Base vocabulary,Preferred label of the vocabulary
+owl:ontologyIRI,http://purl.org/m4m/,IRI of the ontology
+foaf:homepage,www.lDbase.org,Home page of community creating vocabulary
+dct:identifier,,External identifier for the vocabulary
+omv:acronym,,Acronym used for the vocabulary
+dct:description,Project Descriptor of LDbase Project page,Description of the vocabulary
+omv:resourceLocator,https://ldbase.org/taxonomy/project_types,URL locating the vocabulary
+dct:creator,https://orcid.org/0000-0001-9793-0420,"ORCID of the creator of the vocabulary, can be multiple (use separate lines)"
+dct:contributor,0000-0002-1700-7685,ORCID of the contributor,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+voaf:hasEquivalencesWith,,vocabularies to which terms of this vocabulary are aligned with
+omv:keywords,descriptors that apply to the project methodologies ,Description of the controlled vocabulary
+dct:publisher,https://ror.org/05g3dte14,ROR or name of the responsible party for the publication of the vocabulary
+omv:knownUsage,,Usage of the vocabulary
+dct:audience,http://schema.org/Researcher,Audience of the vocabulary
+dct:subject,Project page ,Main subject of the vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+doap:repository,https://bioportal.bioontology.org/,Vocabulary repository where this vocabulary is uploaded,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+schema:includedInDataCatalog,https://bioportal.bioontology.org/,Vocabulary repository where this vocabulary is uploaded
+dct:language,en,Language of metadata and vocabulary terms
+voaf:metadataVoc,https://www.isibang.ac.in/,Vocabulary used to describe the metadata of the vocabulary
+dct:license,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
+owl:versionInfo,0.0.1,Vocabulary version
+dct:created^^xsd:datetime,2023-11-14T00:00:00+00:00,Date when vocabulary was initially created
 dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,,,,,,,,http://purl.obolibrary.org/obo/OBI_0000070,,,,,,,,,,,,,,,,2023-11-12
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-,,,,,,,,,,,,,,,,,,,,,,,,2023-11-12
+vocab:1000,project descriptor,,,Enter descriptors that apply to the methodologies used in the project,,,,http://purl.obolibrary.org/obo/OBI_0000070,,,,,,,,,,,,,,,,2023-11-14
+vocab:1001,ANOVA,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1002,Bilingual,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1003,Bilingual Advantage,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1004,Case-control,,,,,vocab:1000
+vocab:1005,Child outcomes,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1006,Clinical case study,,,,,vocab:1000
+vocab:1007,Cognitive neuroscience,,,,,vocab:1000
+vocab:1008,Descriptive Statistics,,,,,vocab:1000
+vocab:1009,Discourse analysis,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1010,Dyadic,,,,,vocab:1000
+vocab:1011,Early Literacy,,,,,vocab:1000
+vocab:1012,Early Math,,,,,vocab:1000
+vocab:1013,Ethnographic,,,,,vocab:1000
+vocab:1014,Executive Functions,,,,,vocab:1000
+vocab:1015,Existing records data,,,,,vocab:1000
+vocab:1016,Experimental study,,,,,vocab:1000
+vocab:1017,Eyetracking,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1018,Genetically-sensitive,,,,,vocab:1000
+vocab:1019,Group design,,,,,vocab:1000
+vocab:1020,Individual difference,,,,,vocab:1000
+vocab:1021,Integrated Dataset,,,,,vocab:1000
+vocab:1022,Interview,,,,,vocab:1000
+vocab:1023,Kindergarten Readiness,,,,,vocab:1000
+vocab:1024,Learning Disabilities,,,,,vocab:1000
+vocab:1025,Longitudinal,,,,,vocab:1000
+vocab:1026,Math Anxiety,,,,,vocab:1000
+vocab:1027,Math Motivation,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1028,Math Performance,,,,,vocab:1000
+vocab:1029,Mathematics Difficulty,,,,,vocab:1000
+vocab:1030,Meta-analysis,,,,,vocab:1000
+vocab:1031,Middle School Children,,,,,vocab:1000
+vocab:1032,Neuroimaging,,,,,vocab:1000
+vocab:1033,Neuroscience,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1034,Protocol analysis,,,,,vocab:1000
+vocab:1035,Psychometrics,,,,,vocab:1000
+vocab:1036,Psychophysiological,,,,,vocab:1000
+vocab:1037,Quadratic Relationship,,,,,vocab:1000
+vocab:1038,Qualitative,,,,,vocab:1000
+vocab:1039,Quantitative,,,,,vocab:1000
+vocab:1040,Quasi-experimental,,,,,vocab:1000
+vocab:1041,Randomized Control Trial,,,,,vocab:1000
+vocab:1042,Reading,,,,,vocab:1000
+vocab:1043,Reading Anxiety,,,,,vocab:1000
+vocab:1044,Reading-age method,,,,,vocab:1000
+vocab:1045,Regression discontinuity design,,,,,vocab:1000
+vocab:1046,Simulation,,,,,vocab:1000
+vocab:1047,Single-case design,,,,,vocab:1000
+vocab:1048,Social and Emotional Skills,,,,,vocab:1000
+vocab:1049,Survey,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1050,Teacher Outcomes,,,,,vocab:1000
+vocab:1051,Text analysis,,,,,vocab:1000
+vocab:1052,Treatment study,,,,,vocab:1000
+vocab:1053,Twin Study,,,,,vocab:1000
+vocab:1054,Vocabulary,,,,,vocab:1000
+vocab:1055,word learning,,,,,vocab:1000
+vocab:1056,Word Problems,,,,,vocab:1000
+vocab:1057,Working Memory,,,,,vocab:1000
+vocab:1058,Educational Environment,,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1059,Ancillary school services,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1060,Charter schools,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1061,Child caregivers,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1062,Childcare,,,,,vocab:1058
+vocab:1063,Chinese Adolescents,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1064,Day care centers,,,,,vocab:1058
+vocab:1065,Day care effects,,,,,vocab:1058
+vocab:1066,Early childhood education,,,,,vocab:1058
+vocab:1067,Early experience,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1068,Early identification,,,,,vocab:1058
+vocab:1069,Early intervention,,,,,vocab:1058
+vocab:1070,Education Research,,,,,vocab:1058
+vocab:1071,Elementary School,,,,,vocab:1058
+vocab:1072,Even Start,,,,,vocab:1058
+vocab:1073,Family day care,,,,,vocab:1058
+vocab:1074,Family literacy program,,,,,vocab:1058
+vocab:1075,Head Start,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1076,High Poverty,,,,,vocab:1058
+vocab:1077,High School,,,,,vocab:1058
+vocab:1078,Home Learning Environment,,,,,vocab:1058
+vocab:1079,Home Schooling,,,,,vocab:1058
+vocab:1080,Kenan Model,,,,,vocab:1058
+vocab:1081,Language experience approach,,,,,vocab:1058
+vocab:1082,Magnet schools,,,,,vocab:1058
+vocab:1083,Metascience,,,,,vocab:1058,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1084,Middle School,,,,,vocab:1058
+vocab:1085,Parents as Teachers,,,,,vocab:1058
+vocab:1086,Post-Secondary Education,,,,,vocab:1058
+vocab:1087,Prekindergarten classes,,,,,vocab:1058
+vocab:1088,Educational Curricula,,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1089,100 Book Challenge,,,,,vocab:1088,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1090,A Celebration of Character,,,,,vocab:1088,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1091,A+ny where Learning System,,,,,vocab:1088,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1092,Academic Associates Learning Centers,,,,,vocab:1088
+vocab:1093,Academy of READING®,,,,,vocab:1088
+vocab:1094,Accelerated Math®,,,,,vocab:1088
+vocab:1095,Accelerated Reader,,,,,vocab:1088
+vocab:1096,Achieve3000®,,,,,vocab:1088
+vocab:1097,Acquiring Ethical Guidelines for Individual Self Governance (AEGIS),,,,,vocab:1088
+vocab:1098,Addison-Wesley Mathematics basal program,,,,,vocab:1088
+vocab:1099,Advancement Via Individual Determination (AVID),,,,,vocab:1088
+vocab:1100,Adventures of Jasper Woodbury Series,,,,,vocab:1088
+vocab:1101,Algebra Project,,,,,vocab:1088
+vocab:1102,Algebraic Thinking,,,,,vocab:1088
+vocab:1103,AlphabiTunes,,,,,vocab:1088
+vocab:1104,Alpha-Time,,,,,vocab:1088
+vocab:1105,"Als speciale kleuter tel je ook me! (Young Children with Special Needs Count, Too!)",,,,,vocab:1088
+vocab:1106,America's Choice,,,,,vocab:1088
+vocab:1107,Appalachia Model Mathematics Program,,,,,vocab:1088
+vocab:1108,Athens Tutorial Program,,,,,vocab:1088
+vocab:1109,Balanced Early Literacy Initiative,,,,,vocab:1088
+vocab:1110,Barrett Math Program,,,,,vocab:1088
+vocab:1111,Barton Reading & Spelling System®,,,,,vocab:1088
+vocab:1112,Barton Reading and Spelling System,,,,,vocab:1088
+vocab:1113,Benchmark Word Recognition Program,,,,,vocab:1088
+vocab:1114,Bilingual Cooperative Integrated Reading and Composition (BCIRC),,,,,vocab:1088
+vocab:1115,Book Buddies,,,,,vocab:1088
+vocab:1116,Book clubs,,,,,vocab:1088
+vocab:1117,Bookmark,,,,,vocab:1088
+vocab:1118,Bradley Reading and Language Arts,,,,,vocab:1088
+vocab:1119,Breakthrough to Literacy,,,,,vocab:1088
+vocab:1120,Bridge,,,,,vocab:1088
+vocab:1121,Bridges in Mathematics,,,,,vocab:1088
+vocab:1122,Bright Beginnings,,,,,vocab:1088
+vocab:1123,Bring the Classics to Life,,,,,vocab:1088
+vocab:1124,Building Blocks for Math (SRA Real Math),,,,,vocab:1088
+vocab:1125,Building Decision Skills,,,,,vocab:1088
+vocab:1126,Building Esteem in Students Today (BEST),,,,,vocab:1088
+vocab:1127,"C.L.A.P., A sound Approach to Pre-Reading Skills",,,,,vocab:1088
+vocab:1128,California Early Literacy Learning (CELL),,,,,vocab:1088
+vocab:1129,Carbo Reading Styles Program®,,,,,vocab:1088
+vocab:1130,"Caring Habits Experience, The",,,,,vocab:1088
+vocab:1131,Caring School Community (CSC),,,,,vocab:1088
+vocab:1132,Changing Lives,,,,,vocab:1088
+vocab:1133,Character Building & Reading Mastery,,,,,vocab:1088
+vocab:1134,Character Counts!,,,,,vocab:1088
+vocab:1135,Character First!,,,,,vocab:1088
+vocab:1136,CHARACTERplus,,,,,vocab:1088
+vocab:1137,Check & Connect,,,,,vocab:1088
+vocab:1138,"CIERA School Change Project, The",,,,,vocab:1088
+vocab:1139,ClassWide Peer Tutoring,,,,,vocab:1088
+vocab:1140,Cognitive Tutor® Algebra I,,,,,vocab:1088
+vocab:1141,Cognitive Tutor® Algebra II,,,,,vocab:1088
+vocab:1142,Cognitive Tutor® Geometry,,,,,vocab:1088
+vocab:1143,Cognitive Tutor® Integrated Math I,,,,,vocab:1088
+vocab:1144,Cognitive Tutor® Integrated Math II,,,,,vocab:1088
+vocab:1145,Cognitive Tutor® Integrated Math III,,,,,vocab:1088
+vocab:1146,Community of Caring®,,,,,vocab:1088
+vocab:1147,CompassLearning,,,,,vocab:1088
+vocab:1148,Compensatory Language Experiences and Reading Program (CLEAR),,,,,vocab:1088
+vocab:1149,Comprehensive Curriculum for Early Student Success (ACCESS),,,,,vocab:1088
+vocab:1150,Computer Curriculum Corporation (CCC),,,,,vocab:1088
+vocab:1151,Computer Managed Mastery Learning,,,,,vocab:1088
+vocab:1152,Computer-aided instruction (CAI),,,,,vocab:1088
+vocab:1153,Concept Phonics Fluency Set,,,,,vocab:1088
+vocab:1154,Concept-Oriented Reading Instruction (CORI),,,,,vocab:1088
+vocab:1155,Connect with Kids,,,,,vocab:1088
+vocab:1156,Connected Mathematics Project (CMP),,,,,vocab:1088
+vocab:1157,Connecting Math Concepts (CMC) mathematics program,,,,,vocab:1088
+vocab:1158,Consistency Management®,,,,,vocab:1088
+vocab:1159,Cooperative Integrated Reading and Composition® (CIRC®),,,,,vocab:1088
+vocab:1160,Coping Power,,,,,vocab:1088
+vocab:1161,CORD Applied Math,,,,,vocab:1088
+vocab:1162,Core Knowledge Curriculum,,,,,vocab:1088
+vocab:1163,Core Knowledge Language Arts Knowledge Strand,,,,,vocab:1088
+vocab:1164,Core-Plus Mathematics,,,,,vocab:1088
+vocab:1165,Cornerstone Literacy Initiative,,,,,vocab:1088
+vocab:1166,Corrective Reading,,,,,vocab:1088
+vocab:1167,Countdown Video IGAP Intervention Tape,,,,,vocab:1088
+vocab:1168,Crossties,,,,,vocab:1088
+vocab:1169,Curiosity Corner,,,,,vocab:1088
+vocab:1170,DaisyQuest,,,,,vocab:1088
+vocab:1171,Davis Learning Strategies Program,,,,,vocab:1088
+vocab:1172,Des Moines Plan,,,,,vocab:1088
+vocab:1173,Destination Math,,,,,vocab:1088
+vocab:1174,Destination Reading,,,,,vocab:1088
+vocab:1175,Dialogic Reading,,,,,vocab:1088
+vocab:1176,Different Ways of Knowing,,,,,vocab:1088
+vocab:1177,Digi-Block® Learning System,,,,,vocab:1088
+vocab:1178,Direct Instruction,,,,,vocab:1088
+vocab:1179,Direct Instruction and CIRC,,,,,vocab:1088
+vocab:1180,Direct Instruction/DISTAR,,,,,vocab:1088
+vocab:1181,Direct Instruction/DISTAR and Success for All,,,,,vocab:1088
+vocab:1182,Direct Instruction/Horizons,,,,,vocab:1088
+vocab:1183,Direct Instruction/RITE,,,,,vocab:1088
+vocab:1184,Direct Instruction/Spelling Mastery,,,,,vocab:1088
+vocab:1185,Direct Instruction/SRA,,,,,vocab:1088
+vocab:1186,Direct Instruction/Teach Your Child to Read in 100 Easy Lessons,,,,,vocab:1088
+vocab:1187,"Direct, Intensive, Systematic, Early and Comprehensive (DISEC) Instruction",,,,,vocab:1088
+vocab:1188,Discover Intensive Phonics for Yourself,,,,,vocab:1088
+vocab:1189,Discovery Health Connection,,,,,vocab:1088
+vocab:1190,Discovery Health Connection,,,,,vocab:1088
+vocab:1191,Doors to Discovery,,,,,vocab:1088
+vocab:1192,Dr. Cupp Readers & Journal Writers,,,,,vocab:1088
+vocab:1193,DreamBox Learning,,,,,vocab:1088
+vocab:1194,Early Intervention in Reading (EIR)®,,,,,vocab:1088
+vocab:1195,Early Risers,,,,,vocab:1088
+vocab:1196,Earobics®,,,,,vocab:1088
+vocab:1197,Edison Schools,,,,,vocab:1088
+vocab:1198,Emerging Readers Software,,,,,vocab:1088
+vocab:1199,Enhanced Proactive Reading,,,,,vocab:1088
+vocab:1200,enVisionMATH,,,,,vocab:1088
+vocab:1201,"ESSENTIAL Curriculum, The™",,,,,vocab:1088
+vocab:1202,Essential Skills Software,,,,,vocab:1088
+vocab:1203,Everyday Mathematics®,,,,,vocab:1088
+vocab:1204,Evidence Based Literacy Instruction,,,,,vocab:1088
+vocab:1205,Exemplary Center for Reading Instruction (ECRI),,,,,vocab:1088
+vocab:1206,Facing History and Ourselves,,,,,vocab:1088
+vocab:1207,Failure Free Reading,,,,,vocab:1088
+vocab:1208,Fast ForWord®,,,,,vocab:1088
+vocab:1209,Fast Track Action Reading Program,,,,,vocab:1088
+vocab:1210,Fast Track: Elementary School,,,,,vocab:1088
+vocab:1211,Felipe's Sound Search,,,,,vocab:1088
+vocab:1212,First grade Literacy Intervention Program (FLIP),,,,,vocab:1088
+vocab:1213,First Step to Success,,,,,vocab:1088
+vocab:1214,First Steps,,,,,vocab:1088
+vocab:1215,Flippen Reading Connections™,,,,,vocab:1088
+vocab:1216,Florida Primary Education Program,,,,,vocab:1088
+vocab:1217,Fluency Formula,,,,,vocab:1088
+vocab:1218,Four Block Framework,,,,,vocab:1088
+vocab:1219,Frontline Phonics,,,,,vocab:1088
+vocab:1220,Functional Behavioral Assessment-based Interventions,,,,,vocab:1088
+vocab:1221,FUNdamentallyMATH®,,,,,vocab:1088
+vocab:1222,Fundations,,,,,vocab:1088
+vocab:1223,Funnix,,,,,vocab:1088
+vocab:1224,"Geo-Logo, by Investigations in Number, Data, and Space®",,,,,vocab:1088
+vocab:1225,Giraffe Heroes,,,,,vocab:1088
+vocab:1226,GOcabulary Program for Elementary Students,,,,,vocab:1088
+vocab:1227,Goldman-Lynch Language Simulation Program,,,,,vocab:1088
+vocab:1228,Goldman-Lynch Sounds-in-Symbols Development Kit,,,,,vocab:1088
+vocab:1229,Great Books,,,,,vocab:1088
+vocab:1230,Green Dot Public Schools,,,,,vocab:1088
+vocab:1231,Growing With Mathematics®,,,,,vocab:1088
+vocab:1232,Guided Discovery LOGO,,,,,vocab:1088
+vocab:1233,Head Start,,,,,vocab:1088
+vocab:1234,Headsprout Early Reading,,,,,vocab:1088
+vocab:1235,Headsprout® Early Reading,,,,,vocab:1088
+vocab:1236,Heartwood Ethics Curriculum/An Ethics Curriculum for Children,,,,,vocab:1088
+vocab:1237,Heath Mathematics Connections (textbook series),,,,,vocab:1088
+vocab:1238,High School Puente Program,,,,,vocab:1088
+vocab:1239,Higher Order Thinking Skills (HOTS),,,,,vocab:1088
+vocab:1240,Holt Mathematics,,,,,vocab:1088
+vocab:1241,Holt Middle School Math (textbook),,,,,vocab:1088
+vocab:1242,Home Language Environment,,,,,vocab:1088
+vocab:1243,Hooked on Phonics ®,,,,,vocab:1088
+vocab:1244,Houghton Mifflin Mathematics,,,,,vocab:1088
+vocab:1245,Houghton Mifflin Reading©,,,,,vocab:1088
+vocab:1246,Huntington Phonics,,,,,vocab:1088
+vocab:1247,I CAN Learn®,,,,,vocab:1088
+vocab:1248,I CAN Learn® Algebra,,,,,vocab:1088
+vocab:1249,I CAN Learn® Geometry,,,,,vocab:1088
+vocab:1250,I Care Parental Involvement Character Curriculum,,,,,vocab:1088
+vocab:1251,Instructional Conversations and Literature Logs,,,,,vocab:1088
+vocab:1252,"Integrated Mathematics, Science, and Technology (IMaST)",,,,,vocab:1088
+vocab:1253,IntelliTools Reading,,,,,vocab:1088
+vocab:1254,"Investigations in Number, Data, and Space®",,,,,vocab:1088
+vocab:1255,Invitations to Literacy,,,,,vocab:1088
+vocab:1256,Jigsaw Classroom,,,,,vocab:1088
+vocab:1257,Johnny Can Spell,,,,,vocab:1088
+vocab:1258,Jostens Integrated Language Arts Basic Learning System,,,,,vocab:1088
+vocab:1259,Jostens Integrated Learning System,,,,,vocab:1088
+vocab:1260,Key Math Teach and Practice,,,,,vocab:1088
+vocab:1261,Kindergarten Intervention Program (KIP),,,,,vocab:1088,,,,,,,,,,,,,,,,,,2023-11-12
+vocab:1262,Kindergarten Works,,,,,vocab:1088
+vocab:1263,Knowing Mathematics,,,,,vocab:1088
+vocab:1264,Knowledge is Power Program (KIPP),,,,,vocab:1088
+vocab:1265,Kumon Mathematics Program,,,,,vocab:1088
+vocab:1266,Ladders to Literacy,,,,,vocab:1088
+vocab:1267,LANGUAGE!®,,,,,vocab:1088
+vocab:1268,Larson Developmental Math Series,,,,,vocab:1088
+vocab:1269,Leap into Phonics,,,,,vocab:1088
+vocab:1270,LeapFrog Schoolhouse,,,,,vocab:1088
+vocab:1271,Learning for Life,,,,,vocab:1088
+vocab:1272,Lessons in Character,,,,,vocab:1088
+vocab:1273,Let's Begin with the Letter People®,,,,,vocab:1088
+vocab:1274,Letter People,,,,,vocab:1088
+vocab:1275,Letterland,,,,,vocab:1088
+vocab:1276,Leveled Literacy Intervention,,,,,vocab:1088
+vocab:1277,Lexia Reading,,,,,vocab:1088
+vocab:1278,Lightspan Achieve Now,,,,,vocab:1088
+vocab:1279,Lindamood Phoneme Sequencing® (LiPS®),,,,,vocab:1088
+vocab:1280,LinguiSystems,,,,,vocab:1088
+vocab:1281,Lions Quest -- Skills for Action,,,,,vocab:1088
+vocab:1282,Lions Quest -- Skills for Adolescence,,,,,vocab:1088
+vocab:1283,Lions Quest -- Skills for Growing,,,,,vocab:1088
+vocab:1284,Literacy Collaborative,,,,,vocab:1088
+vocab:1285,Literacy Express,,,,,vocab:1088
+vocab:1286,Literacy First,,,,,vocab:1088
+vocab:1287,Little Books,,,,,vocab:1088
+vocab:1288,Living Values Educational Program,,,,,vocab:1088
+vocab:1289,LocuTour Multimedia Cognitive Rehabilitation,,,,,vocab:1088
+vocab:1290,Logo programming language,,,,,vocab:1088
+vocab:1291,Logo programming language,,,,,vocab:1088
+vocab:1292,Lovaas Model of Applied Behavior Analysis,,,,,vocab:1088
+vocab:1293,Love in a Big World,,,,,vocab:1088
+vocab:1294,Macmillan/McGraw-Hill,,,,,vocab:1088
+vocab:1295,Making Meaning,,,,,vocab:1088
+vocab:1296,Math Advantage (textbook series),,,,,vocab:1088
+vocab:1297,Math Applications and Connections (textbook series published by Glencoe),,,,,vocab:1088
+vocab:1298,Math Renaissance®,,,,,vocab:1088
+vocab:1299,Math Trailblazers,,,,,vocab:1088
+vocab:1300,Mathematics in Action (textbook series published by MacMillan),,,,,vocab:1088
+vocab:1301,Mathematics in Context (MiC),,,,,vocab:1088
+vocab:1302,Mathematics Plus (textbook series published by Harcourt),,,,,vocab:1088
+vocab:1303,Mathematics Their Way®,,,,,vocab:1088
+vocab:1304,Mathematics Today by Harcourt Brace,,,,,vocab:1088
+vocab:1305,MathFact,,,,,vocab:1088
+vocab:1306,MathScape: Seeing and Thinking Mathematically,,,,,vocab:1088
+vocab:1307,MathSteps by Houghton Mifflin,,,,,vocab:1088
+vocab:1308,MathThematics,,,,,vocab:1088
+vocab:1309,MathWings by the Success for All Foundation®,,,,,vocab:1088
+vocab:1310,Merit Reading Software Program,,,,,vocab:1088
+vocab:1311,"Middle Grades Math (textbook series, published by ScottForesman/AddisonWesley)",,,,,vocab:1088
+vocab:1312,Middle School Mathematics through Applications Program (MMAP),,,,,vocab:1088
+vocab:1313,Milieu Teaching,,,,,vocab:1088
+vocab:1314,Moving with Math,,,,,vocab:1088
+vocab:1315,Moving with Math® Extensions,,,,,vocab:1088
+vocab:1316,Moving with Math® Math by Topic,,,,,vocab:1088
+vocab:1317,Multiple Saxon Math Courses,,,,,vocab:1088
+vocab:1318,My Reading Coach™,,,,,vocab:1088
+vocab:1319,Mystery Motivator,,,,,vocab:1088
+vocab:1320,National Board for Professional Teaching Standards (NBPTS) Certification,,,,,vocab:1088
+vocab:1321,National Geographic Society and Arizona Geographic Alliance K-8 Program,,,,,vocab:1088
+vocab:1322,New American Schools,,,,,vocab:1088
+vocab:1323,New Century Integrated Instructional System,,,,,vocab:1088
+vocab:1324,New Century Mathematics,,,,,vocab:1088
+vocab:1325,New Heights,,,,,vocab:1088
+vocab:1326,North Carolina A+ Schools network,,,,,vocab:1088
+vocab:1327,Number Power™,,,,,vocab:1088
+vocab:1328,Numeracy Recovery,,,,,vocab:1088
+vocab:1329,Odyssey Reading,,,,,vocab:1088
+vocab:1330,Odyssey® Math,,,,,vocab:1088
+vocab:1331,Onward to Excellence,,,,,vocab:1088
+vocab:1332,Open Circle,,,,,vocab:1088
+vocab:1333,Open Court Reading©,,,,,vocab:1088
+vocab:1334,Opening Eyes to Mathematics by The Math Learning Center,,,,,vocab:1088
+vocab:1335,Orton–Gillingham® technique,,,,,vocab:1088
+vocab:1336,Pacemaker,,,,,vocab:1088
+vocab:1337,Partnership for Access to Higher Mathematics (PATH Mathematics),,,,,vocab:1088
+vocab:1338,Pathways to Character,,,,,vocab:1088
+vocab:1339,"Pause, Prompt, & Praise ©",,,,,vocab:1088
+vocab:1340,Peabody Language Development Kits,,,,,vocab:1088
+vocab:1341,Peace Education,,,,,vocab:1088
+vocab:1342,Peer-Assisted Learning Strategies,,,,,vocab:1088
+vocab:1343,Performance Learning Systems,,,,,vocab:1088
+vocab:1344,Personalized System of Instruction (PSI),,,,,vocab:1088
+vocab:1345,Phono-Graphix,,,,,vocab:1088
+vocab:1346,Phonological Awareness Training,,,,,vocab:1088
+vocab:1347,Phonological Awareness Training plus Letter Knowledge Training,,,,,vocab:1088
+vocab:1348,Piacceleration Instruction,,,,,vocab:1088
+vocab:1349,Pivotal Response Training,,,,,vocab:1088
+vocab:1350,PLATO,,,,,vocab:1088
+vocab:1351,Play-Based Interventions,,,,,vocab:1088
+vocab:1352,Positive Action,,,,,vocab:1088
+vocab:1353,Pre-K Mathematics,,,,,vocab:1088
+vocab:1354,Prentice Hall Literature© (1989-2005),,,,,vocab:1088
+vocab:1355,Prentice Hall/Pearson Literature© (2007-15),,,,,vocab:1088
+vocab:1356,Programmed Tutorial Reading,,,,,vocab:1088
+vocab:1357,Progress in Mathematics © 2006,,,,,vocab:1088
+vocab:1358,Project 2000,,,,,vocab:1088
+vocab:1359,Project CHILD,,,,,vocab:1088
+vocab:1360,Project CRISS®,,,,,vocab:1088
+vocab:1361,Project FAST,,,,,vocab:1088
+vocab:1362,Project LISTEN's Reading Tutor,,,,,vocab:1088
+vocab:1363,Project LISTEN's Writing Tutor,,,,,vocab:1088
+vocab:1364,Project MAS,,,,,vocab:1088
+vocab:1365,Project PLUS (Partnership Linking University School Personnel),,,,,vocab:1088
+vocab:1366,Project Read® Phonology,,,,,vocab:1088
+vocab:1367,Project SEED,,,,,vocab:1088
+vocab:1368,Project Teach and Reach,,,,,vocab:1088
+vocab:1369,Project Wisdom,,,,,vocab:1088
+vocab:1370,Psychology,,,,,vocab:1088
+vocab:1371,QuickReads,,,,,vocab:1088
+vocab:1372,Rainbow Reading Program,,,,,vocab:1088
+vocab:1373,Rational Number Project,,,,,vocab:1088
+vocab:1374,READ 180®,,,,,vocab:1088
+vocab:1375,Read Naturally®,,,,,vocab:1088
+vocab:1376,Read Well®,,,,,vocab:1088
+vocab:1377,"Read, Write & Type!",,,,,vocab:1088
+vocab:1378,Reading Apprenticeship®,,,,,vocab:1088
+vocab:1379,Reading Edge,,,,,vocab:1088
+vocab:1380,Reading Intervention for Early Success,,,,,vocab:1088
+vocab:1381,Reading Mastery,,,,,vocab:1088
+vocab:1382,Reading Plus®,,,,,vocab:1088
+vocab:1383,Reading Recovery®,,,,,vocab:1088
+vocab:1384,Reading Rods,,,,,vocab:1088
+vocab:1385,Reading RULES! Kindergarten,,,,,vocab:1088
+vocab:1386,Reading Speed Drills,,,,,vocab:1088
+vocab:1387,Reading Success from the Start,,,,,vocab:1088
+vocab:1388,Reading Theater,,,,,vocab:1088
+vocab:1389,Reading Together™,,,,,vocab:1088
+vocab:1390,Reading Upgrade,,,,,vocab:1088
+vocab:1391,"Ready, Set, Leap!®",,,,,vocab:1088
+vocab:1392,"Ready, Set, Leap!®",,,,,vocab:1088
+vocab:1393,Real Math basal mathematics program,,,,,vocab:1088
+vocab:1394,Reasoning Mind,,,,,vocab:1088
+vocab:1395,Reciprocal Teaching,,,,,vocab:1088
+vocab:1396,Repeated Reading,,,,,vocab:1088
+vocab:1397,Resolving Conflict Creatively Program (RCCP),,,,,vocab:1088
+vocab:1398,Richards Read Systematic Language Program,,,,,vocab:1088
+vocab:1399,Richmond Young Students Mathematics (RYSM) Class,,,,,vocab:1088
+vocab:1400,Right Start to Reading,,,,,vocab:1088
+vocab:1401,Road to the Code,,,,,vocab:1088
+vocab:1402,RTI,,,,,vocab:1088
+vocab:1403,RULER,,,,,vocab:1088
+vocab:1404,Rutgers-Kenilworth Program,,,,,vocab:1088
+vocab:1405,S.P.I.R.E.,,,,,vocab:1088
+vocab:1406,SAIL (Second grade Acceleration in Literacy),,,,,vocab:1088
+vocab:1407,Saxon Advanced Math,,,,,vocab:1088
+vocab:1408,Saxon Algebra I,,,,,vocab:1088
+vocab:1409,Saxon Algebra II,,,,,vocab:1088
+vocab:1410,Saxon Geometry,,,,,vocab:1088
+vocab:1411,Saxon Math,,,,,vocab:1088
+vocab:1412,Saxon Phonics,,,,,vocab:1088
+vocab:1413,Schoolwide Early Language and Literacy (SWELL),,,,,vocab:1088
+vocab:1414,Scott Foresman Math Diagnostic & Intervention System,,,,,vocab:1088
+vocab:1415,Scott Foresman-Addison Wesley Elementary Mathematics,,,,,vocab:1088
+vocab:1416,Second Step,,,,,vocab:1088
+vocab:1417,Self-Regulated Strategy Development,,,,,vocab:1088
+vocab:1418,Shared Book Reading,,,,,vocab:1088
+vocab:1419,Sharon Wells Mathematics Curriculum,,,,,vocab:1088
+vocab:1420,Silver Burdett Ginn Mathematics,,,,,vocab:1088
+vocab:1421,"Sing, Spell, Read & Write",,,,,vocab:1088
+vocab:1422,"Sing, Spell, Read, and Write (SSRW)",,,,,vocab:1088
+vocab:1423,Singapore Mathematics,,,,,vocab:1088
+vocab:1424,"Six Through Eighth Grade Mathematics (STEM) Project, The",,,,,vocab:1088
+vocab:1425,Skills Reinforcement Project,,,,,vocab:1088
+vocab:1426,SkillsTutor,,,,,vocab:1088
+vocab:1427,Smart and Good,,,,,vocab:1088
+vocab:1428,Soar to Success,,,,,vocab:1088
+vocab:1429,Social Skills Training,,,,,vocab:1088
+vocab:1430,Sonday System,,,,,vocab:1088
+vocab:1431,Sound Field System,,,,,vocab:1088
+vocab:1432,Sound Foundations,,,,,vocab:1088
+vocab:1433,Sound Partners,,,,,vocab:1088
+vocab:1434,Sound Reading,,,,,vocab:1088
+vocab:1435,Sounds Abound,,,,,vocab:1088
+vocab:1436,Sounds and Symbols Early Reading Program,,,,,vocab:1088
+vocab:1437,South African Government Curriculum (CAPS),,,,,vocab:1088
+vocab:1438,Spelling Mastery,,,,,vocab:1088
+vocab:1439,SpellRead,,,,,vocab:1088
+vocab:1440,Starfall,,,,,vocab:1088
+vocab:1441,Start Making a Reader Today® (SMART®),,,,,vocab:1088
+vocab:1442,Stepping Stones to Literacy,,,,,vocab:1088
+vocab:1443,STEPS (Sequential Teaching of Explicit Phonics and Spelling),,,,,vocab:1088
+vocab:1444,Stories and More,,,,,vocab:1088
+vocab:1445,Story Champs,,,,,vocab:1088
+vocab:1446,Story Comprehension to Go,,,,,vocab:1088
+vocab:1447,Strategic Math Series,,,,,vocab:1088
+vocab:1448,Strategies that Work,,,,,vocab:1088
+vocab:1449,Student team reading and writing,,,,,vocab:1088
+vocab:1450,Student Teams Achievement Divisions (STAD),,,,,vocab:1088
+vocab:1451,Success for All®,,,,,vocab:1088
+vocab:1452,Success through Accepting Responsibility (S.T.A.R.),,,,,vocab:1088
+vocab:1453,Successmaker,,,,,vocab:1088
+vocab:1454,SuccessMaker®,,,,,vocab:1088
+vocab:1455,Sullivan Program,,,,,vocab:1088
+vocab:1456,System of Least Prompts,,,,,vocab:1088
+vocab:1457,Talent Development Middle Grades Program,,,,,vocab:1088
+vocab:1458,TAP: The System for Teacher and Student Advancement,,,,,vocab:1088
+vocab:1459,Teach for America (TFA),,,,,vocab:1088
+vocab:1460,Teacher to Teacher Math Problem Solving Supplementary Curriculum,,,,,vocab:1088
+vocab:1461,"The Creative Curriculum® for Preschool, Fourth Edition",,,,,vocab:1088
+vocab:1462,The Expert Mathematician,,,,,vocab:1088
+vocab:1463,The Incredible Years,,,,,vocab:1088
+vocab:1464,The Spalding Method®,,,,,vocab:1088
+vocab:1465,Thinking Mathematics,,,,,vocab:1088
+vocab:1466,TIPS: Math (Teachers Involve Parents in Schoolwork),,,,,vocab:1088
+vocab:1467,TNTP Teaching Fellows,,,,,vocab:1088
+vocab:1468,Too Good for Drugs (TGFD),,,,,vocab:1088
+vocab:1469,Too Good for Drugs and Violence (TGFD & V),,,,,vocab:1088
+vocab:1470,Too Good For Violence (TGFV),,,,,vocab:1088
+vocab:1471,Tools for Getting Along,,,,,vocab:1088
+vocab:1472,Tools of the Mind,,,,,vocab:1088
+vocab:1473,TouchMath®,,,,,vocab:1088
+vocab:1474,Transition Mathematics,,,,,vocab:1088
+vocab:1475,Tribes Learning Communities®,,,,,vocab:1088
+vocab:1476,Tribes TLC®,,,,,vocab:1088
+vocab:1477,Unitedstreaming™,,,,,vocab:1088
+vocab:1478,University of Chicago School Mathematics Project (UCSMP) Advanced Algebra,,,,,vocab:1088
+vocab:1479,University of Chicago School Mathematics Project (UCSMP) Algebra,,,,,vocab:1088
+vocab:1480,"University of Chicago School Mathematics Project (UCSMP) Functions, Statistics, and Trigonometry",,,,,vocab:1088
+vocab:1481,University of Chicago School Mathematics Project (UCSMP) Geometry,,,,,vocab:1088
+vocab:1482,University of Chicago School Mathematics Project (UCSMP) Multiple Courses,,,,,vocab:1088
+vocab:1483,University of Chicago School Mathematics Project (UCSMP) Precalculus and Discrete Mathematics,,,,,vocab:1088
+vocab:1484,Vanderbilt Grade 2 Pirate Math Intervention,,,,,vocab:1088
+vocab:1485,Visual Mathematics by The Math Learning Center,,,,,vocab:1088
+vocab:1486,Vmath®,,,,,vocab:1088
+vocab:1487,Vocabulary Improvement Program for English Language Learners and Their Classmates (VIP),,,,,vocab:1088
+vocab:1488,Voices Literature and Character Education (Voices LACE),,,,,vocab:1088
+vocab:1489,Voices Reading,,,,,vocab:1088
+vocab:1490,VoWac (Vowel Oriented Word Attack Course),,,,,vocab:1088
+vocab:1491,Voyager Universal Literacy System®,,,,,vocab:1088
+vocab:1492,Voyages,,,,,vocab:1088
+vocab:1493,Voyages,,,,,vocab:1088
+vocab:1494,"Wasatch Interactive Learning, distributed by Plato Learning",,,,,vocab:1088
+vocab:1495,Waterford Early Reading Level One,,,,,vocab:1088
+vocab:1496,Waterford Early Reading Program,,,,,vocab:1088
+vocab:1497,WiggleWorks,,,,,vocab:1088
+vocab:1498,Wilson Reading System®,,,,,vocab:1088
+vocab:1499,Wisdom for Life,,,,,vocab:1088
+vocab:1500,WiseSkills®,,,,,vocab:1088
+vocab:1501,Words and Concepts,,,,,vocab:1088
+vocab:1502,Words Their Way™,,,,,vocab:1088
+vocab:1503,WORKSHOP WAY - Instant Personality Phonics Activities,,,,,vocab:1088
+vocab:1504,Wright Group's Intervention Program,,,,,vocab:1088
+vocab:1505,Writing to Read,,,,,vocab:1088
+vocab:1506,Developmental Designs,,,,,,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1507,Cohort Sequential,,,,,vocab:1506,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1508,Control Group,,,,,vocab:1506,,,,,,,,,,,,,,,,,,2023-11-14
+vocab:1509,Correlation,,,,,vocab:1506
+vocab:1510,Cross-sectional,,,,,vocab:1506
+vocab:1511,Individual Differences,,,,,vocab:1506
+vocab:1512,Longitudinal,,,,,vocab:1506
+vocab:1513,Meta-Analysis,,,,,vocab:1506
+vocab:1514,Microgenic,,,,,vocab:1506
+vocab:1515,Panel,,,,,vocab:1506
+vocab:1516,Parallel process study of infant movement and language learning,,,,,vocab:1506
+vocab:1517,Randomized Control Trial,,,,,vocab:1506
+vocab:1518,Repeated Acquisition Design,,,,,vocab:1506
+vocab:1519,Time Series,,,,,vocab:1506
+vocab:1520,Time Series: Continuous,,,,,vocab:1506
+vocab:1521,Time Series: Discrete,,,,,vocab:1506

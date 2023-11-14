@@ -1,25 +1,2762 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <usefulinc.com/ns/doap#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix omv: <http://omv.ontoware.org/2005/05/ontology> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix puv: <https://w3id.org/env/puv#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix vaof: <http://purl.org/vocommons/voaf#> .
 @prefix vocab: <http://purl.org/m4m/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://purl.org/m4m> a skos:ConceptScheme;
-  <http://omv.ontoware.org/2005/05/ontologyknownUsage> "metadata and keywords for ecological research data"@en;
+  <http://omv.ontoware.org/2005/05/ontologykeywords> "descriptors that apply to the project methodologies"@en;
+  <http://omv.ontoware.org/2005/05/ontologyresourceLocator> <https://ldbase.org/taxonomy/project_types>;
   dct:audience schema:Researcher;
+  dct:contributor "0000-0002-1700-7685"@en;
+  dct:created "2023-11-14T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0001-9793-0420>;
+  dct:description "Project Descriptor of LDbase Project page"@en;
   dct:language "en"@en;
-  dct:license <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "Demo M4M Vocabulary"@en;
-  owl:ontologyIRI <https://github.com/gofair-foundation/m4m-vocabulary>;
-  skos:hasTopConcept vocab:1000;
-  skos:prefLabel "M4M Vocab"@en;
-  foaf:homepage <https://github.com/gofair-foundation/m4m-vocabulary>;
-  <voaf:metadataVoc> <http://www.isibang.ac.in/ns/mod/1.4> .
+  dct:license <https://spdx.org/licenses/CC-BY-4.0.html>;
+  dct:publisher <https://ror.org/05g3dte14>;
+  dct:subject "Project page"@en;
+  dct:title "LD Base vocabulary"@en;
+  schema:includedInDataCatalog <https://bioportal.bioontology.org/>;
+  owl:ontologyIRI <http://purl.org/m4m/>;
+  owl:versionInfo "0.0.1"@en;
+  skos:hasTopConcept vocab:1000, vocab:1058, vocab:1088, vocab:1506;
+  skos:prefLabel "LD Base vocabulary"@en;
+  foaf:homepage "www.lDbase.org"@en;
+  <voaf:metadataVoc> <https://www.isibang.ac.in/> .
 
 vocab:1000 a skos:Concept;
-  dct:created "2023-11-12"^^xsd:date;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:definition "Enter descriptors that apply to the methodologies used in the project"@en;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1001, vocab:1002, vocab:1003, vocab:1004, vocab:1005, vocab:1006,
+    vocab:1007, vocab:1008, vocab:1009, vocab:1010, vocab:1011, vocab:1012, vocab:1013,
+    vocab:1014, vocab:1015, vocab:1016, vocab:1017, vocab:1018, vocab:1019, vocab:1020,
+    vocab:1021, vocab:1022, vocab:1023, vocab:1024, vocab:1025, vocab:1026, vocab:1027,
+    vocab:1028, vocab:1029, vocab:1030, vocab:1031, vocab:1032, vocab:1033, vocab:1034,
+    vocab:1035, vocab:1036, vocab:1037, vocab:1038, vocab:1039, vocab:1040, vocab:1041,
+    vocab:1042, vocab:1043, vocab:1044, vocab:1045, vocab:1046, vocab:1047, vocab:1048,
+    vocab:1049, vocab:1050, vocab:1051, vocab:1052, vocab:1053, vocab:1054, vocab:1055,
+    vocab:1056, vocab:1057;
+  skos:prefLabel "project descriptor"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1001 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "ANOVA"@en .
+
+vocab:1002 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bilingual"@en .
+
+vocab:1003 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bilingual Advantage"@en .
+
+vocab:1004 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Case-control"@en .
+
+vocab:1005 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Child outcomes"@en .
+
+vocab:1006 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Clinical case study"@en .
+
+vocab:1007 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive neuroscience"@en .
+
+vocab:1008 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Descriptive Statistics"@en .
+
+vocab:1009 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Discourse analysis"@en .
+
+vocab:1010 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Dyadic"@en .
+
+vocab:1011 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early Literacy"@en .
+
+vocab:1012 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early Math"@en .
+
+vocab:1013 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Ethnographic"@en .
+
+vocab:1014 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Executive Functions"@en .
+
+vocab:1015 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Existing records data"@en .
+
+vocab:1016 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Experimental study"@en .
+
+vocab:1017 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Eyetracking"@en .
+
+vocab:1018 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Genetically-sensitive"@en .
+
+vocab:1019 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Group design"@en .
+
+vocab:1020 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Individual difference"@en .
+
+vocab:1021 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Integrated Dataset"@en .
+
+vocab:1022 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Interview"@en .
+
+vocab:1023 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Kindergarten Readiness"@en .
+
+vocab:1024 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Learning Disabilities"@en .
+
+vocab:1025 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Longitudinal"@en .
+
+vocab:1026 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Anxiety"@en .
+
+vocab:1027 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Motivation"@en .
+
+vocab:1028 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Performance"@en .
+
+vocab:1029 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics Difficulty"@en .
+
+vocab:1030 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Meta-analysis"@en .
+
+vocab:1031 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Middle School Children"@en .
+
+vocab:1032 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Neuroimaging"@en .
+
+vocab:1033 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Neuroscience"@en .
+
+vocab:1034 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Protocol analysis"@en .
+
+vocab:1035 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Psychometrics"@en .
+
+vocab:1036 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Psychophysiological"@en .
+
+vocab:1037 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Quadratic Relationship"@en .
+
+vocab:1038 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Qualitative"@en .
+
+vocab:1039 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Quantitative"@en .
+
+vocab:1040 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Quasi-experimental"@en .
+
+vocab:1041 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Randomized Control Trial"@en .
+
+vocab:1042 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading"@en .
+
+vocab:1043 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Anxiety"@en .
+
+vocab:1044 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading-age method"@en .
+
+vocab:1045 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Regression discontinuity design"@en .
+
+vocab:1046 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Simulation"@en .
+
+vocab:1047 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Single-case design"@en .
+
+vocab:1048 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Social and Emotional Skills"@en .
+
+vocab:1049 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Survey"@en .
+
+vocab:1050 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Teacher Outcomes"@en .
+
+vocab:1051 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Text analysis"@en .
+
+vocab:1052 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Treatment study"@en .
+
+vocab:1053 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Twin Study"@en .
+
+vocab:1054 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Vocabulary"@en .
+
+vocab:1055 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "word learning"@en .
+
+vocab:1056 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Word Problems"@en .
+
+vocab:1057 a skos:Concept;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Working Memory"@en .
+
+vocab:1058 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1059, vocab:1060, vocab:1061, vocab:1062, vocab:1063, vocab:1064,
+    vocab:1065, vocab:1066, vocab:1067, vocab:1068, vocab:1069, vocab:1070, vocab:1071,
+    vocab:1072, vocab:1073, vocab:1074, vocab:1075, vocab:1076, vocab:1077, vocab:1078,
+    vocab:1079, vocab:1080, vocab:1081, vocab:1082, vocab:1083, vocab:1084, vocab:1085,
+    vocab:1086, vocab:1087;
+  skos:prefLabel "Educational Environment"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1059 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Ancillary school services"@en .
+
+vocab:1060 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Charter schools"@en .
+
+vocab:1061 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Child caregivers"@en .
+
+vocab:1062 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Childcare"@en .
+
+vocab:1063 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Chinese Adolescents"@en .
+
+vocab:1064 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Day care centers"@en .
+
+vocab:1065 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Day care effects"@en .
+
+vocab:1066 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early childhood education"@en .
+
+vocab:1067 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early experience"@en .
+
+vocab:1068 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early identification"@en .
+
+vocab:1069 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early intervention"@en .
+
+vocab:1070 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Education Research"@en .
+
+vocab:1071 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Elementary School"@en .
+
+vocab:1072 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Even Start"@en .
+
+vocab:1073 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Family day care"@en .
+
+vocab:1074 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Family literacy program"@en .
+
+vocab:1075 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Head Start"@en .
+
+vocab:1076 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "High Poverty"@en .
+
+vocab:1077 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "High School"@en .
+
+vocab:1078 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Home Learning Environment"@en .
+
+vocab:1079 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Home Schooling"@en .
+
+vocab:1080 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Kenan Model"@en .
+
+vocab:1081 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Language experience approach"@en .
+
+vocab:1082 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Magnet schools"@en .
+
+vocab:1083 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Metascience"@en .
+
+vocab:1084 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Middle School"@en .
+
+vocab:1085 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Parents as Teachers"@en .
+
+vocab:1086 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Post-Secondary Education"@en .
+
+vocab:1087 a skos:Concept;
+  skos:broader vocab:1058;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Prekindergarten classes"@en .
+
+vocab:1088 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:narrower vocab:1089, vocab:1090, vocab:1091, vocab:1092, vocab:1093, vocab:1094,
+    vocab:1095, vocab:1096, vocab:1097, vocab:1098, vocab:1099, vocab:1100, vocab:1101,
+    vocab:1102, vocab:1103, vocab:1104, vocab:1105, vocab:1106, vocab:1107, vocab:1108,
+    vocab:1109, vocab:1110, vocab:1111, vocab:1112, vocab:1113, vocab:1114, vocab:1115,
+    vocab:1116, vocab:1117, vocab:1118, vocab:1119, vocab:1120, vocab:1121, vocab:1122,
+    vocab:1123, vocab:1124, vocab:1125, vocab:1126, vocab:1127, vocab:1128, vocab:1129,
+    vocab:1130, vocab:1131, vocab:1132, vocab:1133, vocab:1134, vocab:1135, vocab:1136,
+    vocab:1137, vocab:1138, vocab:1139, vocab:1140, vocab:1141, vocab:1142, vocab:1143,
+    vocab:1144, vocab:1145, vocab:1146, vocab:1147, vocab:1148, vocab:1149, vocab:1150,
+    vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155, vocab:1156, vocab:1157,
+    vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162, vocab:1163, vocab:1164,
+    vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169, vocab:1170, vocab:1171,
+    vocab:1172, vocab:1173, vocab:1174, vocab:1175, vocab:1176, vocab:1177, vocab:1178,
+    vocab:1179, vocab:1180, vocab:1181, vocab:1182, vocab:1183, vocab:1184, vocab:1185,
+    vocab:1186, vocab:1187, vocab:1188, vocab:1189, vocab:1190, vocab:1191, vocab:1192,
+    vocab:1193, vocab:1194, vocab:1195, vocab:1196, vocab:1197, vocab:1198, vocab:1199,
+    vocab:1200, vocab:1201, vocab:1202, vocab:1203, vocab:1204, vocab:1205, vocab:1206,
+    vocab:1207, vocab:1208, vocab:1209, vocab:1210, vocab:1211, vocab:1212, vocab:1213,
+    vocab:1214, vocab:1215, vocab:1216, vocab:1217, vocab:1218, vocab:1219, vocab:1220,
+    vocab:1221, vocab:1222, vocab:1223, vocab:1224, vocab:1225, vocab:1226, vocab:1227,
+    vocab:1228, vocab:1229, vocab:1230, vocab:1231, vocab:1232, vocab:1233, vocab:1234,
+    vocab:1235, vocab:1236, vocab:1237, vocab:1238, vocab:1239, vocab:1240, vocab:1241,
+    vocab:1242, vocab:1243, vocab:1244, vocab:1245, vocab:1246, vocab:1247, vocab:1248,
+    vocab:1249, vocab:1250, vocab:1251, vocab:1252, vocab:1253, vocab:1254, vocab:1255,
+    vocab:1256, vocab:1257, vocab:1258, vocab:1259, vocab:1260, vocab:1261, vocab:1262,
+    vocab:1263, vocab:1264, vocab:1265, vocab:1266, vocab:1267, vocab:1268, vocab:1269,
+    vocab:1270, vocab:1271, vocab:1272, vocab:1273, vocab:1274, vocab:1275, vocab:1276,
+    vocab:1277, vocab:1278, vocab:1279, vocab:1280, vocab:1281, vocab:1282, vocab:1283,
+    vocab:1284, vocab:1285, vocab:1286, vocab:1287, vocab:1288, vocab:1289, vocab:1290,
+    vocab:1291, vocab:1292, vocab:1293, vocab:1294, vocab:1295, vocab:1296, vocab:1297,
+    vocab:1298, vocab:1299, vocab:1300, vocab:1301, vocab:1302, vocab:1303, vocab:1304,
+    vocab:1305, vocab:1306, vocab:1307, vocab:1308, vocab:1309, vocab:1310, vocab:1311,
+    vocab:1312, vocab:1313, vocab:1314, vocab:1315, vocab:1316, vocab:1317, vocab:1318,
+    vocab:1319, vocab:1320, vocab:1321, vocab:1322, vocab:1323, vocab:1324, vocab:1325,
+    vocab:1326, vocab:1327, vocab:1328, vocab:1329, vocab:1330, vocab:1331, vocab:1332,
+    vocab:1333, vocab:1334, vocab:1335, vocab:1336, vocab:1337, vocab:1338, vocab:1339,
+    vocab:1340, vocab:1341, vocab:1342, vocab:1343, vocab:1344, vocab:1345, vocab:1346,
+    vocab:1347, vocab:1348, vocab:1349, vocab:1350, vocab:1351, vocab:1352, vocab:1353,
+    vocab:1354, vocab:1355, vocab:1356, vocab:1357, vocab:1358, vocab:1359, vocab:1360,
+    vocab:1361, vocab:1362, vocab:1363, vocab:1364, vocab:1365, vocab:1366, vocab:1367,
+    vocab:1368, vocab:1369, vocab:1370, vocab:1371, vocab:1372, vocab:1373, vocab:1374,
+    vocab:1375, vocab:1376, vocab:1377, vocab:1378, vocab:1379, vocab:1380, vocab:1381,
+    vocab:1382, vocab:1383, vocab:1384, vocab:1385, vocab:1386, vocab:1387, vocab:1388,
+    vocab:1389, vocab:1390, vocab:1391, vocab:1392, vocab:1393, vocab:1394, vocab:1395,
+    vocab:1396, vocab:1397, vocab:1398, vocab:1399, vocab:1400, vocab:1401, vocab:1402,
+    vocab:1403, vocab:1404, vocab:1405, vocab:1406;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1407, vocab:1408, vocab:1409, vocab:1410, vocab:1411, vocab:1412,
+    vocab:1413, vocab:1414, vocab:1415, vocab:1416, vocab:1417, vocab:1418, vocab:1419,
+    vocab:1420, vocab:1421, vocab:1422, vocab:1423, vocab:1424, vocab:1425, vocab:1426,
+    vocab:1427, vocab:1428, vocab:1429, vocab:1430, vocab:1431, vocab:1432, vocab:1433,
+    vocab:1434, vocab:1435, vocab:1436, vocab:1437, vocab:1438, vocab:1439, vocab:1440,
+    vocab:1441, vocab:1442, vocab:1443, vocab:1444, vocab:1445, vocab:1446, vocab:1447,
+    vocab:1448, vocab:1449, vocab:1450, vocab:1451, vocab:1452, vocab:1453, vocab:1454,
+    vocab:1455, vocab:1456, vocab:1457, vocab:1458, vocab:1459, vocab:1460, vocab:1461,
+    vocab:1462, vocab:1463, vocab:1464, vocab:1465, vocab:1466, vocab:1467, vocab:1468,
+    vocab:1469, vocab:1470, vocab:1471, vocab:1472, vocab:1473, vocab:1474, vocab:1475,
+    vocab:1476, vocab:1477, vocab:1478, vocab:1479, vocab:1480, vocab:1481, vocab:1482,
+    vocab:1483, vocab:1484, vocab:1485, vocab:1486, vocab:1487, vocab:1488, vocab:1489,
+    vocab:1490, vocab:1491, vocab:1492, vocab:1493, vocab:1494, vocab:1495, vocab:1496,
+    vocab:1497, vocab:1498, vocab:1499, vocab:1500, vocab:1501, vocab:1502, vocab:1503,
+    vocab:1504, vocab:1505;
+  skos:prefLabel "Educational Curricula"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1089 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "100 Book Challenge"@en .
+
+vocab:1090 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "A Celebration of Character"@en .
+
+vocab:1091 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "A+ny where Learning System"@en .
+
+vocab:1092 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Academic Associates Learning Centers"@en .
+
+vocab:1093 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Academy of READING®"@en .
+
+vocab:1094 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Accelerated Math®"@en .
+
+vocab:1095 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Accelerated Reader"@en .
+
+vocab:1096 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Achieve3000®"@en .
+
+vocab:1097 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Acquiring Ethical Guidelines for Individual Self Governance (AEGIS)"@en .
+
+vocab:1098 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Addison-Wesley Mathematics basal program"@en .
+
+vocab:1099 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Advancement Via Individual Determination (AVID)"@en .
+
+vocab:1100 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Adventures of Jasper Woodbury Series"@en .
+
+vocab:1101 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Algebra Project"@en .
+
+vocab:1102 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Algebraic Thinking"@en .
+
+vocab:1103 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "AlphabiTunes"@en .
+
+vocab:1104 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Alpha-Time"@en .
+
+vocab:1105 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Als speciale kleuter tel je ook me! (Young Children with Special Needs Count, Too!)"@en .
+
+vocab:1106 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "America's Choice"@en .
+
+vocab:1107 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Appalachia Model Mathematics Program"@en .
+
+vocab:1108 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Athens Tutorial Program"@en .
+
+vocab:1109 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Balanced Early Literacy Initiative"@en .
+
+vocab:1110 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Barrett Math Program"@en .
+
+vocab:1111 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Barton Reading & Spelling System®"@en .
+
+vocab:1112 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Barton Reading and Spelling System"@en .
+
+vocab:1113 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Benchmark Word Recognition Program"@en .
+
+vocab:1114 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bilingual Cooperative Integrated Reading and Composition (BCIRC)"@en .
+
+vocab:1115 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Book Buddies"@en .
+
+vocab:1116 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Book clubs"@en .
+
+vocab:1117 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bookmark"@en .
+
+vocab:1118 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bradley Reading and Language Arts"@en .
+
+vocab:1119 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Breakthrough to Literacy"@en .
+
+vocab:1120 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bridge"@en .
+
+vocab:1121 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bridges in Mathematics"@en .
+
+vocab:1122 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bright Beginnings"@en .
+
+vocab:1123 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Bring the Classics to Life"@en .
+
+vocab:1124 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Building Blocks for Math (SRA Real Math)"@en .
+
+vocab:1125 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Building Decision Skills"@en .
+
+vocab:1126 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Building Esteem in Students Today (BEST)"@en .
+
+vocab:1127 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "C.L.A.P., A sound Approach to Pre-Reading Skills"@en .
+
+vocab:1128 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "California Early Literacy Learning (CELL)"@en .
+
+vocab:1129 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Carbo Reading Styles Program®"@en .
+
+vocab:1130 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Caring Habits Experience, The"@en .
+
+vocab:1131 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Caring School Community (CSC)"@en .
+
+vocab:1132 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Changing Lives"@en .
+
+vocab:1133 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Character Building & Reading Mastery"@en .
+
+vocab:1134 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Character Counts!"@en .
+
+vocab:1135 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Character First!"@en .
+
+vocab:1136 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "CHARACTERplus"@en .
+
+vocab:1137 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Check & Connect"@en .
+
+vocab:1138 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "CIERA School Change Project, The"@en .
+
+vocab:1139 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "ClassWide Peer Tutoring"@en .
+
+vocab:1140 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Algebra I"@en .
+
+vocab:1141 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Algebra II"@en .
+
+vocab:1142 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Geometry"@en .
+
+vocab:1143 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Integrated Math I"@en .
+
+vocab:1144 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Integrated Math II"@en .
+
+vocab:1145 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cognitive Tutor® Integrated Math III"@en .
+
+vocab:1146 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Community of Caring®"@en .
+
+vocab:1147 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "CompassLearning"@en .
+
+vocab:1148 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Compensatory Language Experiences and Reading Program (CLEAR)"@en .
+
+vocab:1149 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Comprehensive Curriculum for Early Student Success (ACCESS)"@en .
+
+vocab:1150 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Computer Curriculum Corporation (CCC)"@en .
+
+vocab:1151 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Computer Managed Mastery Learning"@en .
+
+vocab:1152 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Computer-aided instruction (CAI)"@en .
+
+vocab:1153 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Concept Phonics Fluency Set"@en .
+
+vocab:1154 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Concept-Oriented Reading Instruction (CORI)"@en .
+
+vocab:1155 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Connect with Kids"@en .
+
+vocab:1156 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Connected Mathematics Project (CMP)"@en .
+
+vocab:1157 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Connecting Math Concepts (CMC) mathematics program"@en .
+
+vocab:1158 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Consistency Management®"@en .
+
+vocab:1159 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cooperative Integrated Reading and Composition® (CIRC®)"@en .
+
+vocab:1160 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Coping Power"@en .
+
+vocab:1161 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "CORD Applied Math"@en .
+
+vocab:1162 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Core Knowledge Curriculum"@en .
+
+vocab:1163 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Core Knowledge Language Arts Knowledge Strand"@en .
+
+vocab:1164 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Core-Plus Mathematics"@en .
+
+vocab:1165 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cornerstone Literacy Initiative"@en .
+
+vocab:1166 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Corrective Reading"@en .
+
+vocab:1167 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Countdown Video IGAP Intervention Tape"@en .
+
+vocab:1168 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Crossties"@en .
+
+vocab:1169 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Curiosity Corner"@en .
+
+vocab:1170 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "DaisyQuest"@en .
+
+vocab:1171 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Davis Learning Strategies Program"@en .
+
+vocab:1172 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Des Moines Plan"@en .
+
+vocab:1173 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Destination Math"@en .
+
+vocab:1174 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Destination Reading"@en .
+
+vocab:1175 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Dialogic Reading"@en .
+
+vocab:1176 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Different Ways of Knowing"@en .
+
+vocab:1177 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Digi-Block® Learning System"@en .
+
+vocab:1178 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction"@en .
+
+vocab:1179 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction and CIRC"@en .
+
+vocab:1180 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/DISTAR"@en .
+
+vocab:1181 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/DISTAR and Success for All"@en .
+
+vocab:1182 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/Horizons"@en .
+
+vocab:1183 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/RITE"@en .
+
+vocab:1184 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/Spelling Mastery"@en .
+
+vocab:1185 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/SRA"@en .
+
+vocab:1186 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct Instruction/Teach Your Child to Read in 100 Easy Lessons"@en .
+
+vocab:1187 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Direct, Intensive, Systematic, Early and Comprehensive (DISEC) Instruction"@en .
+
+vocab:1188 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Discover Intensive Phonics for Yourself"@en .
+
+vocab:1189 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Discovery Health Connection"@en .
+
+vocab:1190 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Discovery Health Connection"@en .
+
+vocab:1191 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Doors to Discovery"@en .
+
+vocab:1192 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Dr. Cupp Readers & Journal Writers"@en .
+
+vocab:1193 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "DreamBox Learning"@en .
+
+vocab:1194 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early Intervention in Reading (EIR)®"@en .
+
+vocab:1195 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Early Risers"@en .
+
+vocab:1196 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Earobics®"@en .
+
+vocab:1197 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Edison Schools"@en .
+
+vocab:1198 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Emerging Readers Software"@en .
+
+vocab:1199 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Enhanced Proactive Reading"@en .
+
+vocab:1200 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "enVisionMATH"@en .
+
+vocab:1201 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "ESSENTIAL Curriculum, The™"@en .
+
+vocab:1202 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Essential Skills Software"@en .
+
+vocab:1203 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Everyday Mathematics®"@en .
+
+vocab:1204 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Evidence Based Literacy Instruction"@en .
+
+vocab:1205 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Exemplary Center for Reading Instruction (ECRI)"@en .
+
+vocab:1206 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Facing History and Ourselves"@en .
+
+vocab:1207 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Failure Free Reading"@en .
+
+vocab:1208 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Fast ForWord®"@en .
+
+vocab:1209 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Fast Track Action Reading Program"@en .
+
+vocab:1210 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Fast Track: Elementary School"@en .
+
+vocab:1211 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Felipe's Sound Search"@en .
+
+vocab:1212 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "First grade Literacy Intervention Program (FLIP)"@en .
+
+vocab:1213 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "First Step to Success"@en .
+
+vocab:1214 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "First Steps"@en .
+
+vocab:1215 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Flippen Reading Connections™"@en .
+
+vocab:1216 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Florida Primary Education Program"@en .
+
+vocab:1217 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Fluency Formula"@en .
+
+vocab:1218 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Four Block Framework"@en .
+
+vocab:1219 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Frontline Phonics"@en .
+
+vocab:1220 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Functional Behavioral Assessment-based Interventions"@en .
+
+vocab:1221 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "FUNdamentallyMATH®"@en .
+
+vocab:1222 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Fundations"@en .
+
+vocab:1223 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Funnix"@en .
+
+vocab:1224 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Geo-Logo, by Investigations in Number, Data, and Space®"@en .
+
+vocab:1225 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Giraffe Heroes"@en .
+
+vocab:1226 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "GOcabulary Program for Elementary Students"@en .
+
+vocab:1227 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Goldman-Lynch Language Simulation Program"@en .
+
+vocab:1228 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Goldman-Lynch Sounds-in-Symbols Development Kit"@en .
+
+vocab:1229 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Great Books"@en .
+
+vocab:1230 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Green Dot Public Schools"@en .
+
+vocab:1231 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Growing With Mathematics®"@en .
+
+vocab:1232 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Guided Discovery LOGO"@en .
+
+vocab:1233 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Head Start"@en .
+
+vocab:1234 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Headsprout Early Reading"@en .
+
+vocab:1235 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Headsprout® Early Reading"@en .
+
+vocab:1236 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Heartwood Ethics Curriculum/An Ethics Curriculum for Children"@en .
+
+vocab:1237 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Heath Mathematics Connections (textbook series)"@en .
+
+vocab:1238 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "High School Puente Program"@en .
+
+vocab:1239 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Higher Order Thinking Skills (HOTS)"@en .
+
+vocab:1240 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Holt Mathematics"@en .
+
+vocab:1241 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Holt Middle School Math (textbook)"@en .
+
+vocab:1242 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Home Language Environment"@en .
+
+vocab:1243 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Hooked on Phonics ®"@en .
+
+vocab:1244 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Houghton Mifflin Mathematics"@en .
+
+vocab:1245 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Houghton Mifflin Reading©"@en .
+
+vocab:1246 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Huntington Phonics"@en .
+
+vocab:1247 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "I CAN Learn®"@en .
+
+vocab:1248 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "I CAN Learn® Algebra"@en .
+
+vocab:1249 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "I CAN Learn® Geometry"@en .
+
+vocab:1250 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "I Care Parental Involvement Character Curriculum"@en .
+
+vocab:1251 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Instructional Conversations and Literature Logs"@en .
+
+vocab:1252 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Integrated Mathematics, Science, and Technology (IMaST)"@en .
+
+vocab:1253 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "IntelliTools Reading"@en .
+
+vocab:1254 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Investigations in Number, Data, and Space®"@en .
+
+vocab:1255 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Invitations to Literacy"@en .
+
+vocab:1256 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Jigsaw Classroom"@en .
+
+vocab:1257 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Johnny Can Spell"@en .
+
+vocab:1258 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Jostens Integrated Language Arts Basic Learning System"@en .
+
+vocab:1259 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Jostens Integrated Learning System"@en .
+
+vocab:1260 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Key Math Teach and Practice"@en .
+
+vocab:1261 a skos:Concept;
+  dct:created "2023-11-12"^^xsd:date;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Kindergarten Intervention Program (KIP)"@en .
+
+vocab:1262 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Kindergarten Works"@en .
+
+vocab:1263 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Knowing Mathematics"@en .
+
+vocab:1264 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Knowledge is Power Program (KIPP)"@en .
+
+vocab:1265 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Kumon Mathematics Program"@en .
+
+vocab:1266 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Ladders to Literacy"@en .
+
+vocab:1267 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "LANGUAGE!®"@en .
+
+vocab:1268 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Larson Developmental Math Series"@en .
+
+vocab:1269 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Leap into Phonics"@en .
+
+vocab:1270 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "LeapFrog Schoolhouse"@en .
+
+vocab:1271 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Learning for Life"@en .
+
+vocab:1272 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lessons in Character"@en .
+
+vocab:1273 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Let's Begin with the Letter People®"@en .
+
+vocab:1274 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Letter People"@en .
+
+vocab:1275 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Letterland"@en .
+
+vocab:1276 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Leveled Literacy Intervention"@en .
+
+vocab:1277 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lexia Reading"@en .
+
+vocab:1278 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lightspan Achieve Now"@en .
+
+vocab:1279 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lindamood Phoneme Sequencing® (LiPS®)"@en .
+
+vocab:1280 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "LinguiSystems"@en .
+
+vocab:1281 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lions Quest -- Skills for Action"@en .
+
+vocab:1282 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lions Quest -- Skills for Adolescence"@en .
+
+vocab:1283 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lions Quest -- Skills for Growing"@en .
+
+vocab:1284 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Literacy Collaborative"@en .
+
+vocab:1285 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Literacy Express"@en .
+
+vocab:1286 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Literacy First"@en .
+
+vocab:1287 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Little Books"@en .
+
+vocab:1288 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Living Values Educational Program"@en .
+
+vocab:1289 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "LocuTour Multimedia Cognitive Rehabilitation"@en .
+
+vocab:1290 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Logo programming language"@en .
+
+vocab:1291 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Logo programming language"@en .
+
+vocab:1292 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Lovaas Model of Applied Behavior Analysis"@en .
+
+vocab:1293 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Love in a Big World"@en .
+
+vocab:1294 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Macmillan/McGraw-Hill"@en .
+
+vocab:1295 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Making Meaning"@en .
+
+vocab:1296 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Advantage (textbook series)"@en .
+
+vocab:1297 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Applications and Connections (textbook series published by Glencoe)"@en .
+
+vocab:1298 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Renaissance®"@en .
+
+vocab:1299 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Math Trailblazers"@en .
+
+vocab:1300 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics in Action (textbook series published by MacMillan)"@en .
+
+vocab:1301 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics in Context (MiC)"@en .
+
+vocab:1302 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics Plus (textbook series published by Harcourt)"@en .
+
+vocab:1303 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics Their Way®"@en .
+
+vocab:1304 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mathematics Today by Harcourt Brace"@en .
+
+vocab:1305 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "MathFact"@en .
+
+vocab:1306 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "MathScape: Seeing and Thinking Mathematically"@en .
+
+vocab:1307 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "MathSteps by Houghton Mifflin"@en .
+
+vocab:1308 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "MathThematics"@en .
+
+vocab:1309 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "MathWings by the Success for All Foundation®"@en .
+
+vocab:1310 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Merit Reading Software Program"@en .
+
+vocab:1311 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Middle Grades Math (textbook series, published by ScottForesman/AddisonWesley)"@en .
+
+vocab:1312 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Middle School Mathematics through Applications Program (MMAP)"@en .
+
+vocab:1313 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Milieu Teaching"@en .
+
+vocab:1314 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Moving with Math"@en .
+
+vocab:1315 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Moving with Math® Extensions"@en .
+
+vocab:1316 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Moving with Math® Math by Topic"@en .
+
+vocab:1317 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Multiple Saxon Math Courses"@en .
+
+vocab:1318 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "My Reading Coach™"@en .
+
+vocab:1319 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Mystery Motivator"@en .
+
+vocab:1320 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "National Board for Professional Teaching Standards (NBPTS) Certification"@en .
+
+vocab:1321 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "National Geographic Society and Arizona Geographic Alliance K-8 Program"@en .
+
+vocab:1322 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "New American Schools"@en .
+
+vocab:1323 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "New Century Integrated Instructional System"@en .
+
+vocab:1324 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "New Century Mathematics"@en .
+
+vocab:1325 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "New Heights"@en .
+
+vocab:1326 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "North Carolina A+ Schools network"@en .
+
+vocab:1327 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Number Power™"@en .
+
+vocab:1328 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Numeracy Recovery"@en .
+
+vocab:1329 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Odyssey Reading"@en .
+
+vocab:1330 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Odyssey® Math"@en .
+
+vocab:1331 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Onward to Excellence"@en .
+
+vocab:1332 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Open Circle"@en .
+
+vocab:1333 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Open Court Reading©"@en .
+
+vocab:1334 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Opening Eyes to Mathematics by The Math Learning Center"@en .
+
+vocab:1335 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Orton–Gillingham® technique"@en .
+
+vocab:1336 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Pacemaker"@en .
+
+vocab:1337 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Partnership for Access to Higher Mathematics (PATH Mathematics)"@en .
+
+vocab:1338 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Pathways to Character"@en .
+
+vocab:1339 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Pause, Prompt, & Praise ©"@en .
+
+vocab:1340 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Peabody Language Development Kits"@en .
+
+vocab:1341 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Peace Education"@en .
+
+vocab:1342 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Peer-Assisted Learning Strategies"@en .
+
+vocab:1343 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Performance Learning Systems"@en .
+
+vocab:1344 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Personalized System of Instruction (PSI)"@en .
+
+vocab:1345 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Phono-Graphix"@en .
+
+vocab:1346 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Phonological Awareness Training"@en .
+
+vocab:1347 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Phonological Awareness Training plus Letter Knowledge Training"@en .
+
+vocab:1348 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Piacceleration Instruction"@en .
+
+vocab:1349 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Pivotal Response Training"@en .
+
+vocab:1350 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "PLATO"@en .
+
+vocab:1351 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Play-Based Interventions"@en .
+
+vocab:1352 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Positive Action"@en .
+
+vocab:1353 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Pre-K Mathematics"@en .
+
+vocab:1354 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Prentice Hall Literature© (1989-2005)"@en .
+
+vocab:1355 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Prentice Hall/Pearson Literature© (2007-15)"@en .
+
+vocab:1356 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Programmed Tutorial Reading"@en .
+
+vocab:1357 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Progress in Mathematics © 2006"@en .
+
+vocab:1358 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project 2000"@en .
+
+vocab:1359 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project CHILD"@en .
+
+vocab:1360 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project CRISS®"@en .
+
+vocab:1361 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project FAST"@en .
+
+vocab:1362 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project LISTEN's Reading Tutor"@en .
+
+vocab:1363 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project LISTEN's Writing Tutor"@en .
+
+vocab:1364 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project MAS"@en .
+
+vocab:1365 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project PLUS (Partnership Linking University School Personnel)"@en .
+
+vocab:1366 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project Read® Phonology"@en .
+
+vocab:1367 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project SEED"@en .
+
+vocab:1368 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project Teach and Reach"@en .
+
+vocab:1369 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Project Wisdom"@en .
+
+vocab:1370 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Psychology"@en .
+
+vocab:1371 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "QuickReads"@en .
+
+vocab:1372 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Rainbow Reading Program"@en .
+
+vocab:1373 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Rational Number Project"@en .
+
+vocab:1374 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "READ 180®"@en .
+
+vocab:1375 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Read Naturally®"@en .
+
+vocab:1376 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Read Well®"@en .
+
+vocab:1377 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Read, Write & Type!"@en .
+
+vocab:1378 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Apprenticeship®"@en .
+
+vocab:1379 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Edge"@en .
+
+vocab:1380 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Intervention for Early Success"@en .
+
+vocab:1381 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Mastery"@en .
+
+vocab:1382 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Plus®"@en .
+
+vocab:1383 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Recovery®"@en .
+
+vocab:1384 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Rods"@en .
+
+vocab:1385 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading RULES! Kindergarten"@en .
+
+vocab:1386 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Speed Drills"@en .
+
+vocab:1387 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Success from the Start"@en .
+
+vocab:1388 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Theater"@en .
+
+vocab:1389 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Together™"@en .
+
+vocab:1390 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reading Upgrade"@en .
+
+vocab:1391 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Ready, Set, Leap!®"@en .
+
+vocab:1392 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Ready, Set, Leap!®"@en .
+
+vocab:1393 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Real Math basal mathematics program"@en .
+
+vocab:1394 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reasoning Mind"@en .
+
+vocab:1395 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Reciprocal Teaching"@en .
+
+vocab:1396 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Repeated Reading"@en .
+
+vocab:1397 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Resolving Conflict Creatively Program (RCCP)"@en .
+
+vocab:1398 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Richards Read Systematic Language Program"@en .
+
+vocab:1399 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Richmond Young Students Mathematics (RYSM) Class"@en .
+
+vocab:1400 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Right Start to Reading"@en .
+
+vocab:1401 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Road to the Code"@en .
+
+vocab:1402 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "RTI"@en .
+
+vocab:1403 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "RULER"@en .
+
+vocab:1404 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Rutgers-Kenilworth Program"@en .
+
+vocab:1405 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "S.P.I.R.E."@en .
+
+vocab:1406 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "SAIL (Second grade Acceleration in Literacy)"@en .
+
+vocab:1407 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Advanced Math"@en .
+
+vocab:1408 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Algebra I"@en .
+
+vocab:1409 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Algebra II"@en .
+
+vocab:1410 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Geometry"@en .
+
+vocab:1411 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Math"@en .
+
+vocab:1412 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Saxon Phonics"@en .
+
+vocab:1413 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Schoolwide Early Language and Literacy (SWELL)"@en .
+
+vocab:1414 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Scott Foresman Math Diagnostic & Intervention System"@en .
+
+vocab:1415 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Scott Foresman-Addison Wesley Elementary Mathematics"@en .
+
+vocab:1416 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Second Step"@en .
+
+vocab:1417 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Self-Regulated Strategy Development"@en .
+
+vocab:1418 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Shared Book Reading"@en .
+
+vocab:1419 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sharon Wells Mathematics Curriculum"@en .
+
+vocab:1420 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Silver Burdett Ginn Mathematics"@en .
+
+vocab:1421 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sing, Spell, Read & Write"@en .
+
+vocab:1422 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sing, Spell, Read, and Write (SSRW)"@en .
+
+vocab:1423 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Singapore Mathematics"@en .
+
+vocab:1424 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Six Through Eighth Grade Mathematics (STEM) Project, The"@en .
+
+vocab:1425 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Skills Reinforcement Project"@en .
+
+vocab:1426 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "SkillsTutor"@en .
+
+vocab:1427 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Smart and Good"@en .
+
+vocab:1428 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Soar to Success"@en .
+
+vocab:1429 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Social Skills Training"@en .
+
+vocab:1430 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sonday System"@en .
+
+vocab:1431 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sound Field System"@en .
+
+vocab:1432 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sound Foundations"@en .
+
+vocab:1433 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sound Partners"@en .
+
+vocab:1434 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sound Reading"@en .
+
+vocab:1435 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sounds Abound"@en .
+
+vocab:1436 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sounds and Symbols Early Reading Program"@en .
+
+vocab:1437 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "South African Government Curriculum (CAPS)"@en .
+
+vocab:1438 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Spelling Mastery"@en .
+
+vocab:1439 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "SpellRead"@en .
+
+vocab:1440 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Starfall"@en .
+
+vocab:1441 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Start Making a Reader Today® (SMART®)"@en .
+
+vocab:1442 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Stepping Stones to Literacy"@en .
+
+vocab:1443 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "STEPS (Sequential Teaching of Explicit Phonics and Spelling)"@en .
+
+vocab:1444 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Stories and More"@en .
+
+vocab:1445 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Story Champs"@en .
+
+vocab:1446 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Story Comprehension to Go"@en .
+
+vocab:1447 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Strategic Math Series"@en .
+
+vocab:1448 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Strategies that Work"@en .
+
+vocab:1449 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Student team reading and writing"@en .
+
+vocab:1450 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Student Teams Achievement Divisions (STAD)"@en .
+
+vocab:1451 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Success for All®"@en .
+
+vocab:1452 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Success through Accepting Responsibility (S.T.A.R.)"@en .
+
+vocab:1453 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Successmaker"@en .
+
+vocab:1454 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "SuccessMaker®"@en .
+
+vocab:1455 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Sullivan Program"@en .
+
+vocab:1456 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "System of Least Prompts"@en .
+
+vocab:1457 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Talent Development Middle Grades Program"@en .
+
+vocab:1458 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "TAP: The System for Teacher and Student Advancement"@en .
+
+vocab:1459 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Teach for America (TFA)"@en .
+
+vocab:1460 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Teacher to Teacher Math Problem Solving Supplementary Curriculum"@en .
+
+vocab:1461 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "The Creative Curriculum® for Preschool, Fourth Edition"@en .
+
+vocab:1462 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "The Expert Mathematician"@en .
+
+vocab:1463 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "The Incredible Years"@en .
+
+vocab:1464 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "The Spalding Method®"@en .
+
+vocab:1465 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Thinking Mathematics"@en .
+
+vocab:1466 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "TIPS: Math (Teachers Involve Parents in Schoolwork)"@en .
+
+vocab:1467 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "TNTP Teaching Fellows"@en .
+
+vocab:1468 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Too Good for Drugs (TGFD)"@en .
+
+vocab:1469 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Too Good for Drugs and Violence (TGFD & V)"@en .
+
+vocab:1470 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Too Good For Violence (TGFV)"@en .
+
+vocab:1471 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Tools for Getting Along"@en .
+
+vocab:1472 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Tools of the Mind"@en .
+
+vocab:1473 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "TouchMath®"@en .
+
+vocab:1474 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Transition Mathematics"@en .
+
+vocab:1475 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Tribes Learning Communities®"@en .
+
+vocab:1476 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Tribes TLC®"@en .
+
+vocab:1477 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Unitedstreaming™"@en .
+
+vocab:1478 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Advanced Algebra"@en .
+
+vocab:1479 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Algebra"@en .
+
+vocab:1480 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Functions, Statistics, and Trigonometry"@en .
+
+vocab:1481 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Geometry"@en .
+
+vocab:1482 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Multiple Courses"@en .
+
+vocab:1483 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "University of Chicago School Mathematics Project (UCSMP) Precalculus and Discrete Mathematics"@en .
+
+vocab:1484 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Vanderbilt Grade 2 Pirate Math Intervention"@en .
+
+vocab:1485 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Visual Mathematics by The Math Learning Center"@en .
+
+vocab:1486 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Vmath®"@en .
+
+vocab:1487 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Vocabulary Improvement Program for English Language Learners and Their Classmates (VIP)"@en .
+
+vocab:1488 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Voices Literature and Character Education (Voices LACE)"@en .
+
+vocab:1489 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Voices Reading"@en .
+
+vocab:1490 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "VoWac (Vowel Oriented Word Attack Course)"@en .
+
+vocab:1491 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Voyager Universal Literacy System®"@en .
+
+vocab:1492 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Voyages"@en .
+
+vocab:1493 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Voyages"@en .
+
+vocab:1494 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Wasatch Interactive Learning, distributed by Plato Learning"@en .
+
+vocab:1495 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Waterford Early Reading Level One"@en .
+
+vocab:1496 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Waterford Early Reading Program"@en .
+
+vocab:1497 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "WiggleWorks"@en .
+
+vocab:1498 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Wilson Reading System®"@en .
+
+vocab:1499 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Wisdom for Life"@en .
+
+vocab:1500 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "WiseSkills®"@en .
+
+vocab:1501 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Words and Concepts"@en .
+
+vocab:1502 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Words Their Way™"@en .
+
+vocab:1503 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "WORKSHOP WAY - Instant Personality Phonics Activities"@en .
+
+vocab:1504 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Wright Group's Intervention Program"@en .
+
+vocab:1505 a skos:Concept;
+  skos:broader vocab:1088;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Writing to Read"@en .
+
+vocab:1506 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1507, vocab:1508, vocab:1509, vocab:1510, vocab:1511, vocab:1512,
+    vocab:1513, vocab:1514, vocab:1515, vocab:1516, vocab:1517, vocab:1518, vocab:1519,
+    vocab:1520, vocab:1521;
+  skos:prefLabel "Developmental Designs"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1507 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cohort Sequential"@en .
+
+vocab:1508 a skos:Concept;
+  dct:created "2023-11-14"^^xsd:date;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Control Group"@en .
+
+vocab:1509 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Correlation"@en .
+
+vocab:1510 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Cross-sectional"@en .
+
+vocab:1511 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Individual Differences"@en .
+
+vocab:1512 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Longitudinal"@en .
+
+vocab:1513 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Meta-Analysis"@en .
+
+vocab:1514 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Microgenic"@en .
+
+vocab:1515 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Panel"@en .
+
+vocab:1516 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Parallel process study of infant movement and language learning"@en .
+
+vocab:1517 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Randomized Control Trial"@en .
+
+vocab:1518 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Repeated Acquisition Design"@en .
+
+vocab:1519 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Time Series"@en .
+
+vocab:1520 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Time Series: Continuous"@en .
+
+vocab:1521 a skos:Concept;
+  skos:broader vocab:1506;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Time Series: Discrete"@en .
