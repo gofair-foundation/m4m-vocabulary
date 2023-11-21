@@ -42,7 +42,7 @@
   owl:ontologyIRI <http://purl.org/m4m/>;
   owl:versionInfo "0.0.1"@en;
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1028, vocab:1034, vocab:1042,
-    vocab:1046, vocab:1051, vocab:1056, vocab:1061, vocab:1065, vocab:1068;
+    vocab:1046, vocab:1051, vocab:1056, vocab:1061, vocab:1066;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
   <voaf:metadataVoc> <https://www.isibang.ac.in/> .
@@ -401,7 +401,7 @@ vocab:1055 a skos:Concept;
 vocab:1056 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1057, vocab:1058, vocab:1059, vocab:1060, vocab:1066, vocab:1067;
+  skos:narrower vocab:1057, vocab:1058, vocab:1059, vocab:1060;
   skos:prefLabel "level of data granularity"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -440,6 +440,7 @@ vocab:1062 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1061;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1065;
   skos:prefLabel "concluded"@en .
 
 vocab:1063 a skos:Concept;
@@ -452,60 +453,68 @@ vocab:1064 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1061;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1069, vocab:1070, vocab:1071, vocab:1072, vocab:1073;
-  skos:prefLabel "ongoing planned"@en .
+  skos:narrower vocab:1003;
+  skos:prefLabel "ongoing"@en .
 
 vocab:1065 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "HBM type"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "planned"@en .
 
 vocab:1066 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1056;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "research object"@en .
+  skos:narrower vocab:1067, vocab:1068, vocab:1069, vocab:1070, vocab:1071, vocab:1072,
+    vocab:1073, vocab:1074;
+  skos:prefLabel "HBM type"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1067 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1056;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surveillance project"@en .
+  skos:prefLabel "research object"@en .
 
 vocab:1068 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "monitoring project"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "surveillance project"@en .
 
 vocab:1069 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1064;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "policy / legislation"@en .
+  skos:prefLabel "monitoring project"@en .
 
 vocab:1070 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1064;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "development of tools/guideles/training material"@en .
+  skos:prefLabel "policy / legislation"@en .
 
 vocab:1071 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1064;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "quality control/quality assurance"@en .
+  skos:prefLabel "development of tools/guideles/training material"@en .
 
 vocab:1072 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1064;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "improving health services delivery infrasturcte"@en .
+  skos:prefLabel "quality control/quality assurance"@en .
 
 vocab:1073 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1064;
+  skos:broader vocab:1066;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "improving health services delivery infrasturcte"@en .
+
+vocab:1074 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  skos:broader vocab:1066;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "health promotion"@en .
 

@@ -110,13 +110,14 @@ vocab:1060,metadata only,,,,,vocab:1056,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1061,status,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1062,concluded,,,,,vocab:1061,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1063,initiated,,,,,vocab:1061,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1064,ongoing planned,,,,,vocab:1061,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1065,HBM type,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1066,research object,,,,,vocab:1056,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1067,surveillance project,,,,,vocab:1056,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1068,monitoring project,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1069,policy / legislation,,,,,vocab:1064,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1070,development of tools/guideles/training material,,,,,vocab:1064,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1071,quality control/quality assurance,,,,,vocab:1064,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1072,improving health services delivery infrasturcte,,,,,vocab:1064,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1073,health promotion,,,,,vocab:1064,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1064,ongoing,,,,,vocab:1061,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1065,planned,,,,,vocab:1062,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1066,HBM type,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1067,research object,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1068,surveillance project,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1069,monitoring project,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1070,policy / legislation,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1071,development of tools/guideles/training material,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1072,quality control/quality assurance,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1073,improving health services delivery infrasturcte,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1074,health promotion,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
