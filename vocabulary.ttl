@@ -41,8 +41,8 @@
   schema:includedInDataCatalog <https://bioportal.bioontology.org/>;
   owl:ontologyIRI <http://purl.org/m4m/>;
   owl:versionInfo "0.0.1"@en;
-  skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1028, vocab:1034, vocab:1042,
-    vocab:1046, vocab:1051, vocab:1056, vocab:1061, vocab:1066;
+  skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1028, vocab:1034, vocab:1038,
+    vocab:1042, vocab:1046, vocab:1051, vocab:1056, vocab:1061, vocab:1066;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
   <voaf:metadataVoc> <https://www.isibang.ac.in/> .
@@ -263,8 +263,7 @@ vocab:1033 a skos:Concept;
 vocab:1034 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1035, vocab:1036, vocab:1037, vocab:1038, vocab:1039,
-    vocab:1040, vocab:1041;
+  skos:narrower vocab:1003, vocab:1035, vocab:1036, vocab:1037;
   skos:prefLabel "non-probabilitstic selection"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -287,27 +286,27 @@ vocab:1037 a skos:Concept;
   skos:prefLabel "purposive"@en .
 
 vocab:1038 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1034;
+  dct:created "2023-11-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003;
-  skos:prefLabel "study design"@en .
+  skos:narrower vocab:1003, vocab:1039, vocab:1040, vocab:1041;
+  skos:prefLabel "study design"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1039 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1034;
+  dct:created "2023-11-22"^^xsd:date;
+  skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "cross-sectional survey"@en .
 
 vocab:1040 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1034;
+  dct:created "2023-11-22"^^xsd:date;
+  skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "case-control"@en .
 
 vocab:1041 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1034;
+  skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "longitutdinal (cohort)"@en .
 

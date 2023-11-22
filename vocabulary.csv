@@ -84,10 +84,10 @@ vocab:1034,non-probabilitstic selection,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1035,convenience,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1036,quota,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1037,purposive,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1038,study design,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1039,cross-sectional survey,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1040,case-control,,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1041,longitutdinal (cohort),,,,,vocab:1034,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1038,study design,,,,,,,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1039,cross-sectional survey,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1040,case-control,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1041,longitutdinal (cohort),,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1042,study setting,,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1043,occupational exposure study,,,,,vocab:1042,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1044,hotspot area,,,,,vocab:1042,,,,,,,,,,,,,,,,,,2023-11-21
