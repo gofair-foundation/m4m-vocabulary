@@ -55,7 +55,8 @@ jobs:
           RENDERING_PROPERTIES: ${{secrets.RENDERING_PROPERTIES}}
         run: |
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
-          mv xls2rdf.log ./logs/          
+          mv xls2rdf.log ./logs/
+          python ./src/update.py
 
       - name: deploy
         env:
