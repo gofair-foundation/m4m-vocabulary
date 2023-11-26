@@ -1,4 +1,4 @@
-ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.
+ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.,,,,,,,,,,,,,,,,,,,,,,2023-11-26
 "Prefixes for controlled vocabularies, schema and ontologies"
 PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
 PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
@@ -46,7 +46,7 @@ dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,rdf:type,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,institution,,,,,,,,,,,test,test,test,test,test,test,test,test,test,,,,2023-11-23
+vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,,2023-11-23
 vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1003,other,,,,,"vocab:1000,vocab:1020,vocab:1042,vocab:1038,vocab:1034,vocab:1028,vocab:1064",,,,,,,,,,,,,,,,,,2023-11-21
@@ -119,5 +119,117 @@ vocab:1069,monitoring project,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1070,policy / legislation,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1071,development of tools/guideles/training material,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1072,quality control/quality assurance,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1073,improving health services delivery infrasturcte,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1074,health promotion,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1073,improving health services delivery infrasturcte,,,,,vocab:1066,,,,,,,,,,,,,,,,,,2023-11-26
+vocab:1074,health promotion,,,,,vocab:1066
+vocab:1097,matrix
+vocab:1098,air matrix,,,,,vocab:1097
+vocab:1099,sediment matrix,,,,,vocab:1097
+vocab:1100,soil matrix,,,,,vocab:1097
+vocab:1101,water matrix,,,,,vocab:1097
+vocab:1102,biota matrix,,,,,vocab:1097
+vocab:1103,deposition matrix,,,,,vocab:1097
+vocab:1104,whole air matrix,,,,,vocab:1098
+vocab:1105,gas phase matrix,,,,,vocab:1098
+vocab:1106,TSP matrix,,,,,vocab:1098
+vocab:1107,PM 10 matrix,,,,,vocab:1098
+vocab:1108,PM 2.5 matrix,,,,,vocab:1098
+vocab:1109,PM 5 matrix,,,,,vocab:1098
+vocab:1110,surface matrix,,,,,vocab:1099
+vocab:1111,sewage sludge matrix,,,,,vocab:1099
+vocab:1112,stratified matrix,,,,,vocab:1099
+vocab:1113,surface matrix,,,,,vocab:1100
+vocab:1114,topsoil matrix,,,,,vocab:1100
+vocab:1115,subsoil A matrix,,,,,vocab:1100
+vocab:1116,subsoil B matrix,,,,,vocab:1100
+vocab:1117,horizon A matrix,,,,,vocab:1100
+vocab:1118,horizon B matrix,,,,,vocab:1100
+vocab:1119,horizon C matrix,,,,,vocab:1100
+vocab:1120,horizon E matrix,,,,,vocab:1100
+vocab:1121,horizon G matrix,,,,,vocab:1100
+vocab:1122,horizon M matrix,,,,,vocab:1100
+vocab:1123,horizon O matrix,,,,,vocab:1100
+vocab:1124,coastal matrix,,,,,vocab:1101
+vocab:1125,brackish matrix,,,,,vocab:1101
+vocab:1126,ocean matrix,,,,,vocab:1101
+vocab:1127,surface freshwater matrix,,,,,vocab:1101
+vocab:1128,surface freshwater - reservoir matrix,,,,,vocab:1101
+vocab:1129,surface freshwater - river matrix,,,,,vocab:1101
+vocab:1130,ground water matrix,,,,,vocab:1101
+vocab:1131,fish matrix,,,,,vocab:1102
+vocab:1132,barley matrix,,,,,vocab:1102
+vocab:1133,grass matrix,,,,,vocab:1102
+vocab:1134,hop matrix,,,,,vocab:1102
+vocab:1135,moss matrix,,,,,vocab:1102
+vocab:1136,mustard matrix,,,,,vocab:1102
+vocab:1137,maize matrix,,,,,vocab:1102
+vocab:1138,oat matrix,,,,,vocab:1102
+vocab:1139,peat moss matrix,,,,,vocab:1102
+vocab:1140,pine matrix,,,,,vocab:1102
+vocab:1141,potato matrix,,,,,vocab:1102
+vocab:1142,rape matrix,,,,,vocab:1102
+vocab:1143,soya matrix,,,,,vocab:1102
+vocab:1144,sunflover matrix,,,,,vocab:1102
+vocab:1145,spruce matrix,,,,,vocab:1102
+vocab:1146,triticale matrix,,,,,vocab:1102
+vocab:1147,wheat matrix,,,,,vocab:1102
+vocab:1148,dry matrix,,,,,vocab:1103
+vocab:1149,mixed matrix,,,,,vocab:1103
+vocab:1150,wet matrix,,,,,vocab:1103
+vocab:1151,blood-whole blood matrix,,BWB,Blood-whole blood,,vocab:1172
+vocab:1152,blood -plasma matrix,,BP,Blood -plasma,,vocab:1172
+vocab:1153,blood -serum matrix,,BS,Blood -serum,,vocab:1172
+vocab:1154,cord blood-whole blood matrix,,CBWB,Cord blood-whole blood,,vocab:1172
+vocab:1155,cord blood-plasma matrix,,CBP,Cord blood-plasma,,vocab:1172
+vocab:1156,cord blood-serum matrix,,CBS,Cord blood-serum,,vocab:1172
+vocab:1157,urine-spot matrix,,US,Urine-spot,,vocab:1172
+vocab:1158,urine-24h matrix,,UD,Urine-24h,,vocab:1172
+vocab:1159,urine-morning urine matrix,,UM,Urine-morning urine,,vocab:1172
+vocab:1160,saliva and/or sputum matrix,,SA,Saliva and or sputum,,vocab:1172
+vocab:1161,semen matrix,,SEM,Semen,,vocab:1172
+vocab:1162,hair matrix,,H,Hair,,vocab:1172
+vocab:1163,exhaled breath condensate matrix,,EBC,Exhaled breath condensate,,vocab:1172
+vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172,,,,,,,,,,,,,,,,,,########
+vocab:1165,breast milk matrix,,BM,Breast milk,,vocab:1172
+vocab:1166,adipose tissue/fat matrix,,ADI,Adipose tissue/fat,,vocab:1172
+vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172,,,,,,,,,,,,,,,,,,########
+vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172
+vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172,,,,,,,,,,,,,,,,,,########
+vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172
+vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172,,,,,,,,,,,,,,,,,,########
+vocab:1172,human matrix,,,,,vocab:1097
+vocab:1173,variable,,,,,,,,,,,,,,,,,,,,,,,########
+vocab:1174,soil erosion in arable land with a slope of 4 to 8 percent in catchment,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassPerAreaTime,http://vocabs.lter-europe.net/EnvThes/24,http://vocabs.lter-europe.net/EnvThes/30330,http://vocabs.lter-europe.net/EnvThes/10092,"vocab:1176,vocab:1177",,,,,,,,########
+vocab:1175,constraint,,,,,,,,,,,,,,,,,,,,,,,########
+vocab:1176,arable,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1177,slope 4 to 8 percent,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1178,education level of the mother of the study participant,,,,,vocab:1173,iop:Variable,,,,,vocab:1204,vocab:1206,,vocab:1207,vocab:1208,,,,,,,,########
+vocab:1179,mass per volume concentration of pcb52 in a house dust sample,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_34206,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194,vocab:1197,,,,,,,,########
+vocab:1180,concentration of pcb118 in air,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_81520,vocab:1098,,,,,,,,,,########
+vocab:1181,percentage of total organic carbon in sediment,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/22183,http://vocabs.lter-europe.net/EnvThes/20813,http://vocabs.lter-europe.net/EnvThes/20899,,,,,,,,,,2023-11-26
+vocab:1182,weight per volume concentration of chlorophyll-a in a water column,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/10073,http://vocabs.lter-europe.net/EnvThes/20785,http://vocabs.lter-europe.net/EnvThes/20538,,http://vocabs.lter-europe.net/EnvThes/20924,,,,,,,,########
+vocab:1183,concentration of leukocytes in the gut of a patient,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/Concentration,http://purl.bioontology.org/ontology/MESH/D007962,http://purl.jp/bio/11/meo/MEO_0000468,http://purl.bioontology.org/ontology/SNOMEDCT/116154003,"http://purl.bioontology.org/ontology/ICD10CM/G93.32, http://purl.bioontology.org/ontology/MESH/D007107",,,,,,,,2023-11-26
+vocab:1184,specific surface area of nanomaterials,,,,,vocab:1173,iop:Variable,,,,,,http://purl.bioontology.org/ontology/npo#NPO_199,,,,,,,,,,,########
+vocab:1185,mass concentration of aldrin in air,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1186,mass concentration of NPs in medium at well bottom,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1187,concentration range of chemical agent in DMEM in cells,,,,,vocab:1173,iop:Variable,,,,,,http://vocabs.lter-europe.net/EnvThes/20748,,,,,,,,,,,########
+vocab:1188,mass per volume concentration of lead in river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1189,pH value of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1190,mass per volume concentration of toluene in a persons morning urine,,,,,vocab:1173,iop:Variable,,,,,,https://vocabulary.actris.nilu.no/actris_vocab/toluene,,,vocab:1202,,,,,,,,########
+vocab:1191,frequency of dietary meat consumption in a person,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1192,pressure of air in atmosphere at 2m height,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1193,concentration of nitrate in running water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1194,concentration of NO2 in the organic horizon of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1195,chemical reactivity of natural organic matter extracted from river surface water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1196,turbidity of river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,,########
+vocab:1197,settled,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1198,DMEM,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1199,medium,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1200,neuroblastoma,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1201,differentiated,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1202,morning,,,,,vocab:1175,iop:Constraint,,,,,,,,,,,,,,,,,########
+vocab:1203,property,,,,,,,,,,,,,,,,,,,,,,,########
+vocab:1204,education level,,,,,vocab:1203,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953,,,,,,,,,,,,,,,########
+vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,,########
+vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,,########
+vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,,2023-11-26
+vocab:1208,mother of participant,,,,,vocab:1175,,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,,########
