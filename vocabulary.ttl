@@ -1055,8 +1055,10 @@ vocab:1175 a skos:Concept;
   skos:prefLabel "constraint"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
-vocab:1176 a iop:Constraint;
+vocab:1176 a skos:Concept;
+  dct:modified "2023-11-29"^^xsd:date;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "arable"@en .
 
 vocab:1177 a iop:Variable;
@@ -1169,28 +1171,35 @@ vocab:1196 a iop:Variable;
   skos:broader vocab:1173;
   skos:prefLabel "turbidity of river water"@en .
 
-vocab:1197 a iop:Constraint;
+vocab:1197 a skos:Concept;
+  dct:modified "2023-11-29"^^xsd:date;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "settled"@en .
 
-vocab:1198 a iop:Constraint;
+vocab:1198 a skos:Concept;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "DMEM"@en .
 
-vocab:1199 a iop:Constraint;
+vocab:1199 a skos:Concept;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "medium"@en .
 
-vocab:1200 a iop:Constraint;
+vocab:1200 a skos:Concept;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "neuroblastoma"@en .
 
-vocab:1201 a iop:Constraint;
+vocab:1201 a skos:Concept;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "differentiated"@en .
 
-vocab:1202 a iop:Constraint;
+vocab:1202 a skos:Concept;
   skos:broader vocab:1175;
+  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "morning"@en .
 
 vocab:1203 a skos:Concept;
