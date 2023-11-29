@@ -116,7 +116,7 @@ sosa:madeBySensor
   owl:versionInfo "0.0.1"@en;
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1028, vocab:1034, vocab:1038,
     vocab:1042, vocab:1046, vocab:1051, vocab:1056, vocab:1061, vocab:1066, vocab:1097,
-    vocab:1173, vocab:1175, vocab:1203, vocab:1205;
+    vocab:1173, vocab:1203, vocab:1205;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
   <voaf:metadataVoc> <https://www.isibang.ac.in/> .
@@ -1038,6 +1038,7 @@ vocab:1173 a skos:Concept;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1174 a iop:Variable;
+  dct:created "2023-11-29"^^xsd:date;
   skos:broader vocab:1173;
   skos:prefLabel "soil erosion in arable land with a slope of 4 to 8 percent in catchment"@en;
   iop:hasConstraint vocab:1176, vocab:1177;
@@ -1046,14 +1047,13 @@ vocab:1174 a iop:Variable;
   iop:hasObjectOfInterest <http://vocabs.lter-europe.net/EnvThes/24>;
   iop:hasProperty <http://qudt.org/vocab/quantitykind/MassPerAreaTime> .
 
-vocab:1175 a skos:Concept;
-  skos:inScheme <http://purl.org/m4m>;
+vocab:1175 a iop:Variable;
+  dct:created "2023-11-29"^^xsd:date;
   skos:narrower vocab:1176, vocab:1197, vocab:1198, vocab:1199, vocab:1200, vocab:1201,
     vocab:1202, vocab:1208;
-  skos:prefLabel "constraint"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "constraint"@en .
 
-vocab:1176 a iop:Constraint;
+vocab:1176 a iop:Constraint, iop:Variable;
   skos:broader vocab:1175;
   skos:prefLabel "arable"@en .
 
