@@ -46,7 +46,7 @@ dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
 Definition of terms
 
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23
+vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-07
 vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1003,other,,,,,"vocab:1000,vocab:1020,vocab:1042,vocab:1038,vocab:1034,vocab:1028,vocab:1064",,,,,,,,,,,,,,,,,2023-11-21
@@ -66,61 +66,56 @@ vocab:1016,daily,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1017,until the number of the participants or samples are,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1018,reqruited/collected,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1019,irregular time spacing,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1020,study area,degurba,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1021,urban,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1022,semi-urban,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1023,rural,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1024,urban and semi-urban,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1025,urban and rural,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1026,rural and semi-urban,,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1027,"urban, semi-urban and rural",,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1028,probabilistic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1029,simple random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1030,stratified random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1031,cluster,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1032,systematic ,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1033,not applicable,,,,,"vocab:1028,vocab:1034;vocab1028",,,,,,,,,,,,,,,,,2023-11-21
-vocab:1034,non-probabilitstic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1035,convenience,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1036,quota,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1037,purposive,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1038,study design,,,,,,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1039,cross-sectional survey,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1040,case-control,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1041,longitutdinal (cohort),,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1042,study setting,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1043,occupational exposure study,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1044,hotspot area,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1045,general population,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1046,seasonality,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1047,summer,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1048,spring,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1049,autumn,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1050,winter,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1051,study implementation level,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1052,international level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1053,national level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1054,regional level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1055,local level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1056,level of data granularity,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1057,single measurement data (pseudonymized),,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1058,single measurement data (anonymized),,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1059,aggreged data,,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1060,metadata only,,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1061,status,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1062,concluded,,,,,vocab:1061,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1063,initiated,,,,,vocab:1061,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1064,ongoing,,,,,vocab:1061,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1065,planned,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1066,HBM type,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1067,research object,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1068,surveillance project,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1069,monitoring project,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1070,policy / legislation,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1071,development of tools/guideles/training material,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1072,quality control/quality assurance,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1073,improving health services delivery infrasturcte,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-26
-vocab:1074,health promotion,,,,,vocab:1066
+vocab:1020,degree of urbanisation,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1021,densely populated area (cities),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1022,intermediate desity area (towns or suburbs),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1023,thinly populated area (rural area),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1024,probabilistic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1025,simple random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1026,stratified random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1027,cluster,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1028,systematic ,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1029,not applicable,,,,,"vocab:1028,vocab:1034;vocab1028",,,,,,,,,,,,,,,,,2023-11-21
+vocab:1030,non-probabilitstic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1031,convenience,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1032,quota,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1033,purposive,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1034,study design,,,,,,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1035,cross-sectional survey,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1036,case-control,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-22
+vocab:1037,longitutdinal (cohort),,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1038,study setting,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1039,occupationally exposed population,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1040,hotspot residents,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1041,general population,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1042,seasonality,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1043,summer,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1044,spring,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1045,autumn,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1046,winter,,,,,vocab:1046,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1047,study implementation level,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1048,international level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1049,national level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1050,regional level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1051,local level,,,,,vocab:1051,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1052,level of data granularity,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1053,single measurement data (pseudonymized),,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1054,single measurement data (anonymized),,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1055,aggreged data,,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1056,metadata only,,,,,vocab:1056,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1057,status,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1058,concluded,,,,,vocab:1061,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1059,ongoing,,,,,vocab:1061,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1060,planned,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1061,HBM type,,,,,,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1062,research object,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1063,surveillance project,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1064,monitoring project,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1065,policy / legislation,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1066,development of tools/guideles/training material,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1067,quality control/quality assurance,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1068,improving health services delivery infrasturcte,,,,,vocab:1066,,,,,,,,,,,,,,,,,2023-11-26
+vocab:1069,health promotion,,,,,vocab:1066
 vocab:1097,matrix
 vocab:1098,air matrix,,,,,vocab:1097
 vocab:1099,sediment matrix,,,,,vocab:1097
@@ -233,3 +228,4 @@ vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,########
 vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,########
 vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,2023-11-26
 vocab:1208,mother of participant,,,,,vocab:1175,,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,########
+vocab:1209,clinical (patient) population,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-12-07
