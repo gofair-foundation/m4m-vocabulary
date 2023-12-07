@@ -49,7 +49,7 @@ Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",sk
 vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-07
 vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1003,other,,,,,"vocab:1000,vocab:1020,vocab:1042,vocab:1038,vocab:1034,vocab:1028,vocab:1064",,,,,,,,,,,,,,,,,2023-11-21
+vocab:1003,other,,,,,"vocab:1000,vocab:1020,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057",,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1004,time frequency,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1005,only once,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1006,annual,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
@@ -83,7 +83,7 @@ vocab:1033,purposive,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1034,study design,,,,,,,,,,,,,,,,,,,,,,2023-11-22
 vocab:1035,cross-sectional survey,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22
 vocab:1036,case-control,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1037,longitutdinal (cohort),,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1037,longitudinal (cohort),,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1038,study setting,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1039,occupationally exposed population,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1040,hotspot residents,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07

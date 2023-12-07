@@ -143,7 +143,8 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1000, vocab:1020, vocab:1028, vocab:1034, vocab:1038, vocab:1042,
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1000, vocab:1020, vocab:1028, vocab:1034, vocab:1038, vocab:1057,
     vocab:1064;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
@@ -361,9 +362,10 @@ vocab:1036 a skos:Concept;
 
 vocab:1037 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1034;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "longitutdinal (cohort)"@en .
+  skos:prefLabel "longitudinal (cohort)"@en .
 
 vocab:1038 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
@@ -397,7 +399,7 @@ vocab:1042 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1043, vocab:1044, vocab:1045, vocab:1046;
+  skos:narrower vocab:1043, vocab:1044, vocab:1045, vocab:1046;
   skos:prefLabel "seasonal coverage"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -503,7 +505,7 @@ vocab:1056 a skos:Concept;
 vocab:1057 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1058, vocab:1059, vocab:1060;
+  skos:narrower vocab:1003, vocab:1058, vocab:1059, vocab:1060;
   skos:prefLabel "status"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
