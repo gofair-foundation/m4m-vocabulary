@@ -143,9 +143,8 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1000, vocab:1020, vocab:1028, vocab:1034, vocab:1038, vocab:1057,
-    vocab:1064;
+  dct:modified "2023-12-08"^^xsd:date;
+  skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -252,7 +251,7 @@ vocab:1020 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1021, vocab:1022, vocab:1023;
+  skos:narrower vocab:1021, vocab:1022, vocab:1023;
   skos:prefLabel "degree of urbanisation"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
