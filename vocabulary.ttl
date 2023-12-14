@@ -153,7 +153,7 @@ vocab:1004 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1005, vocab:1006, vocab:1007, vocab:1008, vocab:1009, vocab:1010,
     vocab:1011, vocab:1012, vocab:1013, vocab:1014, vocab:1015, vocab:1016, vocab:1017,
-    vocab:1018, vocab:1019;
+    vocab:1019;
   skos:prefLabel "time frequency"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -237,9 +237,10 @@ vocab:1017 a skos:Concept;
 
 vocab:1018 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1004;
+  dct:modified "2023-12-14"^^xsd:date;
+  skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "reqruited/collected"@en .
+  skos:prefLabel "recruited/collected"@en .
 
 vocab:1019 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
@@ -369,7 +370,8 @@ vocab:1037 a skos:Concept;
 vocab:1038 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1039, vocab:1040, vocab:1041, vocab:1209;
+  skos:narrower vocab:1003, vocab:1018, vocab:1039, vocab:1040, vocab:1041, vocab:1070,
+    vocab:1209;
   skos:prefLabel "study setting"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -434,7 +436,7 @@ vocab:1047 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1048, vocab:1049, vocab:1050, vocab:1051;
+  skos:narrower vocab:1048, vocab:1049, vocab:1050, vocab:1051, vocab:1071;
   skos:prefLabel "implementation level"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -489,10 +491,10 @@ vocab:1054 a skos:Concept;
 
 vocab:1055 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
+  dct:modified "2023-12-14"^^xsd:date;
   skos:broader vocab:1052;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "aggreged data"@en .
+  skos:prefLabel "aggregated data"@en .
 
 vocab:1056 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
@@ -586,6 +588,18 @@ vocab:1069 a skos:Concept;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "health promotion"@en .
+
+vocab:1070 a skos:Concept;
+  dct:modified "2023-12-14"^^xsd:date;
+  skos:broader vocab:1038;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "pregnant women"@en .
+
+vocab:1071 a skos:Concept;
+  dct:modified "2023-12-14"^^xsd:date;
+  skos:broader vocab:1047;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "European level"@en .
 
 vocab:1097 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;

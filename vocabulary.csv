@@ -64,7 +64,7 @@ vocab:1014,bimonthly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1015,weekly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1016,daily,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1017,until the number of the participants or samples are,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1018,reqruited/collected,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
+vocab:1018,recruited/collected,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-14
 vocab:1019,irregular time spacing,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1020,degree of urbanisation,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1021,densely populated area (cities),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
@@ -101,7 +101,7 @@ vocab:1051,local level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1052,level of data granularity,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1053,single measurement data (pseudonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1054,single measurement data (anonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1055,aggreged data,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
+vocab:1055,aggregated data,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-14
 vocab:1056,metadata only,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
 vocab:1057,status,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1058,concluded,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
@@ -116,6 +116,8 @@ vocab:1066,development of tools/guideles/training material,,,,,vocab:1062,,,,,,,
 vocab:1067,quality control/quality assurance,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1068,improving health services delivery infrasturcte,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-26
 vocab:1069,health promotion,,,,,vocab:1062
+vocab:1070,pregnant women,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-12-14
+vocab:1071,European level,,,,,vocab:1047,,,,,,,,,,,,,,,,,,2023-12-14
 vocab:1097,matrix
 vocab:1098,air matrix,,,,,vocab:1097
 vocab:1099,sediment matrix,,,,,vocab:1097
