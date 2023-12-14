@@ -114,8 +114,8 @@ sosa:madeBySensor
   schema:includedInDataCatalog <https://bioportal.bioontology.org/>;
   owl:ontologyIRI <http://purl.org/m4m/>;
   owl:versionInfo "0.0.1"@en;
-  skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
-    vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
+  skos:hasTopConcept vocab:1000, vocab:1004, vocab:1019, vocab:1023, vocab:1029, vocab:1033,
+    vocab:1037, vocab:1041, vocab:1046, vocab:1051, vocab:1056, vocab:1060, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
@@ -123,7 +123,7 @@ sosa:madeBySensor
 
 vocab:1000 a skos:Concept;
   dct:created "2023-11-23"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
+  dct:modified "2023-12-14"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1001, vocab:1002, vocab:1003;
   skos:prefLabel "institution"@en;
@@ -153,7 +153,7 @@ vocab:1004 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1005, vocab:1006, vocab:1007, vocab:1008, vocab:1009, vocab:1010,
     vocab:1011, vocab:1012, vocab:1013, vocab:1014, vocab:1015, vocab:1016, vocab:1017,
-    vocab:1019;
+    vocab:1018;
   skos:prefLabel "time frequency"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -231,371 +231,364 @@ vocab:1016 a skos:Concept;
 
 vocab:1017 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-14"^^xsd:date;
   skos:broader vocab:1004;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "until the number of the participants or samples are"@en .
+  skos:prefLabel "until the number of the participants or samples is recruited/collected"@en .
 
 vocab:1018 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-14"^^xsd:date;
-  skos:broader vocab:1038;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "recruited/collected"@en .
-
-vocab:1019 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1004;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "irregular time spacing"@en .
 
-vocab:1020 a skos:Concept;
+vocab:1019 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1021, vocab:1022, vocab:1023;
   skos:prefLabel "degree of urbanisation"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1020 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1020;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1020, vocab:1021, vocab:1022;
+  skos:prefLabel "densely populated area (cities)"@en .
 
 vocab:1021 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1020;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "densely populated area (cities)"@en .
+  skos:prefLabel "intermediate desity area (towns or suburbs)"@en .
 
 vocab:1022 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1020;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "intermediate desity area (towns or suburbs)"@en .
-
-vocab:1023 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1020;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "thinly populated area (rural area)"@en .
 
-vocab:1024 a skos:Concept;
+vocab:1023 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "probabilistic selection"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
-vocab:1025 a skos:Concept;
+vocab:1024 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1028;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "simple random"@en .
 
-vocab:1026 a skos:Concept;
+vocab:1025 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1028;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "stratified random"@en .
 
-vocab:1027 a skos:Concept;
+vocab:1026 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1028;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "cluster"@en .
 
-vocab:1028 a skos:Concept;
+vocab:1027 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1028;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1025, vocab:1026, vocab:1027, vocab:1028, vocab:1029;
   skos:prefLabel "systematic"@en .
 
-vocab:1029 a skos:Concept;
+vocab:1028 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1028, <http://purl.org/m4m/1034;vocab1028>;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1024, vocab:1025, vocab:1026, vocab:1027, vocab:1028;
   skos:prefLabel "not applicable"@en .
+
+vocab:1029 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "non-probabilitstic selection"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1030 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1030;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1031, vocab:1032, vocab:1033;
-  skos:prefLabel "non-probabilitstic selection"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1030, vocab:1031, vocab:1032;
+  skos:prefLabel "convenience"@en .
 
 vocab:1031 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1030;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "convenience"@en .
-
-vocab:1032 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1030;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "quota"@en .
 
-vocab:1033 a skos:Concept;
+vocab:1032 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1030;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "purposive"@en .
 
-vocab:1034 a skos:Concept;
+vocab:1033 a skos:Concept;
   dct:created "2023-11-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1035, vocab:1036, vocab:1037;
   skos:prefLabel "study design"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1034 a skos:Concept;
+  dct:created "2023-11-22"^^xsd:date;
+  skos:broader vocab:1034;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1034, vocab:1035, vocab:1036;
+  skos:prefLabel "cross-sectional survey"@en .
 
 vocab:1035 a skos:Concept;
   dct:created "2023-11-22"^^xsd:date;
   skos:broader vocab:1034;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "cross-sectional survey"@en .
-
-vocab:1036 a skos:Concept;
-  dct:created "2023-11-22"^^xsd:date;
-  skos:broader vocab:1034;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "case-control"@en .
 
-vocab:1037 a skos:Concept;
+vocab:1036 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1034;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "longitudinal (cohort)"@en .
 
-vocab:1038 a skos:Concept;
+vocab:1037 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1018, vocab:1039, vocab:1040, vocab:1041, vocab:1070,
-    vocab:1209;
   skos:prefLabel "study setting"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1038 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1038;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1038, vocab:1039, vocab:1040, vocab:1069, vocab:1209;
+  skos:prefLabel "occupationally exposed population"@en .
 
 vocab:1039 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "occupationally exposed population"@en .
+  skos:prefLabel "hotspot residents"@en .
 
 vocab:1040 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "hotspot residents"@en .
+  skos:prefLabel "general population"@en .
 
 vocab:1041 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "general population"@en .
+  skos:prefLabel "seasonal coverage"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1042 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1042;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1043, vocab:1044, vocab:1045, vocab:1046;
-  skos:prefLabel "seasonal coverage"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1042, vocab:1043, vocab:1044, vocab:1045;
+  skos:prefLabel "summer"@en .
 
 vocab:1043 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1042;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "summer"@en .
+  skos:prefLabel "spring"@en .
 
 vocab:1044 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1042;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "spring"@en .
+  skos:prefLabel "autumn"@en .
 
 vocab:1045 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1042;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "autumn"@en .
+  skos:prefLabel "winter"@en .
 
 vocab:1046 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1042;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "winter"@en .
+  skos:prefLabel "implementation level"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1047 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1048, vocab:1049, vocab:1050, vocab:1051, vocab:1071;
-  skos:prefLabel "implementation level"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1047, vocab:1048, vocab:1049, vocab:1050, vocab:1070;
+  skos:prefLabel "international level"@en .
 
 vocab:1048 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "international level"@en .
+  skos:prefLabel "national level"@en .
 
 vocab:1049 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "national level"@en .
+  skos:prefLabel "regional level"@en .
 
 vocab:1050 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "regional level"@en .
+  skos:prefLabel "local level"@en .
 
 vocab:1051 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "local level"@en .
+  skos:prefLabel "level of data granularity"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1052 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1052;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1053, vocab:1054, vocab:1055, vocab:1056;
-  skos:prefLabel "level of data granularity"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:narrower vocab:1052, vocab:1053, vocab:1054, vocab:1055;
+  skos:prefLabel "single measurement data (pseudonymized)"@en .
 
 vocab:1053 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1052;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "single measurement data (pseudonymized)"@en .
-
-vocab:1054 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1052;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "single measurement data (anonymized)"@en .
 
-vocab:1055 a skos:Concept;
+vocab:1054 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-14"^^xsd:date;
   skos:broader vocab:1052;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "aggregated data"@en .
 
-vocab:1056 a skos:Concept;
+vocab:1055 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1052;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "metadata only"@en .
 
-vocab:1057 a skos:Concept;
+vocab:1056 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1058, vocab:1059, vocab:1060;
   skos:prefLabel "status"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1057 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1057;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1057, vocab:1058, vocab:1059;
+  skos:prefLabel "concluded"@en .
 
 vocab:1058 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1057;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "concluded"@en .
+  skos:prefLabel "ongoing"@en .
 
 vocab:1059 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1057;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "ongoing"@en .
-
-vocab:1060 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
-  skos:broader vocab:1057;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "planned"@en .
 
-vocab:1061 a skos:Concept;
+vocab:1060 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "HBM type"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1061 a skos:Concept;
+  dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2023-12-07"^^xsd:date;
+  skos:broader vocab:1062;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "research object"@en .
 
 vocab:1062 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1062, vocab:1063, vocab:1064, vocab:1065, vocab:1066, vocab:1067,
-    vocab:1068, vocab:1069;
-  skos:prefLabel "research object"@en .
+  skos:narrower vocab:1061, vocab:1062, vocab:1063, vocab:1064, vocab:1065, vocab:1066,
+    vocab:1067, vocab:1068;
+  skos:prefLabel "surveillance project"@en .
 
 vocab:1063 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-07"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surveillance project"@en .
+  skos:prefLabel "monitoring project"@en .
 
 vocab:1064 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003;
-  skos:prefLabel "monitoring project"@en .
+  skos:prefLabel "policy / legislation"@en .
 
 vocab:1065 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "policy / legislation"@en .
+  skos:prefLabel "development of tools/guideles/training material"@en .
 
 vocab:1066 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "development of tools/guideles/training material"@en .
-
-vocab:1067 a skos:Concept;
-  dct:created "2023-11-21"^^xsd:date;
-  skos:broader vocab:1062;
-  skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "quality control/quality assurance"@en .
 
-vocab:1068 a skos:Concept;
+vocab:1067 a skos:Concept;
   dct:created "2023-11-26"^^xsd:date;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "improving health services delivery infrasturcte"@en .
 
-vocab:1069 a skos:Concept;
+vocab:1068 a skos:Concept;
   skos:broader vocab:1062;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "health promotion"@en .
 
-vocab:1070 a skos:Concept;
+vocab:1069 a skos:Concept;
   dct:modified "2023-12-14"^^xsd:date;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "pregnant women"@en .
 
-vocab:1071 a skos:Concept;
+vocab:1070 a skos:Concept;
   dct:modified "2023-12-14"^^xsd:date;
   skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
@@ -1256,4 +1249,4 @@ vocab:1209 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "clinical (patient) population"@en .
 
-<http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
+<http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1028 .
