@@ -435,7 +435,7 @@ vocab:1047 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1018, vocab:1048, vocab:1049, vocab:1050, vocab:1051, vocab:1211;
+  skos:narrower vocab:1018, vocab:1048, vocab:1049, vocab:1050, vocab:1051;
   skos:prefLabel "implementation level"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1249,11 +1249,5 @@ vocab:1210 a skos:Concept;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "pregnant women"@en .
-
-vocab:1211 a skos:Concept;
-  dct:modified "2023-12-15"^^xsd:date;
-  skos:broader vocab:1047;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "European level"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
