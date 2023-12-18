@@ -116,7 +116,7 @@ sosa:madeBySensor
   owl:versionInfo "0.0.1"@en;
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
-    vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211;
+    vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
   <voaf:metadataVoc> <https://www.isibang.ac.in/> .
@@ -143,8 +143,9 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-08"^^xsd:date;
-  skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
+    vocab:1244, vocab:1252;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -1454,5 +1455,92 @@ vocab:1243 a skos:Concept;
   skos:broader vocab:1237;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "industry"@en .
+
+vocab:1244 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1245, vocab:1246, vocab:1247, vocab:1248, vocab:1249,
+    vocab:1250, vocab:1251;
+  skos:prefLabel "sampling frame"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1245 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "census data"@en .
+
+vocab:1246 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "electoral register"@en .
+
+vocab:1247 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "school (class)/day care centre lists"@en .
+
+vocab:1248 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "health centre/hospital lists"@en .
+
+vocab:1249 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "health professionals list"@en .
+
+vocab:1250 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "list of participants from another study"@en .
+
+vocab:1251 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "direct contact in selected settings"@en .
+
+vocab:1252 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1253, vocab:1254, vocab:1255, vocab:1256, vocab:1257;
+  skos:prefLabel "recruitment method"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1253 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "letter"@en .
+
+vocab:1254 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "email"@en .
+
+vocab:1255 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "face-to-face"@en .
+
+vocab:1256 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "internet"@en .
+
+vocab:1257 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "phone"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .

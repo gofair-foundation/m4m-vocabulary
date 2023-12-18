@@ -49,7 +49,7 @@ Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",sk
 vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-15
 vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057",,,,,,,,,,,,,,,,,2023-11-21,2023-12-08
+vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057,vocab:1252,vocab:1244",,,,,,,,,,,,,,,,,2023-11-21,2023-12-18
 vocab:1004,time frequency,,,,,,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1005,only once,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
 vocab:1006,annual,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
@@ -263,3 +263,17 @@ vocab:1240,region,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1241,wheather conditions,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1242,passive smoking,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1243,industry,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1244,sampling frame,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1245,census data,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1246,electoral register,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1247,school (class)/day care centre lists,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1248,health centre/hospital lists,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1249,health professionals list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1250,list of participants from another study,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1251,direct contact in selected settings,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1252,recruitment method,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1253,letter,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1254,email,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1255,face-to-face,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1256,internet,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1257,phone,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
