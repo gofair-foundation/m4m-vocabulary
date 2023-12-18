@@ -1274,83 +1274,85 @@ vocab:1214 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:broader vocab:1173;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1215, vocab:1216, vocab:1217, vocab:1218, vocab:1219, vocab:1220,
+    vocab:1221, vocab:1222, vocab:1223, vocab:1224, vocab:1225, vocab:1226, vocab:1227;
   skos:prefLabel "lifestyle information variable"@en .
 
 vocab:1215 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "smoke bevaviour"@en .
 
 vocab:1216 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "alcohol consumption"@en .
 
 vocab:1217 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "occupation"@en .
 
 vocab:1218 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "cosmetic use"@en .
 
 vocab:1219 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "time activity pattern"@en .
 
 vocab:1220 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "sociodemographic variable"@en .
 
 vocab:1221 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "housing information"@en .
 
 vocab:1222 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "combustion behaviour"@en .
 
 vocab:1223 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "parity"@en .
 
 vocab:1224 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "breastfeeding"@en .
 
 vocab:1225 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "physical exercise"@en .
 
 vocab:1226 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "personal hygiene"@en .
 
 vocab:1227 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
-  skos:broader "vocabl:1214"@en;
+  skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "personal behaviour"@en .
 

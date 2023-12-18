@@ -234,19 +234,19 @@ vocab:1211,sex at birth,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1212,female,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1213,male,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1214,lifestyle information variable,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1215,smoke bevaviour,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1216,alcohol consumption,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1217,occupation,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1218,cosmetic use,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1219,time activity pattern,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1220,sociodemographic variable,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1221,housing information,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1222,combustion behaviour,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1223,parity,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1224,breastfeeding,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1225,physical exercise,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1226,personal hygiene,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1227,personal behaviour,,,,,vocabl:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1215,smoke bevaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1216,alcohol consumption,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1217,occupation,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1218,cosmetic use,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1219,time activity pattern,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1220,sociodemographic variable,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1221,housing information,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1222,combustion behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1223,parity,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1224,breastfeeding,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1225,physical exercise,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1226,personal hygiene,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1227,personal behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1228,personal information,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1229,height,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
 vocab:1230,weight,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
