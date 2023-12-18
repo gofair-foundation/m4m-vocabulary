@@ -116,7 +116,7 @@ sosa:madeBySensor
   owl:versionInfo "0.0.1"@en;
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
-    vocab:1173, vocab:1175, vocab:1203, vocab:1205;
+    vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211;
   skos:prefLabel "LD Base vocabulary"@en;
   foaf:homepage "www.lDbase.org"@en;
   <voaf:metadataVoc> <https://www.isibang.ac.in/> .
@@ -1033,7 +1033,7 @@ vocab:1173 a skos:Concept;
   skos:narrower vocab:1174, vocab:1177, vocab:1178, vocab:1179, vocab:1180, vocab:1181,
     vocab:1182, vocab:1183, vocab:1184, vocab:1185, vocab:1186, vocab:1187, vocab:1188,
     vocab:1189, vocab:1190, vocab:1191, vocab:1192, vocab:1193, vocab:1194, vocab:1195,
-    vocab:1196;
+    vocab:1196, vocab:1214, vocab:1228, vocab:1237;
   skos:prefLabel "variable"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1240,6 +1240,7 @@ vocab:1208 a skos:Concept;
   skos:prefLabel "mother of participant"@en .
 
 vocab:1209 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "clinical (patient) population"@en .
@@ -1249,5 +1250,207 @@ vocab:1210 a skos:Concept;
   skos:broader vocab:1038;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "pregnant women"@en .
+
+vocab:1211 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1212, vocab:1213;
+  skos:prefLabel "sex at birth"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1212 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1211;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "female"@en .
+
+vocab:1213 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1211;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "male"@en .
+
+vocab:1214 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "lifestyle information variable"@en .
+
+vocab:1215 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "smoke bevaviour"@en .
+
+vocab:1216 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "alcohol consumption"@en .
+
+vocab:1217 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "occupation"@en .
+
+vocab:1218 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "cosmetic use"@en .
+
+vocab:1219 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "time activity pattern"@en .
+
+vocab:1220 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "sociodemographic variable"@en .
+
+vocab:1221 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "housing information"@en .
+
+vocab:1222 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "combustion behaviour"@en .
+
+vocab:1223 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "parity"@en .
+
+vocab:1224 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "breastfeeding"@en .
+
+vocab:1225 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "physical exercise"@en .
+
+vocab:1226 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "personal hygiene"@en .
+
+vocab:1227 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader "vocabl:1214"@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "personal behaviour"@en .
+
+vocab:1228 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1229, vocab:1230, vocab:1231, vocab:1232, vocab:1233, vocab:1234,
+    vocab:1235, vocab:1236;
+  skos:prefLabel "personal information"@en .
+
+vocab:1229 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "height"@en .
+
+vocab:1230 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "weight"@en .
+
+vocab:1231 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "educational level"@en .
+
+vocab:1232 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "race/ethnicity"@en .
+
+vocab:1233 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "income"@en .
+
+vocab:1234 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "medical data/history"@en .
+
+vocab:1235 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "place/country of birth"@en .
+
+vocab:1236 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "food consumption"@en .
+
+vocab:1237 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1173;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1238, vocab:1239, vocab:1240, vocab:1241, vocab:1242, vocab:1243;
+  skos:prefLabel "environmental factors information"@en .
+
+vocab:1238 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "consumption of local food/feed"@en .
+
+vocab:1239 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "urban versus non-urban"@en .
+
+vocab:1240 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "region"@en .
+
+vocab:1241 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "wheather conditions"@en .
+
+vocab:1242 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "passive smoking"@en .
+
+vocab:1243 a skos:Concept;
+  dct:modified "2023-12-18"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "industry"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
