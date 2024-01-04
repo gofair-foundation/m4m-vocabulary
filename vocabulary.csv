@@ -1,279 +1,284 @@
-ConceptScheme URI,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.,,,,,,,,,,,,,,,,,,,,,2023-11-26
-"Prefixes for controlled vocabularies, schema and ontologies"
-PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time
-PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary
-PREFIX,owl,http://www.w3.org/2002/07/owl#,,"Prefix for the ontology language of the Semantic Web, which empowers fast and flexible data modeling and efficient automated reasoning"
-PREFIX,vaof,http://purl.org/vocommons/voaf#,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary"
-PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms"
-PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,Prefix for Metadata Ontology Vocabulary which is a standard for ontology metadata 
-PREFIX,doap,usefulinc.com/ns/doap#,,"Prefix for the Description of a Project Ontology which describes software projects, in particular free and open source software"
-PREFIX,iop,https://w3id.org/iadopt/ont/,,Prefix for the I-ADOPT Ontology which describes observable properties
+dct:title,http://purl.org/m4m,Main GUPRI (i.e. PID) under which all terms are defined. Preference is to use PURLs or W3IDs as they provide permanent resolvable identifiers.,,,,,,,,,,,,,,,,,,,,,2023-11-26,2023-12-20,,
+"Prefixes for controlled vocabularies, schema and ontologies",,,,,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,vocab,http://purl.org/m4m/,,Prefix for our controlled vocabulary since it is rather tedious to write long URLs all the time,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,skos,http://www.w3.org/2004/02/skos/core#,,Prefix for SKOS Onotlogy is which our base for defining SKOS based controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,owl,http://www.w3.org/2002/07/owl#,,"Prefix for the ontology language of the Semantic Web, which empowers fast and flexible data modeling and efficient automated reasoning",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,vaof,http://purl.org/vocommons/voaf#,,"Prefix for Provenance, Authoring and Versioning Onotlogy which properties such as version and createdOn we will use to describe our controlled vocabulary",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,dct,http://purl.org/dc/terms/ ,,"Prefix for Dublin Core (Terms) Ontology which properties such as title, description, rights, source, etc. we will use to describe our controlled vocabulary as well to define its terms",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,omv,http://omv.ontoware.org/2005/05/ontology,,Prefix for Metadata Ontology Vocabulary which is a standard for ontology metadata ,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,doap,usefulinc.com/ns/doap#,,"Prefix for the Description of a Project Ontology which describes software projects, in particular free and open source software",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,iop,https://w3id.org/iadopt/ont/,,Prefix for the I-ADOPT Ontology which describes observable properties,,,,,,,,,,,,,,,,,,,,,,
 PREFIX,puv,https://w3id.org/env/puv#,,"Prefix for a simple ontology which implements the Parameter Usage 
 Vocabulary semantic model, as described at 
-https://github.com/nvs-vocabs/P01."
-PREFIX,sosa,http://www.w3.org/ns/sosa/,,Prefix for the Semantic Sensor Network Ontology
-PREFIX,xsd,http://www.w3.org/2001/XMLSchema#,,Prefix for the Ontology for eXtenisble Markup Language schemas 
-PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,Prefix for the Research Description Framework that provides the data model explaining how to build a graph
-PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#,,Prefix for the Research Description Framework Schema that explains how nodes in a graph relate
-PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units."
-PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
-Metadata about vocabulary
-
-dct:title,LD Base vocabulary,Title of the vocabulary
-skos:prefLabel,LD Base vocabulary,Preferred label of the vocabulary
-owl:ontologyIRI,http://purl.org/m4m/,IRI of the ontology
-foaf:homepage,www.lDbase.org,Home page of community creating vocabulary
-dct:identifier,,External identifier for the vocabulary
-omv:acronym,,Acronym used for the vocabulary
-dct:description,Project Descriptor of LDbase Project page,Description of the vocabulary
-omv:resourceLocator,https://ldbase.org/taxonomy/project_types,URL locating the vocabulary
-dct:creator,https://orcid.org/0000-0001-9793-0420,"ORCID of the creator of the vocabulary, can be multiple (use separate lines)"
-dct:contributor,0000-0002-1700-7685,ORCID of the contributor,,,,,,,,,,,,,,,,,,,,,2023-11-14
-voaf:hasEquivalencesWith,,vocabularies to which terms of this vocabulary are aligned with
-omv:keywords,descriptors that apply to the project methodologies ,Description of the controlled vocabulary
-dct:publisher,https://ror.org/05g3dte14,ROR or name of the responsible party for the publication of the vocabulary
-omv:knownUsage,,Usage of the vocabulary
-dct:audience,http://schema.org/Researcher,Audience of the vocabulary
-dct:subject,Project page ,Main subject of the vocabulary,,,,,,,,,,,,,,,,,,,,,2023-11-14
-doap:repository,https://bioportal.bioontology.org/,Vocabulary repository where this vocabulary is uploaded,,,,,,,,,,,,,,,,,,,,,2023-11-14
-schema:includedInDataCatalog,https://bioportal.bioontology.org/,Vocabulary repository where this vocabulary is uploaded
-dct:language,en,Language of metadata and vocabulary terms
-voaf:metadataVoc,https://www.isibang.ac.in/,Vocabulary used to describe the metadata of the vocabulary
-dct:license,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
-owl:versionInfo,0.0.1,Vocabulary version
-dct:created^^xsd:datetime,2023-11-14T00:00:00+00:00,Date when vocabulary was initially created
-dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated
-Definition of terms
-
+https://github.com/nvs-vocabs/P01.",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,sosa,http://www.w3.org/ns/sosa/,,Prefix for the Semantic Sensor Network Ontology,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,xsd,http://www.w3.org/2001/XMLSchema#,,Prefix for the Ontology for eXtenisble Markup Language schemas ,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,rdf,http://www.w3.org/1999/02/22-rdf-syntax-ns#,,Prefix for the Research Description Framework that provides the data model explaining how to build a graph,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,rdfs,http://www.w3.org/2000/01/rdf-schema#,,Prefix for the Research Description Framework Schema that explains how nodes in a graph relate,,,,,,,,,,,,,,,,,,,,,,
+PREFIX,qudt,http://qudt.org/schema/qudt/,,"Prefix for ""Quantity, Unit, Dimension and Type"" schema that is used to model physical units.",,,,,,,,,,,,,,,,,,,,,,
+PREFIX,unit,http://qudt.org/vocab/unit/,,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining ",,,,,,,,,,,,,,,,,,,,,,
+Metadata about vocabulary,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+dct:title,LD Base vocabulary,Title of the vocabulary,,,,,,,,,,,,,,,,,,,,,,2023-12-22,,
+skos:prefLabel,LD Base vocabulary,Preferred label of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+owl:ontologyIRI,http://purl.org/m4m/,IRI of the ontology,,,,,,,,,,,,,,,,,,,,,,,,
+foaf:homepage,,Home page of community creating vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:identifier,,External identifier for the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+omv:acronym,,Acronym used for the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:description,,Description of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+omv:resourceLocator,,URL locating the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:creator,,"ORCID of the creator of the vocabulary, can be multiple (use separate lines)",,,,,,,,,,,,,,,,,,,,,,,,
+dct:contributor,,ORCID of the contributor,,,,,,,,,,,,,,,,,,,,,2023-11-14,,,
+voaf:hasEquivalencesWith,,vocabularies to which terms of this vocabulary are aligned with,,,,,,,,,,,,,,,,,,,,,,,,
+omv:keywords,descriptors that apply to the project methodologies ,Description of the controlled vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:publisher,,ROR or name of the responsible party for the publication of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+omv:knownUsage,,Usage of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:audience,http://schema.org/Researcher,Audience of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:subject,Project page ,Main subject of the vocabulary,,,,,,,,,,,,,,,,,,,,,2023-11-14,,,
+doap:repository,,Vocabulary repository where this vocabulary is uploaded,,,,,,,,,,,,,,,,,,,,,2023-11-14,,,
+schema:includedInDataCatalog,,Vocabulary repository where this vocabulary is uploaded,,,,,,,,,,,,,,,,,,,,,,,,
+dct:language,en,Language of metadata and vocabulary terms,,,,,,,,,,,,,,,,,,,,,,,,
+voaf:metadataVoc,,Vocabulary used to describe the metadata of the vocabulary,,,,,,,,,,,,,,,,,,,,,,,,
+dct:license,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided,,,,,,,,,,,,,,,,,,,,,,,,
+owl:versionInfo,0.0.1,Vocabulary version,,,,,,,,,,,,,,,,,,,,,,,,
+dct:created^^xsd:datetime,2023-11-14T00:00:00+00:00,Date when vocabulary was initially created,,,,,,,,,,,,,,,,,,,,,,,,
+dct:modified^^xsd:datetime,,Automatic update when vocabulary is updated,,,,,,,,,,,,,,,,,,,,,,,,
+Definition of terms,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
 Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",skos:notation,skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")",rdf:type,owlsameAs,"skos:exactMatch(separator="","")","skos:closeMatch(separator="","")","skos:broadMatch(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")","puv:statistic(separator="","")","puv:usesMethod(separator="","")","sosa:madeBySensor(separator="","")","puv:uom(separator="","")",owl:deprecated^^xsd:boolean,skos:editorialNote@en,dct:created^^xsd:date,dct:modified^^xsd:date,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-15
-vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057,vocab:1252,vocab:1244",,,,,,,,,,,,,,,,,2023-11-21,2023-12-18
-vocab:1004,time frequency,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1005,only once,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1006,annual,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1007,biennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1008,triennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1009,quadrennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1010,quinquennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1011,two times a year,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1012,three times a year,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1013,quarterly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1014,bimonthly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1015,weekly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1016,daily,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1017,until the number of the participants or samples are recruited/collected,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,2023-12-15
-vocab:1018,European level,,,,,vocab:1047,,,,,,,,,,,,,,,,,,2023-12-15
-vocab:1019,irregular time spacing,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,2023-12-15
-vocab:1020,degree of urbanisation,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1021,densely populated area (cities),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1022,intermediate desity area (towns or suburbs),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1023,thinly populated area (rural area),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1024,probabilistic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1025,simple random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1026,stratified random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1027,cluster,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1028,systematic ,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1029,not applicable,,,,,"vocab:1028,vocab:1034;vocab1028",,,,,,,,,,,,,,,,,2023-11-21
-vocab:1030,non-probabilitstic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1031,convenience,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1032,quota,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1033,purposive,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1034,study design,,,,,,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1035,cross-sectional survey,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1036,case-control,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1037,longitudinal (cohort),,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22
-vocab:1038,study setting,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1039,occupationally exposed population,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1040,hotspot residents,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1041,general population,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1042,seasonal coverage,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1043,summer,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1044,spring,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1045,autumn,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1046,winter,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1047,implementation level,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1048,international level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1049,national level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1050,regional level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1051,local level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1052,level of data granularity,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1053,single measurement data (pseudonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1054,single measurement data (anonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1055,aggregated data,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1056,metadata only,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-14
-vocab:1057,status,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1058,concluded,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1059,ongoing,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1060,planned,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1061,HBM type,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1062,research object,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1063,surveillance project,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1064,monitoring project,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07
-vocab:1065,policy / legislation,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1066,development of tools/guideles/training material,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1067,quality control/quality assurance,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1068,improving health services delivery infrasturcte,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21
-vocab:1069,health promotion,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-26
-vocab:1097,matrix
-vocab:1098,air matrix,,,,,vocab:1097
-vocab:1099,sediment matrix,,,,,vocab:1097
-vocab:1100,soil matrix,,,,,vocab:1097
-vocab:1101,water matrix,,,,,vocab:1097
-vocab:1102,biota matrix,,,,,vocab:1097
-vocab:1103,deposition matrix,,,,,vocab:1097
-vocab:1104,whole air matrix,,,,,vocab:1098
-vocab:1105,gas phase matrix,,,,,vocab:1098
-vocab:1106,TSP matrix,,,,,vocab:1098
-vocab:1107,PM 10 matrix,,,,,vocab:1098
-vocab:1108,PM 2.5 matrix,,,,,vocab:1098
-vocab:1109,PM 5 matrix,,,,,vocab:1098
-vocab:1110,surface matrix,,,,,vocab:1099
-vocab:1111,sewage sludge matrix,,,,,vocab:1099
-vocab:1112,stratified matrix,,,,,vocab:1099
-vocab:1113,surface matrix,,,,,vocab:1100
-vocab:1114,topsoil matrix,,,,,vocab:1100
-vocab:1115,subsoil A matrix,,,,,vocab:1100
-vocab:1116,subsoil B matrix,,,,,vocab:1100
-vocab:1117,horizon A matrix,,,,,vocab:1100
-vocab:1118,horizon B matrix,,,,,vocab:1100
-vocab:1119,horizon C matrix,,,,,vocab:1100
-vocab:1120,horizon E matrix,,,,,vocab:1100
-vocab:1121,horizon G matrix,,,,,vocab:1100
-vocab:1122,horizon M matrix,,,,,vocab:1100
-vocab:1123,horizon O matrix,,,,,vocab:1100
-vocab:1124,coastal matrix,,,,,vocab:1101
-vocab:1125,brackish matrix,,,,,vocab:1101
-vocab:1126,ocean matrix,,,,,vocab:1101
-vocab:1127,surface freshwater matrix,,,,,vocab:1101
-vocab:1128,surface freshwater - reservoir matrix,,,,,vocab:1101
-vocab:1129,surface freshwater - river matrix,,,,,vocab:1101
-vocab:1130,ground water matrix,,,,,vocab:1101
-vocab:1131,fish matrix,,,,,vocab:1102
-vocab:1132,barley matrix,,,,,vocab:1102
-vocab:1133,grass matrix,,,,,vocab:1102
-vocab:1134,hop matrix,,,,,vocab:1102
-vocab:1135,moss matrix,,,,,vocab:1102
-vocab:1136,mustard matrix,,,,,vocab:1102
-vocab:1137,maize matrix,,,,,vocab:1102
-vocab:1138,oat matrix,,,,,vocab:1102
-vocab:1139,peat moss matrix,,,,,vocab:1102
-vocab:1140,pine matrix,,,,,vocab:1102
-vocab:1141,potato matrix,,,,,vocab:1102
-vocab:1142,rape matrix,,,,,vocab:1102
-vocab:1143,soya matrix,,,,,vocab:1102
-vocab:1144,sunflover matrix,,,,,vocab:1102
-vocab:1145,spruce matrix,,,,,vocab:1102
-vocab:1146,triticale matrix,,,,,vocab:1102
-vocab:1147,wheat matrix,,,,,vocab:1102
-vocab:1148,dry matrix,,,,,vocab:1103
-vocab:1149,mixed matrix,,,,,vocab:1103
-vocab:1150,wet matrix,,,,,vocab:1103
-vocab:1151,blood-whole blood matrix,,BWB,Blood-whole blood,,vocab:1172
-vocab:1152,blood -plasma matrix,,BP,Blood -plasma,,vocab:1172
-vocab:1153,blood -serum matrix,,BS,Blood -serum,,vocab:1172
-vocab:1154,cord blood-whole blood matrix,,CBWB,Cord blood-whole blood,,vocab:1172
-vocab:1155,cord blood-plasma matrix,,CBP,Cord blood-plasma,,vocab:1172
-vocab:1156,cord blood-serum matrix,,CBS,Cord blood-serum,,vocab:1172
-vocab:1157,urine-spot matrix,,US,Urine-spot,,vocab:1172
-vocab:1158,urine-24h matrix,,UD,Urine-24h,,vocab:1172
-vocab:1159,urine-morning urine matrix,,UM,Urine-morning urine,,vocab:1172
-vocab:1160,saliva and/or sputum matrix,,SA,Saliva and or sputum,,vocab:1172
-vocab:1161,semen matrix,,SEM,Semen,,vocab:1172
-vocab:1162,hair matrix,,H,Hair,,vocab:1172
-vocab:1163,exhaled breath condensate matrix,,EBC,Exhaled breath condensate,,vocab:1172
-vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172
-vocab:1165,breast milk matrix,,BM,Breast milk,,vocab:1172,,,,,,,,,,,,,,,,,########
-vocab:1166,adipose tissue/fat matrix,,ADI,Adipose tissue/fat,,vocab:1172
-vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172
-vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172,,,,,,,,,,,,,,,,,########
-vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172
-vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172,,,,,,,,,,,,,,,,,########
-vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172
-vocab:1172,human matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,########
-vocab:1173,variable
-vocab:1174,soil erosion in arable land with a slope of 4 to 8 percent in catchment,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassPerAreaTime,http://vocabs.lter-europe.net/EnvThes/24,http://vocabs.lter-europe.net/EnvThes/30330,http://vocabs.lter-europe.net/EnvThes/10092,"vocab:1176,vocab:1177",,,,,,,########
-vocab:1175,constraint,,,,,,,,,,,,,,,,,,,,,,2023-11-29
-vocab:1176,arable,,,,,vocab:1175,,,,,,,,,,,,,,,,,2023-11-29
-vocab:1177,slope 4 to 8 percent,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,2023-11-29
-vocab:1178,education level of the mother of the study participant,,,,,vocab:1173,iop:Variable,,,,,vocab:1204,vocab:1206,,vocab:1207,vocab:1208,,,,,,,########
-vocab:1179,mass per volume concentration of pcb52 in a house dust sample,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_34206,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194,vocab:1197,,,,,,,########
-vocab:1180,concentration of pcb118 in air,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_81520,vocab:1098,,,,,,,,,########
-vocab:1181,percentage of total organic carbon in sediment,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/22183,http://vocabs.lter-europe.net/EnvThes/20813,http://vocabs.lter-europe.net/EnvThes/20899,,,,,,,,,########
-vocab:1182,weight per volume concentration of chlorophyll-a in a water column,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/10073,http://vocabs.lter-europe.net/EnvThes/20785,http://vocabs.lter-europe.net/EnvThes/20538,,http://vocabs.lter-europe.net/EnvThes/20924,,,,,,,2023-11-26
-vocab:1183,concentration of leukocytes in the gut of a patient,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/Concentration,http://purl.bioontology.org/ontology/MESH/D007962,http://purl.jp/bio/11/meo/MEO_0000468,http://purl.bioontology.org/ontology/SNOMEDCT/116154003,"http://purl.bioontology.org/ontology/ICD10CM/G93.32, http://purl.bioontology.org/ontology/MESH/D007107",,,,,,,########
-vocab:1184,specific surface area of nanomaterials,,,,,vocab:1173,iop:Variable,,,,,,http://purl.bioontology.org/ontology/npo#NPO_199,,,,,,,,,,2023-11-26
-vocab:1185,mass concentration of aldrin in air,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1186,mass concentration of NPs in medium at well bottom,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1187,concentration range of chemical agent in DMEM in cells,,,,,vocab:1173,iop:Variable,,,,,,http://vocabs.lter-europe.net/EnvThes/20748,,,,,,,,,,########
-vocab:1188,mass per volume concentration of lead in river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1189,pH value of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1190,mass per volume concentration of toluene in a persons morning urine,,,,,vocab:1173,iop:Variable,,,,,,https://vocabulary.actris.nilu.no/actris_vocab/toluene,,,vocab:1202,,,,,,,########
-vocab:1191,frequency of dietary meat consumption in a person,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1192,pressure of air in atmosphere at 2m height,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1193,concentration of nitrate in running water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1194,concentration of NO2 in the organic horizon of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1195,chemical reactivity of natural organic matter extracted from river surface water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1196,turbidity of river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########
-vocab:1197,settled,,,,,vocab:1175,,,,,,,,,,,,,,,,,########
-vocab:1198,DMEM,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,2023-11-29
-vocab:1199,medium,,,,,vocab:1175,,,,,,,,,,,,,,,,,########
-vocab:1200,neuroblastoma,,,,,vocab:1175,,,,,,,,,,,,,,,,,########
-vocab:1201,differentiated,,,,,vocab:1175,,,,,,,,,,,,,,,,,########
-vocab:1202,morning,,,,,vocab:1175,,,,,,,,,,,,,,,,,########
-vocab:1203,property,,,,,,,,,,,,,,,,,,,,,,########
-vocab:1204,education level,,,,,vocab:1203,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953,,,,,,,,,,,,,,########
-vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,########
-vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,########
-vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,########
-vocab:1208,mother of participant,,,,,vocab:1175,,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,2023-11-26
-vocab:1209,clinical (patient) population,,,,,vocab:1038,,,,,,,,,,,,,,,,,########,2023-12-18
-vocab:1210,pregnant women,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-12-07
-vocab:1211,sex at birth,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1212,female,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1213,male,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1214,lifestyle information variable,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1215,smoke bevaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1216,alcohol consumption,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1217,occupation,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1218,cosmetic use,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1219,time activity pattern,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1220,sociodemographic variable,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1221,housing information,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1222,combustion behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1223,parity,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1224,breastfeeding,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1225,physical exercise,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1226,personal hygiene,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1227,personal behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1228,personal information,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1229,height,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1230,weight,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1231,educational level,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1232,race/ethnicity,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1233,income,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1234,medical data/history,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1235,place/country of birth,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1236,food consumption,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1237,environmental factors information,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1238,consumption of local food/feed,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1239,urban versus non-urban,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1240,region,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1241,wheather conditions,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1242,passive smoking,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1243,industry,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1244,sampling frame,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1245,census data,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1246,electoral register,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1247,school (class)/day care centre lists,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1248,health centre/hospital lists,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1249,health professionals list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1250,list of participants from another study,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1251,direct contact in selected settings,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1252,recruitment method,,,,,,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1253,letter,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1254,email,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1255,face-to-face,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1256,internet,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
-vocab:1257,phone,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18
+vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-15,,
+vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057,vocab:1252,vocab:1244",,,,,,,,,,,,,,,,,2023-11-21,2023-12-18,,
+vocab:1004,time frequency,,,,,,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1005,only once,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1006,annual,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1007,biennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1008,triennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1009,quadrennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1010,quinquennial,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1011,two times a year,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1012,three times a year,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1013,quarterly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1014,bimonthly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1015,weekly,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1016,daily,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1017,until the number of the participants or samples are recruited/collected,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,2023-12-15,,
+vocab:1018,European level,,,,,vocab:1047,,,,,,,,,,,,,,,,,,2023-12-15,,
+vocab:1019,irregular time spacing,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,2023-12-15,,
+vocab:1020,degree of urbanisation,,,,,,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1021,densely populated area (cities),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1022,intermediate desity area (towns or suburbs),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1023,thinly populated area (rural area),,,,,vocab:1020,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1024,probabilistic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1025,simple random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1026,stratified random,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1027,cluster,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1028,systematic ,,,,,vocab:1028,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1029,not applicable,,,,,"vocab:1028,vocab:1034;vocab1028",,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1030,non-probabilitstic selection,,,,,,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1031,convenience,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1032,quota,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1033,purposive,,,,,vocab:1030,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1034,study design,,,,,,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1035,cross-sectional survey,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22,,,
+vocab:1036,case-control,,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22,,,
+vocab:1037,longitudinal (cohort),,,,,vocab:1034,,,,,,,,,,,,,,,,,2023-11-22,,,
+vocab:1038,study setting,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1039,occupationally exposed population,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1040,hotspot residents,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1041,general population,,,,,vocab:1038,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1042,seasonal coverage,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1043,summer,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1044,spring,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1045,autumn,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1046,winter,,,,,vocab:1042,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1047,implementation level,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1048,international level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1049,national level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1050,regional level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1051,local level,,,,,vocab:1047,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1052,level of data granularity,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1053,single measurement data (pseudonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1054,single measurement data (anonymized),,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1055,aggregated data,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1056,metadata only,,,,,vocab:1052,,,,,,,,,,,,,,,,,2023-11-21,2023-12-14,,
+vocab:1057,status,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1058,concluded,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1059,ongoing,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1060,planned,,,,,vocab:1057,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1061,HBM type,,,,,,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1062,research object,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1063,surveillance project,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1064,monitoring project,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,2023-12-07,,
+vocab:1065,policy / legislation,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1066,development of tools/guideles/training material,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1067,quality control/quality assurance,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1068,improving health services delivery infrasturcte,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-21,,,
+vocab:1069,health promotion,,,,,vocab:1062,,,,,,,,,,,,,,,,,2023-11-26,,,
+vocab:1097,matrix,,,,,,,,,,,,,,,,,,,,,,,,,
+vocab:1098,air matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1099,sediment matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1100,soil matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1101,water matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1102,biota matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1103,deposition matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,,,,
+vocab:1104,whole air matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1105,gas phase matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1106,TSP matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1107,PM 10 matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1108,PM 2.5 matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1109,PM 5 matrix,,,,,vocab:1098,,,,,,,,,,,,,,,,,,,,
+vocab:1110,surface matrix,,,,,vocab:1099,,,,,,,,,,,,,,,,,,,,
+vocab:1111,sewage sludge matrix,,,,,vocab:1099,,,,,,,,,,,,,,,,,,,,
+vocab:1112,stratified matrix,,,,,vocab:1099,,,,,,,,,,,,,,,,,,,,
+vocab:1113,surface matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1114,topsoil matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1115,subsoil A matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1116,subsoil B matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1117,horizon A matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1118,horizon B matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1119,horizon C matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1120,horizon E matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1121,horizon G matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1122,horizon M matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1123,horizon O matrix,,,,,vocab:1100,,,,,,,,,,,,,,,,,,,,
+vocab:1124,coastal matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1125,brackish matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1126,ocean matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1127,surface freshwater matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1128,surface freshwater - reservoir matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1129,surface freshwater - river matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1130,ground water matrix,,,,,vocab:1101,,,,,,,,,,,,,,,,,,,,
+vocab:1131,fish matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1132,barley matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1133,grass matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1134,hop matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1135,moss matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1136,mustard matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1137,maize matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1138,oat matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1139,peat moss matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1140,pine matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1141,potato matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1142,rape matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1143,soya matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1144,sunflover matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1145,spruce matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1146,triticale matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1147,wheat matrix,,,,,vocab:1102,,,,,,,,,,,,,,,,,,,,
+vocab:1148,dry matrix,,,,,vocab:1103,,,,,,,,,,,,,,,,,,,,
+vocab:1149,mixed matrix,,,,,vocab:1103,,,,,,,,,,,,,,,,,,,,
+vocab:1150,wet matrix,,,,,vocab:1103,,,,,,,,,,,,,,,,,,,,
+vocab:1151,blood-whole blood matrix,,BWB,Blood-whole blood,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1152,blood -plasma matrix,,BP,Blood -plasma,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1153,blood -serum matrix,,BS,Blood -serum,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1154,cord blood-whole blood matrix,,CBWB,Cord blood-whole blood,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1155,cord blood-plasma matrix,,CBP,Cord blood-plasma,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1156,cord blood-serum matrix,,CBS,Cord blood-serum,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1157,urine-spot matrix,,US,Urine-spot,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1158,urine-24h matrix,,UD,Urine-24h,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1159,urine-morning urine matrix,,UM,Urine-morning urine,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1160,saliva and/or sputum matrix,,SA,Saliva and or sputum,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1161,semen matrix,,SEM,Semen,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1162,hair matrix,,H,Hair,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1163,exhaled breath condensate matrix,,EBC,Exhaled breath condensate,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1164,red blood cells matrix,,RBC,Red blood cells,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1165,breast milk matrix,,BM,Breast milk,,vocab:1172,,,,,,,,,,,,,,,,,########,,,
+vocab:1166,adipose tissue/fat matrix,,ADI,Adipose tissue/fat,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1167,all toe nails matrix,,ATN,All toe nails,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1168,big toe nails matrix,,BTN,Big toe nails,,vocab:1172,,,,,,,,,,,,,,,,,########,,,
+vocab:1169,dermal wipes matrix,,DW,Dermal wipes,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1170,amniotic fluid matrix,,AF,Amniotic fluid,,vocab:1172,,,,,,,,,,,,,,,,,########,,,
+vocab:1171,placenta tissue matrix,,PLT,Placenta tissue,,vocab:1172,,,,,,,,,,,,,,,,,,,,
+vocab:1172,human matrix,,,,,vocab:1097,,,,,,,,,,,,,,,,,########,,,
+vocab:1173,variable,,,,,,,,,,,,,,,,,,,,,,,,,
+vocab:1174,soil erosion in arable land with a slope of 4 to 8 percent in catchment,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassPerAreaTime,http://vocabs.lter-europe.net/EnvThes/24,http://vocabs.lter-europe.net/EnvThes/30330,http://vocabs.lter-europe.net/EnvThes/10092,"vocab:1176,vocab:1177",,,,,,,########,,,
+vocab:1175,constraint,,,,,,,,,,,,,,,,,,,,,,2023-11-29,,,
+vocab:1176,arable,,,,,vocab:1175,,,,,,,,,,,,,,,,,2023-11-29,,,
+vocab:1177,slope 4 to 8 percent,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,2023-11-29,,
+vocab:1178,education level of the mother of the study participant,,,,,vocab:1173,iop:Variable,,,,,vocab:1204,vocab:1206,,vocab:1207,vocab:1208,,,,,,,########,,,
+vocab:1179,mass per volume concentration of pcb52 in a house dust sample,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_34206,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C84281,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C41194,vocab:1197,,,,,,,########,,,
+vocab:1180,concentration of pcb118 in air,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/MassConcentration,http://purl.obolibrary.org/obo/CHEBI_81520,vocab:1098,,,,,,,,,########,,,
+vocab:1181,percentage of total organic carbon in sediment,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/22183,http://vocabs.lter-europe.net/EnvThes/20813,http://vocabs.lter-europe.net/EnvThes/20899,,,,,,,,,########,,,
+vocab:1182,weight per volume concentration of chlorophyll-a in a water column,,,,,vocab:1173,iop:Variable,,,,,http://vocabs.lter-europe.net/EnvThes/10073,http://vocabs.lter-europe.net/EnvThes/20785,http://vocabs.lter-europe.net/EnvThes/20538,,http://vocabs.lter-europe.net/EnvThes/20924,,,,,,,2023-11-26,,,
+vocab:1183,concentration of leukocytes in the gut of a patient,,,,,vocab:1173,iop:Variable,,,,,http://qudt.org/vocab/quantitykind/Concentration,http://purl.bioontology.org/ontology/MESH/D007962,http://purl.jp/bio/11/meo/MEO_0000468,http://purl.bioontology.org/ontology/SNOMEDCT/116154003,"http://purl.bioontology.org/ontology/ICD10CM/G93.32, http://purl.bioontology.org/ontology/MESH/D007107",,,,,,,########,,,
+vocab:1184,specific surface area of nanomaterials,,,,,vocab:1173,iop:Variable,,,,,,http://purl.bioontology.org/ontology/npo#NPO_199,,,,,,,,,,2023-11-26,,,
+vocab:1185,mass concentration of aldrin in air,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1186,mass concentration of NPs in medium at well bottom,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1187,concentration range of chemical agent in DMEM in cells,,,,,vocab:1173,iop:Variable,,,,,,http://vocabs.lter-europe.net/EnvThes/20748,,,,,,,,,,########,,,
+vocab:1188,mass per volume concentration of lead in river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1189,pH value of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1190,mass per volume concentration of toluene in a persons morning urine,,,,,vocab:1173,iop:Variable,,,,,,https://vocabulary.actris.nilu.no/actris_vocab/toluene,,,vocab:1202,,,,,,,########,,,
+vocab:1191,frequency of dietary meat consumption in a person,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1192,pressure of air in atmosphere at 2m height,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1193,concentration of nitrate in running water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1194,concentration of NO2 in the organic horizon of soil,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1195,chemical reactivity of natural organic matter extracted from river surface water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1196,turbidity of river water,,,,,vocab:1173,iop:Variable,,,,,,,,,,,,,,,,########,,,
+vocab:1197,settled,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,,,
+vocab:1198,DMEM,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,2023-11-29,,
+vocab:1199,medium,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,,,
+vocab:1200,neuroblastoma,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,,,
+vocab:1201,differentiated,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,,,
+vocab:1202,morning,,,,,vocab:1175,,,,,,,,,,,,,,,,,########,,,
+vocab:1203,property,,,,,,,,,,,,,,,,,,,,,,########,,,
+vocab:1204,education level,,,,,vocab:1203,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17953,,,,,,,,,,,,,,########,,,
+vocab:1205,entity,,,,,,,,,,,,,,,,,,,,,,########,,,
+vocab:1206,person,,,,,vocab:1205,,,http://xmlns.com/foaf/0.1/Person,,,,,,,,,,,,,,########,,,
+vocab:1207,study,,,,,vocab:1205,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C63536,,,,,,,,,,,,,,########,,,
+vocab:1208,mother of participant,,,,,vocab:1175,,,,http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25189,,,,,,,,,,,,,2023-11-26,,,
+vocab:1209,clinical (patient) population,,,,,vocab:1038,,,,,,,,,,,,,,,,,########,2023-12-18,,
+vocab:1210,pregnant women,,,,,vocab:1038,,,,,,,,,,,,,,,,,,2023-12-07,,
+vocab:1211,sex at birth,,,,,,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1212,female,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1213,male,,,,,vocab:1211,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1214,lifestyle information variable,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1215,smoke behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1216,alcohol consumption,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1217,occupation,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1218,cosmetic use,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1219,time activity pattern,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1220,sociodemographic variable,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1221,housing information,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1222,combustion behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1223,parity,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1224,breastfeeding,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1225,physical exercise,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1226,personal hygiene,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1227,personal behaviour,,,,,vocab:1214,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1228,personal information,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1229,height,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1230,weight,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1231,educational level,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1232,race/ethnicity,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1233,income,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1234,medical data/history,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1235,place/country of birth,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1236,food consumption,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1237,environmental factors information,,,,,vocab:1173,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1238,consumption of local food/feed,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1239,urban versus non-urban,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1240,NUTS region,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1241,wheather conditions,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1242,passive smoking,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1243,industry,,,,,vocab:1237,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1244,sampling frame,,,,,,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1245,census data,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1246,electoral register,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1247,school list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1248,health centre/hospital list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1249,health professionals list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1250,list of participants from another study,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1251,direct contact in selected settings,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1252,recruitment method,,,,,,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1253,letter,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1254,email,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1255,face-to-face,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1256,internet,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1257,phone,,,,,vocab:1252,,,,,,,,,,,,,,,,,,2023-12-18,,
+vocab:1258,day care centre list,,,,,vocab:1244,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1259,addressed population,,,,,,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1260,first population,,,,,vocab:1259,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1261,second population,,,,,vocab:1259,,,,,,,,,,,,,,,,,,2023-12-28,,
+vocab:1262,third population,,,,,vocab:1259,,,,,,,,,,,,,,,,,,2023-12-28,,

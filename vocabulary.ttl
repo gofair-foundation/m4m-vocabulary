@@ -87,7 +87,7 @@ puv:method
   rdfs:comment "method used to measure the value" ;
   rdfs:label "method" ;
   rdfs:range puv:Method .
-        
+
 sosa:madeBySensor 
   a owl:ObjectProperty ;
   rdfs:label "made by sensor"@en ;
@@ -98,28 +98,22 @@ sosa:madeBySensor
   owl:inverseOf sosa:madeObservation ;
   rdfs:isDefinedBy sosa: .
 
+
 <http://purl.org/m4m> a skos:ConceptScheme;
   <http://omv.ontoware.org/2005/05/ontologykeywords> "descriptors that apply to the project methodologies"@en;
-  <http://omv.ontoware.org/2005/05/ontologyresourceLocator> <https://ldbase.org/taxonomy/project_types>;
   dct:audience schema:Researcher;
-  dct:contributor "0000-0002-1700-7685"@en;
   dct:created "2023-11-14T00:00:00+00:00"^^xsd:datetime;
-  dct:creator <https://orcid.org/0000-0001-9793-0420>;
-  dct:description "Project Descriptor of LDbase Project page"@en;
   dct:language "en"@en;
   dct:license <https://spdx.org/licenses/CC-BY-4.0.html>;
-  dct:publisher <https://ror.org/05g3dte14>;
   dct:subject "Project page"@en;
   dct:title "LD Base vocabulary"@en;
-  schema:includedInDataCatalog <https://bioportal.bioontology.org/>;
   owl:ontologyIRI <http://purl.org/m4m/>;
   owl:versionInfo "0.0.1"@en;
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
-    vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252;
-  skos:prefLabel "LD Base vocabulary"@en;
-  foaf:homepage "www.lDbase.org"@en;
-  <voaf:metadataVoc> <https://www.isibang.ac.in/> .
+    vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
+    vocab:1259;
+  skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
   dct:created "2023-11-23"^^xsd:date;
@@ -1280,10 +1274,10 @@ vocab:1214 a skos:Concept;
   skos:prefLabel "lifestyle information variable"@en .
 
 vocab:1215 a skos:Concept;
-  dct:modified "2023-12-18"^^xsd:date;
+  dct:modified "2023-12-28"^^xsd:date;
   skos:broader vocab:1214;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "smoke bevaviour"@en .
+  skos:prefLabel "smoke behaviour"@en .
 
 vocab:1216 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
@@ -1433,10 +1427,10 @@ vocab:1239 a skos:Concept;
   skos:prefLabel "urban versus non-urban"@en .
 
 vocab:1240 a skos:Concept;
-  dct:modified "2023-12-18"^^xsd:date;
+  dct:modified "2023-12-28"^^xsd:date;
   skos:broader vocab:1237;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "region"@en .
+  skos:prefLabel "NUTS region"@en .
 
 vocab:1241 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
@@ -1460,7 +1454,7 @@ vocab:1244 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003, vocab:1245, vocab:1246, vocab:1247, vocab:1248, vocab:1249,
-    vocab:1250, vocab:1251;
+    vocab:1250, vocab:1251, vocab:1258;
   skos:prefLabel "sampling frame"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1477,16 +1471,16 @@ vocab:1246 a skos:Concept;
   skos:prefLabel "electoral register"@en .
 
 vocab:1247 a skos:Concept;
-  dct:modified "2023-12-18"^^xsd:date;
+  dct:modified "2023-12-28"^^xsd:date;
   skos:broader vocab:1244;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "school (class)/day care centre lists"@en .
+  skos:prefLabel "school list"@en .
 
 vocab:1248 a skos:Concept;
-  dct:modified "2023-12-18"^^xsd:date;
+  dct:modified "2023-12-28"^^xsd:date;
   skos:broader vocab:1244;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "health centre/hospital lists"@en .
+  skos:prefLabel "health centre/hospital list"@en .
 
 vocab:1249 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
@@ -1542,5 +1536,36 @@ vocab:1257 a skos:Concept;
   skos:broader vocab:1252;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "phone"@en .
+
+vocab:1258 a skos:Concept;
+  dct:modified "2023-12-28"^^xsd:date;
+  skos:broader vocab:1244;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "day care centre list"@en .
+
+vocab:1259 a skos:Concept;
+  dct:modified "2023-12-28"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1260, vocab:1261, vocab:1262;
+  skos:prefLabel "addressed population"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1260 a skos:Concept;
+  dct:modified "2023-12-28"^^xsd:date;
+  skos:broader vocab:1259;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "first population"@en .
+
+vocab:1261 a skos:Concept;
+  dct:modified "2023-12-28"^^xsd:date;
+  skos:broader vocab:1259;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "second population"@en .
+
+vocab:1262 a skos:Concept;
+  dct:modified "2023-12-28"^^xsd:date;
+  skos:broader vocab:1259;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "third population"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
