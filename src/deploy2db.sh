@@ -16,4 +16,4 @@ rawurlencode() {
 }
 
 rawurlencode "$GRAPH";
-curl -X PUT -d @"$FILE_NAME".ttl -u "$DB_USER":"$DB_PASS" -H "Content-Type: application/x-turtle" $SPARQL_ENDPOINT?graph=$ENCODED_URL
+curl -X PUT -d @"$FILE_NAME".ttl -u "$DB_USER":"$DB_PASS" -H "Content-Type: text/turtle;charset=utf-8" $SPARQL_ENDPOINT?graph=$ENCODED_URL
