@@ -112,7 +112,7 @@ sosa:madeBySensor
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
-    vocab:1259;
+    vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -137,9 +137,9 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2023-12-18"^^xsd:date;
+  dct:modified "2024-01-08"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
-    vocab:1244, vocab:1252;
+    vocab:1244, vocab:1252, vocab:1259, vocab:1263;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -1544,28 +1544,183 @@ vocab:1258 a skos:Concept;
   skos:prefLabel "day care centre list"@en .
 
 vocab:1259 a skos:Concept;
-  dct:modified "2023-12-28"^^xsd:date;
+  dct:modified "2024-01-08"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1260, vocab:1261, vocab:1262;
-  skos:prefLabel "addressed population"@en;
+  skos:narrower vocab:1003, vocab:1260, vocab:1261, vocab:1262, vocab:1266;
+  skos:prefLabel "urinary samples information"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1260 a skos:Concept;
-  dct:modified "2023-12-28"^^xsd:date;
+  dct:modified "2024-01-08"^^xsd:date;
   skos:broader vocab:1259;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "first population"@en .
+  skos:prefLabel "creatinine"@en .
 
 vocab:1261 a skos:Concept;
-  dct:modified "2023-12-28"^^xsd:date;
+  dct:modified "2024-01-08"^^xsd:date;
   skos:broader vocab:1259;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "second population"@en .
+  skos:prefLabel "specific gravity"@en .
 
 vocab:1262 a skos:Concept;
-  dct:modified "2023-12-28"^^xsd:date;
+  dct:modified "2024-01-08"^^xsd:date;
   skos:broader vocab:1259;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "third population"@en .
+  skos:prefLabel "osmolarity"@en .
+
+vocab:1263 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1264, vocab:1265, vocab:1266;
+  skos:prefLabel "blood samples information"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1264 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1263;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gravimetric"@en .
+
+vocab:1265 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1263;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "enzymatic"@en .
+
+vocab:1266 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1259, vocab:1263;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "none"@en .
+
+vocab:1267 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1268, vocab:1269, vocab:1270, vocab:1271, vocab:1272, vocab:1273;
+  skos:prefLabel "unit of measure"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1268 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mL"@en .
+
+vocab:1269 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "µL"@en .
+
+vocab:1270 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "g"@en .
+
+vocab:1271 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mg"@en .
+
+vocab:1272 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "µg"@en .
+
+vocab:1273 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1267;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "cm"@en .
+
+vocab:1274 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1275, vocab:1276, vocab:1277;
+  skos:prefLabel "sampling container material"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1275 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1274;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "PP"@en .
+
+vocab:1276 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1274;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "glass"@en .
+
+vocab:1277 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1274;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "PET"@en .
+
+vocab:1278 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1279, vocab:1280, vocab:1281, vocab:1282, vocab:1283, vocab:1284,
+    vocab:1285, vocab:1286, vocab:1287;
+  skos:prefLabel "quality assurance/qualtiy control method"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1279 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "standard operating procedure"@en .
+
+vocab:1280 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "trained fieldworkers"@en .
+
+vocab:1281 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "control of background contamination in the sampling material"@en .
+
+vocab:1282 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "controlf of the transprot conditions"@en .
+
+vocab:1283 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "control of background contamination in the conservation material"@en .
+
+vocab:1284 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "identifciation/traceability of the samples"@en .
+
+vocab:1285 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "criteria for acceptation/acceptation of the samples"@en .
+
+vocab:1286 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "collection of field blanks"@en .
+
+vocab:1287 a skos:Concept;
+  dct:modified "2024-01-08"^^xsd:date;
+  skos:broader vocab:1278;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "settings the conditions for sample storage"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
