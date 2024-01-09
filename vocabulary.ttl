@@ -137,9 +137,9 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-09"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
-    vocab:1244, vocab:1252, vocab:1259, vocab:1263;
+    vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -1664,8 +1664,8 @@ vocab:1277 a skos:Concept;
 vocab:1278 a skos:Concept;
   dct:modified "2024-01-08"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1279, vocab:1280, vocab:1281, vocab:1282, vocab:1283, vocab:1284,
-    vocab:1285, vocab:1286, vocab:1287;
+  skos:narrower vocab:1003, vocab:1279, vocab:1280, vocab:1281, vocab:1282, vocab:1283,
+    vocab:1284, vocab:1285, vocab:1286, vocab:1287;
   skos:prefLabel "quality assurance/qualtiy control method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
