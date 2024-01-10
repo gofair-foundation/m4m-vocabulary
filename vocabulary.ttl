@@ -112,7 +112,7 @@ sosa:madeBySensor
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
-    vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278;
+    vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1291, vocab:1299;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -139,7 +139,8 @@ vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
-    vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278;
+    vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
+    vocab:1299;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -593,30 +594,32 @@ vocab:1097 a skos:Concept;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1098 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1104, vocab:1105, vocab:1106, vocab:1107, vocab:1108, vocab:1109;
-  skos:prefLabel "air matrix"@en .
+  skos:prefLabel "air"@en .
 
 vocab:1099 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1110, vocab:1111, vocab:1112;
-  skos:prefLabel "sediment matrix"@en .
+  skos:prefLabel "sediment"@en .
 
 vocab:1100 a skos:Concept;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1113, vocab:1114, vocab:1115, vocab:1116, vocab:1117, vocab:1118,
     vocab:1119, vocab:1120, vocab:1121, vocab:1122, vocab:1123;
-  skos:prefLabel "soil matrix"@en .
+  skos:prefLabel "soil"@en .
 
 vocab:1101 a skos:Concept;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1124, vocab:1125, vocab:1126, vocab:1127, vocab:1128, vocab:1129,
     vocab:1130;
-  skos:prefLabel "water matrix"@en .
+  skos:prefLabel "water"@en .
 
 vocab:1102 a skos:Concept;
   skos:broader vocab:1097;
@@ -624,395 +627,407 @@ vocab:1102 a skos:Concept;
   skos:narrower vocab:1131, vocab:1132, vocab:1133, vocab:1134, vocab:1135, vocab:1136,
     vocab:1137, vocab:1138, vocab:1139, vocab:1140, vocab:1141, vocab:1142, vocab:1143,
     vocab:1144, vocab:1145, vocab:1146, vocab:1147;
-  skos:prefLabel "biota matrix"@en .
+  skos:prefLabel "biota"@en .
 
 vocab:1103 a skos:Concept;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1148, vocab:1149, vocab:1150;
-  skos:prefLabel "deposition matrix"@en .
+  skos:prefLabel "deposition"@en .
 
 vocab:1104 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "whole air matrix"@en .
+  skos:prefLabel "whole air"@en .
 
 vocab:1105 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gas phase matrix"@en .
+  skos:prefLabel "gas phase"@en .
 
 vocab:1106 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "TSP matrix"@en .
+  skos:prefLabel "TSP"@en .
 
 vocab:1107 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "PM 10 matrix"@en .
+  skos:prefLabel "PM 10"@en .
 
 vocab:1108 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "PM 2.5 matrix"@en .
+  skos:prefLabel "PM 2.5"@en .
 
 vocab:1109 a skos:Concept;
   skos:broader vocab:1098;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "PM 5 matrix"@en .
+  skos:prefLabel "PM 5"@en .
 
 vocab:1110 a skos:Concept;
   skos:broader vocab:1099;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surface matrix"@en .
+  skos:prefLabel "surface"@en .
 
 vocab:1111 a skos:Concept;
   skos:broader vocab:1099;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "sewage sludge matrix"@en .
+  skos:prefLabel "sewage sludge"@en .
 
 vocab:1112 a skos:Concept;
   skos:broader vocab:1099;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "stratified matrix"@en .
+  skos:prefLabel "stratified"@en .
 
 vocab:1113 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surface matrix"@en .
+  skos:prefLabel "surface"@en .
 
 vocab:1114 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "topsoil matrix"@en .
+  skos:prefLabel "topsoil"@en .
 
 vocab:1115 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "subsoil A matrix"@en .
+  skos:prefLabel "subsoil A"@en .
 
 vocab:1116 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "subsoil B matrix"@en .
+  skos:prefLabel "subsoil B"@en .
 
 vocab:1117 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon A matrix"@en .
+  skos:prefLabel "horizon A"@en .
 
 vocab:1118 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon B matrix"@en .
+  skos:prefLabel "horizon B"@en .
 
 vocab:1119 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon C matrix"@en .
+  skos:prefLabel "horizon C"@en .
 
 vocab:1120 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon E matrix"@en .
+  skos:prefLabel "horizon E"@en .
 
 vocab:1121 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon G matrix"@en .
+  skos:prefLabel "horizon G"@en .
 
 vocab:1122 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon M matrix"@en .
+  skos:prefLabel "horizon M"@en .
 
 vocab:1123 a skos:Concept;
   skos:broader vocab:1100;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "horizon O matrix"@en .
+  skos:prefLabel "horizon O"@en .
 
 vocab:1124 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "coastal matrix"@en .
+  skos:prefLabel "coastal"@en .
 
 vocab:1125 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "brackish matrix"@en .
+  skos:prefLabel "brackish"@en .
 
 vocab:1126 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "ocean matrix"@en .
+  skos:prefLabel "ocean"@en .
 
 vocab:1127 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surface freshwater matrix"@en .
+  skos:prefLabel "surface freshwater"@en .
 
 vocab:1128 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surface freshwater - reservoir matrix"@en .
+  skos:prefLabel "surface freshwater - reservoir"@en .
 
 vocab:1129 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "surface freshwater - river matrix"@en .
+  skos:prefLabel "surface freshwater - river"@en .
 
 vocab:1130 a skos:Concept;
   skos:broader vocab:1101;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "ground water matrix"@en .
+  skos:prefLabel "ground water"@en .
 
 vocab:1131 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "fish matrix"@en .
+  skos:prefLabel "fish"@en .
 
 vocab:1132 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "barley matrix"@en .
+  skos:prefLabel "barley"@en .
 
 vocab:1133 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "grass matrix"@en .
+  skos:prefLabel "grass"@en .
 
 vocab:1134 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "hop matrix"@en .
+  skos:prefLabel "hop"@en .
 
 vocab:1135 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "moss matrix"@en .
+  skos:prefLabel "moss"@en .
 
 vocab:1136 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "mustard matrix"@en .
+  skos:prefLabel "mustard"@en .
 
 vocab:1137 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "maize matrix"@en .
+  skos:prefLabel "maize"@en .
 
 vocab:1138 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "oat matrix"@en .
+  skos:prefLabel "oat"@en .
 
 vocab:1139 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "peat moss matrix"@en .
+  skos:prefLabel "peat moss"@en .
 
 vocab:1140 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "pine matrix"@en .
+  skos:prefLabel "pine"@en .
 
 vocab:1141 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "potato matrix"@en .
+  skos:prefLabel "potato"@en .
 
 vocab:1142 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "rape matrix"@en .
+  skos:prefLabel "rape"@en .
 
 vocab:1143 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "soya matrix"@en .
+  skos:prefLabel "soya"@en .
 
 vocab:1144 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "sunflover matrix"@en .
+  skos:prefLabel "sunflover"@en .
 
 vocab:1145 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "spruce matrix"@en .
+  skos:prefLabel "spruce"@en .
 
 vocab:1146 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "triticale matrix"@en .
+  skos:prefLabel "triticale"@en .
 
 vocab:1147 a skos:Concept;
   skos:broader vocab:1102;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "wheat matrix"@en .
+  skos:prefLabel "wheat"@en .
 
 vocab:1148 a skos:Concept;
   skos:broader vocab:1103;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "dry matrix"@en .
+  skos:prefLabel "dry"@en .
 
 vocab:1149 a skos:Concept;
   skos:broader vocab:1103;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "mixed matrix"@en .
+  skos:prefLabel "mixed"@en .
 
 vocab:1150 a skos:Concept;
   skos:broader vocab:1103;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "wet matrix"@en .
+  skos:prefLabel "wet"@en .
 
 vocab:1151 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Blood-whole blood"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "BWB"@en;
-  skos:prefLabel "blood-whole blood matrix"@en .
+  skos:prefLabel "blood-whole blood"@en .
 
 vocab:1152 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Blood -plasma"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "BP"@en;
-  skos:prefLabel "blood -plasma matrix"@en .
+  skos:prefLabel "blood -plasma"@en .
 
 vocab:1153 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Blood -serum"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "BS"@en;
-  skos:prefLabel "blood -serum matrix"@en .
+  skos:prefLabel "blood -serum"@en .
 
 vocab:1154 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Cord blood-whole blood"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "CBWB"@en;
-  skos:prefLabel "cord blood-whole blood matrix"@en .
+  skos:prefLabel "cord blood-whole blood"@en .
 
 vocab:1155 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Cord blood-plasma"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "CBP"@en;
-  skos:prefLabel "cord blood-plasma matrix"@en .
+  skos:prefLabel "cord blood-plasma"@en .
 
 vocab:1156 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Cord blood-serum"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "CBS"@en;
-  skos:prefLabel "cord blood-serum matrix"@en .
+  skos:prefLabel "cord blood-serum"@en .
 
 vocab:1157 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Urine-spot"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "US"@en;
-  skos:prefLabel "urine-spot matrix"@en .
+  skos:prefLabel "urine-spot"@en .
 
 vocab:1158 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Urine-24h"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "UD"@en;
-  skos:prefLabel "urine-24h matrix"@en .
+  skos:prefLabel "urine-24h"@en .
 
 vocab:1159 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Urine-morning urine"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "UM"@en;
-  skos:prefLabel "urine-morning urine matrix"@en .
+  skos:prefLabel "urine-morning urine"@en .
 
 vocab:1160 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Saliva and or sputum"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "SA"@en;
-  skos:prefLabel "saliva and/or sputum matrix"@en .
+  skos:prefLabel "saliva and/or sputum"@en .
 
 vocab:1161 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Semen"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "SEM"@en;
-  skos:prefLabel "semen matrix"@en .
+  skos:prefLabel "semen"@en .
 
 vocab:1162 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1172;
   skos:definition "Hair"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "H"@en;
-  skos:prefLabel "hair matrix"@en .
+  skos:prefLabel "hair"@en .
 
 vocab:1163 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Exhaled breath condensate"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "EBC"@en;
-  skos:prefLabel "exhaled breath condensate matrix"@en .
+  skos:prefLabel "exhaled breath condensate"@en .
 
 vocab:1164 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Red blood cells"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "RBC"@en;
-  skos:prefLabel "red blood cells matrix"@en .
+  skos:prefLabel "red blood cells"@en .
 
 vocab:1165 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Breast milk"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "BM"@en;
-  skos:prefLabel "breast milk matrix"@en .
+  skos:prefLabel "breast milk"@en .
 
 vocab:1166 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Adipose tissue/fat"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "ADI"@en;
-  skos:prefLabel "adipose tissue/fat matrix"@en .
+  skos:prefLabel "adipose tissue/fat"@en .
 
 vocab:1167 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "All toe nails"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "ATN"@en;
-  skos:prefLabel "all toe nails matrix"@en .
+  skos:prefLabel "all toe nails"@en .
 
 vocab:1168 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Big toe nails"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "BTN"@en;
-  skos:prefLabel "big toe nails matrix"@en .
+  skos:prefLabel "big toe nails"@en .
 
 vocab:1169 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Dermal wipes"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "DW"@en;
-  skos:prefLabel "dermal wipes matrix"@en .
+  skos:prefLabel "dermal wipes"@en .
 
 vocab:1170 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Amniotic fluid"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "AF"@en;
-  skos:prefLabel "amniotic fluid matrix"@en .
+  skos:prefLabel "amniotic fluid"@en .
 
 vocab:1171 a skos:Concept;
   skos:broader vocab:1172;
   skos:definition "Placenta tissue"@en;
   skos:inScheme <http://purl.org/m4m>;
   skos:notation "PLT"@en;
-  skos:prefLabel "placenta tissue matrix"@en .
+  skos:prefLabel "placenta tissue"@en .
 
 vocab:1172 a skos:Concept;
   skos:broader vocab:1097;
@@ -1020,8 +1035,8 @@ vocab:1172 a skos:Concept;
   skos:narrower vocab:1003, vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155,
     vocab:1156, vocab:1157, vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162,
     vocab:1163, vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169,
-    vocab:1170, vocab:1171;
-  skos:prefLabel "human matrix"@en .
+    vocab:1170, vocab:1171, vocab:1288, vocab:1289, vocab:1290;
+  skos:prefLabel "human"@en .
 
 vocab:1173 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
@@ -1722,5 +1737,114 @@ vocab:1287 a skos:Concept;
   skos:broader vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "settings the conditions for sample storage"@en .
+
+vocab:1288 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1172;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "EA"@en;
+  skos:prefLabel "exhaled air"@en .
+
+vocab:1289 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1172;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "DBS"@en;
+  skos:prefLabel "dried blood spots"@en .
+
+vocab:1290 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1172;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "VAMS"@en;
+  skos:prefLabel "volumetric absorptive microsample"@en .
+
+vocab:1291 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1292, vocab:1293, vocab:1294, vocab:1295, vocab:1296,
+    vocab:1297, vocab:1298;
+  skos:notation "SWB"@en;
+  skos:prefLabel "environmental matrix"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1292 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "IDUST"@en;
+  skos:prefLabel "silicone wrist band"@en .
+
+vocab:1293 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "ODUST"@en;
+  skos:prefLabel "indoor dust"@en .
+
+vocab:1294 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "IAIR"@en;
+  skos:prefLabel "outdoor dust"@en .
+
+vocab:1295 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "OAIR"@en;
+  skos:prefLabel "indoor air-stationary"@en .
+
+vocab:1296 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "PAIR"@en;
+  skos:prefLabel "outdoor air-stationary"@en .
+
+vocab:1297 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "SW"@en;
+  skos:prefLabel "personal air"@en .
+
+vocab:1298 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "surface wipe"@en .
+
+vocab:1299 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1300, vocab:1301, vocab:1302, vocab:1303;
+  skos:prefLabel "collection place"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1300 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1299;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "participants home"@en .
+
+vocab:1301 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1299;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "educational establishment"@en .
+
+vocab:1302 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1299;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "workplace"@en .
+
+vocab:1303 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1299;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "healthcare establishment"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
