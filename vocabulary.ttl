@@ -112,7 +112,8 @@ sosa:madeBySensor
   skos:hasTopConcept vocab:1000, vocab:1004, vocab:1020, vocab:1024, vocab:1030, vocab:1034,
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
-    vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1291, vocab:1299;
+    vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
+    vocab:1312, vocab:1319, vocab:1333;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -589,7 +590,7 @@ vocab:1069 a skos:Concept;
 vocab:1097 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1098, vocab:1099, vocab:1100, vocab:1101, vocab:1102, vocab:1103,
-    vocab:1172;
+    vocab:1172, vocab:1291;
   skos:prefLabel "matrix"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1733,10 +1734,10 @@ vocab:1286 a skos:Concept;
   skos:prefLabel "collection of field blanks"@en .
 
 vocab:1287 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "settings the conditions for sample storage"@en .
+  skos:prefLabel "setting the conditions for sample storage"@en .
 
 vocab:1288 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
@@ -1761,59 +1762,59 @@ vocab:1290 a skos:Concept;
 
 vocab:1291 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003, vocab:1292, vocab:1293, vocab:1294, vocab:1295, vocab:1296,
     vocab:1297, vocab:1298;
-  skos:notation "SWB"@en;
-  skos:prefLabel "environmental matrix"@en;
-  skos:topConceptOf <http://purl.org/m4m> .
+  skos:prefLabel "environmental matrix"@en .
 
 vocab:1292 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "IDUST"@en;
+  skos:notation "SWB"@en;
   skos:prefLabel "silicone wrist band"@en .
 
 vocab:1293 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "ODUST"@en;
+  skos:notation "IDUST"@en;
   skos:prefLabel "indoor dust"@en .
 
 vocab:1294 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "IAIR"@en;
+  skos:notation "ODUST"@en;
   skos:prefLabel "outdoor dust"@en .
 
 vocab:1295 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "OAIR"@en;
+  skos:notation "IAIR"@en;
   skos:prefLabel "indoor air-stationary"@en .
 
 vocab:1296 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "PAIR"@en;
+  skos:notation "OAIR"@en;
   skos:prefLabel "outdoor air-stationary"@en .
 
 vocab:1297 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
-  skos:notation "SW"@en;
+  skos:notation "PAIR"@en;
   skos:prefLabel "personal air"@en .
 
 vocab:1298 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1291;
   skos:inScheme <http://purl.org/m4m>;
+  skos:notation "SW"@en;
   skos:prefLabel "surface wipe"@en .
 
 vocab:1299 a skos:Concept;
@@ -1846,5 +1847,221 @@ vocab:1303 a skos:Concept;
   skos:broader vocab:1299;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "healthcare establishment"@en .
+
+vocab:1304 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1305, vocab:1306, vocab:1307, vocab:1308, vocab:1309, vocab:1310,
+    vocab:1311;
+  skos:prefLabel "questionnaire type"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1305 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "non-responder questionnaire"@en .
+
+vocab:1306 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "recruitment questionnaire"@en .
+
+vocab:1307 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "matrix/sample collection questionnaire"@en .
+
+vocab:1308 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "recent exposure questionnaire"@en .
+
+vocab:1309 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "24 hours food diaries"@en .
+
+vocab:1310 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "FFQ"@en;
+  skos:prefLabel "food frequency questionnaire"@en .
+
+vocab:1311 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "FDP"@en;
+  skos:prefLabel "food propensity questionnaire"@en .
+
+vocab:1312 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1313, vocab:1314, vocab:1315, vocab:1316, vocab:1317, vocab:1318;
+  skos:prefLabel "mode of questionnaire conduct"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1313 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "PAPI"@en;
+  skos:prefLabel "paper administered personal interview"@en .
+
+vocab:1314 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "CAPI"@en;
+  skos:prefLabel "computer-assisted personal interview"@en .
+
+vocab:1315 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "PATI"@en;
+  skos:prefLabel "paper administered telephone interview"@en .
+
+vocab:1316 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:notation "CATI"@en;
+  skos:prefLabel "computer-assisted telephone interview"@en .
+
+vocab:1317 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "self-administered questionnaire (paper)"@en .
+
+vocab:1318 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1312;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "self-administered questionnaire (online)"@en .
+
+vocab:1319 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1320, vocab:1321, vocab:1322, vocab:1323, vocab:1324, vocab:1325,
+    vocab:1326, vocab:1327, vocab:1328, vocab:1329, vocab:1330, vocab:1331, vocab:1332;
+  skos:prefLabel "data registry type"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1320 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "birth register"@en .
+
+vocab:1321 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "cancer incidence"@en .
+
+vocab:1322 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "disease specific clinical database"@en .
+
+vocab:1323 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "employment status"@en .
+
+vocab:1324 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "hospital discharge"@en .
+
+vocab:1325 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "medication usage"@en .
+
+vocab:1326 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "migration"@en .
+
+vocab:1327 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "mortality register"@en .
+
+vocab:1328 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "environmental data"@en .
+
+vocab:1329 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "food data"@en .
+
+vocab:1330 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "toxicology data"@en .
+
+vocab:1331 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "GIS"@en .
+
+vocab:1332 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1319;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "birth register"@en .
+
+vocab:1333 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1334, vocab:1335, vocab:1336, vocab:1337;
+  skos:prefLabel "anthropometric measuement"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1334 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1333;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "body height"@en .
+
+vocab:1335 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1333;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "body weight"@en .
+
+vocab:1336 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1333;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "waist circumference"@en .
+
+vocab:1337 a skos:Concept;
+  dct:modified "2024-01-10"^^xsd:date;
+  skos:broader vocab:1333;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "head circumference"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
