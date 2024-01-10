@@ -1563,10 +1563,10 @@ vocab:1261 a skos:Concept;
   skos:prefLabel "specific gravity"@en .
 
 vocab:1262 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1259;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "osmolarity"@en .
+  skos:prefLabel "osmolality"@en .
 
 vocab:1263 a skos:Concept;
   dct:modified "2024-01-08"^^xsd:date;
@@ -1662,11 +1662,11 @@ vocab:1277 a skos:Concept;
   skos:prefLabel "PET"@en .
 
 vocab:1278 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003, vocab:1279, vocab:1280, vocab:1281, vocab:1282, vocab:1283,
     vocab:1284, vocab:1285, vocab:1286, vocab:1287;
-  skos:prefLabel "quality assurance/qualtiy control method"@en;
+  skos:prefLabel "quality assurance/quality control method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1279 a skos:Concept;
