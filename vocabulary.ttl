@@ -139,7 +139,7 @@ vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
-    vocab:1097, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278;
+    vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -587,8 +587,8 @@ vocab:1069 a skos:Concept;
 
 vocab:1097 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1098, vocab:1099, vocab:1100, vocab:1101, vocab:1102,
-    vocab:1103, vocab:1172;
+  skos:narrower vocab:1098, vocab:1099, vocab:1100, vocab:1101, vocab:1102, vocab:1103,
+    vocab:1172;
   skos:prefLabel "matrix"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1017,10 +1017,10 @@ vocab:1171 a skos:Concept;
 vocab:1172 a skos:Concept;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155, vocab:1156,
-    vocab:1157, vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162, vocab:1163,
-    vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169, vocab:1170,
-    vocab:1171;
+  skos:narrower vocab:1003, vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155,
+    vocab:1156, vocab:1157, vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162,
+    vocab:1163, vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169,
+    vocab:1170, vocab:1171;
   skos:prefLabel "human matrix"@en .
 
 vocab:1173 a skos:Concept;
