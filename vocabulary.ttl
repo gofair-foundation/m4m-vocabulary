@@ -141,7 +141,7 @@ vocab:1003 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
     vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
-    vocab:1299;
+    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -1856,8 +1856,8 @@ vocab:1303 a skos:Concept;
 vocab:1304 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1305, vocab:1306, vocab:1307, vocab:1308, vocab:1309, vocab:1310,
-    vocab:1311;
+  skos:narrower vocab:1003, vocab:1305, vocab:1306, vocab:1307, vocab:1308, vocab:1309,
+    vocab:1310, vocab:1311;
   skos:prefLabel "questionnaire type"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1908,7 +1908,8 @@ vocab:1311 a skos:Concept;
 vocab:1312 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1313, vocab:1314, vocab:1315, vocab:1316, vocab:1317, vocab:1318;
+  skos:narrower vocab:1003, vocab:1313, vocab:1314, vocab:1315, vocab:1316, vocab:1317,
+    vocab:1318;
   skos:prefLabel "mode of questionnaire conduct"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1955,8 +1956,8 @@ vocab:1318 a skos:Concept;
 vocab:1319 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1320, vocab:1321, vocab:1322, vocab:1323, vocab:1324, vocab:1325,
-    vocab:1326, vocab:1327, vocab:1328, vocab:1329, vocab:1330, vocab:1331, vocab:1332;
+  skos:narrower vocab:1003, vocab:1320, vocab:1321, vocab:1322, vocab:1323, vocab:1324,
+    vocab:1325, vocab:1326, vocab:1327, vocab:1328, vocab:1329, vocab:1330, vocab:1331;
   skos:prefLabel "data registry type"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2034,14 +2035,14 @@ vocab:1331 a skos:Concept;
 
 vocab:1332 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
-  skos:broader vocab:1319;
+  skos:broader vocab:1333;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "birth register"@en .
+  skos:prefLabel "head circumference"@en .
 
 vocab:1333 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1334, vocab:1335, vocab:1336, vocab:1337;
+  skos:narrower vocab:1003, vocab:1332, vocab:1334, vocab:1335, vocab:1336;
   skos:prefLabel "anthropometric measuement"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2062,11 +2063,5 @@ vocab:1336 a skos:Concept;
   skos:broader vocab:1333;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "waist circumference"@en .
-
-vocab:1337 a skos:Concept;
-  dct:modified "2024-01-10"^^xsd:date;
-  skos:broader vocab:1333;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "head circumference"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
