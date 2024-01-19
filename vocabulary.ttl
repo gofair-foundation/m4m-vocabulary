@@ -2087,7 +2087,7 @@ vocab:1340 a skos:Concept;
   dct:modified "2024-01-19"^^xsd:date;
   skos:broader vocab:1172;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "Buccal cels"@en .
+  skos:prefLabel "Buccal cells"@en .
 
 vocab:1341 a skos:Concept;
   dct:modified "2024-01-19"^^xsd:date;
