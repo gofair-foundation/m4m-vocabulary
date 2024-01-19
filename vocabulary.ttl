@@ -1041,7 +1041,7 @@ vocab:1172 a skos:Concept;
   skos:narrower vocab:1003, vocab:1151, vocab:1152, vocab:1153, vocab:1154, vocab:1155,
     vocab:1156, vocab:1157, vocab:1158, vocab:1159, vocab:1160, vocab:1161, vocab:1162,
     vocab:1163, vocab:1164, vocab:1165, vocab:1166, vocab:1167, vocab:1168, vocab:1169,
-    vocab:1170, vocab:1171, vocab:1288, vocab:1289, vocab:1290;
+    vocab:1170, vocab:1171, vocab:1288, vocab:1289, vocab:1290, vocab:1340;
   skos:prefLabel "human matrix"@en .
 
 vocab:1173 a skos:Concept;
@@ -1770,7 +1770,7 @@ vocab:1291 a skos:Concept;
   skos:broader vocab:1097;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003, vocab:1292, vocab:1293, vocab:1294, vocab:1295, vocab:1296,
-    vocab:1297, vocab:1298;
+    vocab:1297, vocab:1298, vocab:1341, vocab:1342;
   skos:prefLabel "environmental matrix"@en .
 
 vocab:1292 a skos:Concept;
@@ -2082,5 +2082,23 @@ vocab:1339 a skos:Concept;
   skos:narrower vocab:1337, vocab:1338;
   skos:prefLabel "sample"@en;
   skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1340 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:broader vocab:1172;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Buccal cels"@en .
+
+vocab:1341 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "tap water"@en .
+
+vocab:1342 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:broader vocab:1291;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "soil"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
