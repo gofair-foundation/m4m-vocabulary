@@ -113,7 +113,7 @@ sosa:madeBySensor
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
-    vocab:1312, vocab:1319, vocab:1333;
+    vocab:1312, vocab:1319, vocab:1333, vocab:1339;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -1597,16 +1597,16 @@ vocab:1263 a skos:Concept;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1264 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-19"^^xsd:date;
   skos:broader vocab:1263;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "gravimetric"@en .
+  skos:prefLabel "gravimetric analysis"@en .
 
 vocab:1265 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-19"^^xsd:date;
   skos:broader vocab:1263;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "enzymatic"@en .
+  skos:prefLabel "enzymatic summation"@en .
 
 vocab:1266 a skos:Concept;
   dct:modified "2024-01-08"^^xsd:date;
@@ -1709,10 +1709,10 @@ vocab:1281 a skos:Concept;
   skos:prefLabel "control of background contamination in the sampling material"@en .
 
 vocab:1282 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-19"^^xsd:date;
   skos:broader vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "controlf of the transprot conditions"@en .
+  skos:prefLabel "control of the transport conditions"@en .
 
 vocab:1283 a skos:Concept;
   dct:modified "2024-01-08"^^xsd:date;
@@ -1727,10 +1727,10 @@ vocab:1284 a skos:Concept;
   skos:prefLabel "identifciation/traceability of the samples"@en .
 
 vocab:1285 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
+  dct:modified "2024-01-19"^^xsd:date;
   skos:broader vocab:1278;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "criteria for acceptation/acceptation of the samples"@en .
+  skos:prefLabel "criteria for acceptation/rejection of the samples"@en .
 
 vocab:1286 a skos:Concept;
   dct:modified "2024-01-08"^^xsd:date;
@@ -2063,5 +2063,24 @@ vocab:1336 a skos:Concept;
   skos:broader vocab:1333;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "waist circumference"@en .
+
+vocab:1337 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:broader vocab:1339;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "biological sample"@en .
+
+vocab:1338 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:broader vocab:1339;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "environmental sample"@en .
+
+vocab:1339 a skos:Concept;
+  dct:modified "2024-01-19"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1337, vocab:1338;
+  skos:prefLabel "sample"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
