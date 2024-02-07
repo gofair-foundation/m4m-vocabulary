@@ -1,113 +1,113 @@
-13:59:47.829  3572 DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
-13:59:47.831  3574 DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
-13:59:49.860  5603 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
-13:59:49.866  5609 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/m4m/
-13:59:49.868  5611 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#
-13:59:49.870  5613 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2002/07/owl#
-13:59:49.871  5614 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/vocommons/voaf#
-13:59:49.872  5615 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/
-13:59:49.873  5616 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://omv.ontoware.org/2005/05/ontology
-13:59:49.875  5618 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://w3id.org/iadopt/ont/
-13:59:49.877  5620 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://w3id.org/env/puv#
-13:59:49.878  5621 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/ns/sosa/
-13:59:49.879  5622 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2001/XMLSchema#
-13:59:49.880  5623 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/1999/02/22-rdf-syntax-ns#
-13:59:49.881  5624 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2000/01/rdf-schema#
-13:59:49.883  5626 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/
-13:59:49.884  5627 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/vocab/unit/
-13:59:49.887  5630 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/m4m/
-13:59:49.892  5635 ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'ORCID of the creator of the vocabulary, can be multiple (use separate lines)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
-13:59:49.896  5639 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://schema.org/Researcher
-13:59:49.899  5642 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://spdx.org/licenses/CC-BY-4.0.html
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#notation
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#definition
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/source
-13:59:49.903  5646 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#broader
-13:59:49.904  5647 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
-13:59:49.904  5647 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#exactMatch
-13:59:49.904  5647 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 45
-13:59:49.905  5648 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 45
-13:59:49.907  5650 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "LD Base vocabulary" with lang en
-13:59:49.910  5653 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "LD Base vocabulary" with lang en
-13:59:49.910  5653 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "http://purl.org/m4m/" with lang en
-13:59:49.911  5654 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "descriptors that apply to the project methodologies" with lang en
-13:59:49.911  5654 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "http://schema.org/Researcher" with lang en
-13:59:49.912  5655 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Project page" with lang en
-13:59:49.913  5656 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "en" with lang en
-13:59:49.913  5656 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://spdx.org/licenses/CC-BY-4.0.html" with lang en
-13:59:49.913  5656 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "0.0.1" with lang en
-13:59:49.913  5656 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "2023-11-14T00:00:00+00:00" with lang en
-13:59:49.915  5658 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
-13:59:49.915  5658 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=Identifier, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=Identifier, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=Identifier]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel@en(id="label"), language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={id=label}, id=label, reconcileOn=null, headerCell=skos:prefLabel@en(id="label")]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:altLabel(separator=",")]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:notation, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#notation, declaredProperty=skos:notation, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:notation]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:definition@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#definition, declaredProperty=skos:definition, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:definition@en]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:source(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/source, declaredProperty=dct:source, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:source(separator=",")]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broader(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broader, declaredProperty=skos:broader, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broader(separator=",")]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=rdf:type, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/1999/02/22-rdf-syntax-ns#type, declaredProperty=rdf:type, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=rdf:type]
-13:59:49.917  5660 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=owlsameAs, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=owlsameAs, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=owlsameAs]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:exactMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#exactMatch, declaredProperty=skos:exactMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:exactMatch(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:closeMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#closeMatch, declaredProperty=skos:closeMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:closeMatch(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broadMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broadMatch, declaredProperty=skos:broadMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broadMatch(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasProperty, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasProperty, declaredProperty=iop:hasProperty, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasProperty]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasObjectOfInterest, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasObjectOfInterest, declaredProperty=iop:hasObjectOfInterest, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasObjectOfInterest]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasMatrix, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasMatrix, declaredProperty=iop:hasMatrix, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasMatrix]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasContextObject(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasContextObject, declaredProperty=iop:hasContextObject, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=iop:hasContextObject(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasConstraint(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasConstraint, declaredProperty=iop:hasConstraint, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=iop:hasConstraint(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:statistic(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#statistic, declaredProperty=puv:statistic, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:statistic(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:usesMethod(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#usesMethod, declaredProperty=puv:usesMethod, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:usesMethod(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=sosa:madeBySensor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/ns/sosa/madeBySensor, declaredProperty=sosa:madeBySensor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=sosa:madeBySensor(separator=",")]
-13:59:49.925  5668 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:uom(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#uom, declaredProperty=puv:uom, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:uom(separator=",")]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=owl:deprecated^^xsd:boolean, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#boolean], property=http://www.w3.org/2002/07/owl#deprecated, declaredProperty=owl:deprecated, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=owl:deprecated^^xsd:boolean]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:editorialNote@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#editorialNote, declaredProperty=skos:editorialNote, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:editorialNote@en]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:created^^xsd:date, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#date], property=http://purl.org/dc/terms/created, declaredProperty=dct:created, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=dct:created^^xsd:date]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:modified^^xsd:date, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#date], property=http://purl.org/dc/terms/modified, declaredProperty=dct:modified, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=dct:modified^^xsd:date]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:creator(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/creator, declaredProperty=dct:creator, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:creator(separator=",")]
-13:59:49.926  5669 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:contributor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/contributor, declaredProperty=dct:contributor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:contributor(separator=",")]
-13:59:49.926  5669 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
-13:59:50.026  5769 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X185 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.027  5770 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X188 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.029  5772 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X190 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.029  5772 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X192 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.031  5774 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X194 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.032  5775 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X197 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.033  5776 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X198 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.034  5777 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X199 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.034  5777 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X200 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.035  5778 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X201 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.036  5779 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X203 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.037  5780 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X205 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.038  5781 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X206 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.038  5781 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X207 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.039  5782 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X208 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.040  5783 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X209 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.040  5783 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X210 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.041  5784 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X211 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.041  5784 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X212 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.042  5785 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X213 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.042  5785 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X214 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.043  5786 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X215 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.043  5786 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X216 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.044  5787 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X217 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.044  5787 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X218 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.045  5788 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X219 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.045  5788 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X220 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.046  5789 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X221 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.046  5789 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X222 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.047  5790 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X223 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.047  5790 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X224 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.048  5791 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X225 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.049  5792 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X226 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.049  5792 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X227 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.050  5793 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X229 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
-13:59:50.123  5866 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
-13:59:50.123  5866 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
-13:59:50.124  5867 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
-13:59:50.130  5873 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
-13:59:50.135  5878 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
-13:59:50.137  5880 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
-13:59:50.137  5880 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
-13:59:50.142  5885 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 2254 statements generated from Sheet Sheet1
+14:01:02.853  1542 DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
+14:01:02.855  1544 DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
+14:01:03.995  2684 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
+14:01:04.000  2689 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/m4m/
+14:01:04.002  2691 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#
+14:01:04.003  2692 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2002/07/owl#
+14:01:04.004  2693 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/vocommons/voaf#
+14:01:04.005  2694 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/
+14:01:04.006  2695 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://omv.ontoware.org/2005/05/ontology
+14:01:04.008  2697 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://w3id.org/iadopt/ont/
+14:01:04.008  2697 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://w3id.org/env/puv#
+14:01:04.009  2698 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/ns/sosa/
+14:01:04.010  2699 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2001/XMLSchema#
+14:01:04.011  2700 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/1999/02/22-rdf-syntax-ns#
+14:01:04.011  2700 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2000/01/rdf-schema#
+14:01:04.012  2701 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/schema/qudt/
+14:01:04.013  2702 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://qudt.org/vocab/unit/
+14:01:04.017  2706 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/m4m/
+14:01:04.022  2711 ERROR f.s.rdf.xls2rdf.ColumnHeaderParser - Unsuccessfull parsing of header parameters for header 'ORCID of the creator of the vocabulary, can be multiple (use separate lines)', Exception is java.lang.ArrayIndexOutOfBoundsException : Index 1 out of bounds for length 1
+14:01:04.026  2715 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://schema.org/Researcher
+14:01:04.029  2718 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : https://spdx.org/licenses/CC-BY-4.0.html
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#notation
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#definition
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://purl.org/dc/terms/source
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#broader
+14:01:04.033  2722 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+14:01:04.034  2723 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#exactMatch
+14:01:04.034  2723 INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 45
+14:01:04.034  2723 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 45
+14:01:04.037  2726 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "LD Base vocabulary" with lang en
+14:01:04.039  2728 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "LD Base vocabulary" with lang en
+14:01:04.039  2728 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "http://purl.org/m4m/" with lang en
+14:01:04.040  2729 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "descriptors that apply to the project methodologies" with lang en
+14:01:04.041  2730 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "http://schema.org/Researcher" with lang en
+14:01:04.041  2730 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "Project page" with lang en
+14:01:04.041  2730 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "en" with lang en
+14:01:04.042  2731 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "https://spdx.org/licenses/CC-BY-4.0.html" with lang en
+14:01:04.042  2731 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "0.0.1" with lang en
+14:01:04.042  2731 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "2023-11-14T00:00:00+00:00" with lang en
+14:01:04.043  2732 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
+14:01:04.043  2732 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=Identifier, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=Identifier, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=Identifier]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel@en(id="label"), language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={id=label}, id=label, reconcileOn=null, headerCell=skos:prefLabel@en(id="label")]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:altLabel(separator=",")]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:notation, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#notation, declaredProperty=skos:notation, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:notation]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:definition@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#definition, declaredProperty=skos:definition, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:definition@en]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:source(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/source, declaredProperty=dct:source, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:source(separator=",")]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broader(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broader, declaredProperty=skos:broader, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broader(separator=",")]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=rdf:type, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/1999/02/22-rdf-syntax-ns#type, declaredProperty=rdf:type, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=rdf:type]
+14:01:04.045  2734 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=owlsameAs, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=owlsameAs, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=owlsameAs]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:exactMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#exactMatch, declaredProperty=skos:exactMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:exactMatch(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:closeMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#closeMatch, declaredProperty=skos:closeMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:closeMatch(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:broadMatch(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#broadMatch, declaredProperty=skos:broadMatch, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=skos:broadMatch(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasProperty, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasProperty, declaredProperty=iop:hasProperty, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasProperty]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasObjectOfInterest, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasObjectOfInterest, declaredProperty=iop:hasObjectOfInterest, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasObjectOfInterest]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasMatrix, language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasMatrix, declaredProperty=iop:hasMatrix, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=iop:hasMatrix]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasContextObject(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasContextObject, declaredProperty=iop:hasContextObject, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=iop:hasContextObject(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=iop:hasConstraint(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/iadopt/ont/hasConstraint, declaredProperty=iop:hasConstraint, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=iop:hasConstraint(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:statistic(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#statistic, declaredProperty=puv:statistic, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:statistic(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:usesMethod(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#usesMethod, declaredProperty=puv:usesMethod, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:usesMethod(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=sosa:madeBySensor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/ns/sosa/madeBySensor, declaredProperty=sosa:madeBySensor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=sosa:madeBySensor(separator=",")]
+14:01:04.046  2735 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=puv:uom(separator=","), language=Optional.empty, datatype=Optional.empty, property=https://w3id.org/env/puv#uom, declaredProperty=puv:uom, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=puv:uom(separator=",")]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=owl:deprecated^^xsd:boolean, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#boolean], property=http://www.w3.org/2002/07/owl#deprecated, declaredProperty=owl:deprecated, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=owl:deprecated^^xsd:boolean]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:editorialNote@en, language=Optional[en], datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#editorialNote, declaredProperty=skos:editorialNote, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:editorialNote@en]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:created^^xsd:date, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#date], property=http://purl.org/dc/terms/created, declaredProperty=dct:created, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=dct:created^^xsd:date]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:modified^^xsd:date, language=Optional.empty, datatype=Optional[http://www.w3.org/2001/XMLSchema#date], property=http://purl.org/dc/terms/modified, declaredProperty=dct:modified, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=dct:modified^^xsd:date]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:creator(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/creator, declaredProperty=dct:creator, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:creator(separator=",")]
+14:01:04.047  2736 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=dct:contributor(separator=","), language=Optional.empty, datatype=Optional.empty, property=http://purl.org/dc/terms/contributor, declaredProperty=dct:contributor, inverse=false, parameters={separator=,}, id=null, reconcileOn=null, headerCell=dct:contributor(separator=",")]
+14:01:04.047  2736 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
+14:01:04.148  2837 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X185 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.150  2839 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X188 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.151  2840 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X190 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.152  2841 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X192 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.154  2843 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X194 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.156  2845 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X197 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.157  2846 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X198 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.158  2847 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X199 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.159  2848 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X200 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.159  2848 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X201 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.161  2850 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X203 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.162  2851 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X205 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.163  2852 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X206 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.164  2853 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X207 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.165  2854 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X208 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.165  2854 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X209 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.166  2855 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X210 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.167  2856 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X211 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.168  2857 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X212 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.168  2857 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X213 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.169  2858 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X214 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.170  2859 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X215 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.170  2859 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X216 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.171  2860 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X217 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.172  2861 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X218 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.172  2861 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X219 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.173  2862 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X220 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.173  2862 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X221 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.174  2863 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X222 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.175  2864 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X223 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.175  2864 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X224 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.176  2865 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X225 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.176  2865 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X226 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.177  2866 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X227 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.178  2867 INFO  f.s.r.x.LogXls2RdfMessageListener - Cell Sheet1!X229 : WRONG_FORMAT - Failed to parse date format for value '########'. Is the cell formatted as a date ?
+14:01:04.247  2936 INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
+14:01:04.247  2936 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
+14:01:04.248  2937 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
+14:01:04.254  2943 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
+14:01:04.259  2948 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
+14:01:04.262  2951 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
+14:01:04.262  2951 DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
+14:01:04.267  2956 DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 2254 statements generated from Sheet Sheet1
