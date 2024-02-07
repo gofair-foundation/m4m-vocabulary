@@ -120,7 +120,7 @@ vocab:1000 a skos:Concept;
   dct:created "2023-11-23"^^xsd:date;
   dct:modified "2023-12-15"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1001, vocab:1002, vocab:1003;
+  skos:narrower vocab:1001, vocab:1002, vocab:1003, vocab:1385;
   skos:prefLabel "institution"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2330,7 +2330,7 @@ vocab:1375 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1376, vocab:1377, vocab:1378, vocab:1379, vocab:1380, vocab:1381,
     vocab:1382, vocab:1383, vocab:1384;
-  skos:prefLabel "role of contact"@en;
+  skos:prefLabel "role of contact person"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1376 a skos:Concept;
@@ -2386,6 +2386,12 @@ vocab:1384 a skos:Concept;
   skos:broader vocab:1375;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "metadata provider"@en .
+
+vocab:1385 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1000;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "university"@en .
 
 <http://purl.org/m4m/1366;vocab:1367> skos:narrower vocab:1003 .
 
