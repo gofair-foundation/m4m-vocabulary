@@ -113,7 +113,7 @@ sosa:madeBySensor
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
-    vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367;
+    vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -2324,6 +2324,68 @@ vocab:1374 a skos:Concept;
   skos:broader vocab:1367;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "no accreditation"@en .
+
+vocab:1375 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1376, vocab:1377, vocab:1378, vocab:1379, vocab:1380, vocab:1381,
+    vocab:1382, vocab:1383, vocab:1384;
+  skos:prefLabel "role of contact"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1376 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data provider"@en .
+
+vocab:1377 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data owner"@en .
+
+vocab:1378 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data processor"@en .
+
+vocab:1379 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data custodian"@en .
+
+vocab:1380 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "contact ethic documents"@en .
+
+vocab:1381 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "project coordinator"@en .
+
+vocab:1382 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "principle investigator"@en .
+
+vocab:1383 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "addtitional contact"@en .
+
+vocab:1384 a skos:Concept;
+  dct:modified "2024-02-07"^^xsd:date;
+  skos:broader vocab:1375;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "metadata provider"@en .
 
 <http://purl.org/m4m/1366;vocab:1367> skos:narrower vocab:1003 .
 
