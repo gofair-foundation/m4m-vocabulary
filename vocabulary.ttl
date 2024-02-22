@@ -113,7 +113,8 @@ sosa:madeBySensor
     vocab:1038, vocab:1042, vocab:1047, vocab:1052, vocab:1057, vocab:1061, vocab:1097,
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
-    vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375;
+    vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375,
+    vocab:1378, vocab:1390, vocab:1393, vocab:1398;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -138,10 +139,10 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2024-01-24"^^xsd:date;
+  dct:modified "2024-02-22"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
     vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
-    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, <http://purl.org/m4m/1366;vocab:1367>;
+    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, <http://purl.org/m4m/1366;vocab:1367;vocab:1393;vocab:1398>;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -2326,66 +2327,67 @@ vocab:1374 a skos:Concept;
   skos:prefLabel "no accreditation"@en .
 
 vocab:1375 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
+  dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1376, vocab:1377, vocab:1378, vocab:1379, vocab:1380, vocab:1381,
-    vocab:1382, vocab:1383, vocab:1384;
-  skos:prefLabel "role of contact person"@en;
+  skos:narrower vocab:1376, vocab:1377;
+  skos:prefLabel "anonymization level"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1376 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
+  dct:modified "2024-02-22"^^xsd:date;
   skos:broader vocab:1375;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data provider"@en .
+  skos:prefLabel "anonymous"@en .
 
 vocab:1377 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
+  dct:modified "2024-02-22"^^xsd:date;
   skos:broader vocab:1375;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data owner"@en .
+  skos:prefLabel "pseudonymised"@en .
 
 vocab:1378 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data processor"@en .
+  skos:narrower vocab:1379, vocab:1380, vocab:1381, vocab:1382, vocab:1383, vocab:1384,
+    vocab:1386, vocab:1387, vocab:1388, vocab:1389;
+  skos:prefLabel "anonymization process"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1379 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data custodian"@en .
+  skos:prefLabel "EIDs (explicit identifiers)"@en .
 
 vocab:1380 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "contact ethic documents"@en .
+  skos:prefLabel "data removal"@en .
 
 vocab:1381 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "project coordinator"@en .
+  skos:prefLabel "replacement of sensitive data by numbers"@en .
 
 vocab:1382 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "principle investigator"@en .
+  skos:prefLabel "data generalization"@en .
 
 vocab:1383 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "addtitional contact"@en .
+  skos:prefLabel "anatomization"@en .
 
 vocab:1384 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1375;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "metadata provider"@en .
+  skos:prefLabel "permutation"@en .
 
 vocab:1385 a skos:Concept;
   dct:modified "2024-02-07"^^xsd:date;
@@ -2393,6 +2395,117 @@ vocab:1385 a skos:Concept;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "university"@en .
 
-<http://purl.org/m4m/1366;vocab:1367> skos:narrower vocab:1003 .
+vocab:1386 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "permutation"@en .
+
+vocab:1387 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "perturbation"@en .
+
+vocab:1388 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "k-anonymization"@en .
+
+vocab:1389 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1378;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "Epsilon-differential"@en .
+
+vocab:1390 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1391, vocab:1392;
+  skos:prefLabel "aggregation level"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1391 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1390;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "aggregated data"@en .
+
+vocab:1392 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1390;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "individual level data"@en .
+
+vocab:1393 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1394, vocab:1395, vocab:1396, vocab:1397;
+  skos:prefLabel "access condition"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1394 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1393;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "patent"@en .
+
+vocab:1395 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1393;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data property"@en .
+
+vocab:1396 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1393;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data available to other members of consortium"@en .
+
+vocab:1397 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1393;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data available by request"@en .
+
+vocab:1398 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1399, vocab:1400, vocab:1401, vocab:1402, vocab:1403;
+  skos:prefLabel "file format"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1399 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1398;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "CSV"@en .
+
+vocab:1400 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1398;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "ASCII"@en .
+
+vocab:1401 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1398;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "DBF"@en .
+
+vocab:1402 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1398;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "DOCX"@en .
+
+vocab:1403 a skos:Concept;
+  dct:modified "2024-02-22"^^xsd:date;
+  skos:broader vocab:1398;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "XSLX"@en .
+
+<http://purl.org/m4m/1366;vocab:1367;vocab:1393;vocab:1398> skos:narrower vocab:1003 .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
