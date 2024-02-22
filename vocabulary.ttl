@@ -142,7 +142,8 @@ vocab:1003 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
     vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
-    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, <http://purl.org/m4m/1366;vocab:1367;vocab:1393;vocab:1398>;
+    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366, vocab:1367,
+    vocab:1393, vocab:1398;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -2265,18 +2266,18 @@ vocab:1365 a skos:Concept;
 vocab:1366 a skos:Concept;
   dct:modified "2024-01-24"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1343, vocab:1344, vocab:1345, vocab:1346, vocab:1347, vocab:1348,
-    vocab:1349, vocab:1350, vocab:1351, vocab:1352, vocab:1353, vocab:1354, vocab:1355,
-    vocab:1356, vocab:1357, vocab:1358, vocab:1359, vocab:1360, vocab:1361, vocab:1362,
-    vocab:1363, vocab:1364, vocab:1365;
+  skos:narrower vocab:1003, vocab:1343, vocab:1344, vocab:1345, vocab:1346, vocab:1347,
+    vocab:1348, vocab:1349, vocab:1350, vocab:1351, vocab:1352, vocab:1353, vocab:1354,
+    vocab:1355, vocab:1356, vocab:1357, vocab:1358, vocab:1359, vocab:1360, vocab:1361,
+    vocab:1362, vocab:1363, vocab:1364, vocab:1365;
   skos:prefLabel "analytical method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 vocab:1367 a skos:Concept;
   dct:modified "2024-01-24"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1368, vocab:1369, vocab:1370, vocab:1371, vocab:1372, vocab:1373,
-    vocab:1374;
+  skos:narrower vocab:1003, vocab:1368, vocab:1369, vocab:1370, vocab:1371, vocab:1372,
+    vocab:1373, vocab:1374;
   skos:prefLabel "proficiency test"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2441,7 +2442,7 @@ vocab:1392 a skos:Concept;
 vocab:1393 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1394, vocab:1395, vocab:1396, vocab:1397;
+  skos:narrower vocab:1003, vocab:1394, vocab:1395, vocab:1396, vocab:1397;
   skos:prefLabel "access condition"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2472,7 +2473,7 @@ vocab:1397 a skos:Concept;
 vocab:1398 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1399, vocab:1400, vocab:1401, vocab:1402, vocab:1403;
+  skos:narrower vocab:1003, vocab:1399, vocab:1400, vocab:1401, vocab:1402, vocab:1403;
   skos:prefLabel "file format"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2505,7 +2506,5 @@ vocab:1403 a skos:Concept;
   skos:broader vocab:1398;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "XSLX"@en .
-
-<http://purl.org/m4m/1366;vocab:1367;vocab:1393;vocab:1398> skos:narrower vocab:1003 .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .

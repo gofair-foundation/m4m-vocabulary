@@ -49,7 +49,7 @@ Identifier,"skos:prefLabel@en(id=""label"")","skos:altLabel(separator="","")",sk
 vocab:1000,institution,,,,,,,,,,,,,,,,,,,,,,2023-11-23,2023-12-15,,
 vocab:1001,public,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21,,,
 vocab:1002,private,,,,,vocab:1000,,,,,,,,,,,,,,,,,2023-11-21,,,
-vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057,vocab:1252,vocab:1244,vocab:1263,vocab:1259,vocab:1278,vocab:1172,vocab:1291,vocab:1299, vocab:1304,vocab:1319,vocab:1312,vocab:1333,vocab:1366;vocab:1367;vocab:1393;vocab:1398",,,,,,,,,,,,,,,,,2023-11-21,2024-02-22,,
+vocab:1003,other,,,,,"vocab:1000,vocab:1038,vocab:1034,vocab:1028,vocab:1064,vocab:1057,vocab:1252,vocab:1244,vocab:1263,vocab:1259,vocab:1278,vocab:1172,vocab:1291,vocab:1299, vocab:1304,vocab:1319,vocab:1312,vocab:1333,vocab:1366,vocab:1367,vocab:1393,vocab:1398",,,,,,,,,,,,,,,,,2023-11-21,2024-02-22,,
 vocab:1004,time frequency,,,,,,,,,,,,,,,,,,,,,,2023-11-21,,,
 vocab:1005,only once,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
 vocab:1006,annual,,,,,vocab:1004,,,,,,,,,,,,,,,,,2023-11-21,,,
