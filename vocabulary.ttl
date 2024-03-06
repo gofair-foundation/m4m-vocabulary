@@ -114,14 +114,14 @@ sosa:madeBySensor
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
     vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375,
-    vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407, vocab:1414;
+    vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407, vocab:1413;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
   dct:created "2023-11-23"^^xsd:date;
   dct:modified "2023-12-15"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1001, vocab:1002, vocab:1003, vocab:1385;
+  skos:narrower vocab:1001, vocab:1002;
   skos:prefLabel "institution"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -140,10 +140,10 @@ vocab:1002 a skos:Concept;
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2024-03-06"^^xsd:date;
-  skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
-    vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
-    vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366, vocab:1367,
-    vocab:1393, vocab:1398, vocab:1407;
+  skos:broader vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064, vocab:1172,
+    vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291, vocab:1299,
+    vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366, vocab:1367, vocab:1393,
+    vocab:1398, vocab:1407, vocab:1413;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -1860,7 +1860,7 @@ vocab:1304 a skos:Concept;
   dct:modified "2024-01-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1003, vocab:1305, vocab:1306, vocab:1307, vocab:1308, vocab:1309,
-    vocab:1310, vocab:1311;
+    vocab:1310, vocab:1311, vocab:1417, vocab:1418;
   skos:prefLabel "questionnaire type"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2392,10 +2392,10 @@ vocab:1384 a skos:Concept;
   skos:prefLabel "permutation"@en .
 
 vocab:1385 a skos:Concept;
-  dct:modified "2024-02-07"^^xsd:date;
-  skos:broader vocab:1000;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1393;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "university"@en .
+  skos:prefLabel "data openly available"@en .
 
 vocab:1386 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
@@ -2443,7 +2443,7 @@ vocab:1392 a skos:Concept;
 vocab:1393 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1394, vocab:1395, vocab:1396, vocab:1397, vocab:1413;
+  skos:narrower vocab:1003, vocab:1385, vocab:1394, vocab:1395, vocab:1396, vocab:1397;
   skos:prefLabel "access condition"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2566,33 +2566,40 @@ vocab:1412 a skos:Concept;
 
 vocab:1413 a skos:Concept;
   dct:modified "2024-03-06"^^xsd:date;
-  skos:broader vocab:1393;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data openly available"@en .
-
-vocab:1414 a skos:Concept;
-  dct:modified "2024-03-06"^^xsd:date;
-  skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1411, vocab:1412, vocab:1415, vocab:1416, vocab:1417;
+  skos:narrower vocab:1003, vocab:1414, vocab:1415, vocab:1416;
   skos:prefLabel "handling values below LOQ"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
-vocab:1415 a skos:Concept;
+vocab:1414 a skos:Concept;
   dct:modified "2024-03-06"^^xsd:date;
-  skos:broader vocab:1414;
+  skos:broader vocab:1413;
   skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1411, vocab:1412;
   skos:prefLabel "simple replacement by LOQ/2"@en .
 
-vocab:1416 a skos:Concept;
+vocab:1415 a skos:Concept;
   dct:modified "2024-03-06"^^xsd:date;
-  skos:broader vocab:1414;
+  skos:broader vocab:1413;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "simple replacement by LOQ/sqrt2"@en .
 
-vocab:1417 a skos:Concept;
+vocab:1416 a skos:Concept;
   dct:modified "2024-03-06"^^xsd:date;
-  skos:broader vocab:1414;
+  skos:broader vocab:1413;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "simple replacement by LOQ"@en .
+
+vocab:1417 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "job description questionnaire"@en .
+
+vocab:1418 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1304;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "general questionnaire"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
