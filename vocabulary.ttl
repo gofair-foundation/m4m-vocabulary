@@ -114,7 +114,7 @@ sosa:madeBySensor
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
     vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375,
-    vocab:1378, vocab:1390, vocab:1393, vocab:1398;
+    vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -139,11 +139,11 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2024-02-22"^^xsd:date;
+  dct:modified "2024-03-06"^^xsd:date;
   skos:broader vocab:1000, vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064,
     vocab:1172, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291,
     vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366, vocab:1367,
-    vocab:1393, vocab:1398;
+    vocab:1393, vocab:1398, vocab:1407;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -250,6 +250,7 @@ vocab:1019 a skos:Concept;
 
 vocab:1020 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
+  dct:modified "2024-03-06"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
   skos:narrower vocab:1021, vocab:1022, vocab:1023;
   skos:prefLabel "degree of urbanisation"@en;
@@ -1611,8 +1612,8 @@ vocab:1265 a skos:Concept;
   skos:prefLabel "enzymatic summation"@en .
 
 vocab:1266 a skos:Concept;
-  dct:modified "2024-01-08"^^xsd:date;
-  skos:broader vocab:1259, vocab:1263;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1259, vocab:1263, vocab:1404;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "none"@en .
 
@@ -2442,7 +2443,7 @@ vocab:1392 a skos:Concept;
 vocab:1393 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1394, vocab:1395, vocab:1396, vocab:1397;
+  skos:narrower vocab:1003, vocab:1394, vocab:1395, vocab:1396, vocab:1397, vocab:1413;
   skos:prefLabel "access condition"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2453,16 +2454,16 @@ vocab:1394 a skos:Concept;
   skos:prefLabel "patent"@en .
 
 vocab:1395 a skos:Concept;
-  dct:modified "2024-02-22"^^xsd:date;
+  dct:modified "2024-03-06"^^xsd:date;
   skos:broader vocab:1393;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data property"@en .
+  skos:prefLabel "data not available"@en .
 
 vocab:1396 a skos:Concept;
-  dct:modified "2024-02-22"^^xsd:date;
+  dct:modified "2024-03-06"^^xsd:date;
   skos:broader vocab:1393;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "data available to other members of consortium"@en .
+  skos:prefLabel "data available to members of consortium"@en .
 
 vocab:1397 a skos:Concept;
   dct:modified "2024-02-22"^^xsd:date;
@@ -2506,5 +2507,67 @@ vocab:1403 a skos:Concept;
   skos:broader vocab:1398;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "XSLX"@en .
+
+vocab:1404 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1266, vocab:1405, vocab:1406;
+  skos:prefLabel "data transformation or scaling"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1405 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1404;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data processing for outliers"@en .
+
+vocab:1406 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1404;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data processing related to missing data"@en .
+
+vocab:1407 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1003, vocab:1408, vocab:1409, vocab:1410, vocab:1411, vocab:1412;
+  skos:prefLabel "handling values below LOD/LOQ"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1408 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1407;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "simple replacement by LOD/2"@en .
+
+vocab:1409 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1407;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "simple replacement by LOD/sqrt2"@en .
+
+vocab:1410 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1407;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "simple replacement by LOD"@en .
+
+vocab:1411 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1407;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "single imputation based on extrapolation (e.g. regression)"@en .
+
+vocab:1412 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1407;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "multiple imputation (technique)"@en .
+
+vocab:1413 a skos:Concept;
+  dct:modified "2024-03-06"^^xsd:date;
+  skos:broader vocab:1393;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "data openly available"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
