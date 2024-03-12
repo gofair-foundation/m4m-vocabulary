@@ -114,7 +114,8 @@ sosa:madeBySensor
     vocab:1173, vocab:1175, vocab:1203, vocab:1205, vocab:1211, vocab:1244, vocab:1252,
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
     vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375,
-    vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407, vocab:1413;
+    vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407, vocab:1413,
+    vocab:1419, vocab:1435;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -139,11 +140,11 @@ vocab:1002 a skos:Concept;
 
 vocab:1003 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
-  dct:modified "2024-03-06"^^xsd:date;
+  dct:modified "2024-03-12"^^xsd:date;
   skos:broader vocab:1028, vocab:1034, vocab:1038, vocab:1057, vocab:1064, vocab:1172,
-    vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278, vocab:1291, vocab:1299,
-    vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366, vocab:1367, vocab:1393,
-    vocab:1398, vocab:1407, vocab:1413;
+    vocab:1214, vocab:1228, vocab:1244, vocab:1252, vocab:1259, vocab:1263, vocab:1278,
+    vocab:1291, vocab:1299, vocab:1304, vocab:1312, vocab:1319, vocab:1333, vocab:1366,
+    vocab:1367, vocab:1393, vocab:1398, vocab:1407, vocab:1413;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "other"@en .
 
@@ -435,7 +436,7 @@ vocab:1047 a skos:Concept;
   dct:created "2023-11-21"^^xsd:date;
   dct:modified "2023-12-07"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1018, vocab:1048, vocab:1049, vocab:1050, vocab:1051;
+  skos:narrower vocab:1018, vocab:1048, vocab:1049, vocab:1050, vocab:1051, vocab:1431;
   skos:prefLabel "implementation level"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -1293,8 +1294,9 @@ vocab:1214 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:broader vocab:1173;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1215, vocab:1216, vocab:1217, vocab:1218, vocab:1219, vocab:1220,
-    vocab:1221, vocab:1222, vocab:1223, vocab:1224, vocab:1225, vocab:1226, vocab:1227;
+  skos:narrower vocab:1003, vocab:1215, vocab:1216, vocab:1217, vocab:1218, vocab:1219,
+    vocab:1220, vocab:1221, vocab:1222, vocab:1223, vocab:1224, vocab:1225, vocab:1226,
+    vocab:1227;
   skos:prefLabel "lifestyle information variable"@en .
 
 vocab:1215 a skos:Concept;
@@ -1379,8 +1381,8 @@ vocab:1228 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:broader vocab:1173;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1229, vocab:1230, vocab:1231, vocab:1232, vocab:1233, vocab:1234,
-    vocab:1235, vocab:1236;
+  skos:narrower vocab:1003, vocab:1229, vocab:1230, vocab:1231, vocab:1232, vocab:1233,
+    vocab:1234, vocab:1235, vocab:1236, vocab:1432, vocab:1433, vocab:1434;
   skos:prefLabel "personal information"@en .
 
 vocab:1229 a skos:Concept;
@@ -1435,7 +1437,8 @@ vocab:1237 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:broader vocab:1173;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1238, vocab:1239, vocab:1240, vocab:1241, vocab:1242, vocab:1243;
+  skos:narrower vocab:1238, vocab:1239, vocab:1240, vocab:1241, vocab:1242, vocab:1243,
+    vocab:1436, vocab:1437, vocab:1438, vocab:1439;
   skos:prefLabel "environmental factors information"@en .
 
 vocab:1238 a skos:Concept;
@@ -1527,7 +1530,8 @@ vocab:1251 a skos:Concept;
 vocab:1252 a skos:Concept;
   dct:modified "2023-12-18"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:narrower vocab:1003, vocab:1253, vocab:1254, vocab:1255, vocab:1256, vocab:1257;
+  skos:narrower vocab:1003, vocab:1253, vocab:1254, vocab:1255, vocab:1256, vocab:1257,
+    vocab:1440;
   skos:prefLabel "recruitment method"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
@@ -2601,5 +2605,161 @@ vocab:1418 a skos:Concept;
   skos:broader vocab:1304;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "general questionnaire"@en .
+
+vocab:1419 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:narrower vocab:1420, vocab:1421, vocab:1422, vocab:1423, vocab:1424, vocab:1425,
+    vocab:1426, vocab:1427, vocab:1428, vocab:1429, vocab:1430;
+  skos:prefLabel "role of contact"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1420 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who authored the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "author"@en .
+
+vocab:1421 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "custodian"@en .
+
+vocab:1422 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who distributes the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "distributor"@en .
+
+vocab:1423 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who created the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "originator"@en .
+
+vocab:1424 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party that owns the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "owner"@en .
+
+vocab:1425 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who can be contacted for acquiring knowledge about or acquisition of the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "point of contact"@en .
+
+vocab:1426 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Key party responsible for gathering information and conducting research."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "principal investigator"@en .
+
+vocab:1427 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party that has processed the data in a manner such that the resource has been modified."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "processor"@en .
+
+vocab:1428 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who published the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "publisher"@en .
+
+vocab:1429 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party that supplies the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "resource provider"@en .
+
+vocab:1430 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  dct:source "ISO 19115:2014"@en;
+  skos:broader vocab:1419;
+  skos:definition "Party who uses the resource."@en;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "user"@en .
+
+vocab:1431 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1047;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "global"@en .
+
+vocab:1432 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "country of origin"@en .
+
+vocab:1433 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "nationality at birth"@en .
+
+vocab:1434 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1228;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "language spoken at home"@en .
+
+vocab:1435 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "big roads/dense travic nearby"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
+
+vocab:1436 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "green space available nearby"@en .
+
+vocab:1437 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "gas stations"@en .
+
+vocab:1438 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "agricultural fields (pesticide)"@en .
+
+vocab:1439 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1237;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "type of industry"@en .
+
+vocab:1440 a skos:Concept;
+  dct:modified "2024-03-12"^^xsd:date;
+  skos:broader vocab:1252;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "through a school or public institution"@en .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
