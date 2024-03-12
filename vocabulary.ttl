@@ -2706,7 +2706,7 @@ vocab:1431 a skos:Concept;
   dct:modified "2024-03-12"^^xsd:date;
   skos:broader vocab:1047;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "global"@en .
+  skos:prefLabel "global level"@en .
 
 vocab:1432 a skos:Concept;
   dct:modified "2024-03-12"^^xsd:date;

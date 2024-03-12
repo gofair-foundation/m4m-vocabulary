@@ -450,7 +450,7 @@ vocab:1427,processor,,,Party that has processed the data in a manner such that t
 vocab:1428,publisher,,,Party who published the resource.,ISO 19115:2014,vocab:1419,,,,,,,,,,,,,,,,,,2024-03-12,,
 vocab:1429,resource provider,,,Party that supplies the resource.,ISO 19115:2014,vocab:1419,,,,,,,,,,,,,,,,,,2024-03-12,,
 vocab:1430,user,,,Party who uses the resource.,ISO 19115:2014,vocab:1419,,,,,,,,,,,,,,,,,,2024-03-12,,
-vocab:1431,global,,,,,vocab:1047,,,,,,,,,,,,,,,,,,2024-03-12,,
+vocab:1431,global level,,,,,vocab:1047,,,,,,,,,,,,,,,,,,2024-03-12,,
 vocab:1432,country of origin,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2024-03-12,,
 vocab:1433,nationality at birth,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2024-03-12,,
 vocab:1434,language spoken at home,,,,,vocab:1228,,,,,,,,,,,,,,,,,,2024-03-12,,
