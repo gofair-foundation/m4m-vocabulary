@@ -1,10 +1,10 @@
-# [M4M Vocabulary](http://purl.org/m4m/)
+# [M4M Vocabulary](http://m4m.gofairfoundation.nl/Skosmos/m4m)
 
 Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **M4M Vocabulary**. This controlled vocabulary is produced in Metadata 4 Machine (M4M) Workshop.
 
 `sheet2rdf` is used to build and serve **M4M Vocabulary**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary:
 
-http://purl.org/m4m/
+http://m4m.gofairfoundation.nl/Skosmos/m4m
 
 # Tooling
 
