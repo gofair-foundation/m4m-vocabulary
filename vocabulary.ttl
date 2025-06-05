@@ -115,7 +115,7 @@ sosa:madeBySensor
     vocab:1259, vocab:1263, vocab:1267, vocab:1274, vocab:1278, vocab:1299, vocab:1304,
     vocab:1312, vocab:1319, vocab:1333, vocab:1339, vocab:1366, vocab:1367, vocab:1375,
     vocab:1378, vocab:1390, vocab:1393, vocab:1398, vocab:1404, vocab:1407, vocab:1413,
-    vocab:1419, vocab:1435;
+    vocab:1419, vocab:1435, vocab:1441;
   skos:prefLabel "LD Base vocabulary"@en .
 
 vocab:1000 a skos:Concept;
@@ -2761,5 +2761,11 @@ vocab:1440 a skos:Concept;
   skos:broader vocab:1252;
   skos:inScheme <http://purl.org/m4m>;
   skos:prefLabel "through a school or public institution"@en .
+
+vocab:1441 a skos:Concept;
+  dct:modified "2025-06-05"^^xsd:date;
+  skos:inScheme <http://purl.org/m4m>;
+  skos:prefLabel "my test"@en;
+  skos:topConceptOf <http://purl.org/m4m> .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
