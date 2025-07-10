@@ -2763,9 +2763,9 @@ vocab:1440 a skos:Concept;
   skos:prefLabel "through a school or public institution"@en .
 
 vocab:1441 a skos:Concept;
-  dct:modified "2025-06-05"^^xsd:date;
+  dct:modified "2025-07-10"^^xsd:date;
   skos:inScheme <http://purl.org/m4m>;
-  skos:prefLabel "my test"@en;
+  skos:prefLabel "Barbara"@en;
   skos:topConceptOf <http://purl.org/m4m> .
 
 <http://purl.org/m4m/1034;vocab1028> skos:narrower vocab:1029 .
