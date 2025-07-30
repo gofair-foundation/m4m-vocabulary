@@ -32,7 +32,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git pull        
           conda create -n sheet2rdf python=3.8 pandas openpyxl requests
           conda activate sheet2rdf
           curl -L https://github.com/sparna-git/xls2rdf/releases/download/2.1.1/xls2rdf-app-2.1.1-onejar.jar -o xls2rdf.jar
