@@ -78,7 +78,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: skosplay-preview
-          path: ${FILE_NAME}.html
+          path: ${{ env.FILE_NAME }}.html
 
       - name: deploy
         if: github.event_name == 'push'
