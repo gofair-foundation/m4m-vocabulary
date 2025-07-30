@@ -39,15 +39,15 @@ jobs:
       - name: Fetch
         shell: bash -l {0}
         env:
-          FILE_NAME: ${{secrets.FILE_NAME}}
-          SHEET_ID: ${{secrets.SHEET_ID}}
+          FILE_NAME: 'vocabulary_test'
+          SHEET_ID: '2PACX-1vS4psGOV1EWyU5ZPAgbAxrzth2S9m9bKz8MYC120WshMPyqSP40Zhbv_pqCK3WqBZ1hOnCaMNuxvsqa'
         run: |
           conda activate sheet2rdf          
           python ./src/sheet2xls.py
 
       - name: conversion-xls2rdf
         env:
-          FILE_NAME: ${{secrets.FILE_NAME}}
+          FILE_NAME:'vocabulary_test'
         run: |
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
           mv xls2rdf.log ./logs/
@@ -55,7 +55,7 @@ jobs:
 
       - name: commit-artifacts
         env:
-          FILE_NAME: ${{secrets.FILE_NAME}}
+          FILE_NAME: 'vocabulary_test'
         run: |
           rm xls2rdf.jar  
           git add .
