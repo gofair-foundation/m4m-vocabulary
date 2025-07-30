@@ -40,7 +40,7 @@ jobs:
         shell: bash -l {0}
         env:
           FILE_NAME: 'vocabulary_test'
-          SHEET_ID: '1phaIN6ED9WbXZz4ujVGwXu0s08iHWd8_CBACaCefW8c'
+          SHEET_ID: '1phaIN6ED9WbXZz4ujVGwXu0s08iHWd8_CBACaCefW8c/pub?output=csv'
         run: |
           conda activate sheet2rdf          
           python ./src/sheet2xls.py
