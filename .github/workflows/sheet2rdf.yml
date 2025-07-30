@@ -61,6 +61,8 @@ jobs:
 
       - name: Download SKOS Play CLI and render HTML
         if: github.event_name == 'pull_request'
+        env:
+          FILE_NAME: 'vocabulary_test'
         run: |
           curl -L -o skos-play-cli.jar https://bitbucket.org/tfrancart/sparna/downloads/skos-play-cli-0.7.2-onejar.jar
           java -jar skos-play-cli.jar hierarchical -i $FILE_NAME.ttl -o $FILE_NAME.html -f html -l en
