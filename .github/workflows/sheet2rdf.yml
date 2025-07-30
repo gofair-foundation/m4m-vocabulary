@@ -67,6 +67,10 @@ jobs:
           curl -L -o skos-play-cli.jar https://bitbucket.org/tfrancart/sparna/downloads/skos-play-cli-0.7.2-onejar.jar
           java -jar skos-play-cli.jar hierarchical -i ${FILE_NAME}.ttl -o ${FILE_NAME}.html -f html -l en
 
+      - name: List files
+        run: |
+          ls -la
+
       - name: Upload preview artifact
         if: github.event_name == 'pull_request'
         env:
