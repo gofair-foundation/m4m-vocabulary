@@ -49,7 +49,7 @@ jobs:
         env:
           FILE_NAME: 'vocabulary_test'
         run: |
-          java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
+          java -jar xls2rdf.jar convert -i ${FILE_NAME}.xlsx -o ${FILE_NAME}.ttl -l en
           mv xls2rdf.log ./logs/
           python ./src/update.py
 
@@ -65,7 +65,7 @@ jobs:
           FILE_NAME: 'vocabulary_test'
         run: |
           curl -L -o skos-play-cli.jar https://bitbucket.org/tfrancart/sparna/downloads/skos-play-cli-0.7.2-onejar.jar
-          java -jar skos-play-cli.jar hierarchical -i $FILE_NAME.ttl -o $FILE_NAME.html -f html -l en
+          java -jar skos-play-cli.jar hierarchical -i ${FILE_NAME}.ttl -o ${FILE_NAME}.html -f html -l en
 
       - name: Upload preview artifact
         if: github.event_name == 'pull_request'
@@ -74,7 +74,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: skosplay-preview
-          path: $FILE_NAME.html
+          path: ${FILE_NAME}.html
 
       - name: deploy
         if: github.event_name == 'push'
