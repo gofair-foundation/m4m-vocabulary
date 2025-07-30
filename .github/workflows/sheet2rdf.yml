@@ -47,7 +47,7 @@ jobs:
 
       - name: conversion-xls2rdf
         env:
-          FILE_NAME:'vocabulary_test'
+          FILE_NAME: 'vocabulary_test'
         run: |
           java -jar xls2rdf.jar convert -i $FILE_NAME.xlsx -o $FILE_NAME.ttl -l en
           mv xls2rdf.log ./logs/
