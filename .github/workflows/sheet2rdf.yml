@@ -63,7 +63,21 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "new .ttl from Google sheet has been generated"
           git push
 
+      - name: Download SKOS Play CLI and render HTML
+        if: github.event_name == 'pull_request'
+        run: |
+          curl -L -o skos-play-cli.jar https://bitbucket.org/tfrancart/sparna/downloads/skos-play-cli-0.7.2-onejar.jar
+          java -jar skos-play-cli.jar hierarchical -i $FILE_NAME.ttl -o $FILE_NAME.html -f html -l en
+
+      - name: Upload preview artifact
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: skosplay-preview
+          path: $FILE_NAME.html
+
       - name: deploy
+        if: github.event_name == 'push'
         env:
           FILE_NAME: ${{secrets.FILE_NAME}}
           GRAPH: ${{secrets.GRAPH}}
